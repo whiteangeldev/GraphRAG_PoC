@@ -1,0 +1,49 @@
+{
+  "id": "multi-0020",
+  "answer_sha256": "e2c0329748c11108ac787588739355e883f2709465f82b90a7b070056213d6c1",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 28.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions lamp.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

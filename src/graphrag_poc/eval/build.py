@@ -432,11 +432,7 @@ def _fault_part_pairs(
             continue
         keyword = keywords[0]
         match = next(
-            (
-                part
-                for part in parts
-                if keyword in _part_description(part).upper()
-            ),
+            (part for part in parts if keyword in _part_description(part).upper()),
             None,
         )
         if match is not None:

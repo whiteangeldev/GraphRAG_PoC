@@ -1,0 +1,34 @@
+{
+  "id": "procedure-0015",
+  "answer_sha256": "ed295237ce2a4fbd903570bca03dbe0966c4ea7d082a6dd97c9e04c3736a60e4",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
+      "present": true,
+      "quote": "1. Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8)."
+    },
+    {
+      "text": "1. Install return and supply lines (8) on front body bracket (2) and rear body bracket (10) with two clamps (3), washers (4), capscrews (5), and locknuts (1).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove two locknuts (1), capscrews (5), washers (4), clamps (3) and return and supply lines (8) from front body bracket (2) and rear body bracket (10). Discard locknuts (1).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
+      "supported": true,
+      "quote": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8)."
+    }
+  ]
+}

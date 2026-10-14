@@ -1,0 +1,49 @@
+{
+  "id": "multi-0024",
+  "answer_sha256": "4f43c2cbc6254b61c9abd085555ecdb41f2e9d8bf4b3539cfaaecf6bfa5d4edd",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check battery fluid level and check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "a. Removal of companion seat assembly and battery box cover.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "A52425-1",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE CRANKS SLOWLY.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions battery.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

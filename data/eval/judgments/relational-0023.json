@@ -1,0 +1,39 @@
+{
+  "id": "relational-0023",
+  "answer_sha256": "8c0563c2c0ef1928d576c78e8a374dad7a0dc4c890453634072c8734ae410c92",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MFY-6701UT",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE FAILS TO CRANK.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which starter part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

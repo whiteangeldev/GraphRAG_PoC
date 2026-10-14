@@ -1,0 +1,39 @@
+{
+  "id": "relational-0013",
+  "answer_sha256": "e5f2137b45a71cce324cd670f33aebe6613344dcf21b95463dda7317cbf9a90a",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "89305",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 20.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which tire part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

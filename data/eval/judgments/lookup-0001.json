@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0001",
+  "answer_sha256": "2ad4b617f5cac7754d505bf00a592488889ade5daaa8f091392eba19667640f1",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

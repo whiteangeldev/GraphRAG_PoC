@@ -1,0 +1,49 @@
+{
+  "id": "multi-0004",
+  "answer_sha256": "f0fc19f7e48e85f27cfafa0d41a5805763ed13fc2970adb179e77972917e5579",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(2) Check for foreign objects in front of radiator and clean as required.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5584077",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 7.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions radiator.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

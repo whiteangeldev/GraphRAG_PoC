@@ -1,0 +1,59 @@
+{
+  "id": "applicability-0016",
+  "answer_sha256": "fbd6ccf5e63797f24420f4c4cb2d2062207d29fe0add099c00f778e908125262",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "M996A2",
+      "present": true,
+      "quote": "M996A2"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "2-35.",
+      "supported": true,
+      "quote": "2-35."
+    },
+    {
+      "sentence": "TRANSMISSION SYSTEM TESTS (4L80-E) The 4L80-E Transmission system is equipped with a computer called the Transmission Control Module (TCM) (located left rear seat compartment; for M996A2 and M997A2 vehicles, located in the left exterior stowage compartment) which interprets, analyzes and records electronic signals form sensors and switches located on the engine, brake pedal, and transmission.",
+      "supported": true,
+      "quote": "TRANSMISSION SYSTEM TESTS (4L80-E) The 4L80-E Transmission system is equipped with a computer called the Transmission Control Module (TCM) (located left rear seat compartment; for M996A2 and M997A2 vehicles, located in the left exterior stowage compartment) which interprets, analyzes and records electronic signals form sensors and switches located on the engine, brake pedal, and transmission."
+    },
+    {
+      "sentence": "The recorded codes stored in the TCM are known as TROUBLE CODES which are retrieved using the Diagnostic Switch Cable on the J2 connector of the TCM.",
+      "supported": true,
+      "quote": "The recorded codes stored in the TCM are known as TROUBLE CODES which are retrieved using the Diagnostic Switch Cable on the J2 connector of the TCM."
+    },
+    {
+      "sentence": "The TCM can protect the transmission from damage by locking it in Second Gear, with maximum fluid pressure, until the problem has been corrected.",
+      "supported": true,
+      "quote": "The TCM can protect the transmission from damage by locking it in Second Gear, with maximum fluid pressure, until the problem has been corrected."
+    },
+    {
+      "sentence": "The following procedures will detail diagnostic testing, troubleshooting and corrective action for any existing faults.",
+      "supported": true,
+      "quote": "The following procedures will detail diagnostic testing, troubleshooting and corrective action for any existing faults."
+    },
+    {
+      "sentence": "These Transmission System tests may be run any time you think there is a transmission problem or if you were sent here by another test chain.",
+      "supported": true,
+      "quote": "These Transmission System tests may be run any time you think there is a transmission problem or if you were sent here by another test chain."
+    },
+    {
+      "sentence": "This paragraph has a different kind of flow chart to guide you through testing because of the may problems that can occur.",
+      "supported": true,
+      "quote": "This paragraph has a different kind of flow chart to guide you through testing because of the may problems that can occur."
+    },
+    {
+      "sentence": "The most common problems are loose or corroded wiring connections.",
+      "supported": true,
+      "quote": "The most common problems are loose or corroded wiring connections."
+    },
+    {
+      "sentence": "To troubleshoot the transmission, you will need a diagnostic switch cable, digital multimeter and a throttle position (TP) sensor test cable.",
+      "supported": true,
+      "quote": "To troubleshoot the transmission, you will need a diagnostic switch cable, digital multimeter and a throttle position (TP) sensor test cable."
+    }
+  ]
+}

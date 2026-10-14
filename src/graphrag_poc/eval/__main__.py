@@ -7,6 +7,10 @@ from graphrag_poc.eval.check import validate
 
 
 def main() -> int:
+    if sys.argv[1:] == ["--score"]:
+        from graphrag_poc.eval.score import main as score_main
+
+        return score_main()
     questions = build_questions()
     path = write_questions(questions)
     errors = validate(questions)

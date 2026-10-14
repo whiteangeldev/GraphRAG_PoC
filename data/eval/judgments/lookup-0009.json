@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0009",
+  "answer_sha256": "baf51be6bcbc716c497b8fe33f0068c28dd5dc52ffbe00dd2e9f062bca5d17e2",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 8.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

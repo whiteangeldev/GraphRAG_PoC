@@ -1,0 +1,64 @@
+{
+  "id": "procedure-0007",
+  "answer_sha256": "482e94418554fb19ce940d577be0910d5de7f9553b17bcb799a1dc65a247a69e",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7). Discard flat washers (4).",
+      "present": true,
+      "quote": "1. Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7). Discard flat washers (4)."
+    },
+    {
+      "text": "1. Install clamp (1) on air horn (5).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Loosen two clamps (3) and remove elbow (4) from air cleaner assembly (1) and air horn (2).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7).",
+      "supported": true,
+      "quote": "Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7)."
+    },
+    {
+      "sentence": "Discard flat washers (4).",
+      "supported": true,
+      "quote": "Discard flat washers (4)."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Coat threads of screws (2) with sealing compound.",
+      "supported": true,
+      "quote": "Coat threads of screws (2) with sealing compound."
+    },
+    {
+      "sentence": "Install air horn (5) on intake manifold (7) with two flat washers (4), washers (3), and screws (2).",
+      "supported": true,
+      "quote": "Install air horn (5) on intake manifold (7) with two flat washers (4), washers (3), and screws (2)."
+    },
+    {
+      "sentence": "Tighten screws (2) to 40-45 lb-in.",
+      "supported": true,
+      "quote": "Tighten screws (2) to 40-45 lb-in."
+    },
+    {
+      "sentence": "(5-6 N•m).",
+      "supported": true,
+      "quote": "(5-6 N•m)."
+    }
+  ]
+}

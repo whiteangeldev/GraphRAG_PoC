@@ -1,0 +1,59 @@
+{
+  "id": "multi-0013",
+  "answer_sha256": "b23ff3f207cf2078a77757ebfa54df29c977dd5d0fe36a2ba651d54aa0d378c7",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": true,
+      "quote": "Step 1. Check tire air pressure"
+    },
+    {
+      "text": "(6) Refer to para. 3-22 for tire chain installation and operation.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "89305",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "20.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR Step 1.",
+      "supported": true,
+      "quote": "EXCESSIVE OR UNEVEN TIRE WEAR Step 1."
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": true,
+      "quote": "Check tire air pressure."
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": true,
+      "quote": "Inflate or deflate tires to correct air pressure."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

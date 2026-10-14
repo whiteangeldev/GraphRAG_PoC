@@ -1,0 +1,39 @@
+{
+  "id": "relational-0003",
+  "answer_sha256": "ef3d723c54072d57a26383b66a37fa7c4d5879107a9d6594e0b225a316844193",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 6.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which nozzle part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

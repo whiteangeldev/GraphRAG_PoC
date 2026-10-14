@@ -1,0 +1,54 @@
+{
+  "id": "procedure-0010",
+  "answer_sha256": "136146d9d5b6e1f0bcff631003959a6628d922828f35d42f53687e3f9a7f59a9",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1).",
+      "present": true,
+      "quote": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1)."
+    },
+    {
+      "text": "1. Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4).",
+      "present": true,
+      "quote": "1. Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4)."
+    },
+    {
+      "text": "2. Disconnect hose (6) from air cleaner assembly (7).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1).",
+      "supported": true,
+      "quote": "Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1)."
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4).",
+      "supported": true,
+      "quote": "Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4)."
+    },
+    {
+      "sentence": "4.",
+      "supported": true,
+      "quote": "4."
+    },
+    {
+      "sentence": "Remove hose (6) by routing out from three clamps (2) through two grommets (3) in “A” beam (1).",
+      "supported": true,
+      "quote": "Remove hose (6) by routing out from three clamps (2) through two grommets (3) in “A” beam (1)."
+    }
+  ]
+}

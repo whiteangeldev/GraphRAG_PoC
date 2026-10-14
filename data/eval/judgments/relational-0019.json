@@ -1,0 +1,39 @@
+{
+  "id": "relational-0019",
+  "answer_sha256": "ed89a41d8bd616b0d939d09381b579037eca607485036c9c3f15fff4d026fd62",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 27.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which lamp part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

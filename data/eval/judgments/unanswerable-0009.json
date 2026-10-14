@@ -1,0 +1,18 @@
+{
+  "id": "unanswerable-0009",
+  "answer_sha256": "c0cee474cbb8c4603381faeeb9326ee01ae0e7713e0d9797aaff6b8bad2b7116",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "using belt tension gauge.",
+      "supported": true,
+      "quote": "using belt tension gauge."
+    },
+    {
+      "sentence": "Belt tension 110 lbs (489 N) new belt",
+      "supported": true,
+      "quote": "Belt tension 110 lbs (489 N) new belt"
+    }
+  ]
+}

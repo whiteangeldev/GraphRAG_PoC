@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0005",
+  "answer_sha256": "c14c57954045519bd978e3db996b53802d22159e330f5349a17073edfc045769",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 10.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

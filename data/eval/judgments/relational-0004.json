@@ -1,0 +1,34 @@
+{
+  "id": "relational-0004",
+  "answer_sha256": "43de5a28f2a9aed36d7d4921083c27155b1042169c0071e1eaf77d69ea4d8e0f",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5584077",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 7.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE, which parts-list item matches RADIATOR?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

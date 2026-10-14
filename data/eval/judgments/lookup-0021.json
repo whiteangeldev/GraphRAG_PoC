@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0021",
+  "answer_sha256": "7a996a332f9c157c26e0f1e86e772f853c47711f782ade3e490e74dddcb23bd7",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if brake handle is in proper position (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 24.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WEAPON STATION WILL NOT ROTATE OR LOCK.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

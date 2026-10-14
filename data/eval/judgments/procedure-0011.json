@@ -1,0 +1,74 @@
+{
+  "id": "procedure-0011",
+  "answer_sha256": "9bf2a45a046bdd121d0631b9aee7b3dc6d9bf39a96217cc3ad78adcdb08361eb",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove oil dipstick (5) from oil dipstick tube (4).",
+      "present": true,
+      "quote": "1. Remove oil dipstick (5) from oil dipstick tube (4)."
+    },
+    {
+      "text": "1. Apply RTV sealant to O-ring (9) and install O-ring (9) on oil dipstick tube (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove plain-assembled nut (3) and capscrew (13) from harness clamp (2) and upper dipstick tube bracket (6). Discard plain-assembled nut (3).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove oil dipstick (5) from oil dipstick tube (4).",
+      "supported": true,
+      "quote": "Remove oil dipstick (5) from oil dipstick tube (4)."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Install oil dipstick tube (4) in engine oil pan (10).",
+      "supported": true,
+      "quote": "Install oil dipstick tube (4) in engine oil pan (10)."
+    },
+    {
+      "sentence": "5.",
+      "supported": true,
+      "quote": "5."
+    },
+    {
+      "sentence": "Remove oil dipstick tube (4) from engine oil pan (10).",
+      "supported": true,
+      "quote": "Remove oil dipstick tube (4) from engine oil pan (10)."
+    },
+    {
+      "sentence": "Remove and discard O-ring (9).",
+      "supported": true,
+      "quote": "Remove and discard O-ring (9)."
+    },
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "Install oil dipstick (5) into oil dipstick tube (4).",
+      "supported": true,
+      "quote": "Install oil dipstick (5) into oil dipstick tube (4)."
+    },
+    {
+      "sentence": "3-2 Change 3",
+      "supported": true,
+      "quote": "3-2 Change 3"
+    }
+  ]
+}

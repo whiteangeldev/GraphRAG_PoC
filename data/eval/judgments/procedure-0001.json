@@ -1,0 +1,39 @@
+{
+  "id": "procedure-0001",
+  "answer_sha256": "d06f4bbbc5a4c3da24897e003863bf05998007214c857bb44cd79fb3927856a8",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove old pages and insert new pages as indicated below.",
+      "present": true,
+      "quote": "1. Remove old pages and insert new pages as indicated below."
+    },
+    {
+      "text": "1. Two new models have been added to the front cover. The new cover, located at the end of the change package, replaces the existing cover.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Do not operate your vehicle engine in enclosed areas.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "CAUTION instructions. \"H\" (high range) \"H/L\" (high lock range) \"L\" (low range) \"",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove old pages and insert new pages as indicated below.",
+      "supported": true,
+      "quote": "Remove old pages and insert new pages as indicated below."
+    }
+  ]
+}

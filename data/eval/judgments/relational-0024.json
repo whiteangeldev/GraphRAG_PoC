@@ -1,0 +1,34 @@
+{
+  "id": "relational-0024",
+  "answer_sha256": "5385d8635984e924b3c59e291316ad475c496b70520cab30df89ebc04030a2bf",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check battery fluid level and check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "A52425-1",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE CRANKS SLOWLY, which parts-list item matches BATTERY?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

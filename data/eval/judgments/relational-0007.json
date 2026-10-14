@@ -1,0 +1,39 @@
+{
+  "id": "relational-0007",
+  "answer_sha256": "c5ab36249b78668848f09ddb0ac4ac74611caaafd36c96efd63afb21ace3007f",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for low fluid level (para",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 13.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SLIPPAGE IN ALL RANGES.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which transmission part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

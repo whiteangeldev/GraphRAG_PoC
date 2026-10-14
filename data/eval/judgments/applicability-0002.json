@@ -1,0 +1,44 @@
+{
+  "id": "applicability-0002",
+  "answer_sha256": "52d2506d5db84b8cc546d9f4144f188dd483d4dd4f2a7bf372c0aa66991d1e5a",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "M966",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1-7.",
+      "supported": true,
+      "quote": "1-7."
+    },
+    {
+      "sentence": "EQUIPMENT CHARACTERISTICS, CAPABILITIES, AND FEATURES The 1-1/4 ton, 4x4, M998 series vehicles are tactical vehicles designed for use over all types of roads, as well as cross-country terrain in all weather conditions.",
+      "supported": true,
+      "quote": "EQUIPMENT CHARACTERISTICS, CAPABILITIES, AND FEATURES The 1-1/4 ton, 4x4, M998 series vehicles are tactical vehicles designed for use over all types of roads, as well as cross-country terrain in all weather conditions."
+    },
+    {
+      "sentence": "The vehicles have four driving wheels powered by a V-8 liquid-cooled diesel engine.",
+      "supported": true,
+      "quote": "The vehicles have four driving wheels powered by a V-8 liquid-cooled diesel engine."
+    },
+    {
+      "sentence": "Fo u r -wheel hydraulic service brakes and a mechanical parking brake are common to all models in the M998 series.",
+      "supported": true,
+      "quote": "Fo u r -wheel hydraulic service brakes and a mechanical parking brake are common to all models in the M998 series."
+    },
+    {
+      "sentence": "All vehicles are equipped with a pintle hook for towing.",
+      "supported": true,
+      "quote": "All vehicles are equipped with a pintle hook for towing."
+    },
+    {
+      "sentence": "Tiedown and lifting eyes are provided for air, rail, or sea shipment.",
+      "supported": true,
+      "quote": "Tiedown and lifting eyes are provided for air, rail, or sea shipment."
+    }
+  ]
+}

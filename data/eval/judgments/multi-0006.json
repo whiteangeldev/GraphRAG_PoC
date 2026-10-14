@@ -1,0 +1,49 @@
+{
+  "id": "multi-0006",
+  "answer_sha256": "6647329b1b7e761c5645e7eaf4737d0932f4892ec053f9365b880c350411400d",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 12.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions transmission.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0003",
+  "answer_sha256": "8b7472ed2001a8f4a9b23073871ca0a7e1e33d62af296fdc56e4c8acc5ca1987",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 6.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

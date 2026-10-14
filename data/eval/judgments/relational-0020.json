@@ -1,0 +1,34 @@
+{
+  "id": "relational-0020",
+  "answer_sha256": "c907932ae845e898aa4999f747a8d05e84f050e871da9efa72aba0b3dc335c81",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 28.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE, which parts-list item matches LAMP?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

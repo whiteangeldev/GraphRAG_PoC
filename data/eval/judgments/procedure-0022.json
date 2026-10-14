@@ -1,0 +1,64 @@
+{
+  "id": "procedure-0022",
+  "answer_sha256": "512b8733badb09d89e40fa45742b149ebffe4eec52617dca844b1dfa025cde21",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
+      "present": true,
+      "quote": "1. Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6)."
+    },
+    {
+      "text": "1. Install four insulators (8) on front and rear hangers (9) and (7) (if removed.)",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Twist two front hangers (9) until tee handles (2) clear slots (11) in supports (1) and remove front hangers (9). NNOOTTEE Perform step 3 for “A2” vehicles only.",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
+      "supported": true,
+      "quote": "Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6)."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Install two rear hangers (7) on supports (6) with screws (5), washers (4), and nuts (3).",
+      "supported": true,
+      "quote": "Install two rear hangers (7) on supports (6) with screws (5), washers (4), and nuts (3)."
+    },
+    {
+      "sentence": "Tighten nuts (3) to 37 lb-ft (50 N m).",
+      "supported": true,
+      "quote": "Tighten nuts (3) to 37 lb-ft (50 N m)."
+    },
+    {
+      "sentence": "• FOLLOW-ON TASK: Install fuel tank (para.",
+      "supported": true,
+      "quote": "• FOLLOW-ON TASK: Install fuel tank (para."
+    },
+    {
+      "sentence": "3-24).",
+      "supported": true,
+      "quote": "3-24)."
+    },
+    {
+      "sentence": "Change 3 3-59",
+      "supported": true,
+      "quote": "Change 3 3-59"
+    }
+  ]
+}

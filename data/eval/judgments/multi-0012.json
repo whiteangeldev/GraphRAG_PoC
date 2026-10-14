@@ -1,0 +1,49 @@
+{
+  "id": "multi-0012",
+  "answer_sha256": "5dd170e857b1fd41ea9955f527926d6cd6cd03cee7ceb70b740c2fc167aedc8d",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if wheel lug nuts are loose",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "j. Lock steering wheel with cable (2) and chock wheels if tactical situation permits. A1, A2, AND M1123 MODELS A1, A2, AND M1123 MODELS Change 1 2-111",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5740512",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 19.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WHEELS WOBBLE OR SHIMMY.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions wheel.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

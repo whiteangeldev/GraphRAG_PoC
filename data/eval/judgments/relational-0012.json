@@ -1,0 +1,34 @@
+{
+  "id": "relational-0012",
+  "answer_sha256": "14ea82ab86b23d8893d07606985195dc6f04d4db2b93e542a59f29a151289544",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if wheel lug nuts are loose",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5740512",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 19.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WHEELS WOBBLE OR SHIMMY, which parts-list item matches WHEEL?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

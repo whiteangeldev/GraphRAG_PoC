@@ -1,0 +1,54 @@
+{
+  "id": "procedure-0009",
+  "answer_sha256": "1617e0eed7eb90429559a0ffd5f6205ffe05217ef1d1c138aa9da571e83cf1f7",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
+      "present": true,
+      "quote": "1. Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6)."
+    },
+    {
+      "text": "1. Connect hose (5) to gauge (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Disconnect air restriction gauge hose (5) from gauge (4) and remove gauge (4).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
+      "supported": true,
+      "quote": "Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6)."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Position gauge (4) and gasket (3) behind dash panel (6) and secure to bezel (1) with two screws (2).",
+      "supported": true,
+      "quote": "Position gauge (4) and gasket (3) behind dash panel (6) and secure to bezel (1) with two screws (2)."
+    },
+    {
+      "sentence": "2 1 6 5 4 3 FOLLOW-ON TASK: Start engine (TM 9-2320-280-10) and check operation of air restriction gauge.",
+      "supported": true,
+      "quote": "2 1 6 5 4 3 FOLLOW-ON TASK: Start engine (TM 9-2320-280-10) and check operation of air restriction gauge."
+    },
+    {
+      "sentence": "3-30 Change 3",
+      "supported": true,
+      "quote": "3-30 Change 3"
+    }
+  ]
+}

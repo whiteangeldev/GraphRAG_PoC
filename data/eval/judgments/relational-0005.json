@@ -1,0 +1,39 @@
+{
+  "id": "relational-0005",
+  "answer_sha256": "d04b0fb223a1882664e878704b6f1824d51d9b4fd95c8eba62d7bb661b79a47c",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 10.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which transmission part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

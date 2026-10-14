@@ -1,0 +1,34 @@
+{
+  "id": "relational-0006",
+  "answer_sha256": "c7e196c084a358fc70a9c0e9862eb2ee013604a38a1c18f638f3eff1cd00cd69",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 12.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE, which parts-list item matches TRANSMISSION?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

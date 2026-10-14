@@ -1,0 +1,104 @@
+{
+  "id": "lookup-0004",
+  "answer_sha256": "9efffe91be45c2e5b7365e91298fc632495ad9bbe03bacc3ba5bbb72e74245de",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": true,
+      "quote": "Step 1. Check to see if fan is running"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "7.",
+      "supported": true,
+      "quote": "7."
+    },
+    {
+      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE Step 1.",
+      "supported": true,
+      "quote": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE Step 1."
+    },
+    {
+      "sentence": "Check to see if fan is running.",
+      "supported": true,
+      "quote": "Check to see if fan is running."
+    },
+    {
+      "sentence": "If fan is not running, perform emergency fan clutch override procedure (para.",
+      "supported": true,
+      "quote": "If fan is not running, perform emergency fan clutch override procedure (para."
+    },
+    {
+      "sentence": "3-23).",
+      "supported": true,
+      "quote": "3-23)."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Allow engine to cool and check for low coolant level.",
+      "supported": true,
+      "quote": "Allow engine to cool and check for low coolant level."
+    },
+    {
+      "sentence": "Add coolant as necessary (para.",
+      "supported": true,
+      "quote": "Add coolant as necessary (para."
+    },
+    {
+      "sentence": "3-9).",
+      "supported": true,
+      "quote": "3-9)."
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": true,
+      "quote": "Step 3."
+    },
+    {
+      "sentence": "Check for debris blocking radiator fins.",
+      "supported": true,
+      "quote": "Check for debris blocking radiator fins."
+    },
+    {
+      "sentence": "Remove debris.",
+      "supported": true,
+      "quote": "Remove debris."
+    },
+    {
+      "sentence": "Step 4.",
+      "supported": true,
+      "quote": "Step 4."
+    },
+    {
+      "sentence": "Check for broken or missing fan belts.",
+      "supported": true,
+      "quote": "Check for broken or missing fan belts."
+    },
+    {
+      "sentence": "Notify unit maintenance if belts are broken or missing.",
+      "supported": true,
+      "quote": "Notify unit maintenance if belts are broken or missing."
+    },
+    {
+      "sentence": "Step 5.",
+      "supported": true,
+      "quote": "Step 5."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

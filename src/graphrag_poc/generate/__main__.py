@@ -49,13 +49,21 @@ def ask_with_hits(
     """Retrieve, then answer. Returns the fused ranking the page displays."""
 
     active_embedder = embedder if embedder is not None else build_embedder()
-    active_client = client if client is not None else make_client(
-        api_key=os.environ.get("QDRANT_API_KEY") or None
+    active_client = (
+        client
+        if client is not None
+        else make_client(api_key=os.environ.get("QDRANT_API_KEY") or None)
     )
     hits = retrieve(active_client, active_embedder, question)
+    return compose_answer(question, hits), hits
+
+
+def compose_answer(question: str, hits: list[FusedHit]) -> Answer:
+    """Answer from these passages. A configured generation model is used when set."""
+
     if os.environ.get("GENERATION_MODEL", "").strip():
-        return _model_answer(question, hits), hits
-    return answer_from_passages(question, hits), hits
+        return _model_answer(question, hits)
+    return answer_from_passages(question, hits)
 
 
 def _check() -> int:

@@ -1,0 +1,69 @@
+{
+  "id": "procedure-0018",
+  "answer_sha256": "ec8c05fbbe4668626566259dd8663c41477217e353d953440396ea49599e3426",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "present": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "text": "1. Apply sealing compound to fitting (2) and install fitting (2) on filler spout (12).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Unscrew “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "present": true,
+      "quote": "1. Unscrew “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "supported": true,
+      "quote": "Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Unscrew “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "supported": true,
+      "quote": "Unscrew “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Detach cap chain clip (8) from filler spout (12) and remove filler cap (6).",
+      "supported": true,
+      "quote": "Detach cap chain clip (8) from filler spout (12) and remove filler cap (6)."
+    },
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "Remove locknut (13), washer (14), capscrew (16), washer (14), and clamp (15) from filler spout (12).",
+      "supported": true,
+      "quote": "Remove locknut (13), washer (14), capscrew (16), washer (14), and clamp (15) from filler spout (12)."
+    },
+    {
+      "sentence": "Discard locknut (13).",
+      "supported": true,
+      "quote": "Discard locknut (13)."
+    }
+  ]
+}

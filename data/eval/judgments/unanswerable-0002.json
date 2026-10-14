@@ -1,0 +1,198 @@
+{
+  "id": "unanswerable-0002",
+  "answer_sha256": "ba0cbf80867128c8a49318a16c5a81397c923798f32a09eec9d7c967838315a5",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "2-16.",
+      "supported": true,
+      "quote": "2-16."
+    },
+    {
+      "sentence": "ELECTRIC CIRCUIT DESCRIPTION (CONT’D) When there is no electrical connection, such as when a wire is disconnected, the resistance is infinite (too large to be measured).",
+      "supported": true,
+      "quote": "ELECTRIC CIRCUIT DESCRIPTION (CONT’D) When there is no electrical connection, such as when a wire is disconnected, the resistance is infinite (too large to be measured)."
+    },
+    {
+      "sentence": "No current will flow through the wires, because the circuit is no longer continuously connected.",
+      "supported": true,
+      "quote": "No current will flow through the wires, because the circuit is no longer continuously connected."
+    },
+    {
+      "sentence": "This is referred to as an “open circuit” or simply an \"open”.",
+      "supported": true,
+      "quote": "This is referred to as an “open circuit” or simply an \"open”."
+    },
+    {
+      "sentence": "Remember that an electrical circuit is formed by continuous loops of devices connected together.",
+      "supported": true,
+      "quote": "Remember that an electrical circuit is formed by continuous loops of devices connected together."
+    },
+    {
+      "sentence": "When you are troubleshooting you are often asked to check for “continuity\", which simply means that you need to find out if there is a continuous path from one place in the circuit to another.",
+      "supported": true,
+      "quote": "When you are troubleshooting you are often asked to check for “continuity\", which simply means that you need to find out if there is a continuous path from one place in the circuit to another."
+    },
+    {
+      "sentence": "Since you are trying to see if the path is continuous, you must check wires and switches rather than any special or active devices.",
+      "supported": true,
+      "quote": "Since you are trying to see if the path is continuous, you must check wires and switches rather than any special or active devices."
+    },
+    {
+      "sentence": "You will usually just measure the resistance between two points.",
+      "supported": true,
+      "quote": "You will usually just measure the resistance between two points."
+    },
+    {
+      "sentence": "If the resistance is zero (or the value of any resistance that is supposed to be there), then there is continuity.",
+      "supported": true,
+      "quote": "If the resistance is zero (or the value of any resistance that is supposed to be there), then there is continuity."
+    },
+    {
+      "sentence": "In the case of looking for a short, this may mean that you have found the short.",
+      "supported": true,
+      "quote": "In the case of looking for a short, this may mean that you have found the short."
+    },
+    {
+      "sentence": "If the resistance is off-scale on the meter (infinite resistance) then there is no connection and you have found an open.",
+      "supported": true,
+      "quote": "If the resistance is off-scale on the meter (infinite resistance) then there is no connection and you have found an open."
+    },
+    {
+      "sentence": "A continuity test is the same whether you are looking for an open or a short, the only difference being what resistance values you are looking for and where you make the measurements.",
+      "supported": true,
+      "quote": "A continuity test is the same whether you are looking for an open or a short, the only difference being what resistance values you are looking for and where you make the measurements."
+    },
+    {
+      "sentence": "You are familiar with the typical light switch which allows you to turn a light on and off.",
+      "supported": true,
+      "quote": "You are familiar with the typical light switch which allows you to turn a light on and off."
+    },
+    {
+      "sentence": "A switch of any kind in an electrical circuit is simply a way of opening the loop so that no current will flow through it.",
+      "supported": true,
+      "quote": "A switch of any kind in an electrical circuit is simply a way of opening the loop so that no current will flow through it."
+    },
+    {
+      "sentence": "Something to remember while troubleshooting is that everything on the positive side of the switch still has full battery voltage while everything from the switch on through the rest of the circuit is (or should be) connected to the battery negative terminal and you will measure zero volts.",
+      "supported": true,
+      "quote": "Something to remember while troubleshooting is that everything on the positive side of the switch still has full battery voltage while everything from the switch on through the rest of the circuit is (or should be) connected to the battery negative terminal and you will measure zero volts."
+    },
+    {
+      "sentence": "This is easy to remember if you think of the faucet on a sink.",
+      "supported": true,
+      "quote": "This is easy to remember if you think of the faucet on a sink."
+    },
+    {
+      "sentence": "If you shut off the faucet, there is no water flowing into the sink, but the water in the pipe is still under pressure.",
+      "supported": true,
+      "quote": "If you shut off the faucet, there is no water flowing into the sink, but the water in the pipe is still under pressure."
+    },
+    {
+      "sentence": "Sometimes a switch is turned on and off automatically.",
+      "supported": true,
+      "quote": "Sometimes a switch is turned on and off automatically."
+    },
+    {
+      "sentence": "An example is a “circuit breaker\" which is a device that measures how much current is flowing through it.",
+      "supported": true,
+      "quote": "An example is a “circuit breaker\" which is a device that measures how much current is flowing through it."
+    },
+    {
+      "sentence": "If the current goes too high (possibly damaging equipment or melting the wires) then it opens an internal switch to stop the current flow.",
+      "supported": true,
+      "quote": "If the current goes too high (possibly damaging equipment or melting the wires) then it opens an internal switch to stop the current flow."
+    },
+    {
+      "sentence": "A “relay” is another form of switch that is turned on and off under remote control using a signal in another wire.",
+      "supported": true,
+      "quote": "A “relay” is another form of switch that is turned on and off under remote control using a signal in another wire."
+    },
+    {
+      "sentence": "When a device which requires a very large amount of current (such as the starter motor), must be turned on and off, a “power relay” is used.",
+      "supported": true,
+      "quote": "When a device which requires a very large amount of current (such as the starter motor), must be turned on and off, a “power relay” is used."
+    },
+    {
+      "sentence": "The idea is to use a small switch to turn on a larger switch.",
+      "supported": true,
+      "quote": "The idea is to use a small switch to turn on a larger switch."
+    },
+    {
+      "sentence": "Thus, you don’t have very large wires going all over the vehicle or large switches on the instrument panel.",
+      "supported": true,
+      "quote": "Thus, you don’t have very large wires going all over the vehicle or large switches on the instrument panel."
+    },
+    {
+      "sentence": "In the case of the starter’s power relay, it is also called a “solenoid”.",
+      "supported": true,
+      "quote": "In the case of the starter’s power relay, it is also called a “solenoid”."
+    },
+    {
+      "sentence": "A solenoid is any device that changes the electrical current into a forward and backward motion.",
+      "supported": true,
+      "quote": "A solenoid is any device that changes the electrical current into a forward and backward motion."
+    },
+    {
+      "sentence": "It is something like an electrical motor except that instead of continuously going around in the same direction, it goes in or out.",
+      "supported": true,
+      "quote": "It is something like an electrical motor except that instead of continuously going around in the same direction, it goes in or out."
+    },
+    {
+      "sentence": "For the starter, the solenoid is used to \"push” a very large switch into the “on” position.",
+      "supported": true,
+      "quote": "For the starter, the solenoid is used to \"push” a very large switch into the “on” position."
+    },
+    {
+      "sentence": "When testing a circuit, you will need to know how much current is flowing.",
+      "supported": true,
+      "quote": "When testing a circuit, you will need to know how much current is flowing."
+    },
+    {
+      "sentence": "Current is easilly measured with the STE/lCE-R.",
+      "supported": true,
+      "quote": "Current is easilly measured with the STE/lCE-R."
+    },
+    {
+      "sentence": "A device called a “shunt\" is connected to the negative terminal of the battery.",
+      "supported": true,
+      "quote": "A device called a “shunt\" is connected to the negative terminal of the battery."
+    },
+    {
+      "sentence": "A shunt is a very precise resistor designed so that for every 1000 amps of current that flow through it there is a drop of .1 volts from one side of it to the other (different shunts may have different values).",
+      "supported": true,
+      "quote": "A shunt is a very precise resistor designed so that for every 1000 amps of current that flow through it there is a drop of .1 volts from one side of it to the other (different shunts may have different values)."
+    },
+    {
+      "sentence": "By measuring the voltage across the shunt you know how much current is flowing through the circuit.",
+      "supported": true,
+      "quote": "By measuring the voltage across the shunt you know how much current is flowing through the circuit."
+    },
+    {
+      "sentence": "The shunt is placed on the negative side because it is safer (less chance of accidents which may short out the batteries).",
+      "supported": true,
+      "quote": "The shunt is placed on the negative side because it is safer (less chance of accidents which may short out the batteries)."
+    },
+    {
+      "sentence": "Since all of the current eventually goes through the negative battery terminal anyway, the shunt gives the same measurement as if it were connected to the positive terminal.",
+      "supported": true,
+      "quote": "Since all of the current eventually goes through the negative battery terminal anyway, the shunt gives the same measurement as if it were connected to the positive terminal."
+    },
+    {
+      "sentence": "You can think of the shunt as doing the same thing as the water meter in your house.",
+      "supported": true,
+      "quote": "You can think of the shunt as doing the same thing as the water meter in your house."
+    },
+    {
+      "sentence": "As you turn devices such as lights on or off, you can use the shunt to measure how much current they are using.",
+      "supported": true,
+      "quote": "As you turn devices such as lights on or off, you can use the shunt to measure how much current they are using."
+    },
+    {
+      "sentence": "2-40",
+      "supported": true,
+      "quote": "2-40"
+    }
+  ]
+}

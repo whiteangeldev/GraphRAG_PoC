@@ -1,0 +1,34 @@
+{
+  "id": "procedure-0017",
+  "answer_sha256": "09e29a525af311ad83366f2db0d4516d517ad36d866d0186e42dd8fbb67717ec",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Remove clip (9) securing fuel tank vent line (3) to vent line (6).",
+      "present": true,
+      "quote": "1. Remove clip (9) securing fuel tank vent line (3) to vent line (6)."
+    },
+    {
+      "text": "1. Install clamp (10) and vent line filter (13) to body bracket (17) with washer (11), capscrew (18), and locknut (12). NNOOTTEE Perform step 2 only when deep water fording kit is installed.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove two capscrews (2) securing clamps (1) and (7) and vent lines (3) and (6) to brackets (8).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Remove clip (9) securing fuel tank vent line (3) to vent line (6).",
+      "supported": true,
+      "quote": "Remove clip (9) securing fuel tank vent line (3) to vent line (6)."
+    }
+  ]
+}

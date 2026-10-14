@@ -1,0 +1,39 @@
+{
+  "id": "relational-0011",
+  "answer_sha256": "a3afe5f8e65af4ffa9ea19bb98d4e5525f32fac9f77ef06b1497c75d7d05e9fd",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if parking brake is partially applied",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12460229",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 17.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "BRAKE WARNING LAMP ASSEMBLY ON.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which brake part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

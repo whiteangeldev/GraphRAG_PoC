@@ -1,0 +1,18 @@
+{
+  "id": "unanswerable-0005",
+  "answer_sha256": "a92233b5737587cfd879efcd0b4a40260a48b7d32fb510c3fb478792b93a09ec",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "2-27.",
+      "supported": true,
+      "quote": "2-27."
+    },
+    {
+      "sentence": "MALFUNCTION",
+      "supported": true,
+      "quote": "MALFUNCTION"
+    }
+  ]
+}

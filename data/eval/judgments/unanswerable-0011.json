@@ -1,0 +1,18 @@
+{
+  "id": "unanswerable-0011",
+  "answer_sha256": "e24c76e5bfe2a99defa2fe381a6c86006379a01506790113a4727cd885ee8b0f",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "2-23.",
+      "supported": true,
+      "quote": "2-23."
+    },
+    {
+      "sentence": "SLAVE STARTING OPERATION",
+      "supported": true,
+      "quote": "SLAVE STARTING OPERATION"
+    }
+  ]
+}

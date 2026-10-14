@@ -1,0 +1,39 @@
+{
+  "id": "procedure-0005",
+  "answer_sha256": "fa50a1ca3c9d4fbb11c39e480c245f16c2f86845b1226c0b22edec4c644fd1ba",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "1. Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6).",
+      "present": true,
+      "quote": "1. Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6)."
+    },
+    {
+      "text": "1. Check gasket (3) for dents, tears, rips, and other damage. Make sure the gasket has not taken a set. Make sure there are no hard dirt ridges on the sealing surfaces.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove nut and washer assembly (7) and filter element (4) from stud (5) and air cleaner assembly(6).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "WARNING",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6).",
+      "supported": true,
+      "quote": "Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6)."
+    }
+  ]
+}

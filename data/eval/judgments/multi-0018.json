@@ -1,0 +1,49 @@
+{
+  "id": "multi-0018",
+  "answer_sha256": "fe426bd2886e504ad45116f824b31ffb4529ec8db551712e696cbca5995f5740",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check that interior light switch on control box is in proper position",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 26.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions lamp.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

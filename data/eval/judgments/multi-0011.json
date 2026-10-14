@@ -1,0 +1,74 @@
+{
+  "id": "multi-0011",
+  "answer_sha256": "d15acf67df688d319be5e84e19321cf0912453be1afda1400f9250a2432e8b02",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if parking brake is partially applied",
+      "present": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied"
+    },
+    {
+      "text": "e. Depress service brake pedal (6). Depress parking brake release button and release parking brake lever (4). The brake warning lamp assembly (1) should go out. 2-108 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12460229",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "17.",
+      "supported": true,
+      "quote": "17."
+    },
+    {
+      "sentence": "BRAKE WARNING LAMP ASSEMBLY ON Step 1.",
+      "supported": true,
+      "quote": "BRAKE WARNING LAMP ASSEMBLY ON Step 1."
+    },
+    {
+      "sentence": "Check to see if parking brake is partially applied.",
+      "supported": true,
+      "quote": "Check to see if parking brake is partially applied."
+    },
+    {
+      "sentence": "Disengage parking brake.",
+      "supported": true,
+      "quote": "Disengage parking brake."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Check for low brake fluid level (TM 9-2320-280-20).",
+      "supported": true,
+      "quote": "Check for low brake fluid level (TM 9-2320-280-20)."
+    },
+    {
+      "sentence": "Add brake fluid (Appendix G).",
+      "supported": true,
+      "quote": "Add brake fluid (Appendix G)."
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": true,
+      "quote": "Step 3."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

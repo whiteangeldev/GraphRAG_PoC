@@ -1,0 +1,39 @@
+{
+  "id": "relational-0001",
+  "answer_sha256": "6211f88bd4729c6eb57809b9ace794007fbb5a649b86fbeb6ffd337c389f302b",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12339317",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which alternator part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0025",
+  "answer_sha256": "80d2829fb01f980b9acd11563aa99293a78969aeafd7e0718d7a5af34e8773ac",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 28.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -38,5 +38,6 @@ demo:
 	$(PYTHON) -m graphrag_poc.app
 
 eval:
-	@echo "target '$@' is reserved for a later step" >&2
-	@exit 1
+	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
+	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
+	$(PYTHON) -m graphrag_poc.eval --score

@@ -1,0 +1,99 @@
+{
+  "id": "multi-0021",
+  "answer_sha256": "6521923d0023bfd62afe2d6d88c1020b52cb5521e7572ad6e51f03a7a837158a",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Perform malfunction 26, steps 1 through 3",
+      "present": true,
+      "quote": "Step 1. Perform malfunction 26, steps 1 through 3"
+    },
+    {
+      "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "29.",
+      "supported": true,
+      "quote": "29."
+    },
+    {
+      "sentence": "SPOTUGHT FAILS TO ILLUMINATE Step 1.",
+      "supported": true,
+      "quote": "SPOTUGHT FAILS TO ILLUMINATE Step 1."
+    },
+    {
+      "sentence": "Perform malfunction 26, steps 1 through 3.",
+      "supported": true,
+      "quote": "Perform malfunction 26, steps 1 through 3."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Check if ceiling lights illuminate.",
+      "supported": true,
+      "quote": "Check if ceiling lights illuminate."
+    },
+    {
+      "sentence": "If dome lamps illuminate, check to ensure spotlight switch is in proper position.",
+      "supported": true,
+      "quote": "If dome lamps illuminate, check to ensure spotlight switch is in proper position."
+    },
+    {
+      "sentence": "Place spotlight switch in proper position (para.",
+      "supported": true,
+      "quote": "Place spotlight switch in proper position (para."
+    },
+    {
+      "sentence": "2-61).",
+      "supported": true,
+      "quote": "2-61)."
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": true,
+      "quote": "Step 3."
+    },
+    {
+      "sentence": "Inspect bulb for serviceability.",
+      "supported": true,
+      "quote": "Inspect bulb for serviceability."
+    },
+    {
+      "sentence": "Replace bulb with known serviceable bulb (para.",
+      "supported": true,
+      "quote": "Replace bulb with known serviceable bulb (para."
+    },
+    {
+      "sentence": "3-28).",
+      "supported": true,
+      "quote": "3-28)."
+    },
+    {
+      "sentence": "Step 4.",
+      "supported": true,
+      "quote": "Step 4."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "unanswerable-0014",
+  "answer_sha256": "fb73189b1a22894e7456849ea0e916defffb250e8d4e52031443202f418fcebd",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: What does this mean in the manual: malfunction 77.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "LEFT TURN SIGNAL ON THE MOON?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

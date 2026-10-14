@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0027",
+  "answer_sha256": "0a28df8bff723546f937fddc6862a090cb49199695657b9b6ea4d0083c3fcd59",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Ensure that operating controls are properly set",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 30.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

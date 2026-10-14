@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0008",
+  "answer_sha256": "1dd454b57baed4701a0e97570a70531aa553d3a0aa52e59bb0479bc504d1ab8a",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "8.",
+      "supported": true,
+      "quote": "8."
+    },
+    {
+      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE",
+      "supported": true,
+      "quote": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE"
+    }
+  ]
+}

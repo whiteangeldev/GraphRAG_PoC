@@ -1,0 +1,2468 @@
+{
+  "id": "unanswerable-0015",
+  "answer_sha256": "b50040aa10dd87f2bd8d91873e80cfba7476cc5d13c672420ee7d5d84eb4dfbe",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "Table 2-2.",
+      "supported": true,
+      "quote": "Table 2-2."
+    },
+    {
+      "sentence": "Adaption of dual voltage alternator on a single voltage system Dual Voltage Alternator Single Voltage System Ground wire afixed to regulator Ground wire afixed to regulator regulator or 14 volt power stud Change 1 60 AMP/100 AMP 200 AMP/400 AMP (DRIVE BELTS/ (DRIVE BELTS/ SERPENTINE BELT) SERPENTINE BELT) CONTROL BOX/ Change 1 2-195 KNOWN INFO DIAGNOSTIC FLOWCHART ARE ALTERNATOR DRIVEBELTS/ VISUAL INSPECTION, USE BELT TENSION GAUGE/ SERPENTINE BELT TIGHT AND IN GOOD CONDITION (NO CRACKS, FRAYS, OR GLAZE)?",
+      "supported": true,
+      "quote": "Adaption of dual voltage alternator on a single voltage system Dual Voltage Alternator Single Voltage System Ground wire afixed to regulator Ground wire afixed to regulator regulator or 14 volt power stud Change 1 60 AMP/100 AMP 200 AMP/400 AMP (DRIVE BELTS/ (DRIVE BELTS/ SERPENTINE BELT) SERPENTINE BELT) CONTROL BOX/ Change 1 2-195 KNOWN INFO DIAGNOSTIC FLOWCHART ARE ALTERNATOR DRIVEBELTS/ VISUAL INSPECTION, USE BELT TENSION GAUGE/ SERPENTINE BELT TIGHT AND IN GOOD CONDITION (NO CRACKS, FRAYS, OR GLAZE)?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS PROTECTIVE CONTROL BOX/DISTRIBUTION BOX REASON FOR QUESTION tensioner has fully retracted, the fast enough to recharge the TIGHTEN OR REPLACE.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS PROTECTIVE CONTROL BOX/DISTRIBUTION BOX REASON FOR QUESTION tensioner has fully retracted, the fast enough to recharge the TIGHTEN OR REPLACE."
+    },
+    {
+      "sentence": "CONTINUE TESTING KNOWN INFO ARE ALL WIRE CONNECTIONS VISUAL INSPECTION TO ALTERNATOR CLEAN, TIGHT, AND MAKING GOOD CONNECTION?",
+      "supported": true,
+      "quote": "CONTINUE TESTING KNOWN INFO ARE ALL WIRE CONNECTIONS VISUAL INSPECTION TO ALTERNATOR CLEAN, TIGHT, AND MAKING GOOD CONNECTION?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX CONTINUE TESTING REASON FOR QUESTION Loose or dirty connections can from charging the batteries.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX CONTINUE TESTING REASON FOR QUESTION Loose or dirty connections can from charging the batteries."
+    },
+    {
+      "sentence": "KNOWN INFO 3 TEST OPTIONS 1.",
+      "supported": true,
+      "quote": "KNOWN INFO 3 TEST OPTIONS 1."
+    },
+    {
+      "sentence": "STE/ICE-R TESTS 67 AND 89 WITH ROTARY SWITCH IN “RUN” WIRING CONNECTIONS OK (INTERLEAVE) (Pages 2-740, 750) POSITION (ENGINE NOT RUNNING), DO YOU HAVE BATTERY VOLTAGE 2.",
+      "supported": true,
+      "quote": "STE/ICE-R TESTS 67 AND 89 WITH ROTARY SWITCH IN “RUN” WIRING CONNECTIONS OK (INTERLEAVE) (Pages 2-740, 750) POSITION (ENGINE NOT RUNNING), DO YOU HAVE BATTERY VOLTAGE 2."
+    },
+    {
+      "sentence": "MULTIMETER AT ALTERNATOR OUTPUT TERMINAL ?",
+      "supported": true,
+      "quote": "MULTIMETER AT ALTERNATOR OUTPUT TERMINAL ?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX Change 1 REASON FOR QUESTION The alternator must be connected to batteries to be able to recharge the REFERENCE INFORMATION be replaced (para.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX Change 1 REASON FOR QUESTION The alternator must be connected to batteries to be able to recharge the REFERENCE INFORMATION be replaced (para."
+    },
+    {
+      "sentence": "3-81, all except M1123 and \"A2\" vehicles) (para.",
+      "supported": true,
+      "quote": "3-81, all except M1123 and \"A2\" vehicles) (para."
+    },
+    {
+      "sentence": "3-83, M1123 and \"A2\" vehicles).",
+      "supported": true,
+      "quote": "3-83, M1123 and \"A2\" vehicles)."
+    },
+    {
+      "sentence": "Use a belt tension gauge to determine if the belts need to be tightened, refer to (para 3-82, all except M1123 and \"A2\" BAD CONNECTIONS ARE THE MOST COMMON PROBLEM !",
+      "supported": true,
+      "quote": "Use a belt tension gauge to determine if the belts need to be tightened, refer to (para 3-82, all except M1123 and \"A2\" BAD CONNECTIONS ARE THE MOST COMMON PROBLEM !"
+    },
+    {
+      "sentence": "Sometimes just disconnecting, cleaning, and reconnecting will solve a problem.",
+      "supported": true,
+      "quote": "Sometimes just disconnecting, cleaning, and reconnecting will solve a problem."
+    },
+    {
+      "sentence": "BE THOROUGH!",
+      "supported": true,
+      "quote": "BE THOROUGH!"
+    },
+    {
+      "sentence": "Refer to the functional flow schematic and check the 1.",
+      "supported": true,
+      "quote": "Refer to the functional flow schematic and check the 1."
+    },
+    {
+      "sentence": "BATTERY - make sure all connections are clean and tight, including the shunt and power stud.",
+      "supported": true,
+      "quote": "BATTERY - make sure all connections are clean and tight, including the shunt and power stud."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "STARTER - check the high current (heavy gauge voltage; a loose connection will have voltage but can't 3.",
+      "supported": true,
+      "quote": "STARTER - check the high current (heavy gauge voltage; a loose connection will have voltage but can't 3."
+    },
+    {
+      "sentence": "PCB/DISTRIBUTION BOX Disconnect negative battery cable before disconnecting and reconnecting PCB/distribution box at all times.",
+      "supported": true,
+      "quote": "PCB/DISTRIBUTION BOX Disconnect negative battery cable before disconnecting and reconnecting PCB/distribution box at all times."
+    },
+    {
+      "sentence": "Failure to disconnect battery cable will result in damage to equipment or Unscrew BOTH connectors and look for bent or and corrosion in the connections.",
+      "supported": true,
+      "quote": "Failure to disconnect battery cable will result in damage to equipment or Unscrew BOTH connectors and look for bent or and corrosion in the connections."
+    },
+    {
+      "sentence": "INTERLEAVE TESTS 67 AND 89 BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R.",
+      "supported": true,
+      "quote": "INTERLEAVE TESTS 67 AND 89 BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R."
+    },
+    {
+      "sentence": "DIAL 06, PRESS THE TEST BUTTON.",
+      "supported": true,
+      "quote": "DIAL 06, PRESS THE TEST BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED BY BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED BY BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED AGAIN, DIAL IN TEST 89 AND PRESS THE BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED AGAIN, DIAL IN TEST 89 AND PRESS THE BUTTON."
+    },
+    {
+      "sentence": "VTM WILL DISPLAY RESULT FOR TEST 67, NIEHOFF ALTERNATOR NIEHOFF ALTERNATOR Change 1 2-197 KNOWN INFO BATTERIES OK DIAGNOSTIC FLOWCHART STE/ICE-R TEST 10 (Page 2-734) START ENGINE.",
+      "supported": true,
+      "quote": "VTM WILL DISPLAY RESULT FOR TEST 67, NIEHOFF ALTERNATOR NIEHOFF ALTERNATOR Change 1 2-197 KNOWN INFO BATTERIES OK DIAGNOSTIC FLOWCHART STE/ICE-R TEST 10 (Page 2-734) START ENGINE."
+    },
+    {
+      "sentence": "DOES ENGINE IDLE AT CORRECT SPEED (6.2L 625-675 RPM)?",
+      "supported": true,
+      "quote": "DOES ENGINE IDLE AT CORRECT SPEED (6.2L 625-675 RPM)?"
+    },
+    {
+      "sentence": "CONNECTIONS OK PCB/DISTRIBUTION BOX (6.5L 700-750 RPM)?",
+      "supported": true,
+      "quote": "CONNECTIONS OK PCB/DISTRIBUTION BOX (6.5L 700-750 RPM)?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS ALTERNATOR DRIVE ADJUST IDLE RPM KNOWN INFO REASON FOR QUESTION alternator is not driven fast BATTERIES OK LOCK THROTTLE AT 1200-1500 1.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS ALTERNATOR DRIVE ADJUST IDLE RPM KNOWN INFO REASON FOR QUESTION alternator is not driven fast BATTERIES OK LOCK THROTTLE AT 1200-1500 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 10 (interleave CONNECTIONS OK PCB/DISTRIBUTION BOX IS VOLTAGE AT ALTERNATOR 2.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 10 (interleave CONNECTIONS OK PCB/DISTRIBUTION BOX IS VOLTAGE AT ALTERNATOR 2."
+    },
+    {
+      "sentence": "MULTIMETER OUTPUT TERMINAL 27-29 VOLTS ?",
+      "supported": true,
+      "quote": "MULTIMETER OUTPUT TERMINAL 27-29 VOLTS ?"
+    },
+    {
+      "sentence": "ALTERNATOR DRIVE OK POSSIBLE PROBLEMS REASON FOR QUESTION Alternator voltage must be voltage to recharge batteries.",
+      "supported": true,
+      "quote": "ALTERNATOR DRIVE OK POSSIBLE PROBLEMS REASON FOR QUESTION Alternator voltage must be voltage to recharge batteries."
+    },
+    {
+      "sentence": "KNOWN INFO 6 TEST OPTIONS BATTERIES OK IS VOLTAGE AT BATTERY TERMINALS 27-29 VOLTS ?",
+      "supported": true,
+      "quote": "KNOWN INFO 6 TEST OPTIONS BATTERIES OK IS VOLTAGE AT BATTERY TERMINALS 27-29 VOLTS ?"
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 67 (Page 2-740) (SAME AS ALTERNATOR OUTPUT) CONNECTIONS OK PCB/DISTRIBUTION BOX OK ALTERNATOR DRIVE OK OUTPUT OK POSSIBLE PROBLEMS Change 1 REASON FOR QUESTION lower than alternator output, wiring resistance is too high.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 67 (Page 2-740) (SAME AS ALTERNATOR OUTPUT) CONNECTIONS OK PCB/DISTRIBUTION BOX OK ALTERNATOR DRIVE OK OUTPUT OK POSSIBLE PROBLEMS Change 1 REASON FOR QUESTION lower than alternator output, wiring resistance is too high."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION A charged battery in good condition is a prerequisite for testing an alternator/regulator system.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION A charged battery in good condition is a prerequisite for testing an alternator/regulator system."
+    },
+    {
+      "sentence": "If battery is suspect, substitute a known Output for 60 amp alternator is wire 5A and stud.",
+      "supported": true,
+      "quote": "If battery is suspect, substitute a known Output for 60 amp alternator is wire 5A and stud."
+    },
+    {
+      "sentence": "All other alternators have a large stud on side of housing as output terminal to connect wire 6.",
+      "supported": true,
+      "quote": "All other alternators have a large stud on side of housing as output terminal to connect wire 6."
+    },
+    {
+      "sentence": "PCB/distribution box engine connector.",
+      "supported": true,
+      "quote": "PCB/distribution box engine connector."
+    },
+    {
+      "sentence": "PCB/distribution box body connector.",
+      "supported": true,
+      "quote": "PCB/distribution box body connector."
+    },
+    {
+      "sentence": "Check and clean starter solenoid and battery box Look for loose, dirty, or broken connections and repair as necessary.",
+      "supported": true,
+      "quote": "Check and clean starter solenoid and battery box Look for loose, dirty, or broken connections and repair as necessary."
+    },
+    {
+      "sentence": "If terminal voltage is still low, harness should be replaced.",
+      "supported": true,
+      "quote": "If terminal voltage is still low, harness should be replaced."
+    },
+    {
+      "sentence": "Notify DS maintenance.",
+      "supported": true,
+      "quote": "Notify DS maintenance."
+    },
+    {
+      "sentence": "If idle can be adjusted to within limits, go to step 5.",
+      "supported": true,
+      "quote": "If idle can be adjusted to within limits, go to step 5."
+    },
+    {
+      "sentence": "If idle CANNOT be adjusted to within limits, you may have a problem with the fuel system.",
+      "supported": true,
+      "quote": "If idle CANNOT be adjusted to within limits, you may have a problem with the fuel system."
+    },
+    {
+      "sentence": "You can either continue here or run the fuel system tests ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "You can either continue here or run the fuel system tests ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Cranking RPM should be at least 100.",
+      "supported": true,
+      "quote": "Cranking RPM should be at least 100."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "BATTERY VOLTAGE STE/ICE-R TEST 67 2.",
+      "supported": true,
+      "quote": "BATTERY VOLTAGE STE/ICE-R TEST 67 2."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Batteries should be glowplugs turn on.",
+      "supported": true,
+      "quote": "Batteries should be glowplugs turn on."
+    },
+    {
+      "sentence": "Change 1 2-199 KNOWN INFO BATTERIES OK DIAGNOSTIC FLOWCHART STE/ICE-R TEST 80 (Page 2-749) WITH ENGINE RUNNING, MEASURE CURRENT FROM ALTERNATOR WIRE OUTPUT TERMINAL.",
+      "supported": true,
+      "quote": "Change 1 2-199 KNOWN INFO BATTERIES OK DIAGNOSTIC FLOWCHART STE/ICE-R TEST 80 (Page 2-749) WITH ENGINE RUNNING, MEASURE CURRENT FROM ALTERNATOR WIRE OUTPUT TERMINAL."
+    },
+    {
+      "sentence": "CONNECTIONS OK PROTECTIVE CONTROL BOX/DISTRIBUTION BOX IS CURRENT GREATER THAN ALTERNATOR DRIVE OK ALTERNATOR OUTPUT OK POSSIBLE PROBLEMS ALTERNATOR TESTS REASON FOR QUESTION Alternator must supply enough IF YOU STILL HAVE A PROBLEM, RERUN THESE TESTS TO MAKE SURE YOU DIDN'T MISS ANYTHING.",
+      "supported": true,
+      "quote": "CONNECTIONS OK PROTECTIVE CONTROL BOX/DISTRIBUTION BOX IS CURRENT GREATER THAN ALTERNATOR DRIVE OK ALTERNATOR OUTPUT OK POSSIBLE PROBLEMS ALTERNATOR TESTS REASON FOR QUESTION Alternator must supply enough IF YOU STILL HAVE A PROBLEM, RERUN THESE TESTS TO MAKE SURE YOU DIDN'T MISS ANYTHING."
+    },
+    {
+      "sentence": "IF EVERYTHING CHECKS OUT, RUN BATTERY TESTS AND ELECTRICAL TESTS.",
+      "supported": true,
+      "quote": "IF EVERYTHING CHECKS OUT, RUN BATTERY TESTS AND ELECTRICAL TESTS."
+    },
+    {
+      "sentence": "Change 1 REFERENCE INFORMATION alternator.",
+      "supported": true,
+      "quote": "Change 1 REFERENCE INFORMATION alternator."
+    },
+    {
+      "sentence": "All other alternators have large stud on alternator case as output connector for wire 6.",
+      "supported": true,
+      "quote": "All other alternators have large stud on alternator case as output connector for wire 6."
+    },
+    {
+      "sentence": "Alternator current will make sure alternator can supply enough alternator, (refer to chapter 12).",
+      "supported": true,
+      "quote": "Alternator current will make sure alternator can supply enough alternator, (refer to chapter 12)."
+    },
+    {
+      "sentence": "voltage alternators, (refer to chapter 4).",
+      "supported": true,
+      "quote": "voltage alternators, (refer to chapter 4)."
+    },
+    {
+      "sentence": "BATTERY CURRENT STE/ICE-R TEST 80 2.",
+      "supported": true,
+      "quote": "BATTERY CURRENT STE/ICE-R TEST 80 2."
+    },
+    {
+      "sentence": "Displayed reading is in amps.",
+      "supported": true,
+      "quote": "Displayed reading is in amps."
+    },
+    {
+      "sentence": "The reading will be greater than 30 amps, depending on how many accessories you have on.",
+      "supported": true,
+      "quote": "The reading will be greater than 30 amps, depending on how many accessories you have on."
+    },
+    {
+      "sentence": "Change 1 ALTERNATOR A DIAGNOSTIC FLOWCHART KNOWN INFO IS THE STARTER MOTOR VOLTAGE 1.",
+      "supported": true,
+      "quote": "Change 1 ALTERNATOR A DIAGNOSTIC FLOWCHART KNOWN INFO IS THE STARTER MOTOR VOLTAGE 1."
+    },
+    {
+      "sentence": "STE/ICE-R TESTS 67, 68 BATTERY IS NOT CON- NECTED TO ALTERNATOR THE SAME AS BATTERY VOLTAGE?",
+      "supported": true,
+      "quote": "STE/ICE-R TESTS 67, 68 BATTERY IS NOT CON- NECTED TO ALTERNATOR THE SAME AS BATTERY VOLTAGE?"
+    },
+    {
+      "sentence": "WHEN ROTARY SWITCH POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX KNOWN INFO DISCONNECT THE BATTERY BATTERY IS NOT CON- REASON FOR QUESTION The cable connecting the batteries to the alternator goes to the 1.",
+      "supported": true,
+      "quote": "WHEN ROTARY SWITCH POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX KNOWN INFO DISCONNECT THE BATTERY BATTERY IS NOT CON- REASON FOR QUESTION The cable connecting the batteries to the alternator goes to the 1."
+    },
+    {
+      "sentence": "STE/ICE-R TESTS 67, 89 NECTED TO ALTERNATOR NEGATIVE CABLE.",
+      "supported": true,
+      "quote": "STE/ICE-R TESTS 67, 89 NECTED TO ALTERNATOR NEGATIVE CABLE."
+    },
+    {
+      "sentence": "DISCONNECT WHEN ROTARY SWITCH ENGINE CONNECTOR AT PCB/DISTRIBUTION BOX.",
+      "supported": true,
+      "quote": "DISCONNECT WHEN ROTARY SWITCH ENGINE CONNECTOR AT PCB/DISTRIBUTION BOX."
+    },
+    {
+      "sentence": "RECONNECT BATTERIES CONNECTED THE BATTERY NEGATIVE CABLE.",
+      "supported": true,
+      "quote": "RECONNECT BATTERIES CONNECTED THE BATTERY NEGATIVE CABLE."
+    },
+    {
+      "sentence": "IS THERE BATTERY VOLTAGE AT POSSIBLE PROBLEMS REASON FOR QUESTION SOCKET E OF THE PCB/DISTRIBUTION PCB/DISTRIBUTION BOX BOX ENGINE CONNECTOR HARNESS ?",
+      "supported": true,
+      "quote": "IS THERE BATTERY VOLTAGE AT POSSIBLE PROBLEMS REASON FOR QUESTION SOCKET E OF THE PCB/DISTRIBUTION PCB/DISTRIBUTION BOX BOX ENGINE CONNECTOR HARNESS ?"
+    },
+    {
+      "sentence": "KNOWN INFO A3 TEST OPTIONS REMOVE THE BATTERY NEGATIVE 1.",
+      "supported": true,
+      "quote": "KNOWN INFO A3 TEST OPTIONS REMOVE THE BATTERY NEGATIVE 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 91 BATTERY IS NOT CON- NECTED TO ALTERNATOR CABLE.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 91 BATTERY IS NOT CON- NECTED TO ALTERNATOR CABLE."
+    },
+    {
+      "sentence": "IS THERE CONTINUITY WHEN ROTARY SWITCH IS (LESS THAN 20 OHMS BATTERIES CONNECTED RESISTANCE) FROM SOCKET F OF PCB/DISTRIBUTION BOX ENGINE CONNECTOR HARNESS TO WIRE REASON FOR QUESTION POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX Change 1 If the box is connected to the alternator, then the relay in the PCB/distribution box is no good.",
+      "supported": true,
+      "quote": "IS THERE CONTINUITY WHEN ROTARY SWITCH IS (LESS THAN 20 OHMS BATTERIES CONNECTED RESISTANCE) FROM SOCKET F OF PCB/DISTRIBUTION BOX ENGINE CONNECTOR HARNESS TO WIRE REASON FOR QUESTION POSSIBLE PROBLEMS PCB/DISTRIBUTION BOX Change 1 If the box is connected to the alternator, then the relay in the PCB/distribution box is no good."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION DISCONNECT NEGATIVE BATTERY CABLE BEFORE DISCONNECTING AND RECONNECTING PROTECTIVE CONTROL BOX/DISTRIBUTION BOX HARNESS.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION DISCONNECT NEGATIVE BATTERY CABLE BEFORE DISCONNECTING AND RECONNECTING PROTECTIVE CONTROL BOX/DISTRIBUTION BOX HARNESS."
+    },
+    {
+      "sentence": "box at all times.",
+      "supported": true,
+      "quote": "box at all times."
+    },
+    {
+      "sentence": "Failure to disconnect battery cable will result in damage to equipment or When checking for voltage or continuity in a harness connector (steps A2 and A3), check the wiring at the connector carefully for broken wires.",
+      "supported": true,
+      "quote": "Failure to disconnect battery cable will result in damage to equipment or When checking for voltage or continuity in a harness connector (steps A2 and A3), check the wiring at the connector carefully for broken wires."
+    },
+    {
+      "sentence": "Check to see that the connector pins are not bent, broken, or pushed out of place.",
+      "supported": true,
+      "quote": "Check to see that the connector pins are not bent, broken, or pushed out of place."
+    },
+    {
+      "sentence": "Check that the connections are clean and tight.",
+      "supported": true,
+      "quote": "Check that the connections are clean and tight."
+    },
+    {
+      "sentence": "Use the STE/ICE-R in TK mode for this measurement.",
+      "supported": true,
+      "quote": "Use the STE/ICE-R in TK mode for this measurement."
+    },
+    {
+      "sentence": "DO NOT USE THE DCA.",
+      "supported": true,
+      "quote": "DO NOT USE THE DCA."
+    },
+    {
+      "sentence": "Leave the negative battery cable off for the measurement.",
+      "supported": true,
+      "quote": "Leave the negative battery cable off for the measurement."
+    },
+    {
+      "sentence": "If there is an open circuit, the STE/ICE-R will measure close to 500 ohms.",
+      "supported": true,
+      "quote": "If there is an open circuit, the STE/ICE-R will measure close to 500 ohms."
+    },
+    {
+      "sentence": "If you don't have continuity or voltage, and the wires and connections are all ok, then the harness must have a harness.",
+      "supported": true,
+      "quote": "If you don't have continuity or voltage, and the wires and connections are all ok, then the harness must have a harness."
+    },
+    {
+      "sentence": "Replace harness, notify DS Maintenance.",
+      "supported": true,
+      "quote": "Replace harness, notify DS Maintenance."
+    },
+    {
+      "sentence": "Replace PCB, refer to (para.",
+      "supported": true,
+      "quote": "Replace PCB, refer to (para."
+    },
+    {
+      "sentence": "4-5).",
+      "supported": true,
+      "quote": "4-5)."
+    },
+    {
+      "sentence": "Replace distribution box, refer to (para.",
+      "supported": true,
+      "quote": "Replace distribution box, refer to (para."
+    },
+    {
+      "sentence": "4-5.1).",
+      "supported": true,
+      "quote": "4-5.1)."
+    },
+    {
+      "sentence": "INTERLEAVE TEST 67 AND 68.",
+      "supported": true,
+      "quote": "INTERLEAVE TEST 67 AND 68."
+    },
+    {
+      "sentence": "BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R.",
+      "supported": true,
+      "quote": "BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R."
+    },
+    {
+      "sentence": "DIAL 06, PRESS THE TEST BUTTON.",
+      "supported": true,
+      "quote": "DIAL 06, PRESS THE TEST BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED BY BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED BY BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED AGAIN, DIAL IN TEST 68 AND PRESS THE BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED AGAIN, DIAL IN TEST 68 AND PRESS THE BUTTON."
+    },
+    {
+      "sentence": "VTM WILL DISPLAY RESULT FOR TEST 67, THEN 68 THEN 6768, AND THEN REPEAT.",
+      "supported": true,
+      "quote": "VTM WILL DISPLAY RESULT FOR TEST 67, THEN 68 THEN 6768, AND THEN REPEAT."
+    },
+    {
+      "sentence": "SEE TM 9-4910-571-12&P FOR MORE INFORMATION.",
+      "supported": true,
+      "quote": "SEE TM 9-4910-571-12&P FOR MORE INFORMATION."
+    },
+    {
+      "sentence": "INTERLEAVE TEST 67 AND 89.",
+      "supported": true,
+      "quote": "INTERLEAVE TEST 67 AND 89."
+    },
+    {
+      "sentence": "BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R.",
+      "supported": true,
+      "quote": "BATTERY VOLTAGE AND DC VOLTAGE USE CONTROL FUNCTION 06 TO INTERLEAVE TESTS ON THE STE/ICE-R."
+    },
+    {
+      "sentence": "DIAL 06, PRESS THE TEST BUTTON.",
+      "supported": true,
+      "quote": "DIAL 06, PRESS THE TEST BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED BY BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED BY BUTTON."
+    },
+    {
+      "sentence": "WHEN PROMPTED AGAIN, DIAL IN TEST 89 AND PRESS THE BUTTON.",
+      "supported": true,
+      "quote": "WHEN PROMPTED AGAIN, DIAL IN TEST 89 AND PRESS THE BUTTON."
+    },
+    {
+      "sentence": "VTM WILL DISPLAY RESULT FOR TEST 67, THEN 89 THEN 6789, AND THEN REPEAT.",
+      "supported": true,
+      "quote": "VTM WILL DISPLAY RESULT FOR TEST 67, THEN 89 THEN 6789, AND THEN REPEAT."
+    },
+    {
+      "sentence": "SEE TM 9-4910-571-12&P FOR MORE INFORMATION.",
+      "supported": true,
+      "quote": "SEE TM 9-4910-571-12&P FOR MORE INFORMATION."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 91 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 91 1."
+    },
+    {
+      "sentence": "Connect RED clip and BLACK clip to the terminations indicated in the question.",
+      "supported": true,
+      "quote": "Connect RED clip and BLACK clip to the terminations indicated in the question."
+    },
+    {
+      "sentence": "RED to the 3.",
+      "supported": true,
+      "quote": "RED to the 3."
+    },
+    {
+      "sentence": "Displayed reading is in ohms.",
+      "supported": true,
+      "quote": "Displayed reading is in ohms."
+    },
+    {
+      "sentence": "Less than 5 ohms is continuity.",
+      "supported": true,
+      "quote": "Less than 5 ohms is continuity."
+    },
+    {
+      "sentence": "If the resistance is over 4500 ohms, STE/ICE displays “9.9.9.9”.",
+      "supported": true,
+      "quote": "If the resistance is over 4500 ohms, STE/ICE displays “9.9.9.9”."
+    },
+    {
+      "sentence": "Change 1 ALTERNATOR B DIAGNOSTIC FLOWCHART IDENTIFY MODEL ALTERNATOR.",
+      "supported": true,
+      "quote": "Change 1 ALTERNATOR B DIAGNOSTIC FLOWCHART IDENTIFY MODEL ALTERNATOR."
+    },
+    {
+      "sentence": "TESTING IS DIFFERENT FOR EACH MODEL.",
+      "supported": true,
+      "quote": "TESTING IS DIFFERENT FOR EACH MODEL."
+    },
+    {
+      "sentence": "IS THIS A 60 AMP PRESTOLITE ALTERNATOR?",
+      "supported": true,
+      "quote": "IS THIS A 60 AMP PRESTOLITE ALTERNATOR?"
+    },
+    {
+      "sentence": "KNOWN INFO ALTERNATOR OUTPUT VOLTAGE IS NOT REASON FOR QUESTION Connections and testing procedures are not the same for different model 1.",
+      "supported": true,
+      "quote": "KNOWN INFO ALTERNATOR OUTPUT VOLTAGE IS NOT REASON FOR QUESTION Connections and testing procedures are not the same for different model 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 (Page 2-750) STOP ENGINE.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 (Page 2-750) STOP ENGINE."
+    },
+    {
+      "sentence": "DISCONNECT WIRE POSSIBLE PROBLEMS 568A FROM ALTERNATOR WIRE 568.",
+      "supported": true,
+      "quote": "DISCONNECT WIRE POSSIBLE PROBLEMS 568A FROM ALTERNATOR WIRE 568."
+    },
+    {
+      "sentence": "TURN THE ROTARY SWITCH TO \"RUN\".",
+      "supported": true,
+      "quote": "TURN THE ROTARY SWITCH TO \"RUN\"."
+    },
+    {
+      "sentence": "MEASURE VOLTAGE AT THE WIRE THAT IS NOT CONNECTED TO THE ALTERNATOR.",
+      "supported": true,
+      "quote": "MEASURE VOLTAGE AT THE WIRE THAT IS NOT CONNECTED TO THE ALTERNATOR."
+    },
+    {
+      "sentence": "IS THERE BATTERY KNOWN INFO ALTERNATOR OUTPUT NOTIFY DS REASON FOR QUESTION VOLTAGE IS NOT NO MAINTENANCE TO REPAIR WIRE 568A OR REPLACE HARNESS POSSIBLE PROBLEMS 1.",
+      "supported": true,
+      "quote": "IS THERE BATTERY KNOWN INFO ALTERNATOR OUTPUT NOTIFY DS REASON FOR QUESTION VOLTAGE IS NOT NO MAINTENANCE TO REPAIR WIRE 568A OR REPLACE HARNESS POSSIBLE PROBLEMS 1."
+    },
+    {
+      "sentence": "STE/STE-R TEST 89 CONNECT WIRE 568A AND 568.",
+      "supported": true,
+      "quote": "STE/STE-R TEST 89 CONNECT WIRE 568A AND 568."
+    },
+    {
+      "sentence": "TURN ROTARY SWITCH TO “RUN’’.",
+      "supported": true,
+      "quote": "TURN ROTARY SWITCH TO “RUN’’."
+    },
+    {
+      "sentence": "MEASURE VOLTAGE AT ALTERNATOR END OF 2.",
+      "supported": true,
+      "quote": "MEASURE VOLTAGE AT ALTERNATOR END OF 2."
+    },
+    {
+      "sentence": "MULTIMETER WIRE 568.",
+      "supported": true,
+      "quote": "MULTIMETER WIRE 568."
+    },
+    {
+      "sentence": "IS THERE BATTERY VOLTAGE AT ALTERNATOR END OF KNOWN INFO ALTERNATOR OUTPUT VOLTAGE IS NOT NO REPLACE WIRE 568 POSSIBLE PROBLEMS Change 1 REASON FOR QUESTION REFERENCE INFORMATION For 60 amp Prestolite alternator, continue B.",
+      "supported": true,
+      "quote": "IS THERE BATTERY VOLTAGE AT ALTERNATOR END OF KNOWN INFO ALTERNATOR OUTPUT VOLTAGE IS NOT NO REPLACE WIRE 568 POSSIBLE PROBLEMS Change 1 REASON FOR QUESTION REFERENCE INFORMATION For 60 amp Prestolite alternator, continue B."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, go to C, page 2-208.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, go to C, page 2-208."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, go to D, page 2-212.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, go to D, page 2-212."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Voltage on wire 568 signals regulator to turn on.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Voltage on wire 568 signals regulator to turn on."
+    },
+    {
+      "sentence": "Without voltage, regulator can't operate.",
+      "supported": true,
+      "quote": "Without voltage, regulator can't operate."
+    },
+    {
+      "sentence": "Wire 568A is connected with wire 5A inside engine wire harness.",
+      "supported": true,
+      "quote": "Wire 568A is connected with wire 5A inside engine wire harness."
+    },
+    {
+      "sentence": "If there is no loose end on wire 568A, wire harness repair is required.",
+      "supported": true,
+      "quote": "If there is no loose end on wire 568A, wire harness repair is required."
+    },
+    {
+      "sentence": "Notify DS Maintenance.",
+      "supported": true,
+      "quote": "Notify DS Maintenance."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 REFERENCE INFORMATION 2.",
+      "supported": true,
+      "quote": "Change 1 REFERENCE INFORMATION 2."
+    },
+    {
+      "sentence": "Remove protective cover from alternator wiring.",
+      "supported": true,
+      "quote": "Remove protective cover from alternator wiring."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Remove the potting material.",
+      "supported": true,
+      "quote": "Remove the potting material."
+    },
+    {
+      "sentence": "4.",
+      "supported": true,
+      "quote": "4."
+    },
+    {
+      "sentence": "Remove hex head plug to expose adjustment screw.",
+      "supported": true,
+      "quote": "Remove hex head plug to expose adjustment screw."
+    },
+    {
+      "sentence": "5.",
+      "supported": true,
+      "quote": "5."
+    },
+    {
+      "sentence": "Start engine and lock throttle at 1200-1500 RPM by using STE/ICE-R test 10.",
+      "supported": true,
+      "quote": "Start engine and lock throttle at 1200-1500 RPM by using STE/ICE-R test 10."
+    },
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "Connect the Red test lead to wire 5A and the Black 7.",
+      "supported": true,
+      "quote": "Connect the Red test lead to wire 5A and the Black 7."
+    },
+    {
+      "sentence": "Monitor alternator output voltage with STE/ICE-R 8.",
+      "supported": true,
+      "quote": "Monitor alternator output voltage with STE/ICE-R 8."
+    },
+    {
+      "sentence": "Use a cross tip screwdriver to adjust the alternator with silicon caulk, and replace the protective cover.",
+      "supported": true,
+      "quote": "Use a cross tip screwdriver to adjust the alternator with silicon caulk, and replace the protective cover."
+    },
+    {
+      "sentence": "ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Cranking RPM should be approximately 100.",
+      "supported": true,
+      "quote": "Cranking RPM should be approximately 100."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Regulator cannot be tested independently from alternator on 60 amp alternator system.",
+      "supported": true,
+      "quote": "Regulator cannot be tested independently from alternator on 60 amp alternator system."
+    },
+    {
+      "sentence": "Change 1 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204.",
+      "supported": true,
+      "quote": "Change 1 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, continue C.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, continue C."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, go to D, page 2-212.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, go to D, page 2-212."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Voltage on wire 568 signals regulator to turn on.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Voltage on wire 568 signals regulator to turn on."
+    },
+    {
+      "sentence": "Without voltage, regulator can't operate.",
+      "supported": true,
+      "quote": "Without voltage, regulator can't operate."
+    },
+    {
+      "sentence": "Wire 568A is connected with wire 5A inside engine wire harness.",
+      "supported": true,
+      "quote": "Wire 568A is connected with wire 5A inside engine wire harness."
+    },
+    {
+      "sentence": "If there is no loose end on wire 568A, wire harness repair is required.",
+      "supported": true,
+      "quote": "If there is no loose end on wire 568A, wire harness repair is required."
+    },
+    {
+      "sentence": "Notify DS Maintenance.",
+      "supported": true,
+      "quote": "Notify DS Maintenance."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 DIAGNOSTIC FLOWCHART KNOWN INFO C4 TEST OPTIONS VOLTAGE OUTPUT WAS VOLTAGE READ IN STEP 5, ON PAGE 2-198, LESS THAN 35 WIRING OR IGNITION POSSIBLE PROBLEMS REGULATOR (Para REASON FOR QUESTION If voltage exceeded 35 volts, regulator over-voltage protection KNOWN INFO C5 TEST OPTIONS VOLTAGE OUTPUT 1.",
+      "supported": true,
+      "quote": "Change 1 DIAGNOSTIC FLOWCHART KNOWN INFO C4 TEST OPTIONS VOLTAGE OUTPUT WAS VOLTAGE READ IN STEP 5, ON PAGE 2-198, LESS THAN 35 WIRING OR IGNITION POSSIBLE PROBLEMS REGULATOR (Para REASON FOR QUESTION If voltage exceeded 35 volts, regulator over-voltage protection KNOWN INFO C5 TEST OPTIONS VOLTAGE OUTPUT 1."
+    },
+    {
+      "sentence": "STE/ICE-R Tests 10 and 89 WITH REGULATOR REMOVED FROM ALTERNATOR, PERFORM FULL-FIELD TEST.",
+      "supported": true,
+      "quote": "STE/ICE-R Tests 10 and 89 WITH REGULATOR REMOVED FROM ALTERNATOR, PERFORM FULL-FIELD TEST."
+    },
+    {
+      "sentence": "START ENGINE AND SET WIRING OR IGNITION SPEED TO 850 RPM.",
+      "supported": true,
+      "quote": "START ENGINE AND SET WIRING OR IGNITION SPEED TO 850 RPM."
+    },
+    {
+      "sentence": "CONNECT A JUMPER WIRE FROM PIN E ON ALTERNATOR TO GROUND.",
+      "supported": true,
+      "quote": "CONNECT A JUMPER WIRE FROM PIN E ON ALTERNATOR TO GROUND."
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS REASON FOR QUESTION Determine if alternator or regulator MOMENTARILY WIRE JUMPER FROM PIN D TO BATTERY VOLTAGE.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS REASON FOR QUESTION Determine if alternator or regulator MOMENTARILY WIRE JUMPER FROM PIN D TO BATTERY VOLTAGE."
+    },
+    {
+      "sentence": "MEASURE VOLTAGE AT ALTERNATOR OUTPUT.",
+      "supported": true,
+      "quote": "MEASURE VOLTAGE AT ALTERNATOR OUTPUT."
+    },
+    {
+      "sentence": "DID VOLTAGE RISE TO AT LEAST 75 VOLTS?",
+      "supported": true,
+      "quote": "DID VOLTAGE RISE TO AT LEAST 75 VOLTS?"
+    },
+    {
+      "sentence": "REPLACE ALTERNATOR REPLACE REGULATOR Change 1 REFERENCE INFORMATION Ensure all electrical loads are disconnected components in other devices.",
+      "supported": true,
+      "quote": "REPLACE ALTERNATOR REPLACE REGULATOR Change 1 REFERENCE INFORMATION Ensure all electrical loads are disconnected components in other devices."
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Disconnect battery ground cable.",
+      "supported": true,
+      "quote": "Disconnect battery ground cable."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Remove clamp pins from slots.",
+      "supported": true,
+      "quote": "Remove clamp pins from slots."
+    },
+    {
+      "sentence": "4.",
+      "supported": true,
+      "quote": "4."
+    },
+    {
+      "sentence": "Loosen connector nut.",
+      "supported": true,
+      "quote": "Loosen connector nut."
+    },
+    {
+      "sentence": "5.",
+      "supported": true,
+      "quote": "5."
+    },
+    {
+      "sentence": "Remove regulator from alternator.",
+      "supported": true,
+      "quote": "Remove regulator from alternator."
+    },
+    {
+      "sentence": "Secure regulator out of the way.",
+      "supported": true,
+      "quote": "Secure regulator out of the way."
+    },
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "Connect battery ground cable.",
+      "supported": true,
+      "quote": "Connect battery ground cable."
+    },
+    {
+      "sentence": "Multimeter set to read over 75 vdc.",
+      "supported": true,
+      "quote": "Multimeter set to read over 75 vdc."
+    },
+    {
+      "sentence": "ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Cranking RPM should be approximately STE/lCE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Cranking RPM should be approximately STE/lCE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, go to C, page 2-208.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, go to C, page 2-208."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, continue D.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, continue D."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, page For 100 amp single voltage Niehoff alternator, go to F, page For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Replacement of Reverse Polarity Fuse 1.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, page For 100 amp single voltage Niehoff alternator, go to F, page For 100 amp dual voltage Niehoff alternator, go to F.1, For 200 amp dual voltage Niehoff alternator, go to G, For 400 amp dual voltage Niehoff alternator, go to H, Replacement of Reverse Polarity Fuse 1."
+    },
+    {
+      "sentence": "Remove nut, lockwasher, washer, fuse, insulator 2.",
+      "supported": true,
+      "quote": "Remove nut, lockwasher, washer, fuse, insulator 2."
+    },
+    {
+      "sentence": "Examine fuse for burns and breaks.",
+      "supported": true,
+      "quote": "Examine fuse for burns and breaks."
+    },
+    {
+      "sentence": "Replace fuse and insulator if damaged.",
+      "supported": true,
+      "quote": "Replace fuse and insulator if damaged."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Install new fuse and insulator on output stud with washer, lockwasher, and nut.",
+      "supported": true,
+      "quote": "Install new fuse and insulator on output stud with washer, lockwasher, and nut."
+    },
+    {
+      "sentence": "Tighten nut 10-15 1.",
+      "supported": true,
+      "quote": "Tighten nut 10-15 1."
+    },
+    {
+      "sentence": "Disconnect battery ground cable.",
+      "supported": true,
+      "quote": "Disconnect battery ground cable."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Remove four screws, lockwashers, gasket, and 3.",
+      "supported": true,
+      "quote": "Remove four screws, lockwashers, gasket, and 3."
+    },
+    {
+      "sentence": "Remove potting material as necessary to gain STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Remove potting material as necessary to gain STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 REFERENCE INFORMATION TEMPERATURE-ENVIRONMENT ADJUSTMENT 1.",
+      "supported": true,
+      "quote": "Change 1 REFERENCE INFORMATION TEMPERATURE-ENVIRONMENT ADJUSTMENT 1."
+    },
+    {
+      "sentence": "Disconnect battery ground cable.",
+      "supported": true,
+      "quote": "Disconnect battery ground cable."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Remove four screws securing regulator to alternator.",
+      "supported": true,
+      "quote": "Remove four screws securing regulator to alternator."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Position regulator to allow access to the buss bar link.",
+      "supported": true,
+      "quote": "Position regulator to allow access to the buss bar link."
+    },
+    {
+      "sentence": "The buss bar link and voltage setting terminals are located under sealant.",
+      "supported": true,
+      "quote": "The buss bar link and voltage setting terminals are located under sealant."
+    },
+    {
+      "sentence": "It maybe necessary to scrape desert condition), loosen screw E0 and remove screws E1 and E2.",
+      "supported": true,
+      "quote": "It maybe necessary to scrape desert condition), loosen screw E0 and remove screws E1 and E2."
+    },
+    {
+      "sentence": "Rotate bus bar link to E2.",
+      "supported": true,
+      "quote": "Rotate bus bar link to E2."
+    },
+    {
+      "sentence": "Reinstall screws 6.",
+      "supported": true,
+      "quote": "Reinstall screws 6."
+    },
+    {
+      "sentence": "Install regulator to alternator with four screws.",
+      "supported": true,
+      "quote": "Install regulator to alternator with four screws."
+    },
+    {
+      "sentence": "7.",
+      "supported": true,
+      "quote": "7."
+    },
+    {
+      "sentence": "Connect battery ground cable.",
+      "supported": true,
+      "quote": "Connect battery ground cable."
+    },
+    {
+      "sentence": "To reset alternator output voltage to 28 volts, the buss bar link should be connected between E0 and E1.",
+      "supported": true,
+      "quote": "To reset alternator output voltage to 28 volts, the buss bar link should be connected between E0 and E1."
+    },
+    {
+      "sentence": "The terminal connection E0 and E3 provides an output voltage of 28.8 volts (for arctic conditions).",
+      "supported": true,
+      "quote": "The terminal connection E0 and E3 provides an output voltage of 28.8 volts (for arctic conditions)."
+    },
+    {
+      "sentence": "When operation in hot weather or arctic conditions cease, the alternator output voltage should be reset to its normal 9.",
+      "supported": true,
+      "quote": "When operation in hot weather or arctic conditions cease, the alternator output voltage should be reset to its normal 9."
+    },
+    {
+      "sentence": "Mark the output voltage setting on the alternator and annotate the information in the vehicle log book for This procedure resets the alternator output approximately If an overcharge condition exists, wiring to regulator is ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "Mark the output voltage setting on the alternator and annotate the information in the vehicle log book for This procedure resets the alternator output approximately If an overcharge condition exists, wiring to regulator is ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Displayed reading is STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION 1.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION 1."
+    },
+    {
+      "sentence": "Disconnect battery ground cable.",
+      "supported": true,
+      "quote": "Disconnect battery ground cable."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Remove five screws, lockwashers, and leads from 4.",
+      "supported": true,
+      "quote": "Remove five screws, lockwashers, and leads from 4."
+    },
+    {
+      "sentence": "Connect 6 volt lantern battery NSN 6135-00-643-1310, (or equivalent that can supply 1.0 amp current at 6 volts) with (+) battery and lead connector to W lead and (-) battery and lead connector to Y lead.",
+      "supported": true,
+      "quote": "Connect 6 volt lantern battery NSN 6135-00-643-1310, (or equivalent that can supply 1.0 amp current at 6 volts) with (+) battery and lead connector to W lead and (-) battery and lead connector to Y lead."
+    },
+    {
+      "sentence": "Insulate all 5.",
+      "supported": true,
+      "quote": "Insulate all 5."
+    },
+    {
+      "sentence": "Monitor voltage across alternator output studs.",
+      "supported": true,
+      "quote": "Monitor voltage across alternator output studs."
+    },
+    {
+      "sentence": "Meter Ensure all vehicle and on board equipment are turned off.",
+      "supported": true,
+      "quote": "Meter Ensure all vehicle and on board equipment are turned off."
+    },
+    {
+      "sentence": "Higher voltages could damage components.",
+      "supported": true,
+      "quote": "Higher voltages could damage components."
+    },
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "Connect battery ground cable.",
+      "supported": true,
+      "quote": "Connect battery ground cable."
+    },
+    {
+      "sentence": "If installing alternator, reconnect regulator (para 4-114).",
+      "supported": true,
+      "quote": "If installing alternator, reconnect regulator (para 4-114)."
+    },
+    {
+      "sentence": "STE/lCE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/lCE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "FROM B1, IS THIS A NIEHOFF 200 AMP DIAGNOSTIC FLOWCHART SINGLE VOLTAGE ALTERNATOR?",
+      "supported": true,
+      "quote": "FROM B1, IS THIS A NIEHOFF 200 AMP DIAGNOSTIC FLOWCHART SINGLE VOLTAGE ALTERNATOR?"
+    },
+    {
+      "sentence": "SEE NOTE ON REASON FOR QUESTION Must know model of alternator to perform proper KNOWN INFO E2 TEST OPTIONS VOLTAGE OUTPUT START ENGINE AND ALLOW TO STE/ICE-R Test 10 and 89 POSSIBLE PROBLEMS FUSIBLE LINK RECHECK VOLTAGE OUTPUT.",
+      "supported": true,
+      "quote": "SEE NOTE ON REASON FOR QUESTION Must know model of alternator to perform proper KNOWN INFO E2 TEST OPTIONS VOLTAGE OUTPUT START ENGINE AND ALLOW TO STE/ICE-R Test 10 and 89 POSSIBLE PROBLEMS FUSIBLE LINK RECHECK VOLTAGE OUTPUT."
+    },
+    {
+      "sentence": "REASON FOR QUESTION ALTERNATOR IS ALTERNATOR OUTPUT LESS Determine if high or low REGULATOR THAN 26 VOLTS?",
+      "supported": true,
+      "quote": "REASON FOR QUESTION ALTERNATOR IS ALTERNATOR OUTPUT LESS Determine if high or low REGULATOR THAN 26 VOLTS?"
+    },
+    {
+      "sentence": "output voltage.",
+      "supported": true,
+      "quote": "output voltage."
+    },
+    {
+      "sentence": "IF OUTPUT VOLTAGE IS OVER 30.5 VOLTS, REPLACE REGULATOR, (Para.",
+      "supported": true,
+      "quote": "IF OUTPUT VOLTAGE IS OVER 30.5 VOLTS, REPLACE REGULATOR, (Para."
+    },
+    {
+      "sentence": "4-114) OR (Para.",
+      "supported": true,
+      "quote": "4-114) OR (Para."
+    },
+    {
+      "sentence": "4-115).",
+      "supported": true,
+      "quote": "4-115)."
+    },
+    {
+      "sentence": "2-218 Change 2 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, For 100 amp Prestolite alternator, go to C, For 200 amp Prestolite alternator, go to D, For 200 amp single voltage Niehoff alternator, continue with E.",
+      "supported": true,
+      "quote": "2-218 Change 2 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, For 100 amp Prestolite alternator, go to C, For 200 amp Prestolite alternator, go to D, For 200 amp single voltage Niehoff alternator, continue with E."
+    },
+    {
+      "sentence": "For 100 amp single voltage Niehoff alternator, go For 100 amp dual voltage Niehoff alternator, go to For 200 amp dual voltage Niehoff alternator, go to For 400 amp dual voltage Niehoff alternator, go to The regulator for this model alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "For 100 amp single voltage Niehoff alternator, go For 100 amp dual voltage Niehoff alternator, go to For 200 amp dual voltage Niehoff alternator, go to For 400 amp dual voltage Niehoff alternator, go to The regulator for this model alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage over Output voltage of 26 - 30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 1.",
+      "supported": true,
+      "quote": "Any output voltage over Output voltage of 26 - 30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 1."
+    },
+    {
+      "sentence": "Start Test 10, Engine RPM.",
+      "supported": true,
+      "quote": "Start Test 10, Engine RPM."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Engine RPM should STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Engine RPM should STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or 3.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or 3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 2 2-218.1 FROM E2, DIAGNOSTIC FLOWCHART KNOWN INFO E3 TEST OPTIONS Voltage Output STOP ENGINE.",
+      "supported": true,
+      "quote": "Change 2 2-218.1 FROM E2, DIAGNOSTIC FLOWCHART KNOWN INFO E3 TEST OPTIONS Voltage Output STOP ENGINE."
+    },
+    {
+      "sentence": "CHECK WIRE 6 AT ALTERNATOR AND STARTER FOR LOOSENESS OR CORROSION.",
+      "supported": true,
+      "quote": "CHECK WIRE 6 AT ALTERNATOR AND STARTER FOR LOOSENESS OR CORROSION."
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS ARE TERMINAL CONNECTIONS Fusible Link CLEAN AND SECURE TERMINAL REASON FOR QUESTION Determine if connections are good at alternator and KNOWN INFO E4 TEST OPTIONS VOLTAGE OUTPUT CHECK FOR BURNED OR BROKEN REVERSE POLARITY FUSIBLE LINK ON ALTERNATOR OUTPUT POSSIBLE PROBLEMS STUD.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS ARE TERMINAL CONNECTIONS Fusible Link CLEAN AND SECURE TERMINAL REASON FOR QUESTION Determine if connections are good at alternator and KNOWN INFO E4 TEST OPTIONS VOLTAGE OUTPUT CHECK FOR BURNED OR BROKEN REVERSE POLARITY FUSIBLE LINK ON ALTERNATOR OUTPUT POSSIBLE PROBLEMS STUD."
+    },
+    {
+      "sentence": "IS FUSIBLE LINK OK?",
+      "supported": true,
+      "quote": "IS FUSIBLE LINK OK?"
+    },
+    {
+      "sentence": "FUSIBLE LINK FUSIBLE LINK.",
+      "supported": true,
+      "quote": "FUSIBLE LINK FUSIBLE LINK."
+    },
+    {
+      "sentence": "REASON FOR QUESTION Fusible link connects alternator output stud to THEN GO TO STEP 5, 2-218.2 Change 2 REFERENCE INFORMATION Wire 6 connects alternator output stud to starter terminal.",
+      "supported": true,
+      "quote": "REASON FOR QUESTION Fusible link connects alternator output stud to THEN GO TO STEP 5, 2-218.2 Change 2 REFERENCE INFORMATION Wire 6 connects alternator output stud to starter terminal."
+    },
+    {
+      "sentence": "A poor connection at these points will cause a low or no alternator output condition.",
+      "supported": true,
+      "quote": "A poor connection at these points will cause a low or no alternator output condition."
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Disconnect battery ground cable.",
+      "supported": true,
+      "quote": "Disconnect battery ground cable."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Remove boot from alternator output terminal.",
+      "supported": true,
+      "quote": "Remove boot from alternator output terminal."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Remove nut, lockwasher, washers, and fusible 4.",
+      "supported": true,
+      "quote": "Remove nut, lockwasher, washers, and fusible 4."
+    },
+    {
+      "sentence": "Inspect fusible link.",
+      "supported": true,
+      "quote": "Inspect fusible link."
+    },
+    {
+      "sentence": "5.",
+      "supported": true,
+      "quote": "5."
+    },
+    {
+      "sentence": "Replace fusible link if damaged or appears 6.",
+      "supported": true,
+      "quote": "Replace fusible link if damaged or appears 6."
+    },
+    {
+      "sentence": "Connect battery ground cable.",
+      "supported": true,
+      "quote": "Connect battery ground cable."
+    },
+    {
+      "sentence": "Change 2 2-219 FROM E4, DIAGNOSTIC FLOWCHART KNOWN INFO E5 TEST OPTIONS VOLTAGE OUTPUT STE/ICE Test 89, TURN ROTARY SWITCH TO “RUN” POSITION.",
+      "supported": true,
+      "quote": "Change 2 2-219 FROM E4, DIAGNOSTIC FLOWCHART KNOWN INFO E5 TEST OPTIONS VOLTAGE OUTPUT STE/ICE Test 89, TURN ROTARY SWITCH TO “RUN” POSITION."
+    },
+    {
+      "sentence": "CHECK FOR BATTERY FUSIBLE LINK OK VOLTAGE AT RED (ENERGIZE) TERMINAL ON REGULATOR.",
+      "supported": true,
+      "quote": "CHECK FOR BATTERY FUSIBLE LINK OK VOLTAGE AT RED (ENERGIZE) TERMINAL ON REGULATOR."
+    },
+    {
+      "sentence": "IS POSSIBLE PROBLEMS BATTERY VOLTAGE PRESENT?",
+      "supported": true,
+      "quote": "IS POSSIBLE PROBLEMS BATTERY VOLTAGE PRESENT?"
+    },
+    {
+      "sentence": "REASON FOR QUESTION As wire 568A is stubbed off, the voltage from wire 5A on red terminal signals regulator DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS.",
+      "supported": true,
+      "quote": "REASON FOR QUESTION As wire 568A is stubbed off, the voltage from wire 5A on red terminal signals regulator DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS."
+    },
+    {
+      "sentence": "KNOWN INFO E6 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR-TO- STE/ICE Test 10 and 90, INCORRECT REGULATOR CABLE.",
+      "supported": true,
+      "quote": "KNOWN INFO E6 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR-TO- STE/ICE Test 10 and 90, INCORRECT REGULATOR CABLE."
+    },
+    {
+      "sentence": "START (pages 2-734 and 2-751).",
+      "supported": true,
+      "quote": "START (pages 2-734 and 2-751)."
+    },
+    {
+      "sentence": "ENGINE AND SET IDLE 1200-1500 REGULATOR HAS RPM.",
+      "supported": true,
+      "quote": "ENGINE AND SET IDLE 1200-1500 REGULATOR HAS RPM."
+    },
+    {
+      "sentence": "USING 15 AMP CAPACITY JUMPER WIRE, MOMENTARILY CONNECT PIN “A” OF FUSIBLE LINK OK ALTERNATOR CONNECTOR TO ENGINE GROUND.",
+      "supported": true,
+      "quote": "USING 15 AMP CAPACITY JUMPER WIRE, MOMENTARILY CONNECT PIN “A” OF FUSIBLE LINK OK ALTERNATOR CONNECTOR TO ENGINE GROUND."
+    },
+    {
+      "sentence": "DOES POSSIBLE PROBLEMS CURRENT RISE DURING REASON FOR QUESTION This connection applies full current loading to field coil.",
+      "supported": true,
+      "quote": "DOES POSSIBLE PROBLEMS CURRENT RISE DURING REASON FOR QUESTION This connection applies full current loading to field coil."
+    },
+    {
+      "sentence": "CONNECTION TO 180 - 220 AMPS?",
+      "supported": true,
+      "quote": "CONNECTION TO 180 - 220 AMPS?"
+    },
+    {
+      "sentence": "Alternator current output should be near maximum.",
+      "supported": true,
+      "quote": "Alternator current output should be near maximum."
+    },
+    {
+      "sentence": "REPLACE ALTERNATOR, (Para.",
+      "supported": true,
+      "quote": "REPLACE ALTERNATOR, (Para."
+    },
+    {
+      "sentence": "4-109).",
+      "supported": true,
+      "quote": "4-109)."
+    },
+    {
+      "sentence": "THEN GO TO REPLACE REGULATOR (Para.",
+      "supported": true,
+      "quote": "THEN GO TO REPLACE REGULATOR (Para."
+    },
+    {
+      "sentence": "4-114).",
+      "supported": true,
+      "quote": "4-114)."
+    },
+    {
+      "sentence": "THEN GO TO 2-220 Change 2 REFERENCE INFORMATION 2.",
+      "supported": true,
+      "quote": "THEN GO TO 2-220 Change 2 REFERENCE INFORMATION 2."
+    },
+    {
+      "sentence": "Make contact at stud.",
+      "supported": true,
+      "quote": "Make contact at stud."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or 3.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or 3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "ENGINE RPM STE/ICE-R TEST 10 1.",
+      "supported": true,
+      "quote": "ENGINE RPM STE/ICE-R TEST 10 1."
+    },
+    {
+      "sentence": "Start Test 10, Engine RPM.",
+      "supported": true,
+      "quote": "Start Test 10, Engine RPM."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Set engine to fast 0-1500 AMPS DC STE/ICE-R TEST 90 1.",
+      "supported": true,
+      "quote": "Set engine to fast 0-1500 AMPS DC STE/ICE-R TEST 90 1."
+    },
+    {
+      "sentence": "Connect probe.",
+      "supported": true,
+      "quote": "Connect probe."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in amps.",
+      "supported": true,
+      "quote": "Displayed reading is in amps."
+    },
+    {
+      "sentence": "FROM B1, IS THIS A NIEHOFF 100 AMP DIAGNOSTIC FLOWCHART SINGLE VOLTAGE ALTERNATOR?",
+      "supported": true,
+      "quote": "FROM B1, IS THIS A NIEHOFF 100 AMP DIAGNOSTIC FLOWCHART SINGLE VOLTAGE ALTERNATOR?"
+    },
+    {
+      "sentence": "SEE NOTE ON REASON FOR QUESTION Must know model of alternator to perform proper KNOWN INFO F2 TEST OPTIONS VOLTAGE OUTPUT START ENGINE AND ALLOW TO IDLE AT 1200-1500 RPM.",
+      "supported": true,
+      "quote": "SEE NOTE ON REASON FOR QUESTION Must know model of alternator to perform proper KNOWN INFO F2 TEST OPTIONS VOLTAGE OUTPUT START ENGINE AND ALLOW TO IDLE AT 1200-1500 RPM."
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS RECHECK VOLTAGE OUTPUT.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS RECHECK VOLTAGE OUTPUT."
+    },
+    {
+      "sentence": "IS ALTERNATOR OUTPUT LESS STE/ICE Test 10 and 89, (pages 2-734 and 2-750).",
+      "supported": true,
+      "quote": "IS ALTERNATOR OUTPUT LESS STE/ICE Test 10 and 89, (pages 2-734 and 2-750)."
+    },
+    {
+      "sentence": "REASON FOR QUESTION REGULATOR THAN 26 VOLTS?",
+      "supported": true,
+      "quote": "REASON FOR QUESTION REGULATOR THAN 26 VOLTS?"
+    },
+    {
+      "sentence": "Determine if high or low IF OUTPUT VOLTAGE IS OVER 30.5 VOLTS, output voltage.",
+      "supported": true,
+      "quote": "Determine if high or low IF OUTPUT VOLTAGE IS OVER 30.5 VOLTS, output voltage."
+    },
+    {
+      "sentence": "REPLACE REGULATOR (Para.",
+      "supported": true,
+      "quote": "REPLACE REGULATOR (Para."
+    },
+    {
+      "sentence": "12-22).",
+      "supported": true,
+      "quote": "12-22)."
+    },
+    {
+      "sentence": "KNOWN INFO STOP ENGINE.",
+      "supported": true,
+      "quote": "KNOWN INFO STOP ENGINE."
+    },
+    {
+      "sentence": "DISCONNECT WIRE VOLTAGE OUTPUT 568A FROM ALTERNATOR WIRE 568.",
+      "supported": true,
+      "quote": "DISCONNECT WIRE VOLTAGE OUTPUT 568A FROM ALTERNATOR WIRE 568."
+    },
+    {
+      "sentence": "TURN ROTARY SWITCH TO “RUN”.",
+      "supported": true,
+      "quote": "TURN ROTARY SWITCH TO “RUN”."
+    },
+    {
+      "sentence": "MEASURE VOLTAGE AT POSSIBLE PROBLEMS THE WIRE THAT IS NOT CONNECTED TO THE STE/ICE Test 89, ALTERNATOR.",
+      "supported": true,
+      "quote": "MEASURE VOLTAGE AT POSSIBLE PROBLEMS THE WIRE THAT IS NOT CONNECTED TO THE STE/ICE Test 89, ALTERNATOR."
+    },
+    {
+      "sentence": "IS THERE BATTERY REASON FOR QUESTION carry ignition current to turn NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE 2-222 Change 2 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, For 100 amp Prestolite alternator, go to C, For 200 amp Prestolite alternator, go to D, For 200 amp single voltage Niehoff alternator, continue with E.",
+      "supported": true,
+      "quote": "IS THERE BATTERY REASON FOR QUESTION carry ignition current to turn NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE 2-222 Change 2 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, For 100 amp Prestolite alternator, go to C, For 200 amp Prestolite alternator, go to D, For 200 amp single voltage Niehoff alternator, continue with E."
+    },
+    {
+      "sentence": "For 100 amp single voltage Niehoff alternator, continue with F.",
+      "supported": true,
+      "quote": "For 100 amp single voltage Niehoff alternator, continue with F."
+    },
+    {
+      "sentence": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2.",
+      "supported": true,
+      "quote": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2."
+    },
+    {
+      "sentence": "For 200 amp dual voltage Niehoff alternator, go to G, page 2-224.6.",
+      "supported": true,
+      "quote": "For 200 amp dual voltage Niehoff alternator, go to G, page 2-224.6."
+    },
+    {
+      "sentence": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10.",
+      "supported": true,
+      "quote": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10."
+    },
+    {
+      "sentence": "The regulator for this model alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "The regulator for this model alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage Output voltage of 25-30.5 is acceptable for ENGINE RPM STE/ICE-R TEST 10 1.",
+      "supported": true,
+      "quote": "Any output voltage Output voltage of 25-30.5 is acceptable for ENGINE RPM STE/ICE-R TEST 10 1."
+    },
+    {
+      "sentence": "Start Test 10, Engine RPM.",
+      "supported": true,
+      "quote": "Start Test 10, Engine RPM."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Engine RPM should STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Engine RPM should STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or 3.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or 3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Voltage on wire 568 signals regulator to turn on.",
+      "supported": true,
+      "quote": "Voltage on wire 568 signals regulator to turn on."
+    },
+    {
+      "sentence": "Without voltage, regulator can’t operate.",
+      "supported": true,
+      "quote": "Without voltage, regulator can’t operate."
+    },
+    {
+      "sentence": "Wire 568A is connected with wire 5A inside engine wire harness.",
+      "supported": true,
+      "quote": "Wire 568A is connected with wire 5A inside engine wire harness."
+    },
+    {
+      "sentence": "If there is Change 1 2-223 FROM F3, DIAGNOSTIC FLOWCHART KNOWN INFO F4 TEST OPTIONS VOLTAGE OUTPUT CONNECT WIRE 568A AND 568.",
+      "supported": true,
+      "quote": "If there is Change 1 2-223 FROM F3, DIAGNOSTIC FLOWCHART KNOWN INFO F4 TEST OPTIONS VOLTAGE OUTPUT CONNECT WIRE 568A AND 568."
+    },
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "STE/ICE Test 89, INCORRECT DISCONNECT WIRE 568 FROM (page 2-750) REGULATOR HAS ALTERNATOR.",
+      "supported": true,
+      "quote": "STE/ICE Test 89, INCORRECT DISCONNECT WIRE 568 FROM (page 2-750) REGULATOR HAS ALTERNATOR."
+    },
+    {
+      "sentence": "TURN ROTARY SWITCH TO “RUN”.",
+      "supported": true,
+      "quote": "TURN ROTARY SWITCH TO “RUN”."
+    },
+    {
+      "sentence": "MEASURE VOLTAGE AT ALTERNATOR END OF WIRE.",
+      "supported": true,
+      "quote": "MEASURE VOLTAGE AT ALTERNATOR END OF WIRE."
+    },
+    {
+      "sentence": "IS THERE VOLTAGE AT BATTERY END OF WIRE 568?",
+      "supported": true,
+      "quote": "IS THERE VOLTAGE AT BATTERY END OF WIRE 568?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS REPLACE WIRE REASON FOR QUESTION carry ignition current to turn KNOWN INFO F5 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR-TO- REGULATOR CABLE.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS REPLACE WIRE REASON FOR QUESTION carry ignition current to turn KNOWN INFO F5 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR-TO- REGULATOR CABLE."
+    },
+    {
+      "sentence": "START REGULATOR HAS STE/ICE Test 10 and 90, (pages 2-734 and 2-751).",
+      "supported": true,
+      "quote": "START REGULATOR HAS STE/ICE Test 10 and 90, (pages 2-734 and 2-751)."
+    },
+    {
+      "sentence": "ENGINE AND SET IDLE 1200-1500 RPM.",
+      "supported": true,
+      "quote": "ENGINE AND SET IDLE 1200-1500 RPM."
+    },
+    {
+      "sentence": "USING 15 AMP CAPACITY JUMPER WIRE, MOMENTARILY CONNECT PIN A OF ALTERNATOR CONNECTOR TO ENGINE POSSIBLE PROBLEMS GROUND.",
+      "supported": true,
+      "quote": "USING 15 AMP CAPACITY JUMPER WIRE, MOMENTARILY CONNECT PIN A OF ALTERNATOR CONNECTOR TO ENGINE POSSIBLE PROBLEMS GROUND."
+    },
+    {
+      "sentence": "DOES CURRENT RISE REASON FOR QUESTION This connection applies full DURING CONNECTION TO 90-110 current loading to field coil.",
+      "supported": true,
+      "quote": "DOES CURRENT RISE REASON FOR QUESTION This connection applies full DURING CONNECTION TO 90-110 current loading to field coil."
+    },
+    {
+      "sentence": "Alternator current output should be near maximum.",
+      "supported": true,
+      "quote": "Alternator current output should be near maximum."
+    },
+    {
+      "sentence": "REPLACE ALTERNATOR, (Para.",
+      "supported": true,
+      "quote": "REPLACE ALTERNATOR, (Para."
+    },
+    {
+      "sentence": "12-24).",
+      "supported": true,
+      "quote": "12-24)."
+    },
+    {
+      "sentence": "THEN GO TO REPLACE REGULATOR, (Para.",
+      "supported": true,
+      "quote": "THEN GO TO REPLACE REGULATOR, (Para."
+    },
+    {
+      "sentence": "12-22).",
+      "supported": true,
+      "quote": "12-22)."
+    },
+    {
+      "sentence": "THEN GO TO 2-224 Change 2 REFERENCE INFORMATION expose red terminal.",
+      "supported": true,
+      "quote": "THEN GO TO 2-224 Change 2 REFERENCE INFORMATION expose red terminal."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Make contact at stud.",
+      "supported": true,
+      "quote": "Make contact at stud."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or 3.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or 3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "ENGINE RPM STE/ICE-R TEST 10 1.",
+      "supported": true,
+      "quote": "ENGINE RPM STE/ICE-R TEST 10 1."
+    },
+    {
+      "sentence": "Start Test 10, Engine RPM.",
+      "supported": true,
+      "quote": "Start Test 10, Engine RPM."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Set engine to fast 0-1500 AMPS DC STE/ICE-R TEST 90 1.",
+      "supported": true,
+      "quote": "Set engine to fast 0-1500 AMPS DC STE/ICE-R TEST 90 1."
+    },
+    {
+      "sentence": "Connect probe.",
+      "supported": true,
+      "quote": "Connect probe."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in amps.",
+      "supported": true,
+      "quote": "Displayed reading is in amps."
+    },
+    {
+      "sentence": "Change 2 2-224.1 FROM B1 DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 100 AMP DUAL VOLTAGE ALTERNATOR?",
+      "supported": true,
+      "quote": "Change 2 2-224.1 FROM B1 DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 100 AMP DUAL VOLTAGE ALTERNATOR?"
+    },
+    {
+      "sentence": "opposite page KNOWN INFO REASON FOR QUESTION Must know model of alternator to perform proper tests.",
+      "supported": true,
+      "quote": "opposite page KNOWN INFO REASON FOR QUESTION Must know model of alternator to perform proper tests."
+    },
+    {
+      "sentence": "Voltage Incorrect F.1-2 TEST OPTIONS START ENGINE AND ALLOW TO POSSIBLE PROBLEMS STE/ICE-R TEST 10, (interleave with control output volt- volts, replace reg- (Para.",
+      "supported": true,
+      "quote": "Voltage Incorrect F.1-2 TEST OPTIONS START ENGINE AND ALLOW TO POSSIBLE PROBLEMS STE/ICE-R TEST 10, (interleave with control output volt- volts, replace reg- (Para."
+    },
+    {
+      "sentence": "4-5.6).",
+      "supported": true,
+      "quote": "4-5.6)."
+    },
+    {
+      "sentence": "KNOWN INFO Voltage Output DISCONNECT ALTERNATOR-TO- Regulator has REGULATOR CABLE.",
+      "supported": true,
+      "quote": "KNOWN INFO Voltage Output DISCONNECT ALTERNATOR-TO- Regulator has REGULATOR CABLE."
+    },
+    {
+      "sentence": "START Energizing Voltage function 01 of page 2-734 REASON FOR QUESTION Determine if high or low output STE/ICE-R TEST 10 AND 90 (pages 2-734 and 2-751) ENGINE AND SET IDLE 1200 - 1500 RPM.",
+      "supported": true,
+      "quote": "START Energizing Voltage function 01 of page 2-734 REASON FOR QUESTION Determine if high or low output STE/ICE-R TEST 10 AND 90 (pages 2-734 and 2-751) ENGINE AND SET IDLE 1200 - 1500 RPM."
+    },
+    {
+      "sentence": "USING 15-AMP CAPACITY POSSIBLE PROBLEMS JUMPER WIRE, MOMENTARILY CONNECT TO ENGINE GROUND.",
+      "supported": true,
+      "quote": "USING 15-AMP CAPACITY POSSIBLE PROBLEMS JUMPER WIRE, MOMENTARILY CONNECT TO ENGINE GROUND."
+    },
+    {
+      "sentence": "REASON FOR QUESTION Regulator DOES CURRENT AND VOLTAGE This connection applies full RISE DURING CONNECTION?",
+      "supported": true,
+      "quote": "REASON FOR QUESTION Regulator DOES CURRENT AND VOLTAGE This connection applies full RISE DURING CONNECTION?"
+    },
+    {
+      "sentence": "current loading to field coil.",
+      "supported": true,
+      "quote": "current loading to field coil."
+    },
+    {
+      "sentence": "Alternator current output should be near maximum.",
+      "supported": true,
+      "quote": "Alternator current output should be near maximum."
+    },
+    {
+      "sentence": "(Para.",
+      "supported": true,
+      "quote": "(Para."
+    },
+    {
+      "sentence": "4-5.6).",
+      "supported": true,
+      "quote": "4-5.6)."
+    },
+    {
+      "sentence": "Then go regulator (Para.",
+      "supported": true,
+      "quote": "Then go regulator (Para."
+    },
+    {
+      "sentence": "4-5.6).",
+      "supported": true,
+      "quote": "4-5.6)."
+    },
+    {
+      "sentence": "Change 1 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204.",
+      "supported": true,
+      "quote": "Change 1 REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, go to C, page 2-208.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, go to C, page 2-208."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, go to D, page 2-212.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, go to D, page 2-212."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, ENGINE RPM STE/ICE-R TEST 10 For 100 amp dual voltage Niehoff alternator, continue with 1.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, For 100 amp single voltage Niehoff alternator, go to F, ENGINE RPM STE/ICE-R TEST 10 For 100 amp dual voltage Niehoff alternator, continue with 1."
+    },
+    {
+      "sentence": "Start test 10, Engine RPM.",
+      "supported": true,
+      "quote": "Start test 10, Engine RPM."
+    },
+    {
+      "sentence": "For 200 amp dual voltage Niehoff alternator, go to G, page 2.",
+      "supported": true,
+      "quote": "For 200 amp dual voltage Niehoff alternator, go to G, page 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is For 400 amp dual voltage Niehoff alternator, go to H, page The regulator for this model alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "Displayed reading is For 400 amp dual voltage Niehoff alternator, go to H, page The regulator for this model alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage Output voltage of 26-30.5 is acceptable for this 0-1,500 AMPS DC STE/ICE-R TEST 90 1.",
+      "supported": true,
+      "quote": "Any output voltage Output voltage of 26-30.5 is acceptable for this 0-1,500 AMPS DC STE/ICE-R TEST 90 1."
+    },
+    {
+      "sentence": "Connect probe.",
+      "supported": true,
+      "quote": "Connect probe."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in amps.",
+      "supported": true,
+      "quote": "Displayed reading is in amps."
+    },
+    {
+      "sentence": "Change 1 KNOWN INFO VOLTAGE OUTPUT DIAGNOSTIC FLOWCHART IDLE ENGINE AT 1200-1500 RPM.",
+      "supported": true,
+      "quote": "Change 1 KNOWN INFO VOLTAGE OUTPUT DIAGNOSTIC FLOWCHART IDLE ENGINE AT 1200-1500 RPM."
+    },
+    {
+      "sentence": "DOES VOLTAGE ON 14 VOLT OUTPUT REGULATOR HAS TERMINAL (YELLOW INSULATOR) MEASURE BETWEEN 13.4-14.6 VOLTS?",
+      "supported": true,
+      "quote": "DOES VOLTAGE ON 14 VOLT OUTPUT REGULATOR HAS TERMINAL (YELLOW INSULATOR) MEASURE BETWEEN 13.4-14.6 VOLTS?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT CORRECT, REPLACE REGULATOR (Para 4-5.6).",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT CORRECT, REPLACE REGULATOR (Para 4-5.6)."
+    },
+    {
+      "sentence": "RECHECK VOLTAGE.",
+      "supported": true,
+      "quote": "RECHECK VOLTAGE."
+    },
+    {
+      "sentence": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR (Para 4-5.2) KNOWN INFO VOLTAGE OUTPUT REASON FOR QUESTION Determine if high or low output 1.",
+      "supported": true,
+      "quote": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR (Para 4-5.2) KNOWN INFO VOLTAGE OUTPUT REASON FOR QUESTION Determine if high or low output 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 10 AND 89 TURN ROTARY SWITCH TO RUN POSITION.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 10 AND 89 TURN ROTARY SWITCH TO RUN POSITION."
+    },
+    {
+      "sentence": "CHECK FOR BATTERY REGULATOR HAS VOLTAGE AT RED (ENERGIZE) ENERGIZING VOLTAGE TERMINAL ON REGULATOR.",
+      "supported": true,
+      "quote": "CHECK FOR BATTERY REGULATOR HAS VOLTAGE AT RED (ENERGIZE) ENERGIZING VOLTAGE TERMINAL ON REGULATOR."
+    },
+    {
+      "sentence": "IS BATTERY VOLTAGE PRESENT?",
+      "supported": true,
+      "quote": "IS BATTERY VOLTAGE PRESENT?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS REPLACE REGULATOR Change 1 REASON FOR QUESTION signals regulator to turn on.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS REPLACE REGULATOR Change 1 REASON FOR QUESTION signals regulator to turn on."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 200 AMP DUAL VOLTAGE ALTERNATOR?",
+      "supported": true,
+      "quote": "Change 1 DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 200 AMP DUAL VOLTAGE ALTERNATOR?"
+    },
+    {
+      "sentence": "OPPOSITE PAGE KNOWN INFO REASON FOR QUESTION Must know model of alternator to STE/ICE-R TEST 10, START ENGINE AND ALLOW TO IDLE VOLTAGE OUTPUT (interleave with control function AT 1200-1500 RPM FOR 2-3 MINUTES.",
+      "supported": true,
+      "quote": "OPPOSITE PAGE KNOWN INFO REASON FOR QUESTION Must know model of alternator to STE/ICE-R TEST 10, START ENGINE AND ALLOW TO IDLE VOLTAGE OUTPUT (interleave with control function AT 1200-1500 RPM FOR 2-3 MINUTES."
+    },
+    {
+      "sentence": "RECHECK VOLTAGE OUTPUT.",
+      "supported": true,
+      "quote": "RECHECK VOLTAGE OUTPUT."
+    },
+    {
+      "sentence": "IS ALTERNATOR OUTPUT LESS THAN REASON FOR QUESTION POSSIBLE PROBLEMS 26 VOLTS?",
+      "supported": true,
+      "quote": "IS ALTERNATOR OUTPUT LESS THAN REASON FOR QUESTION POSSIBLE PROBLEMS 26 VOLTS?"
+    },
+    {
+      "sentence": "Determine if high or low output IF OUTPUT VOLTAGE KNOWN INFO DISCONNECT ALTERNATOR- STE/ICE-R TEST 10 AND 90 TO-REGULATOR CABLE.",
+      "supported": true,
+      "quote": "Determine if high or low output IF OUTPUT VOLTAGE KNOWN INFO DISCONNECT ALTERNATOR- STE/ICE-R TEST 10 AND 90 TO-REGULATOR CABLE."
+    },
+    {
+      "sentence": "START VOLTAGE OUTPUT ENGINE AND SET IDLE 1200-1500 RPM.",
+      "supported": true,
+      "quote": "START VOLTAGE OUTPUT ENGINE AND SET IDLE 1200-1500 RPM."
+    },
+    {
+      "sentence": "USING 15-AMP CAPACITY JUMPER REGULATOR HAS ENERGIZING VOLTAGE WIRE, MOMENTARILY CONNECT PIN A OF ALTERNATOR CONNECTOR TO REASON FOR QUESTION ENGINE GROUND.",
+      "supported": true,
+      "quote": "USING 15-AMP CAPACITY JUMPER REGULATOR HAS ENERGIZING VOLTAGE WIRE, MOMENTARILY CONNECT PIN A OF ALTERNATOR CONNECTOR TO REASON FOR QUESTION ENGINE GROUND."
+    },
+    {
+      "sentence": "DOES CURRENT This connection applies full POSSIBLE PROBLEMS AND VOLTAGE RISE DURING current loading to field coil.",
+      "supported": true,
+      "quote": "DOES CURRENT This connection applies full POSSIBLE PROBLEMS AND VOLTAGE RISE DURING current loading to field coil."
+    },
+    {
+      "sentence": "REPLACE ALTERNATOR REPLACE REGULATOR Change 1 Alternator current output should REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204.",
+      "supported": true,
+      "quote": "REPLACE ALTERNATOR REPLACE REGULATOR Change 1 Alternator current output should REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, go to C, page 2-208.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, go to C, page 2-208."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, go to D, page 2-212.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, go to D, page 2-212."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, page 2-218.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, page 2-218."
+    },
+    {
+      "sentence": "For 100 amp single voltage Niehoff alternator, go to F, page 2-222.",
+      "supported": true,
+      "quote": "For 100 amp single voltage Niehoff alternator, go to F, page 2-222."
+    },
+    {
+      "sentence": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2.",
+      "supported": true,
+      "quote": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2."
+    },
+    {
+      "sentence": "For 200 amp dual voltage Niehoff alternator, continue with G.",
+      "supported": true,
+      "quote": "For 200 amp dual voltage Niehoff alternator, continue with G."
+    },
+    {
+      "sentence": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10.",
+      "supported": true,
+      "quote": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10."
+    },
+    {
+      "sentence": "The regulator for this model alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "The regulator for this model alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage Output voltage of 26-30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "Any output voltage Output voltage of 26-30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Displayed reading is STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 KNOWN INFO VOLTAGE OUTPUT DIAGNOSTIC FLOWCHART IDLE ENGINE AT 1200-1500 RPM.",
+      "supported": true,
+      "quote": "Change 1 KNOWN INFO VOLTAGE OUTPUT DIAGNOSTIC FLOWCHART IDLE ENGINE AT 1200-1500 RPM."
+    },
+    {
+      "sentence": "DOES VOLTAGE ON 14 VOLT OUTPUT REGULATOR HAS TERMINAL (YELLOW INSULATOR) MEASURE BETWEEN 13.4-14.6 VOLTS?",
+      "supported": true,
+      "quote": "DOES VOLTAGE ON 14 VOLT OUTPUT REGULATOR HAS TERMINAL (YELLOW INSULATOR) MEASURE BETWEEN 13.4-14.6 VOLTS?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT REASON FOR QUESTION Determine if high or low output CORRECT, REPLACE REGULATOR (Para 4-5.10).",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT REASON FOR QUESTION Determine if high or low output CORRECT, REPLACE REGULATOR (Para 4-5.10)."
+    },
+    {
+      "sentence": "RECHECK VOLTAGE.",
+      "supported": true,
+      "quote": "RECHECK VOLTAGE."
+    },
+    {
+      "sentence": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR KNOWN INFO VOLTAGE OUTPUT 1.",
+      "supported": true,
+      "quote": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR KNOWN INFO VOLTAGE OUTPUT 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 TURN ROTARY SWITCH TO RUN POSITION.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 TURN ROTARY SWITCH TO RUN POSITION."
+    },
+    {
+      "sentence": "CHECK FOR BATTERY VOLTAGE AT RED (ENERGIZED) TERMINAL ON REGULATOR.",
+      "supported": true,
+      "quote": "CHECK FOR BATTERY VOLTAGE AT RED (ENERGIZED) TERMINAL ON REGULATOR."
+    },
+    {
+      "sentence": "IS BATTERY VOLTAGE PRESENT?",
+      "supported": true,
+      "quote": "IS BATTERY VOLTAGE PRESENT?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS REPLACE REGULATOR Change 1 REASON FOR QUESTION signals regulator to turn on.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS NOTIFY DS MAINTENANCE TO REPAIR OR REPLACE WIRING HARNESS REPLACE REGULATOR Change 1 REASON FOR QUESTION signals regulator to turn on."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 ALTERNATOR H DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 400 AMP DUAL VOLTAGE ALTERNATOR?",
+      "supported": true,
+      "quote": "Change 1 ALTERNATOR H DIAGNOSTIC FLOWCHART IS THIS A NIEHOFF 400 AMP DUAL VOLTAGE ALTERNATOR?"
+    },
+    {
+      "sentence": "OPPOSITE PAGE REASON FOR QUESTION Must know model of alternator to KNOWN INFO H2 TEST OPTIONS START ENGINE AND ALLOW TO IDLE STE/ICE-R TEST 10 VOLTAGE OUTPUT (Interleave with control function AT 1200-1500 RPM FOR 2-3 MINUTES.",
+      "supported": true,
+      "quote": "OPPOSITE PAGE REASON FOR QUESTION Must know model of alternator to KNOWN INFO H2 TEST OPTIONS START ENGINE AND ALLOW TO IDLE STE/ICE-R TEST 10 VOLTAGE OUTPUT (Interleave with control function AT 1200-1500 RPM FOR 2-3 MINUTES."
+    },
+    {
+      "sentence": "RECHECK VOLTAGE OUTPUT.",
+      "supported": true,
+      "quote": "RECHECK VOLTAGE OUTPUT."
+    },
+    {
+      "sentence": "IS ALTERNATOR OUTPUT LESS THAN 26 POSSIBLE PROBLEMS REASON FOR QUESTION Determine if high or low output IF OUTPUT VOLTAGE IS REPLACE REGULATOR KNOWN INFO IDLE ENGINE AT 1200-1500 RPM.",
+      "supported": true,
+      "quote": "IS ALTERNATOR OUTPUT LESS THAN 26 POSSIBLE PROBLEMS REASON FOR QUESTION Determine if high or low output IF OUTPUT VOLTAGE IS REPLACE REGULATOR KNOWN INFO IDLE ENGINE AT 1200-1500 RPM."
+    },
+    {
+      "sentence": "VOLTAGE OUTPUT DOES VOLTAGE ON 14 VOLT OUTPUT TERMINAL (YELLOW INSULATOR) REGULATOR HAS ENERGIZING VOLTAGE MEASURE BETWEEN 13.4-14.6 POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT CORRECT, REPLACE REGULATOR (Para 4-5.14) RECHECK VOLTAGE.",
+      "supported": true,
+      "quote": "VOLTAGE OUTPUT DOES VOLTAGE ON 14 VOLT OUTPUT TERMINAL (YELLOW INSULATOR) REGULATOR HAS ENERGIZING VOLTAGE MEASURE BETWEEN 13.4-14.6 POSSIBLE PROBLEMS IF OUTPUT VOLTAGE IS NOT CORRECT, REPLACE REGULATOR (Para 4-5.14) RECHECK VOLTAGE."
+    },
+    {
+      "sentence": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR Change 1 REASON FOR QUESTION Determine if high or low output REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204.",
+      "supported": true,
+      "quote": "IF VOLTAGE IS STILL NOT CORRECT, REPLACE ALTERNATOR Change 1 REASON FOR QUESTION Determine if high or low output REFERENCE INFORMATION For 60 amp Prestolite alternator, go to B, page 2-204."
+    },
+    {
+      "sentence": "For 100 amp Prestolite alternator, go to C, page 2-208.",
+      "supported": true,
+      "quote": "For 100 amp Prestolite alternator, go to C, page 2-208."
+    },
+    {
+      "sentence": "For 200 amp Prestolite alternator, go to D, page 2-212.",
+      "supported": true,
+      "quote": "For 200 amp Prestolite alternator, go to D, page 2-212."
+    },
+    {
+      "sentence": "For 200 amp single voltage Niehoff alternator, go to E, page 2-218.",
+      "supported": true,
+      "quote": "For 200 amp single voltage Niehoff alternator, go to E, page 2-218."
+    },
+    {
+      "sentence": "For 100 amp single voltage Niehoff alternator, go to F, page 2-222.",
+      "supported": true,
+      "quote": "For 100 amp single voltage Niehoff alternator, go to F, page 2-222."
+    },
+    {
+      "sentence": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2.",
+      "supported": true,
+      "quote": "For 100 amp dual voltage Niehoff alternator, go to F.1, page 2-224.2."
+    },
+    {
+      "sentence": "For 200 amp dual voltage Niehoff alternator, continue with G.",
+      "supported": true,
+      "quote": "For 200 amp dual voltage Niehoff alternator, continue with G."
+    },
+    {
+      "sentence": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10.",
+      "supported": true,
+      "quote": "For 400 amp dual voltage Niehoff alternator, go to H, page 2-224.10."
+    },
+    {
+      "sentence": "The regulator for this model alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "The regulator for this model alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection.",
+      "supported": true,
+      "quote": "Any output voltage over Output voltage of 26-30.5 is acceptable for this The regulator for this alternator has overvoltage protection."
+    },
+    {
+      "sentence": "Any output voltage Output voltage of 26-30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "Any output voltage Output voltage of 26-30.5 is acceptable for this ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "Displayed reading is STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "Change 1 KNOWN INFO VOLTAGE OUTPUT TURN ROTARY SWITCH TO RUN POSITION.",
+      "supported": true,
+      "quote": "Change 1 KNOWN INFO VOLTAGE OUTPUT TURN ROTARY SWITCH TO RUN POSITION."
+    },
+    {
+      "sentence": "CHECK FOR BATTERY VOLTAGE AT RED (ENERGIZE) TERMINAL ON REGULATOR.",
+      "supported": true,
+      "quote": "CHECK FOR BATTERY VOLTAGE AT RED (ENERGIZE) TERMINAL ON REGULATOR."
+    },
+    {
+      "sentence": "IS BATTERY VOLTAGE PRESENT?",
+      "supported": true,
+      "quote": "IS BATTERY VOLTAGE PRESENT?"
+    },
+    {
+      "sentence": "POSSIBLE PROBLEMS DIAGNOSTIC FLOWCHART 1.",
+      "supported": true,
+      "quote": "POSSIBLE PROBLEMS DIAGNOSTIC FLOWCHART 1."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 89 REASON FOR QUESTION REGULATOR NOIFY DS terminal signals regulator to turn WIRING MAINTENANCE TO on.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 89 REASON FOR QUESTION REGULATOR NOIFY DS terminal signals regulator to turn WIRING MAINTENANCE TO on."
+    },
+    {
+      "sentence": "REPAIR OR REPLACE KNOWN INFO H5 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR- STE/ICE-R TEST 10 AND 90 TO-REGULATOR CABLE.",
+      "supported": true,
+      "quote": "REPAIR OR REPLACE KNOWN INFO H5 TEST OPTIONS VOLTAGE OUTPUT DISCONNECT ALTERNATOR- STE/ICE-R TEST 10 AND 90 TO-REGULATOR CABLE."
+    },
+    {
+      "sentence": "START ENGINE AND SET IDLE 1200-1500 REGULATOR HAS RPM.",
+      "supported": true,
+      "quote": "START ENGINE AND SET IDLE 1200-1500 REGULATOR HAS RPM."
+    },
+    {
+      "sentence": "USING 15-AMP CAPACITY ENERGIZING VOLTAGE JUMPER WIRE, MOMENTARILY CONNECT TO PIN A OF ALTERNATOR REASON FOR QUESTION CONNECTOR.",
+      "supported": true,
+      "quote": "USING 15-AMP CAPACITY ENERGIZING VOLTAGE JUMPER WIRE, MOMENTARILY CONNECT TO PIN A OF ALTERNATOR REASON FOR QUESTION CONNECTOR."
+    },
+    {
+      "sentence": "DOES CURRENT AND This connection applies full current POSSIBLE PROBLEMS VOLTAGE RISE DURING REPLACE REGULATOR REPLACE REGULATOR Change 1 REFERENCE INFORMATION STE/ICE-R TEST 89 1.",
+      "supported": true,
+      "quote": "DOES CURRENT AND This connection applies full current POSSIBLE PROBLEMS VOLTAGE RISE DURING REPLACE REGULATOR REPLACE REGULATOR Change 1 REFERENCE INFORMATION STE/ICE-R TEST 89 1."
+    },
+    {
+      "sentence": "Connect RED clip to the indicated test point, BLACK clip to negative or ground.",
+      "supported": true,
+      "quote": "Connect RED clip to the indicated test point, BLACK clip to negative or ground."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in volts.",
+      "supported": true,
+      "quote": "Displayed reading is in volts."
+    },
+    {
+      "sentence": "ENGINE RPM STE/ICE-R TEST 10 2.",
+      "supported": true,
+      "quote": "ENGINE RPM STE/ICE-R TEST 10 2."
+    },
+    {
+      "sentence": "Crank or start the engine.",
+      "supported": true,
+      "quote": "Crank or start the engine."
+    },
+    {
+      "sentence": "Displayed reading is RPM.",
+      "supported": true,
+      "quote": "Displayed reading is RPM."
+    },
+    {
+      "sentence": "Set engine to fast idle of 1200-1500 RPM.",
+      "supported": true,
+      "quote": "Set engine to fast idle of 1200-1500 RPM."
+    },
+    {
+      "sentence": "STE/ICE-R TEST 90 1.",
+      "supported": true,
+      "quote": "STE/ICE-R TEST 90 1."
+    },
+    {
+      "sentence": "Connect probe.",
+      "supported": true,
+      "quote": "Connect probe."
+    },
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "Displayed reading is in amps.",
+      "supported": true,
+      "quote": "Displayed reading is in amps."
+    },
+    {
+      "sentence": "Change 1 2-225 /(2-226 blank)",
+      "supported": true,
+      "quote": "Change 1 2-225 /(2-226 blank)"
+    }
+  ]
+}

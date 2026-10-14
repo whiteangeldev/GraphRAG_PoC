@@ -1,0 +1,39 @@
+{
+  "id": "relational-0017",
+  "answer_sha256": "ae286bacd7893613190a0c99de2a3ba102f31aad9f6ab1967720f817b15b57c9",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if brake handle is in proper position (para",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12340298",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 24.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WEAPON STATION WILL NOT ROTATE OR LOCK.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which turret part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

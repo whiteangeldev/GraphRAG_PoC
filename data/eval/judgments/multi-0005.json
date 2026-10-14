@@ -1,0 +1,59 @@
+{
+  "id": "multi-0005",
+  "answer_sha256": "78e8f2208b090a21cca2ac1658b1edeaa8aedaf4e145897213fc21fabfd5a6db",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": true,
+      "quote": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles"
+    },
+    {
+      "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "10.",
+      "supported": true,
+      "quote": "10."
+    },
+    {
+      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT Step 1.",
+      "supported": true,
+      "quote": "NO RESPONSE TO SHIFT LEVER MOVEMENT Step 1."
+    },
+    {
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
+      "supported": true,
+      "quote": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles."
+    },
+    {
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
+      "supported": true,
+      "quote": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

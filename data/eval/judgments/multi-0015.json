@@ -1,0 +1,39 @@
+{
+  "id": "multi-0015",
+  "answer_sha256": "aaf10a9911937223133ef69f56140eb0bdb22254c925745fbc3267b45c792e74",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "j. Lock steering wheel with cable (2) and chock wheels if tactical situation permits. A1, A2, AND M1123 MODELS A1, A2, AND M1123 MODELS Change 1 2-111",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: Trace malfunction 22.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "HARD STEERING through the steering step to the parts list.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "unanswerable-0001",
+  "answer_sha256": "59b2c85fd65e7da255fe87d4f001b929ca559afe8b38f62b486779effe6f6908",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: Can you explain 99.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ZZZNOTACODE FAILURE?",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "I can't find it in the book.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "relational-0014",
+  "answer_sha256": "7cd7d3121f0bbab015fb497635c902408b1a260317d9e78a066e5968e8c1445c",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 21.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT, which parts-list item matches STEERING?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

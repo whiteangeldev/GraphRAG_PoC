@@ -1,0 +1,5138 @@
+{
+  "id": "unanswerable-0012",
+  "answer_sha256": "7b4cc0beeff2bae080f90de7b44f0d4fd587b48ef41fbe9a3cbbb4700dbd48e0",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "BE AWARE, the field protective mask and ambulance Nuclear-Biological-Chemical (NBC) system will not protect you from exhaust poisoning.",
+      "supported": true,
+      "quote": "BE AWARE, the field protective mask and ambulance Nuclear-Biological-Chemical (NBC) system will not protect you from exhaust poisoning."
+    },
+    {
+      "sentence": "THE BEST DEFENSE AGAINST EXHAUST POISONING IS ADEQUATE VENTILATION.",
+      "supported": true,
+      "quote": "THE BEST DEFENSE AGAINST EXHAUST POISONING IS ADEQUATE VENTILATION."
+    },
+    {
+      "sentence": "warning a WARNING SUMMARY • Never open one end of cargo shell door without first ensuring that the opposite end is securely closed.",
+      "supported": true,
+      "quote": "warning a WARNING SUMMARY • Never open one end of cargo shell door without first ensuring that the opposite end is securely closed."
+    },
+    {
+      "sentence": "Not doing so may cause both ends to open at the same time, causing damage to equipment, mission abort, or injury to personnel.",
+      "supported": true,
+      "quote": "Not doing so may cause both ends to open at the same time, causing damage to equipment, mission abort, or injury to personnel."
+    },
+    {
+      "sentence": "• Drycleaning solvent is flammable and will not be used near an open flame.",
+      "supported": true,
+      "quote": "• Drycleaning solvent is flammable and will not be used near an open flame."
+    },
+    {
+      "sentence": "A fire extinguisher will be kept nearby when the solvent is used.",
+      "supported": true,
+      "quote": "A fire extinguisher will be kept nearby when the solvent is used."
+    },
+    {
+      "sentence": "Use only in well-ventilated places.",
+      "supported": true,
+      "quote": "Use only in well-ventilated places."
+    },
+    {
+      "sentence": "Failure to do this may result in injury to personnel and/or damage to equipment.",
+      "supported": true,
+      "quote": "Failure to do this may result in injury to personnel and/or damage to equipment."
+    },
+    {
+      "sentence": "• Protective gloves, clothing, and/or respiratory equipment must be worn whenever caustic, toxic, or flammable cleaning solutions are used.",
+      "supported": true,
+      "quote": "• Protective gloves, clothing, and/or respiratory equipment must be worn whenever caustic, toxic, or flammable cleaning solutions are used."
+    },
+    {
+      "sentence": "Failure to do this may result in injury to personnel and/or damage to equipment.",
+      "supported": true,
+      "quote": "Failure to do this may result in injury to personnel and/or damage to equipment."
+    },
+    {
+      "sentence": "• Do not perform fuel or battery system checks, inspections, or maintenance while smoking or near sparks.",
+      "supported": true,
+      "quote": "• Do not perform fuel or battery system checks, inspections, or maintenance while smoking or near sparks."
+    },
+    {
+      "sentence": "Fuel may ignite and batteries may explode causing damage to vehicle and injury or death to personnel.",
+      "supported": true,
+      "quote": "Fuel may ignite and batteries may explode causing damage to vehicle and injury or death to personnel."
+    },
+    {
+      "sentence": "• The automatic transmissions on M998 and “A1” vehicles do not have a “PARK” position.",
+      "supported": true,
+      "quote": "• The automatic transmissions on M998 and “A1” vehicles do not have a “PARK” position."
+    },
+    {
+      "sentence": "Whenever the vehicle is parked, or the transmission is in “NEUTRAL,” the parking brake MUST BE APPLIED.",
+      "supported": true,
+      "quote": "Whenever the vehicle is parked, or the transmission is in “NEUTRAL,” the parking brake MUST BE APPLIED."
+    },
+    {
+      "sentence": "Damage to equipment and injury to personnel may occur if these instructions are not followed.",
+      "supported": true,
+      "quote": "Damage to equipment and injury to personnel may occur if these instructions are not followed."
+    },
+    {
+      "sentence": "• The automatic transmissions on M1123 and “A2” vehicles have a “PARK” position.",
+      "supported": true,
+      "quote": "• The automatic transmissions on M1123 and “A2” vehicles have a “PARK” position."
+    },
+    {
+      "sentence": "Never use the transmission shift lever in place of the parking brake.",
+      "supported": true,
+      "quote": "Never use the transmission shift lever in place of the parking brake."
+    },
+    {
+      "sentence": "Set the parking brake.",
+      "supported": true,
+      "quote": "Set the parking brake."
+    },
+    {
+      "sentence": "Ensure the transmission shift lever in in the “P” (park) position and transfer case shift lever is NOT in the “N” (neutral) position.",
+      "supported": true,
+      "quote": "Ensure the transmission shift lever in in the “P” (park) position and transfer case shift lever is NOT in the “N” (neutral) position."
+    },
+    {
+      "sentence": "Damage to equipment and injury to personnel may occur if these instructions are not followed.",
+      "supported": true,
+      "quote": "Damage to equipment and injury to personnel may occur if these instructions are not followed."
+    },
+    {
+      "sentence": "• Ensure all slack from two-point seatbelt adjusting strap or three-point seatbelt is removed.",
+      "supported": true,
+      "quote": "• Ensure all slack from two-point seatbelt adjusting strap or three-point seatbelt is removed."
+    },
+    {
+      "sentence": "Two-point seatbelt retracts but does not lock in any position.",
+      "supported": true,
+      "quote": "Two-point seatbelt retracts but does not lock in any position."
+    },
+    {
+      "sentence": "Three- point seatbelt retracts and will lock only during sudden stops or impact.",
+      "supported": true,
+      "quote": "Three- point seatbelt retracts and will lock only during sudden stops or impact."
+    },
+    {
+      "sentence": "Injury to personnel will result if an accident occurs and seatbelts are not in use or adjusted properly.",
+      "supported": true,
+      "quote": "Injury to personnel will result if an accident occurs and seatbelts are not in use or adjusted properly."
+    },
+    {
+      "sentence": "• Extreme caution shall be taken when transporting personnel.",
+      "supported": true,
+      "quote": "• Extreme caution shall be taken when transporting personnel."
+    },
+    {
+      "sentence": "Rollover protection and seatbelts are available for the crew area only and are not provided in the troop/cargo area.",
+      "supported": true,
+      "quote": "Rollover protection and seatbelts are available for the crew area only and are not provided in the troop/cargo area."
+    },
+    {
+      "sentence": "Despite certain design characteristics of the vehicle, such as improved capabilities, failure to use basic safe driving skills may result in injury or death to personnel and damage to equipment.",
+      "supported": true,
+      "quote": "Despite certain design characteristics of the vehicle, such as improved capabilities, failure to use basic safe driving skills may result in injury or death to personnel and damage to equipment."
+    },
+    {
+      "sentence": "• Operators are reminded to observe basic safe driving techniques/skills when operating vehicle.",
+      "supported": true,
+      "quote": "• Operators are reminded to observe basic safe driving techniques/skills when operating vehicle."
+    },
+    {
+      "sentence": "Vehicle speed must be reduced consistent with weather and road/terrain conditions.",
+      "supported": true,
+      "quote": "Vehicle speed must be reduced consistent with weather and road/terrain conditions."
+    },
+    {
+      "sentence": "Obstacles such as stumps and boulders must be avoided.",
+      "supported": true,
+      "quote": "Obstacles such as stumps and boulders must be avoided."
+    },
+    {
+      "sentence": "• This vehicle has been designed to operate safely and efficiently within the limits specified in this TM.",
+      "supported": true,
+      "quote": "• This vehicle has been designed to operate safely and efficiently within the limits specified in this TM."
+    },
+    {
+      "sentence": "Operations beyond these limits are prohibited IAW AR 750-1 without written approval from the Commander, U.S.",
+      "supported": true,
+      "quote": "Operations beyond these limits are prohibited IAW AR 750-1 without written approval from the Commander, U.S."
+    },
+    {
+      "sentence": "Army Tank-automotive and Armaments Command, ATTN: AMSTA-CM-S, Warren, MI 48397-5000.",
+      "supported": true,
+      "quote": "Army Tank-automotive and Armaments Command, ATTN: AMSTA-CM-S, Warren, MI 48397-5000."
+    },
+    {
+      "sentence": "• Prior to towing vehicle with rear wheels up, secure steering wheel to prevent front wheels from turning.",
+      "supported": true,
+      "quote": "• Prior to towing vehicle with rear wheels up, secure steering wheel to prevent front wheels from turning."
+    },
+    {
+      "sentence": "• Wear leather gloves when handling winch cable.",
+      "supported": true,
+      "quote": "• Wear leather gloves when handling winch cable."
+    },
+    {
+      "sentence": "Do not handle cable with bare hands.",
+      "supported": true,
+      "quote": "Do not handle cable with bare hands."
+    },
+    {
+      "sentence": "When fully extending winch cable, ensure that four wraps of winch cable remain on drum at all times.",
+      "supported": true,
+      "quote": "When fully extending winch cable, ensure that four wraps of winch cable remain on drum at all times."
+    },
+    {
+      "sentence": "Direct all personnel to stand clear of winch cable during winch operation.",
+      "supported": true,
+      "quote": "Direct all personnel to stand clear of winch cable during winch operation."
+    },
+    {
+      "sentence": "Failure to do this may cause damage to vehicle and injury or death to personnel.",
+      "supported": true,
+      "quote": "Failure to do this may cause damage to vehicle and injury or death to personnel."
+    },
+    {
+      "sentence": "w a rning b Change 1 WARNING SUMMARY (Cont’d) • Avoid using fire extinguisher in unventilated areas.",
+      "supported": true,
+      "quote": "w a rning b Change 1 WARNING SUMMARY (Cont’d) • Avoid using fire extinguisher in unventilated areas."
+    },
+    {
+      "sentence": "Prolonged inhalation exposure to extinguishing agent or fumes from burning material may cause injury to personnel.",
+      "supported": true,
+      "quote": "Prolonged inhalation exposure to extinguishing agent or fumes from burning material may cause injury to personnel."
+    },
+    {
+      "sentence": "Using fire extinguisher in windy area will cause rapid dispersal of extinguishing agent and reduce effectiveness in fire control.",
+      "supported": true,
+      "quote": "Using fire extinguisher in windy area will cause rapid dispersal of extinguishing agent and reduce effectiveness in fire control."
+    },
+    {
+      "sentence": "• Vehicle operation in snow is a hazardous condition.",
+      "supported": true,
+      "quote": "• Vehicle operation in snow is a hazardous condition."
+    },
+    {
+      "sentence": "Operator must travel at reduced speeds and be prepared to meet sudden changes in road conditions.",
+      "supported": true,
+      "quote": "Operator must travel at reduced speeds and be prepared to meet sudden changes in road conditions."
+    },
+    {
+      "sentence": "Pump brakes gradually when stopping vehicle on ice or snow.",
+      "supported": true,
+      "quote": "Pump brakes gradually when stopping vehicle on ice or snow."
+    },
+    {
+      "sentence": "Sudden braking will cause wheels to lock and vehicle to slide out of control causing damage to vehicle and injury or death to personnel.",
+      "supported": true,
+      "quote": "Sudden braking will cause wheels to lock and vehicle to slide out of control causing damage to vehicle and injury or death to personnel."
+    },
+    {
+      "sentence": "• Do not rely on wet service brakes.",
+      "supported": true,
+      "quote": "• Do not rely on wet service brakes."
+    },
+    {
+      "sentence": "Keep applying brakes until they dry out and uneven braking ceases.",
+      "supported": true,
+      "quote": "Keep applying brakes until they dry out and uneven braking ceases."
+    },
+    {
+      "sentence": "Failure to do this may cause damage to vehicle and injury or death to personnel.",
+      "supported": true,
+      "quote": "Failure to do this may cause damage to vehicle and injury or death to personnel."
+    },
+    {
+      "sentence": "• Exhaust components are hot after prolonged vehicle use.",
+      "supported": true,
+      "quote": "• Exhaust components are hot after prolonged vehicle use."
+    },
+    {
+      "sentence": "Ensure exhaust system components are cool before removing/installing exhaust assembly.",
+      "supported": true,
+      "quote": "Ensure exhaust system components are cool before removing/installing exhaust assembly."
+    },
+    {
+      "sentence": "Failure to do this will result in injury to personnel.",
+      "supported": true,
+      "quote": "Failure to do this will result in injury to personnel."
+    },
+    {
+      "sentence": "• Do not use the hand throttle as an automatic speed or cruise control.",
+      "supported": true,
+      "quote": "• Do not use the hand throttle as an automatic speed or cruise control."
+    },
+    {
+      "sentence": "The hand throttle does not automatically disengage when brake is applied, resulting in increased stopping distances and possible hazardous and unsafe operation.",
+      "supported": true,
+      "quote": "The hand throttle does not automatically disengage when brake is applied, resulting in increased stopping distances and possible hazardous and unsafe operation."
+    },
+    {
+      "sentence": "Injury to personnel or damage to equipment may result.",
+      "supported": true,
+      "quote": "Injury to personnel or damage to equipment may result."
+    },
+    {
+      "sentence": "• Do not operate heater when ventilation system is on.",
+      "supported": true,
+      "quote": "• Do not operate heater when ventilation system is on."
+    },
+    {
+      "sentence": "Damage to heater or injury to personnel will result.",
+      "supported": true,
+      "quote": "Damage to heater or injury to personnel will result."
+    },
+    {
+      "sentence": "• To ensure opening of the hood assembly is accomplished safely and effectively, always maintain the proper lifting posture, legs bent with back straight.",
+      "supported": true,
+      "quote": "• To ensure opening of the hood assembly is accomplished safely and effectively, always maintain the proper lifting posture, legs bent with back straight."
+    },
+    {
+      "sentence": "When raising and securing hood, make sure the hood prop rod is secured to hood support bracket.",
+      "supported": true,
+      "quote": "When raising and securing hood, make sure the hood prop rod is secured to hood support bracket."
+    },
+    {
+      "sentence": "When releasing hood prop rod, do not pull rod at hook end.",
+      "supported": true,
+      "quote": "When releasing hood prop rod, do not pull rod at hook end."
+    },
+    {
+      "sentence": "Damage to equipment or injury to personnel will occur if hood is not raised, secured, and lowered properly.",
+      "supported": true,
+      "quote": "Damage to equipment or injury to personnel will occur if hood is not raised, secured, and lowered properly."
+    },
+    {
+      "sentence": "• If NBC exposure is suspected, all air filter media should be handled by personnel wearing protective equipment.",
+      "supported": true,
+      "quote": "• If NBC exposure is suspected, all air filter media should be handled by personnel wearing protective equipment."
+    },
+    {
+      "sentence": "Consult your unit NBC officer or NBCNCO for appropriate handling or disposal instructions.",
+      "supported": true,
+      "quote": "Consult your unit NBC officer or NBCNCO for appropriate handling or disposal instructions."
+    },
+    {
+      "sentence": "• Radial and bias ply tires should not be mixed on the same vehicle.",
+      "supported": true,
+      "quote": "• Radial and bias ply tires should not be mixed on the same vehicle."
+    },
+    {
+      "sentence": "Injury to personnel or damage to equipment may result.",
+      "supported": true,
+      "quote": "Injury to personnel or damage to equipment may result."
+    },
+    {
+      "sentence": "• Do not use bias ply tires on the M1097, M1123, or any A1 and A2 models, under any condition.",
+      "supported": true,
+      "quote": "• Do not use bias ply tires on the M1097, M1123, or any A1 and A2 models, under any condition."
+    },
+    {
+      "sentence": "Due to tire load ratings and vehicle load carrying capabilities, only the load range “D” radial tire can be used on the M1097, M1123, and all A1 and A2 models.",
+      "supported": true,
+      "quote": "Due to tire load ratings and vehicle load carrying capabilities, only the load range “D” radial tire can be used on the M1097, M1123, and all A1 and A2 models."
+    },
+    {
+      "sentence": "• For M1097, M1123, and all A1 and A2 model vehicles only, hearing protection is required for driver and passengers when engine is running.",
+      "supported": true,
+      "quote": "• For M1097, M1123, and all A1 and A2 model vehicles only, hearing protection is required for driver and passengers when engine is running."
+    },
+    {
+      "sentence": "Noise levels produced by these vehicles exceed 85 dBA, which may cause injury to personnel.",
+      "supported": true,
+      "quote": "Noise levels produced by these vehicles exceed 85 dBA, which may cause injury to personnel."
+    },
+    {
+      "sentence": "• The Department of Transportation requires 105 mm cannon ammunition to be in wooden boxes when transporting ammunition on public highways.",
+      "supported": true,
+      "quote": "• The Department of Transportation requires 105 mm cannon ammunition to be in wooden boxes when transporting ammunition on public highways."
+    },
+    {
+      "sentence": "Movement of cannon ammunition in fiber containers (inner pack) in the vehicle ammunition rack is restricted to other than public highways.",
+      "supported": true,
+      "quote": "Movement of cannon ammunition in fiber containers (inner pack) in the vehicle ammunition rack is restricted to other than public highways."
+    },
+    {
+      "sentence": "• Do not operate the vehicle without the windshield assembly positioned upright and the “B” pillar securely attached.",
+      "supported": true,
+      "quote": "• Do not operate the vehicle without the windshield assembly positioned upright and the “B” pillar securely attached."
+    },
+    {
+      "sentence": "Operation of the vehicle without these structures in place may result in injury to personnel and damage to equipment.",
+      "supported": true,
+      "quote": "Operation of the vehicle without these structures in place may result in injury to personnel and damage to equipment."
+    },
+    {
+      "sentence": "Change 1 w a rning c WARNING SUMMARY (Cont’d) • Communication shelters AN/GRC-122 and AN/GRC-142 RATT may overload vehicle by up to 500 pounds.",
+      "supported": true,
+      "quote": "Change 1 w a rning c WARNING SUMMARY (Cont’d) • Communication shelters AN/GRC-122 and AN/GRC-142 RATT may overload vehicle by up to 500 pounds."
+    },
+    {
+      "sentence": "Use caution when driving to avoid damage to equipment or injury to personnel.",
+      "supported": true,
+      "quote": "Use caution when driving to avoid damage to equipment or injury to personnel."
+    },
+    {
+      "sentence": "• Chock blocks shall be used when parking a vehicle with inoperative parking brakes, when operating in extreme cold conditions, when parking on inclines, or whenever and wherever maintenance is being performed.",
+      "supported": true,
+      "quote": "• Chock blocks shall be used when parking a vehicle with inoperative parking brakes, when operating in extreme cold conditions, when parking on inclines, or whenever and wherever maintenance is being performed."
+    },
+    {
+      "sentence": "Failure to do so may result in injury to personnel or damage to equipment.",
+      "supported": true,
+      "quote": "Failure to do so may result in injury to personnel or damage to equipment."
+    },
+    {
+      "sentence": "• Vehicle speed must be reduced consistent with weather and road/terrain conditions.",
+      "supported": true,
+      "quote": "• Vehicle speed must be reduced consistent with weather and road/terrain conditions."
+    },
+    {
+      "sentence": "Obstacles such as stumps and boulders must be avoided.",
+      "supported": true,
+      "quote": "Obstacles such as stumps and boulders must be avoided."
+    },
+    {
+      "sentence": "Failure to use basic safe driving techniques/skills may result in injury or death to personnel and damage to equipment.",
+      "supported": true,
+      "quote": "Failure to use basic safe driving techniques/skills may result in injury or death to personnel and damage to equipment."
+    },
+    {
+      "sentence": "• Do not use tow pintle as a step when entering or exiting vehicle cargo area.",
+      "supported": true,
+      "quote": "• Do not use tow pintle as a step when entering or exiting vehicle cargo area."
+    },
+    {
+      "sentence": "Failure to do so may result in injury to personnel or damage to equipment.",
+      "supported": true,
+      "quote": "Failure to do so may result in injury to personnel or damage to equipment."
+    },
+    {
+      "sentence": "w a rning d Change 1 LIST OF EFFECTIVE PAGES NOTE: The portion of the text affected by the changes is indicated by a vertical line in the outer margins of the page.",
+      "supported": true,
+      "quote": "w a rning d Change 1 LIST OF EFFECTIVE PAGES NOTE: The portion of the text affected by the changes is indicated by a vertical line in the outer margins of the page."
+    },
+    {
+      "sentence": "Dates of issue for original and changed pages are: Original .",
+      "supported": true,
+      "quote": "Dates of issue for original and changed pages are: Original ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": "0 .",
+      "supported": true,
+      "quote": "0 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". 31 January 1996 Change .",
+      "supported": true,
+      "quote": ". 31 January 1996 Change ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". 1 .",
+      "supported": true,
+      "quote": ". 1 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": "31 May 1999 Change .",
+      "supported": true,
+      "quote": "31 May 1999 Change ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". 2 .",
+      "supported": true,
+      "quote": ". 2 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": "30 November 2001 TOTALNUMBER OF PAGES IN THIS PUBLICATION IS 398 CONSISTING OF THE FOLLOWING: Page No.",
+      "supported": true,
+      "quote": "30 November 2001 TOTALNUMBER OF PAGES IN THIS PUBLICATION IS 398 CONSISTING OF THE FOLLOWING: Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "Page No.",
+      "supported": true,
+      "quote": "Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "Page No.",
+      "supported": true,
+      "quote": "Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "Warning a .",
+      "supported": true,
+      "quote": "Warning a ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-80 .",
+      "supported": true,
+      "quote": ".0 2-80 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-157 - 2-165 .",
+      "supported": true,
+      "quote": ".1 2-157 - 2-165 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 Warning b - d .",
+      "supported": true,
+      "quote": ".0 Warning b - d ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-81 - 2-82 .",
+      "supported": true,
+      "quote": ".1 2-81 - 2-82 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-166 - 2-167 .",
+      "supported": true,
+      "quote": ".0 2-166 - 2-167 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 A - B .",
+      "supported": true,
+      "quote": ".1 A - B ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 2-83 - 2-87 .",
+      "supported": true,
+      "quote": ". .2 2-83 - 2-87 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-168 - 2-171 .",
+      "supported": true,
+      "quote": ".1 2-168 - 2-171 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 i .",
+      "supported": true,
+      "quote": ".0 i ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 2-88 - 2-89 .",
+      "supported": true,
+      "quote": ". .1 2-88 - 2-89 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-172 .",
+      "supported": true,
+      "quote": ".0 2-172 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 ii .",
+      "supported": true,
+      "quote": ". .1 ii ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-90 - 2-104 .",
+      "supported": true,
+      "quote": ".0 2-90 - 2-104 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 2-173 - 2-179 .",
+      "supported": true,
+      "quote": ". .1 2-173 - 2-179 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 1-1 - 1-3 .",
+      "supported": true,
+      "quote": ".0 1-1 - 1-3 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-104.1 - 2-104.3 Added .",
+      "supported": true,
+      "quote": ".1 2-104.1 - 2-104.3 Added ."
+    },
+    {
+      "sentence": ".1 2-180 .",
+      "supported": true,
+      "quote": ".1 2-180 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 1-4 - 1-5 .",
+      "supported": true,
+      "quote": ". .1 1-4 - 1-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-104.4 Blank .",
+      "supported": true,
+      "quote": ".0 2-104.4 Blank ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-181 - 2-182 .",
+      "supported": true,
+      "quote": ".1 2-181 - 2-182 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 1-6 - 1-9 .",
+      "supported": true,
+      "quote": ".0 1-6 - 1-9 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-105 - 2-106 .",
+      "supported": true,
+      "quote": ".1 2-105 - 2-106 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-182.1 - 2-182.2 Added .",
+      "supported": true,
+      "quote": ".1 2-182.1 - 2-182.2 Added ."
+    },
+    {
+      "sentence": ".1 1-10 - 1-21 .",
+      "supported": true,
+      "quote": ".1 1-10 - 1-21 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-107 .",
+      "supported": true,
+      "quote": ".0 2-107 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 2-183 - 2-184 .",
+      "supported": true,
+      "quote": ". .0 2-183 - 2-184 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 1-22 - 1-24 .",
+      "supported": true,
+      "quote": ".1 1-22 - 1-24 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-108 - 2-112 .",
+      "supported": true,
+      "quote": ".1 2-108 - 2-112 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-185 - 2-217 .",
+      "supported": true,
+      "quote": ".1 2-185 - 2-217 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 1-25 - 1-29 .",
+      "supported": true,
+      "quote": ".0 1-25 - 1-29 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-113 - 2-120 .",
+      "supported": true,
+      "quote": ".0 2-113 - 2-120 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 218 Blank .",
+      "supported": true,
+      "quote": ".0 218 Blank ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 1-30 - 1-34 .",
+      "supported": true,
+      "quote": ". .0 1-30 - 1-34 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-121 .",
+      "supported": true,
+      "quote": ".1 2-121 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-1 - 3-2 .",
+      "supported": true,
+      "quote": ". .1 3-1 - 3-2 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-1 - 2-3 .",
+      "supported": true,
+      "quote": ".0 2-1 - 2-3 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-122 - 2-124 .",
+      "supported": true,
+      "quote": ".0 2-122 - 2-124 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 3-3 .",
+      "supported": true,
+      "quote": ".0 3-3 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 2-4 .",
+      "supported": true,
+      "quote": ". .1 2-4 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 2-124.1 - 2-124.2 Added .",
+      "supported": true,
+      "quote": ". .1 2-124.1 - 2-124.2 Added ."
+    },
+    {
+      "sentence": ".1 3-4 .",
+      "supported": true,
+      "quote": ".1 3-4 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 2-5 .",
+      "supported": true,
+      "quote": ". .0 2-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 2-125 .",
+      "supported": true,
+      "quote": ". .0 2-125 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-5 .",
+      "supported": true,
+      "quote": ". .1 3-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 2-6 - 2-7 .",
+      "supported": true,
+      "quote": ". .1 2-6 - 2-7 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-126 .",
+      "supported": true,
+      "quote": ".1 2-126 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 3-6 - 3-9 .",
+      "supported": true,
+      "quote": ". .2 3-6 - 3-9 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-8 - 2-25 .",
+      "supported": true,
+      "quote": ".0 2-8 - 2-25 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 2-127 - 2-132 .",
+      "supported": true,
+      "quote": ". .0 2-127 - 2-132 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 3-10 - 3-11 .",
+      "supported": true,
+      "quote": ".0 3-10 - 3-11 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-26 - 2-27 .",
+      "supported": true,
+      "quote": ".1 2-26 - 2-27 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-132.1 Added .",
+      "supported": true,
+      "quote": ".1 2-132.1 Added ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 3-12 - 3-15 .",
+      "supported": true,
+      "quote": ". .2 3-12 - 3-15 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-28 - 2-31 .",
+      "supported": true,
+      "quote": ".0 2-28 - 2-31 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-132.2 Added .",
+      "supported": true,
+      "quote": ".0 2-132.2 Added ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 3-16 .",
+      "supported": true,
+      "quote": ". .2 3-16 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-32 - 2-33 .",
+      "supported": true,
+      "quote": ".1 2-32 - 2-33 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-133 Blank .",
+      "supported": true,
+      "quote": ".1 2-133 Blank ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 3-17 .",
+      "supported": true,
+      "quote": ". .2 3-17 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-34 - 2-41 .",
+      "supported": true,
+      "quote": ".0 2-34 - 2-41 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-134 .",
+      "supported": true,
+      "quote": ".0 2-134 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-18 - 3-21 .",
+      "supported": true,
+      "quote": ". .1 3-18 - 3-21 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-42 .",
+      "supported": true,
+      "quote": ".1 2-42 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-134.1 - 2-134.4 Added .",
+      "supported": true,
+      "quote": ".1 2-134.1 - 2-134.4 Added ."
+    },
+    {
+      "sentence": ".1 3-22 .",
+      "supported": true,
+      "quote": ".1 3-22 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-43 .",
+      "supported": true,
+      "quote": ".0 2-43 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-135 .",
+      "supported": true,
+      "quote": ".0 2-135 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-23 .",
+      "supported": true,
+      "quote": ". .1 3-23 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-44 - 2-45 .",
+      "supported": true,
+      "quote": ".1 2-44 - 2-45 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-136 .",
+      "supported": true,
+      "quote": ".1 2-136 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 3-24 - 3-26 .",
+      "supported": true,
+      "quote": ". .0 3-24 - 3-26 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-46 - 2-60 .",
+      "supported": true,
+      "quote": ".0 2-46 - 2-60 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-137 .",
+      "supported": true,
+      "quote": ".0 2-137 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-27 - 3-28 .",
+      "supported": true,
+      "quote": ". .1 3-27 - 3-28 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-61 - 2-62 .",
+      "supported": true,
+      "quote": ".1 2-61 - 2-62 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-138 .",
+      "supported": true,
+      "quote": ".1 2-138 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 3-28.1 - 3-28.2 Added .",
+      "supported": true,
+      "quote": ". .0 3-28.1 - 3-28.2 Added ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-63 - 2-65 .",
+      "supported": true,
+      "quote": ".1 2-63 - 2-65 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-139 - 2-144 .",
+      "supported": true,
+      "quote": ".0 2-139 - 2-144 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 3-29 .",
+      "supported": true,
+      "quote": ".1 3-29 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-66 .",
+      "supported": true,
+      "quote": ".1 2-66 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-145 .",
+      "supported": true,
+      "quote": ".1 2-145 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 3-30 - 3-31 .",
+      "supported": true,
+      "quote": ". .0 3-30 - 3-31 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-67 .",
+      "supported": true,
+      "quote": ".0 2-67 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-146 .",
+      "supported": true,
+      "quote": ".0 2-146 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-32 - 3-33 .",
+      "supported": true,
+      "quote": ". .1 3-32 - 3-33 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-68 - 2-70 .",
+      "supported": true,
+      "quote": ".1 2-68 - 2-70 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-147 - 2-151 .",
+      "supported": true,
+      "quote": ".1 2-147 - 2-151 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 3-34 - 3-38 .",
+      "supported": true,
+      "quote": ".0 3-34 - 3-38 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-71 .",
+      "supported": true,
+      "quote": ".0 2-71 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-152 .",
+      "supported": true,
+      "quote": ".0 2-152 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 3-39 - 3-40 .",
+      "supported": true,
+      "quote": ". .1 3-39 - 3-40 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-72 - 2-76 .",
+      "supported": true,
+      "quote": ".1 2-72 - 2-76 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-153 .",
+      "supported": true,
+      "quote": ".1 2-153 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 A-1 - A-2 .",
+      "supported": true,
+      "quote": ". .0 A-1 - A-2 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-77 .",
+      "supported": true,
+      "quote": ".1 2-77 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-154 .",
+      "supported": true,
+      "quote": ".0 2-154 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 B-1 .",
+      "supported": true,
+      "quote": ". .1 B-1 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-78 .",
+      "supported": true,
+      "quote": ".0 2-78 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 2-155 .",
+      "supported": true,
+      "quote": ".1 2-155 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 B-2 .",
+      "supported": true,
+      "quote": ". .0 B-2 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".2 2-79 .",
+      "supported": true,
+      "quote": ".2 2-79 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 2-156 .",
+      "supported": true,
+      "quote": ".0 2-156 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 B-3 - B-4 .",
+      "supported": true,
+      "quote": ". .1 B-3 - B-4 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 *Zero in this column indicates original page.",
+      "supported": true,
+      "quote": ".1 *Zero in this column indicates original page."
+    },
+    {
+      "sentence": "Change 2 A LIST OF EFFECTIVE PAGES (Contd) Page No.",
+      "supported": true,
+      "quote": "Change 2 A LIST OF EFFECTIVE PAGES (Contd) Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "Page No.",
+      "supported": true,
+      "quote": "Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "Page No.",
+      "supported": true,
+      "quote": "Page No."
+    },
+    {
+      "sentence": ". .*Change No.",
+      "supported": true,
+      "quote": ". .*Change No."
+    },
+    {
+      "sentence": "B-4.1 - B-4.2 Added .",
+      "supported": true,
+      "quote": "B-4.1 - B-4.2 Added ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 E-11 .",
+      "supported": true,
+      "quote": ". .1 E-11 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 G-2 - G-5 .",
+      "supported": true,
+      "quote": ". .1 G-2 - G-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 B-5 - B-10 .",
+      "supported": true,
+      "quote": ".1 B-5 - B-10 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 E-12 .",
+      "supported": true,
+      "quote": ". .1 E-12 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 G-6 .",
+      "supported": true,
+      "quote": ". .0 G-6 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 C-1 - C-4 .",
+      "supported": true,
+      "quote": ".0 C-1 - C-4 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 F-1 - F-5 .",
+      "supported": true,
+      "quote": ".1 F-1 - F-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 G-7 - G-8 .",
+      "supported": true,
+      "quote": ".1 G-7 - G-8 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 D-1 .",
+      "supported": true,
+      "quote": ".1 D-1 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 F-6 - F-7 .",
+      "supported": true,
+      "quote": ".0 F-6 - F-7 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 G-9 - G-13 .",
+      "supported": true,
+      "quote": ".0 G-9 - G-13 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 D-2 - D-6 .",
+      "supported": true,
+      "quote": ". .0 D-2 - D-6 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 F-8 - F-17 .",
+      "supported": true,
+      "quote": ".1 F-8 - F-17 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 G-14 - G-16 .",
+      "supported": true,
+      "quote": ". .1 G-14 - G-16 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 E-1 - E-2 .",
+      "supported": true,
+      "quote": ".1 E-1 - E-2 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 F-18 - F-21 .",
+      "supported": true,
+      "quote": ".1 F-18 - F-21 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 Index-1 - Index-5 .",
+      "supported": true,
+      "quote": ".0 Index-1 - Index-5 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 E-3 - E-6 .",
+      "supported": true,
+      "quote": ". .1 E-3 - E-6 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 F-22 - F-23 .",
+      "supported": true,
+      "quote": ".0 F-22 - F-23 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 Index 6 .",
+      "supported": true,
+      "quote": ".1 Index 6 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .2 E-7 - E-8 .",
+      "supported": true,
+      "quote": ". .2 E-7 - E-8 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".1 F-24 Blank .",
+      "supported": true,
+      "quote": ".1 F-24 Blank ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 Index 7 .",
+      "supported": true,
+      "quote": ".0 Index 7 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .1 E-9 - E-10 .",
+      "supported": true,
+      "quote": ". .1 E-9 - E-10 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 G-1 .",
+      "supported": true,
+      "quote": ". .0 G-1 ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ".0 Index 8 Blank .",
+      "supported": true,
+      "quote": ".0 Index 8 Blank ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .",
+      "supported": true,
+      "quote": ". ."
+    },
+    {
+      "sentence": ". .0 *Zero in this column indicates original page.",
+      "supported": true,
+      "quote": ". .0 *Zero in this column indicates original page."
+    },
+    {
+      "sentence": "B Change 2 TECHNICAL MANUAL NO.",
+      "supported": true,
+      "quote": "B Change 2 TECHNICAL MANUAL NO."
+    },
+    {
+      "sentence": "9-2320-280-10 NO.",
+      "supported": true,
+      "quote": "9-2320-280-10 NO."
+    },
+    {
+      "sentence": "2320-10/6B THE AIR FORCE, AND MARINE CORPS WASHINGTON, D.C.",
+      "supported": true,
+      "quote": "2320-10/6B THE AIR FORCE, AND MARINE CORPS WASHINGTON, D.C."
+    },
+    {
+      "sentence": "31 JANUARY 1996 TECHNICAL ORDER NO.",
+      "supported": true,
+      "quote": "31 JANUARY 1996 TECHNICAL ORDER NO."
+    },
+    {
+      "sentence": "36A12-1A-2091-1 *ARMY TM 9-2320-280-10 HEADQUARTERS, DEPARTMENTS OF THE ARMY, OPERATOR’S MANUAL TRUCK, UTILITY: CARGO/TROOP CARRIER, 1-1/4 TON, 4X4, M998 (2320-01-107-7155) (EIC: BBD); M998A1 (2320-01-371-9577) (EIC: BBN); TRUCK, UTILITY: CARGO/TROOP CARRIER, 1-1/4 TON, 4X4, W/WINCH, M1038 (2320-01-107-7156) (EIC: BBE); M1038A1 (2320-01-371-9578) (EIC: BBP); TRUCK, UTILITY: HEAVY VAR I A N T , 4X4, M1097 (2320-01-346-9317)(EIC: BBM); M1097A1 (2320-01-371-9583) (EIC: BBU); M1097A2 (2320-01-380-8604) (EIC: BB6); M1123 (2320-01-455-9593) (EIC:B6 G ) ; TRUCK, UTILITY: TOW CARRIER, ARMORED, 1-1/4 TON, 4X4, M966 (2320-01-107-7153) (EIC: BBC); M966A1 (2320-01-372-3932) (EIC: BBX); M1121 (2320-01-456-1282)( E I CB 6 H ) ; TRUCK, UTILITY: TOW CARRIER, ARMORED, 1-1/4 TON, 4X4, W/WINCH, M1036 (2320-01-107-7154) (EIC: BBH); TRUCK, UTILITY: TOW CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, M1045 (2320-01-146-7191); M1045A1 (2320-01-371-9580) (EIC: BBR); M1045A2 (2320-01-380-8229) (EIC: BB5); TRUCK, UTILITY: TOW CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, W/WINCH, M1046 (2320-01-146-7188); M1046A1 (2320-01-371-9582) (EIC: BBT); TRUCK, UTILITY: ARMAMENT CARRIER, ARMORED, 1-1/4 TON, 4X4, M1025 (2320-01-128-9551) (EIC: BBF); M1025A1 (2320-01-371-9584) (EIC: BBV); M1025A2 (2320-01-380-8233) (EIC: BB3); TRUCK, UTILITY: ARMAMENT CARRIER, ARMORED, 1-1/4 TON, 4X4, W/WINCH, M1026 (2320-01-128-9552) (EIC: BBG); M1026A1 (2320-01-371-9579) (EIC: BBQ); TRUCK, UTILITY: ARMAMENT CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, M1043 (2320-01-146-7190); M1043A1 (2320-01-372-3933) (EIC: BBY); M1043A2 (2320-01-380-8213) (EIC: BB4); TRUCK, UTILITY: ARMAMENT CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, W/WINCH, M1044 (2320-01-146-7189); M1044A1 (2320-01-371-9581) (EIC: BBS); TRUCK, UTILITY: S250 SHELTER CARRIER, 4X4, M1037 (2320-01-146-7193) (EIC: BBK); TRUCK, UTILITY: S250 SHELTER CARRIER, 4X4, W/WINCH, M1042 (2320-01-146-7187); TRUCK, AMBULANCE, 2-LITTER, ARMORED, 4X4, M996 (2310-01-111-2275) (EIC: BBB); M996A1 (2310-01-372-3935) (EIC: BB2); TRUCK, AMBULANCE, 4-LITTER, ARMORED, 4X4, M997 (2310-01-111-2274) (EIC: BBA); M997A1 (2310-01-372-3934) (EIC: BB2); M997A2 (2310-01-380-8225) (EIC: BB8); TRUCK, AMBULANCE, 2-LITTER, SOFT TOP, 4X4, M1035 (2310-01-146-7194); M1035A1 (2310-01-371-9585) (EIC: BBW); M1035A2 (2310-01-380-8290) (EIC: BB9).",
+      "supported": true,
+      "quote": "36A12-1A-2091-1 *ARMY TM 9-2320-280-10 HEADQUARTERS, DEPARTMENTS OF THE ARMY, OPERATOR’S MANUAL TRUCK, UTILITY: CARGO/TROOP CARRIER, 1-1/4 TON, 4X4, M998 (2320-01-107-7155) (EIC: BBD); M998A1 (2320-01-371-9577) (EIC: BBN); TRUCK, UTILITY: CARGO/TROOP CARRIER, 1-1/4 TON, 4X4, W/WINCH, M1038 (2320-01-107-7156) (EIC: BBE); M1038A1 (2320-01-371-9578) (EIC: BBP); TRUCK, UTILITY: HEAVY VAR I A N T , 4X4, M1097 (2320-01-346-9317)(EIC: BBM); M1097A1 (2320-01-371-9583) (EIC: BBU); M1097A2 (2320-01-380-8604) (EIC: BB6); M1123 (2320-01-455-9593) (EIC:B6 G ) ; TRUCK, UTILITY: TOW CARRIER, ARMORED, 1-1/4 TON, 4X4, M966 (2320-01-107-7153) (EIC: BBC); M966A1 (2320-01-372-3932) (EIC: BBX); M1121 (2320-01-456-1282)( E I CB 6 H ) ; TRUCK, UTILITY: TOW CARRIER, ARMORED, 1-1/4 TON, 4X4, W/WINCH, M1036 (2320-01-107-7154) (EIC: BBH); TRUCK, UTILITY: TOW CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, M1045 (2320-01-146-7191); M1045A1 (2320-01-371-9580) (EIC: BBR); M1045A2 (2320-01-380-8229) (EIC: BB5); TRUCK, UTILITY: TOW CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, W/WINCH, M1046 (2320-01-146-7188); M1046A1 (2320-01-371-9582) (EIC: BBT); TRUCK, UTILITY: ARMAMENT CARRIER, ARMORED, 1-1/4 TON, 4X4, M1025 (2320-01-128-9551) (EIC: BBF); M1025A1 (2320-01-371-9584) (EIC: BBV); M1025A2 (2320-01-380-8233) (EIC: BB3); TRUCK, UTILITY: ARMAMENT CARRIER, ARMORED, 1-1/4 TON, 4X4, W/WINCH, M1026 (2320-01-128-9552) (EIC: BBG); M1026A1 (2320-01-371-9579) (EIC: BBQ); TRUCK, UTILITY: ARMAMENT CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, M1043 (2320-01-146-7190); M1043A1 (2320-01-372-3933) (EIC: BBY); M1043A2 (2320-01-380-8213) (EIC: BB4); TRUCK, UTILITY: ARMAMENT CARRIER, W/SUPPLEMENTAL ARMOR, 1-1/4 TON, 4X4, W/WINCH, M1044 (2320-01-146-7189); M1044A1 (2320-01-371-9581) (EIC: BBS); TRUCK, UTILITY: S250 SHELTER CARRIER, 4X4, M1037 (2320-01-146-7193) (EIC: BBK); TRUCK, UTILITY: S250 SHELTER CARRIER, 4X4, W/WINCH, M1042 (2320-01-146-7187); TRUCK, AMBULANCE, 2-LITTER, ARMORED, 4X4, M996 (2310-01-111-2275) (EIC: BBB); M996A1 (2310-01-372-3935) (EIC: BB2); TRUCK, AMBULANCE, 4-LITTER, ARMORED, 4X4, M997 (2310-01-111-2274) (EIC: BBA); M997A1 (2310-01-372-3934) (EIC: BB2); M997A2 (2310-01-380-8225) (EIC: BB8); TRUCK, AMBULANCE, 2-LITTER, SOFT TOP, 4X4, M1035 (2310-01-146-7194); M1035A1 (2310-01-371-9585) (EIC: BBW); M1035A2 (2310-01-380-8290) (EIC: BB9)."
+    },
+    {
+      "sentence": "Approved for public release; distribution is unlimited.",
+      "supported": true,
+      "quote": "Approved for public release; distribution is unlimited."
+    },
+    {
+      "sentence": "REPORTING OF ERRORS AND RECOMMENDING IMPROVEMENTS You can help improve this publication.",
+      "supported": true,
+      "quote": "REPORTING OF ERRORS AND RECOMMENDING IMPROVEMENTS You can help improve this publication."
+    },
+    {
+      "sentence": "If you find any mistakes or if you know of a way to improve the procedures, please let us know.",
+      "supported": true,
+      "quote": "If you find any mistakes or if you know of a way to improve the procedures, please let us know."
+    },
+    {
+      "sentence": "Submit your DA Form 2028-2 (Recommended Changes to Equipment Technical Publications), through the Internet, on the Army Electronic Product Support (AEPS) website.",
+      "supported": true,
+      "quote": "Submit your DA Form 2028-2 (Recommended Changes to Equipment Technical Publications), through the Internet, on the Army Electronic Product Support (AEPS) website."
+    },
+    {
+      "sentence": "The Internet address is ht t p : / / a e p s .",
+      "supported": true,
+      "quote": "The Internet address is ht t p : / / a e p s ."
+    },
+    {
+      "sentence": "r i a .",
+      "supported": true,
+      "quote": "r i a ."
+    },
+    {
+      "sentence": "a r m y .m i l .",
+      "supported": true,
+      "quote": "a r m y .m i l ."
+    },
+    {
+      "sentence": "If you need a password, scroll down and click on “ACCESS REQUEST FORM.” The DA Form 2028 is located in the ONLINE FORMS PROCESSING section of the AEPS.",
+      "supported": true,
+      "quote": "If you need a password, scroll down and click on “ACCESS REQUEST FORM.” The DA Form 2028 is located in the ONLINE FORMS PROCESSING section of the AEPS."
+    },
+    {
+      "sentence": "Fill out the form and click on SU B M I T .",
+      "supported": true,
+      "quote": "Fill out the form and click on SU B M I T ."
+    },
+    {
+      "sentence": "Using this form on the AEPS will enable us to respond quicker to your comments and better manage the DA Form 2028 program.",
+      "supported": true,
+      "quote": "Using this form on the AEPS will enable us to respond quicker to your comments and better manage the DA Form 2028 program."
+    },
+    {
+      "sentence": "You may also mail, fax or email your letter, DA Form 2028, or DA Form 2028-2 direct to: Commander, U.S.",
+      "supported": true,
+      "quote": "You may also mail, fax or email your letter, DA Form 2028, or DA Form 2028-2 direct to: Commander, U.S."
+    },
+    {
+      "sentence": "Army Tank-automotive and Armaments Command, ATTN: AMSTA- L C - C I P - W T , Rock Island, IL 61299-7630.",
+      "supported": true,
+      "quote": "Army Tank-automotive and Armaments Command, ATTN: AMSTA- L C - C I P - W T , Rock Island, IL 61299-7630."
+    },
+    {
+      "sentence": "The email address is am s t a - ac-nml@ r i a .",
+      "supported": true,
+      "quote": "The email address is am s t a - ac-nml@ r i a ."
+    },
+    {
+      "sentence": "a r m y .m i l .",
+      "supported": true,
+      "quote": "a r m y .m i l ."
+    },
+    {
+      "sentence": "The fax number is DSN 793-0726 or Commercial (309) 782-0726.",
+      "supported": true,
+      "quote": "The fax number is DSN 793-0726 or Commercial (309) 782-0726."
+    },
+    {
+      "sentence": "(Marine Corps) Submit NAVMC 10772 to the Commanding General (826), MCLB, 814 Radford Blvd., Albany, GA 31704-112 8 .",
+      "supported": true,
+      "quote": "(Marine Corps) Submit NAVMC 10772 to the Commanding General (826), MCLB, 814 Radford Blvd., Albany, GA 31704-112 8 ."
+    },
+    {
+      "sentence": "*This publication supersedes TM 9-2320-280-10 dated 18 JUNE 1991 and all changes.",
+      "supported": true,
+      "quote": "*This publication supersedes TM 9-2320-280-10 dated 18 JUNE 1991 and all changes."
+    },
+    {
+      "sentence": "Change 1 i Page",
+      "supported": true,
+      "quote": "Change 1 i Page"
+    }
+  ]
+}

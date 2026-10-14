@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0019",
+  "answer_sha256": "8a77198b9a819441fc0bd4e2eeba946637d5baf1661fc0fed83c5397084cbfab",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 22.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "HARD STEERING.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

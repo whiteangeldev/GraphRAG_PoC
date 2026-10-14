@@ -1,0 +1,518 @@
+{
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "generation_model": "",
+  "judge": "quote",
+  "rrf_k": 60,
+  "evidence_limit": 10,
+  "rerank": false,
+  "temperature": 0.0,
+  "seed": 0,
+  "overall": {
+    "questions": 157,
+    "hit_at_10": {
+      "numerator": 98,
+      "denominator": 141
+    },
+    "mrr_denominators": [
+      13,
+      2,
+      2,
+      3,
+      1,
+      5,
+      15,
+      1,
+      1,
+      3,
+      0,
+      5,
+      9,
+      2,
+      0,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      2,
+      0,
+      17,
+      21,
+      4,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      16,
+      2,
+      2,
+      2,
+      1,
+      2,
+      0,
+      2,
+      2,
+      1,
+      3,
+      2,
+      0,
+      2,
+      0,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2,
+      0,
+      2,
+      13,
+      3,
+      2,
+      2,
+      8,
+      1,
+      22,
+      5,
+      4,
+      1,
+      3,
+      1,
+      5,
+      3,
+      2,
+      17,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10,
+      15,
+      4,
+      1,
+      4,
+      2,
+      3,
+      4,
+      1,
+      3,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      3,
+      0,
+      2,
+      1,
+      5
+    ],
+    "evidence_recall": {
+      "numerator": 104,
+      "denominator": 266
+    },
+    "required_fact_recall": {
+      "numerator": 65,
+      "denominator": 266
+    },
+    "claim_precision": {
+      "numerator": 938,
+      "denominator": 1141
+    },
+    "action_accuracy": {
+      "numerator": 93,
+      "denominator": 157
+    }
+  },
+  "by_type": {
+    "lookup": {
+      "questions": 35,
+      "hit_at_10": {
+        "numerator": 25,
+        "denominator": 35
+      },
+      "mrr_denominators": [
+        13,
+        2,
+        2,
+        3,
+        1,
+        5,
+        15,
+        1,
+        1,
+        3,
+        0,
+        5,
+        9,
+        2,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        0,
+        17,
+        21,
+        1,
+        0,
+        0,
+        1,
+        1,
+        3,
+        0,
+        2,
+        1,
+        5
+      ],
+      "evidence_recall": {
+        "numerator": 25,
+        "denominator": 35
+      },
+      "required_fact_recall": {
+        "numerator": 12,
+        "denominator": 35
+      },
+      "claim_precision": {
+        "numerator": 141,
+        "denominator": 193
+      },
+      "action_accuracy": {
+        "numerator": 22,
+        "denominator": 35
+      }
+    },
+    "procedure": {
+      "questions": 22,
+      "hit_at_10": {
+        "numerator": 22,
+        "denominator": 22
+      },
+      "mrr_denominators": [
+        4,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "evidence_recall": {
+        "numerator": 28,
+        "denominator": 72
+      },
+      "required_fact_recall": {
+        "numerator": 28,
+        "denominator": 72
+      },
+      "claim_precision": {
+        "numerator": 116,
+        "denominator": 116
+      },
+      "action_accuracy": {
+        "numerator": 22,
+        "denominator": 22
+      }
+    },
+    "applicability": {
+      "questions": 22,
+      "hit_at_10": {
+        "numerator": 1,
+        "denominator": 22
+      },
+      "mrr_denominators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "evidence_recall": {
+        "numerator": 1,
+        "denominator": 22
+      },
+      "required_fact_recall": {
+        "numerator": 14,
+        "denominator": 22
+      },
+      "claim_precision": {
+        "numerator": 547,
+        "denominator": 547
+      },
+      "action_accuracy": {
+        "numerator": 22,
+        "denominator": 22
+      }
+    },
+    "relational": {
+      "questions": 25,
+      "hit_at_10": {
+        "numerator": 19,
+        "denominator": 25
+      },
+      "mrr_denominators": [
+        16,
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        2,
+        2,
+        1,
+        3,
+        2,
+        0,
+        2,
+        0,
+        2,
+        1,
+        2,
+        5,
+        2,
+        1,
+        2,
+        0,
+        2,
+        13
+      ],
+      "evidence_recall": {
+        "numerator": 19,
+        "denominator": 50
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 50
+      },
+      "claim_precision": {
+        "numerator": 0,
+        "denominator": 88
+      },
+      "action_accuracy": {
+        "numerator": 0,
+        "denominator": 25
+      }
+    },
+    "multi_hop": {
+      "questions": 25,
+      "hit_at_10": {
+        "numerator": 22,
+        "denominator": 25
+      },
+      "mrr_denominators": [
+        3,
+        2,
+        2,
+        8,
+        1,
+        22,
+        5,
+        4,
+        1,
+        3,
+        1,
+        5,
+        3,
+        2,
+        17,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        15,
+        4,
+        1
+      ],
+      "evidence_recall": {
+        "numerator": 22,
+        "denominator": 75
+      },
+      "required_fact_recall": {
+        "numerator": 11,
+        "denominator": 75
+      },
+      "claim_precision": {
+        "numerator": 110,
+        "denominator": 173
+      },
+      "action_accuracy": {
+        "numerator": 12,
+        "denominator": 25
+      }
+    },
+    "troubleshooting": {
+      "questions": 9,
+      "hit_at_10": {
+        "numerator": 9,
+        "denominator": 9
+      },
+      "mrr_denominators": [
+        4,
+        2,
+        3,
+        4,
+        1,
+        3,
+        2,
+        2,
+        2
+      ],
+      "evidence_recall": {
+        "numerator": 9,
+        "denominator": 9
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 9
+      },
+      "claim_precision": {
+        "numerator": 18,
+        "denominator": 18
+      },
+      "action_accuracy": {
+        "numerator": 9,
+        "denominator": 9
+      }
+    },
+    "follow_up": {
+      "questions": 3,
+      "hit_at_10": {
+        "numerator": 0,
+        "denominator": 3
+      },
+      "mrr_denominators": [
+        0,
+        0,
+        0
+      ],
+      "evidence_recall": {
+        "numerator": 0,
+        "denominator": 3
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 3
+      },
+      "claim_precision": {
+        "numerator": 6,
+        "denominator": 6
+      },
+      "action_accuracy": {
+        "numerator": 3,
+        "denominator": 3
+      }
+    },
+    "unanswerable": {
+      "questions": 16,
+      "hit_at_10": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "mrr_denominators": [],
+      "evidence_recall": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "claim_precision": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "action_accuracy": {
+        "numerator": 3,
+        "denominator": 16
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "multi-0014",
+  "answer_sha256": "fe2198626dda4909ff3d84d17ba3b61b260602a417d094834cfe17d996d1b5d6",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "j. Lock steering wheel with cable (2) and chock wheels if tactical situation permits. A1, A2, AND M1123 MODELS A1, A2, AND M1123 MODELS Change 1 2-111",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 21.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions steering.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

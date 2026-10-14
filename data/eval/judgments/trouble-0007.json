@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0007",
+  "answer_sha256": "7b427e75eedcbe302b33dc097c13fd978723c4828684101b3800502047d96e45",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for low fluid level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "13.",
+      "supported": true,
+      "quote": "13."
+    },
+    {
+      "sentence": "SLIPPAGE IN ALL RANGES",
+      "supported": true,
+      "quote": "SLIPPAGE IN ALL RANGES"
+    }
+  ]
+}

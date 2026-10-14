@@ -1,0 +1,128 @@
+{
+  "id": "unanswerable-0008",
+  "answer_sha256": "373d9778679be6cdda2763ab64dc29c7cd5eafaf4eb1dae76d660ddd2f00de03",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "1-6.",
+      "supported": true,
+      "quote": "1-6."
+    },
+    {
+      "sentence": "REPORTING EQUIPMENT IMPROVEMENT RECOMMENDATIONS (EIRs) If your vehicle needs improvement, let us know.",
+      "supported": true,
+      "quote": "REPORTING EQUIPMENT IMPROVEMENT RECOMMENDATIONS (EIRs) If your vehicle needs improvement, let us know."
+    },
+    {
+      "sentence": "Send us an EIR.",
+      "supported": true,
+      "quote": "Send us an EIR."
+    },
+    {
+      "sentence": "You, the user, are the only one who can tell us what you don’t like about your equipment.",
+      "supported": true,
+      "quote": "You, the user, are the only one who can tell us what you don’t like about your equipment."
+    },
+    {
+      "sentence": "Let us know why you don’t like the design or performance.",
+      "supported": true,
+      "quote": "Let us know why you don’t like the design or performance."
+    },
+    {
+      "sentence": "The preferred method for submitting QDRs is through the Army Electronic Product Support (AEPS) website under the Electronic Deficiency Reporting System (EDRS).",
+      "supported": true,
+      "quote": "The preferred method for submitting QDRs is through the Army Electronic Product Support (AEPS) website under the Electronic Deficiency Reporting System (EDRS)."
+    },
+    {
+      "sentence": "The web address is: https://aeps.ria.army.mil.",
+      "supported": true,
+      "quote": "The web address is: https://aeps.ria.army.mil."
+    },
+    {
+      "sentence": "This is a secured site requiring a password that can be applied for on the front page of the website.",
+      "supported": true,
+      "quote": "This is a secured site requiring a password that can be applied for on the front page of the website."
+    },
+    {
+      "sentence": "If the above method is not available to you, put it on an SF 368, Product Quality Deficiency Report (PQDR), and mail it to us at: Department of the Army, U.S.",
+      "supported": true,
+      "quote": "If the above method is not available to you, put it on an SF 368, Product Quality Deficiency Report (PQDR), and mail it to us at: Department of the Army, U.S."
+    },
+    {
+      "sentence": "Army Tank-automotive and Armaments Command, ATTN: AMSTA-TR-E/PQDR MS 267, 6501 E.",
+      "supported": true,
+      "quote": "Army Tank-automotive and Armaments Command, ATTN: AMSTA-TR-E/PQDR MS 267, 6501 E."
+    },
+    {
+      "sentence": "11 Mile Road, Warren, MI 48397-500.",
+      "supported": true,
+      "quote": "11 Mile Road, Warren, MI 48397-500."
+    },
+    {
+      "sentence": "We’ll send you a reply.",
+      "supported": true,
+      "quote": "We’ll send you a reply."
+    },
+    {
+      "sentence": "(Marine Corps) Submit QDR’s in accordance with MCO 4855-10.",
+      "supported": true,
+      "quote": "(Marine Corps) Submit QDR’s in accordance with MCO 4855-10."
+    },
+    {
+      "sentence": "1.7.",
+      "supported": true,
+      "quote": "1.7."
+    },
+    {
+      "sentence": "EQUIPMENT IMPROVEMENT REPORT AND MAINTENANCE DIGEST (EIR MD) The quarterly Equipment Improvement Report and Maintenance Digest, TB 43-0001-62 series, contains valuable field information on the equipment covered in this manual.",
+      "supported": true,
+      "quote": "EQUIPMENT IMPROVEMENT REPORT AND MAINTENANCE DIGEST (EIR MD) The quarterly Equipment Improvement Report and Maintenance Digest, TB 43-0001-62 series, contains valuable field information on the equipment covered in this manual."
+    },
+    {
+      "sentence": "The information in the TB 43-0001-62 series is compiled from some of the Equipment Improvement Reports that you prepared on the vehicles covered in this manual.",
+      "supported": true,
+      "quote": "The information in the TB 43-0001-62 series is compiled from some of the Equipment Improvement Reports that you prepared on the vehicles covered in this manual."
+    },
+    {
+      "sentence": "Many of these articles result from comments, suggestions, and improvement recommendations that you submitted to the EIR program.",
+      "supported": true,
+      "quote": "Many of these articles result from comments, suggestions, and improvement recommendations that you submitted to the EIR program."
+    },
+    {
+      "sentence": "The TB 43-0001-62 series contains information on equipment improvements, minor alterations, proposed Modification Work Orders (MWOs), warranties (if applicable), actions taken on some of your DA Form 2028s (Recommended Changes to Publications and Blank Forms), and advance information on proposed changes that may affect this manual.",
+      "supported": true,
+      "quote": "The TB 43-0001-62 series contains information on equipment improvements, minor alterations, proposed Modification Work Orders (MWOs), warranties (if applicable), actions taken on some of your DA Form 2028s (Recommended Changes to Publications and Blank Forms), and advance information on proposed changes that may affect this manual."
+    },
+    {
+      "sentence": "The information will help you in doing your job better and will help in keeping you advised of the latest changes to this manual.",
+      "supported": true,
+      "quote": "The information will help you in doing your job better and will help in keeping you advised of the latest changes to this manual."
+    },
+    {
+      "sentence": "Also refer to DA Pam 25-30, Consolidated Index of Army Publications and Blank Forms, and appendix A, References, of this manual.",
+      "supported": true,
+      "quote": "Also refer to DA Pam 25-30, Consolidated Index of Army Publications and Blank Forms, and appendix A, References, of this manual."
+    },
+    {
+      "sentence": "(Marine Corps) Submit QDR’s in accordance with MCO 4855-10.",
+      "supported": true,
+      "quote": "(Marine Corps) Submit QDR’s in accordance with MCO 4855-10."
+    },
+    {
+      "sentence": "For those with access to the World Wide Web (WWW), the EIR MD can be viewed through the Army Electronic Product Support.",
+      "supported": true,
+      "quote": "For those with access to the World Wide Web (WWW), the EIR MD can be viewed through the Army Electronic Product Support."
+    },
+    {
+      "sentence": "The site is http://aeps.ria.army.mil.",
+      "supported": true,
+      "quote": "The site is http://aeps.ria.army.mil."
+    },
+    {
+      "sentence": "Change 2 1-1",
+      "supported": true,
+      "quote": "Change 2 1-1"
+    }
+  ]
+}

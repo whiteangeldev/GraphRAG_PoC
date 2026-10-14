@@ -1,0 +1,24 @@
+{
+  "id": "applicability-0008",
+  "answer_sha256": "b196c46106e5a569e603ed9a9fabf5f845ed59dbfbdf390bca5365c738434037",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "M996",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "a.",
+      "supported": true,
+      "quote": "a."
+    },
+    {
+      "sentence": "Disassembly INITIAL SETUP: Applicable Models All vehicles except: M997A2, M1025A2, M1035A2, M1043A2, M1045A2, M1097A2, M1123 Tools General mechanic’s tool kit: automotive (Appendix B, Item 1)",
+      "supported": true,
+      "quote": "Disassembly INITIAL SETUP: Applicable Models All vehicles except: M997A2, M1025A2, M1035A2, M1043A2, M1045A2, M1097A2, M1123 Tools General mechanic’s tool kit: automotive (Appendix B, Item 1)"
+    }
+  ]
+}

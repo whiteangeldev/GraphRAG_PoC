@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0007",
+  "answer_sha256": "6d19549c723278490e69ebe24ee7d60e8b9687dfeb95bb38ba97b79064d30912",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 12.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

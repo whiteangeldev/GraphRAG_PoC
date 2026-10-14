@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0006",
+  "answer_sha256": "1b03a85f39387c1ab5afd58edfddc43b2db156663ac2d49a81db5ea2d67023ec",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "12.",
+      "supported": true,
+      "quote": "12."
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE",
+      "supported": true,
+      "quote": "FLUID THROWN FROM TRANSMISSION FILL TUBE"
+    }
+  ]
+}

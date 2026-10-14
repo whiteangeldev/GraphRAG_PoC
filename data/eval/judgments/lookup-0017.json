@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0017",
+  "answer_sha256": "d6ad63ba7e61e3987a2a6e4716ce264d3682de59c4dd0dcd7cd6a1b4b4ac4b2b",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 20.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

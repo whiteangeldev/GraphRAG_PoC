@@ -1,0 +1,49 @@
+{
+  "id": "multi-0002",
+  "answer_sha256": "13c4af10ba04e70aa788cca567b62213e9c8aa65797386cde015695fd2312a26",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check oil level for overfilling (Appendix G)",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 5.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions nozzle.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

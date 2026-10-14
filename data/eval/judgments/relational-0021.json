@@ -1,0 +1,39 @@
+{
+  "id": "relational-0021",
+  "answer_sha256": "ff9d6e5e6034d6e32a84e5b5420d70c0dc330e8621c16b196089aa4c3dd2585c",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Perform malfunction 26, steps 1 through 3",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 29.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SPOTUGHT FAILS TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which lamp part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

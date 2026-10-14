@@ -12,7 +12,7 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 | 6. Hybrid retrieval and cited answers | Finished, 14 October 2026 |
 | 7. Demonstration interface | Finished, 14 October 2026 |
 | 8. Evaluation set | Finished, 14 October 2026 |
-| 9. Evaluation runner and baseline report | Not started |
+| 9. Evaluation runner and baseline report | Finished, 14 October 2026 |
 | 10. Reproduction package and milestone note | Not started |
 
 ## Step 1 — Project skeleton and data contracts
@@ -157,3 +157,34 @@ The set has 157 questions. Everyday wording (`vocabulary: user`) is 85, more tha
 | Counts | Passed. The table above meets every minimum, and everyday wording is more than half. |
 | Every gold node id exists | Passed. |
 | Every required fact is in a gold passage | Passed. |
+
+## Step 9 — Evaluation runner and baseline report
+
+Finished 14 October 2026. `make eval` scores `data/eval/questions.jsonl` with the Step 6 retriever and writes `docs/baseline_report.md`. Judgments are cached in `data/eval/judgments/`, one file per question. A later run reuses a judgment when the answer and the judge name are unchanged.
+
+The generator receives the first 10 fused passages. Fusion is reciprocal rank fusion, `k = 60`, over the dense list and the sparse list. The reranker is off. The embedding model is `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. No generation model is configured, so the answer is the text of the cited passages. Temperature is 0 and the seed is 0.
+
+`JUDGE_MODEL` is empty, so this run uses the quote check: a required fact or an answer sentence counts only when its quote is an exact span of a cited passage. The language-model judge is in the runner and applies the same quote rule. It is used when `JUDGE_MODEL` is set. No model endpoint was available for this run.
+
+| Question type | Questions | hit@10 | MRR | Evidence recall | Required-fact recall | Claim precision | Action accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Overall | 157 | 69.5 | 0.461 | 39.1 | 24.4 | 82.2 | 59.2 |
+| lookup | 35 | 71.4 | 0.470 | 71.4 | 34.3 | 73.1 | 62.9 |
+| procedure | 22 | 100.0 | 0.890 | 38.9 | 38.9 | 100.0 | 100.0 |
+| applicability | 22 | 4.5 | 0.023 | 4.5 | 63.6 | 100.0 | 100.0 |
+| relational | 25 | 76.0 | 0.447 | 38.0 | 0.0 | 0.0 | 0.0 |
+| multi_hop | 25 | 88.0 | 0.525 | 29.3 | 14.7 | 63.6 | 48.0 |
+| troubleshooting | 9 | 100.0 | 0.463 | 100.0 | 0.0 | 100.0 | 100.0 |
+| follow_up | 3 | 0.0 | 0.000 | 0.0 | 0.0 | 100.0 | 100.0 |
+| unanswerable | 16 | — | — | — | — | — | 18.8 |
+
+Shares are percentages. MRR is the mean of 1/rank. hit@10, MRR, and evidence recall cover the 141 questions that have a gold passage. The 16 unanswerable questions have none. Eleven questions are Japanese. Ten of them have gold passages in `mlit_b052`.
+
+Every relational question missed at least one gold passage in the ten given to the generator. Nineteen kept the malfunction row and missed the parts-list row. The answerer also refused 22 relational, 12 lookup, and 12 multi-hop questions whose passages do contain the malfunction title: the title string it reads continues into the comma or the next word, and that longer string is not in the passage. Three of the 16 unanswerable questions were refused. Those three read as a malfunction title. The other 13 do not, and the answerer quotes a retrieved passage.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| A second run with the cache reproduces every metric | Passed. The second run reused all 157 judgments. `docs/baseline_report.md` and `data/eval/metrics.json` were byte-identical to the first run. |
+| The report lists every question type that has questions | Passed. The table lists lookup, procedure, applicability, relational, multi-hop, troubleshooting, follow-up, and unanswerable. |

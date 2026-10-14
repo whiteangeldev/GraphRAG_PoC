@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0009",
+  "answer_sha256": "5109a85d28e0db3b2d13c5812ca310308efe53ad0b44eb0375f550dcf31f8ed6",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check operating controls for correct settings",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "9.",
+      "supported": true,
+      "quote": "9."
+    },
+    {
+      "sentence": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE",
+      "supported": true,
+      "quote": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE"
+    }
+  ]
+}

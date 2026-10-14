@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0014",
+  "answer_sha256": "957ad10c754a77b2d080035985e52fed231a5edfce2ab65fa61b9ac70e5ca5eb",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if parking brake is partially applied",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "17.",
+      "supported": true,
+      "quote": "17."
+    },
+    {
+      "sentence": "BRAKE WARNING LAMP ASSEMBLY ON",
+      "supported": true,
+      "quote": "BRAKE WARNING LAMP ASSEMBLY ON"
+    }
+  ]
+}

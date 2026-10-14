@@ -1,0 +1,89 @@
+{
+  "id": "multi-0025",
+  "answer_sha256": "56987b7c42474f1c1bb6670bbfe8b565bf5d92f210b6fd3b4158117fd1630ffe",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",
+      "present": true,
+      "quote": "Step 1. Check to see if fuel gauge indicates “E” (empty)"
+    },
+    {
+      "text": "(3) Fuel gauge (9) should indicate fuel level in fuel tank.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "6472357",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "3.",
+      "supported": true,
+      "quote": "3."
+    },
+    {
+      "sentence": "ENGINE CRANKS BUT DOES NOT START Step 1.",
+      "supported": true,
+      "quote": "ENGINE CRANKS BUT DOES NOT START Step 1."
+    },
+    {
+      "sentence": "Check to see if fuel gauge indicates “E” (empty).",
+      "supported": true,
+      "quote": "Check to see if fuel gauge indicates “E” (empty)."
+    },
+    {
+      "sentence": "Fill fuel tank, and start engine.",
+      "supported": true,
+      "quote": "Fill fuel tank, and start engine."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2."
+    },
+    {
+      "sentence": "Purge fuel system of air (para.",
+      "supported": true,
+      "quote": "Purge fuel system of air (para."
+    },
+    {
+      "sentence": "3-10).",
+      "supported": true,
+      "quote": "3-10)."
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": true,
+      "quote": "Step 3."
+    },
+    {
+      "sentence": "Check to see if WAIT-TO-START lamp assembly fails to light or does not go out.",
+      "supported": true,
+      "quote": "Check to see if WAIT-TO-START lamp assembly fails to light or does not go out."
+    },
+    {
+      "sentence": "Notify unit maintenance if wait-to-start lamp assembly fails to light or does not go out.",
+      "supported": true,
+      "quote": "Notify unit maintenance if wait-to-start lamp assembly fails to light or does not go out."
+    },
+    {
+      "sentence": "Step 4.",
+      "supported": true,
+      "quote": "Step 4."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "Other causes."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": true,
+      "quote": "Notify unit maintenance."
+    }
+  ]
+}

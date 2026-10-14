@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0003",
+  "answer_sha256": "04deff3c49e774a5ffd79cf1ee73e99462976412e730f33c8f7060b3df43a27a",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "6.",
+      "supported": true,
+      "quote": "6."
+    },
+    {
+      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER",
+      "supported": true,
+      "quote": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER"
+    }
+  ]
+}

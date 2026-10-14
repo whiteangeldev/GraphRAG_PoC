@@ -1,0 +1,39 @@
+{
+  "id": "relational-0015",
+  "answer_sha256": "0bf2820059a37e88e2b0419d68f3d71eaab30e10964d2b9e714700621c043527",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The vehicle has this problem: 22.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "HARD STEERING.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Which steering part number is listed?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

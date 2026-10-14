@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0023",
+  "answer_sha256": "4842fe7754c4d8952fc0ece5e166f6e9980a45ec28839512c00968d15823283c",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check that interior light switch on control box is in proper position",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: The truck is showing this problem: 26.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What should I check first?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "relational-0008",
+  "answer_sha256": "8298b8d22d8282265906dbd8535499020d144020fec6355268307db38a4bd07e",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "7X677",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 8.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE, which parts-list item matches OIL PUMP?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

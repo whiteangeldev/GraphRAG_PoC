@@ -1,0 +1,833 @@
+{
+  "id": "unanswerable-0013",
+  "answer_sha256": "758fa771626257c865fb1a972b8904e9e1572b9d134e812b6248e48b8f532744",
+  "judge": "quote",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "NOTE Run the BRAKES and DRIVETRAIN tests in this manual.",
+      "supported": true,
+      "quote": "NOTE Run the BRAKES and DRIVETRAIN tests in this manual."
+    },
+    {
+      "sentence": "If you don’t find any faults, notify DS maintenance.",
+      "supported": true,
+      "quote": "If you don’t find any faults, notify DS maintenance."
+    },
+    {
+      "sentence": "TM 8-2320-280-20-1 TRANSMISSION SYSTEM (4L80-E) 2-417 Page 2-412 Para.",
+      "supported": true,
+      "quote": "TM 8-2320-280-20-1 TRANSMISSION SYSTEM (4L80-E) 2-417 Page 2-412 Para."
+    },
+    {
+      "sentence": "4-39 Page 2-420 2-418 PARA 4-29 PARA.",
+      "supported": true,
+      "quote": "4-39 Page 2-420 2-418 PARA 4-29 PARA."
+    },
+    {
+      "sentence": "4-85 PARA 4-42 PARA 4-42 Page 2-418 PAGES 2-428 THROUGH 2-443 PAGE 2-421 PARA.",
+      "supported": true,
+      "quote": "4-85 PARA 4-42 PARA 4-42 Page 2-418 PAGES 2-428 THROUGH 2-443 PAGE 2-421 PARA."
+    },
+    {
+      "sentence": "4-42.",
+      "supported": true,
+      "quote": "4-42."
+    },
+    {
+      "sentence": "2-420 REFERENCE INFORMATION TRANSMISSION SYSTEM (4L80-E) The following chart will help you find the code you need.",
+      "supported": true,
+      "quote": "2-420 REFERENCE INFORMATION TRANSMISSION SYSTEM (4L80-E) The following chart will help you find the code you need."
+    },
+    {
+      "sentence": "The J1 cable diagnostics checks (page 2-428) must be performed.",
+      "supported": true,
+      "quote": "The J1 cable diagnostics checks (page 2-428) must be performed."
+    },
+    {
+      "sentence": "Always correct the lower code number first.",
+      "supported": true,
+      "quote": "Always correct the lower code number first."
+    },
+    {
+      "sentence": "If code 51 shows up, replace TCM (para.",
+      "supported": true,
+      "quote": "If code 51 shows up, replace TCM (para."
+    },
+    {
+      "sentence": "4-42), operate vehicle, and recheck for trouble codes.",
+      "supported": true,
+      "quote": "4-42), operate vehicle, and recheck for trouble codes."
+    },
+    {
+      "sentence": "TROUBLE CODE CIRCUIT PAGE NO.",
+      "supported": true,
+      "quote": "TROUBLE CODE CIRCUIT PAGE NO."
+    },
+    {
+      "sentence": "21 Throttle Position High 2-422 22 Throttle Position Low 2-422 24 Transmission Output Speed Sensor (TOSS) 2-422 28 Transmission Range Pressure Switch 2-422 37 Torque Converter Clutch (TCC) Brake Switch Stuck “ON” 2-422 38 TCC Brake Switch Stuck “OFF” 2-422 39 TCC Stuck “OFF” 2-423 51 Transmission Control Module (TCM) Bad 2-423 52 System Voltage High Long 2-423 53 System Voltage High 2-423 58 Transmission Temperature High 2-423 59 Transmission Temperature Low 2-423 68 Transmission Component Slipping 2-424 69 Torque Converter Clutch (TCC) Stuck “ON” 2-424 71 Engine Speed Sensor Circuit Low 2-424 73 Pressure Control Solenoid (PCS) Current 2-424 74 Transmission Input Speed Sensor (TISS) Circuit 2-425 75 System Voltage Low 2-425 79 Transmission Fluid Overtemp 2-425 81 2-3 Shift Solenoid Circuit Fault 2-425 82 1-2 Shift Solenoid Circuit Fault 2-426 83 TCC Solenoid (PWM) Circuit Fault 2-426 85 Undefined Ratio 2-426 86 Low Ratio 2-427 87 High Ratio 2-427 TRANSMISSION SYSTEM (4L80-E) DTC 28 DTC 21/22 REFERENCE INFORMATION Throttle Position (TP) Sensor Circuit High/ Transmission Range (TR) Pressure Switch Assembly (PSA) Fault Throttle Position Sensor Circuit Low Circuit Description: Circuit Description: The TP sensor contains a resistor strip with one end The Transmission Range (TR) switch assembly consists connected to a 5-volt supply and the other to ground.",
+      "supported": true,
+      "quote": "21 Throttle Position High 2-422 22 Throttle Position Low 2-422 24 Transmission Output Speed Sensor (TOSS) 2-422 28 Transmission Range Pressure Switch 2-422 37 Torque Converter Clutch (TCC) Brake Switch Stuck “ON” 2-422 38 TCC Brake Switch Stuck “OFF” 2-422 39 TCC Stuck “OFF” 2-423 51 Transmission Control Module (TCM) Bad 2-423 52 System Voltage High Long 2-423 53 System Voltage High 2-423 58 Transmission Temperature High 2-423 59 Transmission Temperature Low 2-423 68 Transmission Component Slipping 2-424 69 Torque Converter Clutch (TCC) Stuck “ON” 2-424 71 Engine Speed Sensor Circuit Low 2-424 73 Pressure Control Solenoid (PCS) Current 2-424 74 Transmission Input Speed Sensor (TISS) Circuit 2-425 75 System Voltage Low 2-425 79 Transmission Fluid Overtemp 2-425 81 2-3 Shift Solenoid Circuit Fault 2-425 82 1-2 Shift Solenoid Circuit Fault 2-426 83 TCC Solenoid (PWM) Circuit Fault 2-426 85 Undefined Ratio 2-426 86 Low Ratio 2-427 87 High Ratio 2-427 TRANSMISSION SYSTEM (4L80-E) DTC 28 DTC 21/22 REFERENCE INFORMATION Throttle Position (TP) Sensor Circuit High/ Transmission Range (TR) Pressure Switch Assembly (PSA) Fault Throttle Position Sensor Circuit Low Circuit Description: Circuit Description: The TP sensor contains a resistor strip with one end The Transmission Range (TR) switch assembly consists connected to a 5-volt supply and the other to ground."
+    },
+    {
+      "sentence": "of five normally open pressure switches mounted on The signal is connected to a movable contact within the valve body.",
+      "supported": true,
+      "quote": "of five normally open pressure switches mounted on The signal is connected to a movable contact within the valve body."
+    },
+    {
+      "sentence": "The TCM supplies battery voltage to the TP sensor.",
+      "supported": true,
+      "quote": "The TCM supplies battery voltage to the TP sensor."
+    },
+    {
+      "sentence": "As the accelerator pedal is applied, and each range signal.",
+      "supported": true,
+      "quote": "As the accelerator pedal is applied, and each range signal."
+    },
+    {
+      "sentence": "BY grounding one or more of these the throttle shaft rotates, the voltage signal will circuits through various combinations of the pressure increase from approximately 0.5 to 4.5 volts.",
+      "supported": true,
+      "quote": "BY grounding one or more of these the throttle shaft rotates, the voltage signal will circuits through various combinations of the pressure increase from approximately 0.5 to 4.5 volts."
+    },
+    {
+      "sentence": "switches, the TCM assembly detects what transmis- sion range has been selected by the vehicle operator.",
+      "supported": true,
+      "quote": "switches, the TCM assembly detects what transmis- sion range has been selected by the vehicle operator."
+    },
+    {
+      "sentence": "DTC 21 Will Set When: When the transmission electrical connector is discon- nected, the ground potential for the three range signals Engine is operating.",
+      "supported": true,
+      "quote": "DTC 21 Will Set When: When the transmission electrical connector is discon- nected, the ground potential for the three range signals Engine is operating."
+    },
+    {
+      "sentence": "l to the TCM will be removed and D2 gear will be indicated TP sensor signal voltage is greater than 4.9 voits.",
+      "supported": true,
+      "quote": "l to the TCM will be removed and D2 gear will be indicated TP sensor signal voltage is greater than 4.9 voits."
+    },
+    {
+      "sentence": "l c Conditions are met for one second.",
+      "supported": true,
+      "quote": "l c Conditions are met for one second."
+    },
+    {
+      "sentence": "DTC 22 Will Set When: Engine is operating.",
+      "supported": true,
+      "quote": "DTC 22 Will Set When: Engine is operating."
+    },
+    {
+      "sentence": "l .",
+      "supported": true,
+      "quote": "l ."
+    },
+    {
+      "sentence": "TP sensor signal voltage is less than 0.2 volt.",
+      "supported": true,
+      "quote": "TP sensor signal voltage is less than 0.2 volt."
+    },
+    {
+      "sentence": "Conditions are met for one second.",
+      "supported": true,
+      "quote": "Conditions are met for one second."
+    },
+    {
+      "sentence": "l DTC 37/38 Torque Converter Clutch (TCC) Brake Switch Stuck “ON”/ DTC 24 TCC Brake Switch Stuck “OFF” Output Speed Sensor Signal Circuit Description: Circuit Decription: The normally closed brake switch supplies a B+ The Output Speed sensor is a magnetic induction type signal volt when the TCC brake switch is closed sensor.",
+      "supported": true,
+      "quote": "l DTC 37/38 Torque Converter Clutch (TCC) Brake Switch Stuck “ON”/ DTC 24 TCC Brake Switch Stuck “OFF” Output Speed Sensor Signal Circuit Description: Circuit Decription: The normally closed brake switch supplies a B+ The Output Speed sensor is a magnetic induction type signal volt when the TCC brake switch is closed sensor."
+    },
+    {
+      "sentence": "Gear teeth pressed onto the output shaft (brake pedal not applied).",
+      "supported": true,
+      "quote": "Gear teeth pressed onto the output shaft (brake pedal not applied)."
+    },
+    {
+      "sentence": "induce an alternating voltage into the sensor.",
+      "supported": true,
+      "quote": "induce an alternating voltage into the sensor."
+    },
+    {
+      "sentence": "DTC 24 Will Set When: Not in P/N.",
+      "supported": true,
+      "quote": "DTC 24 Will Set When: Not in P/N."
+    },
+    {
+      "sentence": "l CKT voltage is constant.",
+      "supported": true,
+      "quote": "l CKT voltage is constant."
+    },
+    {
+      "sentence": "l Engine speed is greater than 3000 rpm.",
+      "supported": true,
+      "quote": "l Engine speed is greater than 3000 rpm."
+    },
+    {
+      "sentence": "l .",
+      "supported": true,
+      "quote": "l ."
+    },
+    {
+      "sentence": "Output speed is less than 200 rpm.",
+      "supported": true,
+      "quote": "Output speed is less than 200 rpm."
+    },
+    {
+      "sentence": "TP is between 10% and 100%.",
+      "supported": true,
+      "quote": "TP is between 10% and 100%."
+    },
+    {
+      "sentence": "l All conditions are met for 3 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 3 seconds."
+    },
+    {
+      "sentence": "l DTC 28 Will Set When: Range signals “A” and “C” are both zero volts.",
+      "supported": true,
+      "quote": "l DTC 28 Will Set When: Range signals “A” and “C” are both zero volts."
+    },
+    {
+      "sentence": "l Condition is met for 2 seconds.",
+      "supported": true,
+      "quote": "l Condition is met for 2 seconds."
+    },
+    {
+      "sentence": "l DTC 37 Will Set When: CKT 810B is open.",
+      "supported": true,
+      "quote": "l DTC 37 Will Set When: CKT 810B is open."
+    },
+    {
+      "sentence": "- Then vehicle speed is between 5 mph (8 kph) and 20 mph (32 kph) for greater than 6 seconds.",
+      "supported": true,
+      "quote": "- Then vehicle speed is between 5 mph (8 kph) and 20 mph (32 kph) for greater than 6 seconds."
+    },
+    {
+      "sentence": "- Then vehicle speed is greater than 20 mph (32 kph) for greater than 6 seconds.",
+      "supported": true,
+      "quote": "- Then vehicle speed is greater than 20 mph (32 kph) for greater than 6 seconds."
+    },
+    {
+      "sentence": "- For a complete total of seven times.",
+      "supported": true,
+      "quote": "- For a complete total of seven times."
+    },
+    {
+      "sentence": "DTC 38 Will Set When: TCC brake switch feed CKT 810B has constant voltage.",
+      "supported": true,
+      "quote": "DTC 38 Will Set When: TCC brake switch feed CKT 810B has constant voltage."
+    },
+    {
+      "sentence": "- Vehicle speed is greater than 20 mph (32 kph) for greater than 6 seconds.",
+      "supported": true,
+      "quote": "- Vehicle speed is greater than 20 mph (32 kph) for greater than 6 seconds."
+    },
+    {
+      "sentence": ". Then vehicle speed is between 5 mph (8 kph) and 20 mph (32 kph) for greater than 6 seconds.",
+      "supported": true,
+      "quote": ". Then vehicle speed is between 5 mph (8 kph) and 20 mph (32 kph) for greater than 6 seconds."
+    },
+    {
+      "sentence": "- For a complete total of seven times.",
+      "supported": true,
+      "quote": "- For a complete total of seven times."
+    },
+    {
+      "sentence": "REFERENCE INFORMATION DTC 39 TCC Stuck “OFF” Circuit Description: TRANSMISSION SYSTEM (4L80-E) DTC 52/53 System Voltage High Long/ System Voltage High The TCM commands the TCC PWM solenoid “ON” by Circuit Description: modulating TCC signal fluid acting on the converter Ignition voltage is supplied to the control module to clutch shift valve.",
+      "supported": true,
+      "quote": "REFERENCE INFORMATION DTC 39 TCC Stuck “OFF” Circuit Description: TRANSMISSION SYSTEM (4L80-E) DTC 52/53 System Voltage High Long/ System Voltage High The TCM commands the TCC PWM solenoid “ON” by Circuit Description: modulating TCC signal fluid acting on the converter Ignition voltage is supplied to the control module to clutch shift valve."
+    },
+    {
+      "sentence": "Then TCC fluid applies the torque indicate the status of the ignition switch.",
+      "supported": true,
+      "quote": "Then TCC fluid applies the torque indicate the status of the ignition switch."
+    },
+    {
+      "sentence": "Battery converter clutch.",
+      "supported": true,
+      "quote": "Battery converter clutch."
+    },
+    {
+      "sentence": "DTC 39 Will Set When: TCC is commanded “ON.” l TCC slip speed greater than 65 RPM.",
+      "supported": true,
+      "quote": "DTC 39 Will Set When: TCC is commanded “ON.” l TCC slip speed greater than 65 RPM."
+    },
+    {
+      "sentence": "l Trans range in D3 or D4.",
+      "supported": true,
+      "quote": "l Trans range in D3 or D4."
+    },
+    {
+      "sentence": "l 2nd or 3rd gear.",
+      "supported": true,
+      "quote": "l 2nd or 3rd gear."
+    },
+    {
+      "sentence": "l All conditions are met for two seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for two seconds."
+    },
+    {
+      "sentence": "l DTC 51 Faulty or Incorrect Circuit description: The transmission Control Module (TCM) , an on board computer, receives and processes input signals from sensors on the vehicle and delivers output signals to the solenoids located on the control valve assembly.",
+      "supported": true,
+      "quote": "l DTC 51 Faulty or Incorrect Circuit description: The transmission Control Module (TCM) , an on board computer, receives and processes input signals from sensors on the vehicle and delivers output signals to the solenoids located on the control valve assembly."
+    },
+    {
+      "sentence": "These solenoids control the transmission operating pressures, upshift and downshift patterns and torque converter clutch (TCC) operation.",
+      "supported": true,
+      "quote": "These solenoids control the transmission operating pressures, upshift and downshift patterns and torque converter clutch (TCC) operation."
+    },
+    {
+      "sentence": "DTC 51 Will Set When: There is an uncorrectable computational error, l or an input is in error intermittently.",
+      "supported": true,
+      "quote": "DTC 51 Will Set When: There is an uncorrectable computational error, l or an input is in error intermittently."
+    },
+    {
+      "sentence": "voltage is supplied to the control module to, in part, maintain memory of learned functions and parameters.",
+      "supported": true,
+      "quote": "voltage is supplied to the control module to, in part, maintain memory of learned functions and parameters."
+    },
+    {
+      "sentence": "DTC 52 Will Set When: The ignition is “ON” and the system voltage l is greater than 16 volts.",
+      "supported": true,
+      "quote": "DTC 52 Will Set When: The ignition is “ON” and the system voltage l is greater than 16 volts."
+    },
+    {
+      "sentence": "Condition is met for 109 minutes.",
+      "supported": true,
+      "quote": "Condition is met for 109 minutes."
+    },
+    {
+      "sentence": "l DTC 53 Will Set When: The ignition is “ON” and the system voltage l is greater than 19.5 volts.",
+      "supported": true,
+      "quote": "l DTC 53 Will Set When: The ignition is “ON” and the system voltage l is greater than 19.5 volts."
+    },
+    {
+      "sentence": "Condition is met for 2 minutes.",
+      "supported": true,
+      "quote": "Condition is met for 2 minutes."
+    },
+    {
+      "sentence": "l DTC 58 Transmission Fluid Temperature (TFT) Sensor Circuit Low (High Temperature Indicated) Circuit Description: The TFT sensor is a thermistor that controls the signal voltage to the TCM, The TCM supplies a 5-volt reference signal to the sensor on TWC pin “L.” When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage.",
+      "supported": true,
+      "quote": "l DTC 58 Transmission Fluid Temperature (TFT) Sensor Circuit Low (High Temperature Indicated) Circuit Description: The TFT sensor is a thermistor that controls the signal voltage to the TCM, The TCM supplies a 5-volt reference signal to the sensor on TWC pin “L.” When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage."
+    },
+    {
+      "sentence": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreasesto approximately 1.5 to 2.0 volts.",
+      "supported": true,
+      "quote": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreasesto approximately 1.5 to 2.0 volts."
+    },
+    {
+      "sentence": "With DTC 79 also set, check the transmission cooling system.",
+      "supported": true,
+      "quote": "With DTC 79 also set, check the transmission cooling system."
+    },
+    {
+      "sentence": "DTC 58 Will Set When: Signal voltage indicates TFT greater than l 304°F (151°C).",
+      "supported": true,
+      "quote": "DTC 58 Will Set When: Signal voltage indicates TFT greater than l 304°F (151°C)."
+    },
+    {
+      "sentence": "Condition is met for 1 second.",
+      "supported": true,
+      "quote": "Condition is met for 1 second."
+    },
+    {
+      "sentence": "l TRANSMISSION SYSTEM (4L80-E) DTC 59 DTC 69 Torque Converter Clutch (TCC) Stuck “ON” Transmission Fluid Temperature (TFT) Sensor Circuit High (Low Temperature Indicated) Circuit Description: Circuit Description: The TCM commands the TCC PWM solenoid “ON” REFERENCE INFORMATION The TFT sensor is a thermistor that controls the by modulating TCC signal fluid acting on the signal voltage to the TCM.",
+      "supported": true,
+      "quote": "l TRANSMISSION SYSTEM (4L80-E) DTC 59 DTC 69 Torque Converter Clutch (TCC) Stuck “ON” Transmission Fluid Temperature (TFT) Sensor Circuit High (Low Temperature Indicated) Circuit Description: Circuit Description: The TCM commands the TCC PWM solenoid “ON” REFERENCE INFORMATION The TFT sensor is a thermistor that controls the by modulating TCC signal fluid acting on the signal voltage to the TCM."
+    },
+    {
+      "sentence": "The TCM supplies a converter clutch shift vaIve.",
+      "supported": true,
+      "quote": "The TCM supplies a converter clutch shift vaIve."
+    },
+    {
+      "sentence": "Then TCC fluid applies 5-volt reference signal to the sensor on TWC Pin “L.” the torque converter clutch.",
+      "supported": true,
+      "quote": "Then TCC fluid applies 5-volt reference signal to the sensor on TWC Pin “L.” the torque converter clutch."
+    },
+    {
+      "sentence": "When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage.",
+      "supported": true,
+      "quote": "When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage."
+    },
+    {
+      "sentence": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreases to approximately 1.5 to 2.0 volts.",
+      "supported": true,
+      "quote": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreases to approximately 1.5 to 2.0 volts."
+    },
+    {
+      "sentence": "DTC 71 DTC 59 Will Set When: Engine Speed, Sensor Circuit Low .",
+      "supported": true,
+      "quote": "DTC 71 DTC 59 Will Set When: Engine Speed, Sensor Circuit Low ."
+    },
+    {
+      "sentence": "Signal voltage indicates TFT less than -34°F (-37°C).",
+      "supported": true,
+      "quote": "Signal voltage indicates TFT less than -34°F (-37°C)."
+    },
+    {
+      "sentence": "Circuit Description: Condition is met for 1 second.",
+      "supported": true,
+      "quote": "Circuit Description: Condition is met for 1 second."
+    },
+    {
+      "sentence": "l The camshaft position sensor (CPS) detects the DTC 68 rotational speed of the camshaft.",
+      "supported": true,
+      "quote": "l The camshaft position sensor (CPS) detects the DTC 68 rotational speed of the camshaft."
+    },
+    {
+      "sentence": "As the camshaft Transmission Component Slipping rotates, an AC signal is generated in the circuit.",
+      "supported": true,
+      "quote": "As the camshaft Transmission Component Slipping rotates, an AC signal is generated in the circuit."
+    },
+    {
+      "sentence": "This signal provides the input to determine engine Circuit Description: speed for use in various calculations including TCC The TCM monitors the difference in engine slip speed and overdrive ratio.",
+      "supported": true,
+      "quote": "This signal provides the input to determine engine Circuit Description: speed for use in various calculations including TCC The TCM monitors the difference in engine slip speed and overdrive ratio."
+    },
+    {
+      "sentence": "Speed and input Speed.",
+      "supported": true,
+      "quote": "Speed and input Speed."
+    },
+    {
+      "sentence": "DTC 68 Will Set When: TCC slip speed greater than 200 RPM.",
+      "supported": true,
+      "quote": "DTC 68 Will Set When: TCC slip speed greater than 200 RPM."
+    },
+    {
+      "sentence": "l Fourth gear is indicated.",
+      "supported": true,
+      "quote": "l Fourth gear is indicated."
+    },
+    {
+      "sentence": "l TCC is locked.",
+      "supported": true,
+      "quote": "l TCC is locked."
+    },
+    {
+      "sentence": "l Not in park/neutral.",
+      "supported": true,
+      "quote": "l Not in park/neutral."
+    },
+    {
+      "sentence": "l All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l Trans range switch indicates D3 or D4.",
+      "supported": true,
+      "quote": "l Trans range switch indicates D3 or D4."
+    },
+    {
+      "sentence": "l Commanded gear indicates 2nd or 3rd gear.",
+      "supported": true,
+      "quote": "l Commanded gear indicates 2nd or 3rd gear."
+    },
+    {
+      "sentence": "l All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l DTC 69 Will Set When: TCC slip speed RPM indicates between -5 and l +10 RPM.",
+      "supported": true,
+      "quote": "l DTC 69 Will Set When: TCC slip speed RPM indicates between -5 and l +10 RPM."
+    },
+    {
+      "sentence": ". TCC solenoid is commanded “OFF.” TP sensor signal is greater than 25%.",
+      "supported": true,
+      "quote": ". TCC solenoid is commanded “OFF.” TP sensor signal is greater than 25%."
+    },
+    {
+      "sentence": "l DTC 71 Will Set When: l Engine speed less than 50 rpm Transmission range indicates, R, D4, D3, or D1.",
+      "supported": true,
+      "quote": "l DTC 71 Will Set When: l Engine speed less than 50 rpm Transmission range indicates, R, D4, D3, or D1."
+    },
+    {
+      "sentence": "l Conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "l Conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l DTC 73 TRANSMISSION SYSTEM (4L80-E) DTC 75 Pressure Control Solenoid (PCS) Circuit System Voltage Low Current Error (Force Motor Circuit) Circuit Description: Circuit Description: Ignition voltage is supplied to the control module to The pressure control solenoid is a TCM-controlled indicate the status of the ignition switch.",
+      "supported": true,
+      "quote": "l DTC 73 TRANSMISSION SYSTEM (4L80-E) DTC 75 Pressure Control Solenoid (PCS) Circuit System Voltage Low Current Error (Force Motor Circuit) Circuit Description: Circuit Description: Ignition voltage is supplied to the control module to The pressure control solenoid is a TCM-controlled indicate the status of the ignition switch."
+    },
+    {
+      "sentence": "Battery device used to regulate transmission line pressure.",
+      "supported": true,
+      "quote": "Battery device used to regulate transmission line pressure."
+    },
+    {
+      "sentence": "The voltage is supplied to the control module to, in part, TCM compares TP voltage, engine rpm and other maintain memory of learned functions and parameters.",
+      "supported": true,
+      "quote": "The voltage is supplied to the control module to, in part, TCM compares TP voltage, engine rpm and other maintain memory of learned functions and parameters."
+    },
+    {
+      "sentence": "inputs to determine the appropriate line pressure of a given load.",
+      "supported": true,
+      "quote": "inputs to determine the appropriate line pressure of a given load."
+    },
+    {
+      "sentence": "The TCM will regulate the pressure by applying a varying amperage to the pressure control solenoid.",
+      "supported": true,
+      "quote": "The TCM will regulate the pressure by applying a varying amperage to the pressure control solenoid."
+    },
+    {
+      "sentence": "The applied amperage can vary from 0.1 to 1.1 amp.",
+      "supported": true,
+      "quote": "The applied amperage can vary from 0.1 to 1.1 amp."
+    },
+    {
+      "sentence": "The TCM then monitors the amperage at the return line.",
+      "supported": true,
+      "quote": "The TCM then monitors the amperage at the return line."
+    },
+    {
+      "sentence": "DTC 73 Will Set When: .",
+      "supported": true,
+      "quote": "DTC 73 Will Set When: ."
+    },
+    {
+      "sentence": "The return amperage varies greater than 0.16 amps from the commanded amperage.",
+      "supported": true,
+      "quote": "The return amperage varies greater than 0.16 amps from the commanded amperage."
+    },
+    {
+      "sentence": ". All conditions are met for 1 second.",
+      "supported": true,
+      "quote": ". All conditions are met for 1 second."
+    },
+    {
+      "sentence": "DTC 74 Transmission Input Speed Sensor (TISS) Circuit Circuit Description: The TISS sensor consists of a permanent magnet surrounded by a coil of wire.",
+      "supported": true,
+      "quote": "DTC 74 Transmission Input Speed Sensor (TISS) Circuit Circuit Description: The TISS sensor consists of a permanent magnet surrounded by a coil of wire."
+    },
+    {
+      "sentence": "As the forward clutch housing rotates, an AC voltage is induced in the circuit.",
+      "supported": true,
+      "quote": "As the forward clutch housing rotates, an AC voltage is induced in the circuit."
+    },
+    {
+      "sentence": "The signal voltage and frequency vary directly with the forward clutch rotational speed.",
+      "supported": true,
+      "quote": "The signal voltage and frequency vary directly with the forward clutch rotational speed."
+    },
+    {
+      "sentence": "DTC 74 Will Set When” s Trans range not in park or neutral.",
+      "supported": true,
+      "quote": "DTC 74 Will Set When” s Trans range not in park or neutral."
+    },
+    {
+      "sentence": ". Engine speed greater than 300 rpm.",
+      "supported": true,
+      "quote": ". Engine speed greater than 300 rpm."
+    },
+    {
+      "sentence": "Trans output speed greater than 200 rpm.",
+      "supported": true,
+      "quote": "Trans output speed greater than 200 rpm."
+    },
+    {
+      "sentence": "l Trans input speed less than 50 rpm.",
+      "supported": true,
+      "quote": "l Trans input speed less than 50 rpm."
+    },
+    {
+      "sentence": "l .",
+      "supported": true,
+      "quote": "l ."
+    },
+    {
+      "sentence": "All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "DTC 75 Will Set When: The ignition is “ON.” l Ignition feed voltage to the control module is l less than the graduated scale of: .",
+      "supported": true,
+      "quote": "DTC 75 Will Set When: The ignition is “ON.” l Ignition feed voltage to the control module is l less than the graduated scale of: ."
+    },
+    {
+      "sentence": "-40°F (-40°C) = 7.3 volts.",
+      "supported": true,
+      "quote": "-40°F (-40°C) = 7.3 volts."
+    },
+    {
+      "sentence": "- 194°F (-90°C) = 10.3 volts.",
+      "supported": true,
+      "quote": "- 194°F (-90°C) = 10.3 volts."
+    },
+    {
+      "sentence": "- 302°F (-150°C) = 11.7 volts.",
+      "supported": true,
+      "quote": "- 302°F (-150°C) = 11.7 volts."
+    },
+    {
+      "sentence": "Engine speed greater than 1000 rpm.",
+      "supported": true,
+      "quote": "Engine speed greater than 1000 rpm."
+    },
+    {
+      "sentence": "l All conditions are met for 4 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 4 seconds."
+    },
+    {
+      "sentence": "l DTC 79 Transmission Fluid Overtemp Circuit Description: The Transmission Fluid Temperature (TFT) sensor is a thermistor that controls the signal voltage to the TCM.",
+      "supported": true,
+      "quote": "l DTC 79 Transmission Fluid Overtemp Circuit Description: The Transmission Fluid Temperature (TFT) sensor is a thermistor that controls the signal voltage to the TCM."
+    },
+    {
+      "sentence": "The TCM supplies a 5-volt reference signal to the sensor on CKT 923A.",
+      "supported": true,
+      "quote": "The TCM supplies a 5-volt reference signal to the sensor on CKT 923A."
+    },
+    {
+      "sentence": "When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage.",
+      "supported": true,
+      "quote": "When the transmission fluid is cold, the sensor resistance is high and the TCM will sense high signal voltage."
+    },
+    {
+      "sentence": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreases to approximately 1.5 to 2.0 volts.",
+      "supported": true,
+      "quote": "As the transmission fluid temperature warms to normal transmission operating temperature 212°F (100°C), the sensor resistance becomes less and the voltage decreases to approximately 1.5 to 2.0 volts."
+    },
+    {
+      "sentence": "DTC 79 Will Set When: Trans fluid temp greater than 295°F (146°C).",
+      "supported": true,
+      "quote": "DTC 79 Will Set When: Trans fluid temp greater than 295°F (146°C)."
+    },
+    {
+      "sentence": "l All conditions are met for 30 minutes.",
+      "supported": true,
+      "quote": "l All conditions are met for 30 minutes."
+    },
+    {
+      "sentence": "l TRANSMISSION SYSTEM (4L80-E) DTC 83 DTC 81 TCC Solenoid (PWM) Circuit Fault 2-3 Shift Solenoid Circuit Fault Circuit Description: Circuit Description: REFERENCE INFORMATION Ignition voltage is supplied directly to the 2-3 shift The control module supplies a ground through an solenoid.",
+      "supported": true,
+      "quote": "l TRANSMISSION SYSTEM (4L80-E) DTC 83 DTC 81 TCC Solenoid (PWM) Circuit Fault 2-3 Shift Solenoid Circuit Fault Circuit Description: Circuit Description: REFERENCE INFORMATION Ignition voltage is supplied directly to the 2-3 shift The control module supplies a ground through an solenoid."
+    },
+    {
+      "sentence": "The TCM controls the solenoid by providing internal Quad-Driver Module (QDM) allowing the ground path through CKT 315A to TCM.",
+      "supported": true,
+      "quote": "The TCM controls the solenoid by providing internal Quad-Driver Module (QDM) allowing the ground path through CKT 315A to TCM."
+    },
+    {
+      "sentence": "current to flow through the solenoid coil according to the duty cycle (percentage of “ON” and “OFF” DTC 81 Will Set When: time).",
+      "supported": true,
+      "quote": "current to flow through the solenoid coil according to the duty cycle (percentage of “ON” and “OFF” DTC 81 Will Set When: time)."
+    },
+    {
+      "sentence": "This current flow through the solenoid coil The TCM commands the solenoid “ON” and creates a magnetic field that magnetizes the l voltage remains high.",
+      "supported": true,
+      "quote": "This current flow through the solenoid coil The TCM commands the solenoid “ON” and creates a magnetic field that magnetizes the l voltage remains high."
+    },
+    {
+      "sentence": "solenoid core.",
+      "supported": true,
+      "quote": "solenoid core."
+    },
+    {
+      "sentence": "The magnetized core attracts the check-ball to seat against spring pressure.",
+      "supported": true,
+      "quote": "The magnetized core attracts the check-ball to seat against spring pressure."
+    },
+    {
+      "sentence": "This c The TCM commands the solenoid “OFF” and blocks the exhaust for the TCC signal fluid and voltage remains low.",
+      "supported": true,
+      "quote": "This c The TCM commands the solenoid “OFF” and blocks the exhaust for the TCC signal fluid and voltage remains low."
+    },
+    {
+      "sentence": "allows 2-3 drive fluid to feed the TCC signal circuit.",
+      "supported": true,
+      "quote": "allows 2-3 drive fluid to feed the TCC signal circuit."
+    },
+    {
+      "sentence": ". All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": ". All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "The TCC signal fluid pressure acts on the TCC regulator valve to regulate line pressure and to DTC 82 apply fluid pressure to the TCC shift valve.",
+      "supported": true,
+      "quote": "The TCC signal fluid pressure acts on the TCC regulator valve to regulate line pressure and to DTC 82 apply fluid pressure to the TCC shift valve."
+    },
+    {
+      "sentence": "When 1-2 Shift Solenoid Fault the TCC shift valve is in the “apply” position, regulated apply fluid pressure is directed through Circuit Description: the TCC valve to apply the torque converter clutch.",
+      "supported": true,
+      "quote": "When 1-2 Shift Solenoid Fault the TCC shift valve is in the “apply” position, regulated apply fluid pressure is directed through Circuit Description: the TCC valve to apply the torque converter clutch."
+    },
+    {
+      "sentence": "Ignition voltage is supplied directly to the 1-2 shift solenoid.",
+      "supported": true,
+      "quote": "Ignition voltage is supplied directly to the 1-2 shift solenoid."
+    },
+    {
+      "sentence": "The TCM controls the solenoid by providing the ground path through CKT 237A to TCM.",
+      "supported": true,
+      "quote": "The TCM controls the solenoid by providing the ground path through CKT 237A to TCM."
+    },
+    {
+      "sentence": "DTC 82 Will Set When: The TCM commands the solenoid “ON” and l voltage remains high.",
+      "supported": true,
+      "quote": "DTC 82 Will Set When: The TCM commands the solenoid “ON” and l voltage remains high."
+    },
+    {
+      "sentence": "The TCM commands the solenoid “OFF” and l voltage remains low.",
+      "supported": true,
+      "quote": "The TCM commands the solenoid “OFF” and l voltage remains low."
+    },
+    {
+      "sentence": "All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l DTC 83 Will Set When: l The TCM commands the solenoid “ON” and voltage remains high.",
+      "supported": true,
+      "quote": "l DTC 83 Will Set When: l The TCM commands the solenoid “ON” and voltage remains high."
+    },
+    {
+      "sentence": "l The TCM commands the solenoid “OFF” and voltage remains low.",
+      "supported": true,
+      "quote": "l The TCM commands the solenoid “OFF” and voltage remains low."
+    },
+    {
+      "sentence": "AU conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "AU conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l REFERENCE INFORMATION DTC 85 Undefined Ratio Error Circuit Description: TRANSMISSION SYSTEM (4L80-E) DTC 87 High Ratio Error Circuit Description: The control module calculates ratio based on the The control module calculates ratio based on the transmission input speed and output speed sensor transmission input speed and output speed sensor reading.",
+      "supported": true,
+      "quote": "l REFERENCE INFORMATION DTC 85 Undefined Ratio Error Circuit Description: TRANSMISSION SYSTEM (4L80-E) DTC 87 High Ratio Error Circuit Description: The control module calculates ratio based on the The control module calculates ratio based on the transmission input speed and output speed sensor transmission input speed and output speed sensor reading."
+    },
+    {
+      "sentence": "The control module compares the known readings.",
+      "supported": true,
+      "quote": "The control module compares the known readings."
+    },
+    {
+      "sentence": "The control module compares the known transmission ratio to the calculated ratio for the transmission ratio to the calculated ratio for the particular gear range selected.",
+      "supported": true,
+      "quote": "The control module compares the known transmission ratio to the calculated ratio for the transmission ratio to the calculated ratio for the particular gear range selected."
+    },
+    {
+      "sentence": "DTC 85 Will Set When: TP is greater than 25%.",
+      "supported": true,
+      "quote": "DTC 85 Will Set When: TP is greater than 25%."
+    },
+    {
+      "sentence": "l .",
+      "supported": true,
+      "quote": "l ."
+    },
+    {
+      "sentence": "Not in park neutral, or 4th gear.",
+      "supported": true,
+      "quote": "Not in park neutral, or 4th gear."
+    },
+    {
+      "sentence": ". Engine speed is greater than 300 rpm.",
+      "supported": true,
+      "quote": ". Engine speed is greater than 300 rpm."
+    },
+    {
+      "sentence": "Vehicle speed is greater than 7 mph (11 kph).",
+      "supported": true,
+      "quote": "Vehicle speed is greater than 7 mph (11 kph)."
+    },
+    {
+      "sentence": "l All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l DTC 86 Low Ratio Error Circuit Description: The control module calculates ratio based on the transmission input speed and output speed sensor readings.",
+      "supported": true,
+      "quote": "l DTC 86 Low Ratio Error Circuit Description: The control module calculates ratio based on the transmission input speed and output speed sensor readings."
+    },
+    {
+      "sentence": "The control module compares the known transmission ratio to the calculated ratio for the particular gear range selected.",
+      "supported": true,
+      "quote": "The control module compares the known transmission ratio to the calculated ratio for the particular gear range selected."
+    },
+    {
+      "sentence": "DTC 86 Will Set When: l Not in park, reverse, or neutral.",
+      "supported": true,
+      "quote": "DTC 86 Will Set When: l Not in park, reverse, or neutral."
+    },
+    {
+      "sentence": "l Engine speed greater than 300 rpm.",
+      "supported": true,
+      "quote": "l Engine speed greater than 300 rpm."
+    },
+    {
+      "sentence": "l TP greater than 25%.",
+      "supported": true,
+      "quote": "l TP greater than 25%."
+    },
+    {
+      "sentence": "l Vehicle speed is greater than 7 mph (11 kph).",
+      "supported": true,
+      "quote": "l Vehicle speed is greater than 7 mph (11 kph)."
+    },
+    {
+      "sentence": "l Trans gear ratio is less than 1.06 in first or second gear.",
+      "supported": true,
+      "quote": "l Trans gear ratio is less than 1.06 in first or second gear."
+    },
+    {
+      "sentence": "l All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "l All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "particular gear range selected.",
+      "supported": true,
+      "quote": "particular gear range selected."
+    },
+    {
+      "sentence": "DTC 87 Will Set When: TP greater than 25%.",
+      "supported": true,
+      "quote": "DTC 87 Will Set When: TP greater than 25%."
+    },
+    {
+      "sentence": "l Not in park, reverse, or neutral.",
+      "supported": true,
+      "quote": "l Not in park, reverse, or neutral."
+    },
+    {
+      "sentence": "l .",
+      "supported": true,
+      "quote": "l ."
+    },
+    {
+      "sentence": "Engine speed greater than 300 rpm.",
+      "supported": true,
+      "quote": "Engine speed greater than 300 rpm."
+    },
+    {
+      "sentence": ". Vehicle speed greater than 7 mph (11 kph).",
+      "supported": true,
+      "quote": ". Vehicle speed greater than 7 mph (11 kph)."
+    },
+    {
+      "sentence": "Transmission temperature is greater than l 68°F (20°C).",
+      "supported": true,
+      "quote": "Transmission temperature is greater than l 68°F (20°C)."
+    },
+    {
+      "sentence": "All conditions are met for 2 seconds.",
+      "supported": true,
+      "quote": "All conditions are met for 2 seconds."
+    },
+    {
+      "sentence": "l TRANSMISSION SYSTEM (4L80-E)",
+      "supported": true,
+      "quote": "l TRANSMISSION SYSTEM (4L80-E)"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "multi-0016",
+  "answer_sha256": "0398c9fa776cd9219930f1472bbb6fba6fd06b8b449f007e9af531ebecfa968d",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Wait 2 minutes and attempt winch operation again",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "b. Purpose of the Vehicle.M966, M966A1, M1036, and M1121 TOW carriers are used to mount and operate the TOW missile launcher system with armor protection for crew, TOW system components, and ammunition. The M1036 is equipped with a winch. This feature permits recovery operations of similar vehicles.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "W6000HMV",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: My truck has this fault: 23.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WINCH STOPS DURING NORMAL OPERATION.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The manual also mentions winch.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "What part number should I look up?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

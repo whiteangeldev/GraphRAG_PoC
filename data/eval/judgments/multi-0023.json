@@ -1,0 +1,34 @@
+{
+  "id": "multi-0023",
+  "answer_sha256": "0a0da6067b5aec5e892b24b2bd93bb9279d7236c980065619f1c4e4372e82fdc",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Start Test 89, DC volts. ALTERNATOR Page 2-218 Visual Incorrect OK? Wiring Alternator Regulator NO CONNECTIONS. YES starter. Visual INCORRECT WIRING ALTERNATOR REGULATOR REPLACE NO wire 6. YES Page 2-198 GO TO E5, Page 2-220 ALTERNATOR",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MFY-6701UT",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "ENGINE FAILS TO CRANK",
+      "supported": true,
+      "quote": "ENGINE FAILS TO CRANK"
+    }
+  ]
+}

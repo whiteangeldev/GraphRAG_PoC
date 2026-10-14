@@ -1,0 +1,34 @@
+{
+  "id": "relational-0022",
+  "answer_sha256": "ac3eca81bf70733e59a2ea684166b03a8a9e74a09e03cf80a5046d9fef27e3ec",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "Step 1. Ensure that operating controls are properly set",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5598104",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: For malfunction 30.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE, which parts-list item matches HEATER?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "procedure-0002",
+  "answer_sha256": "abf9cc116a6626567aa39669e0eda8ddc79e761199a23b79d33a7f2cf29b785c",
+  "judge": "quote",
+  "facts": [
+    {
+      "text": "2. Winch Wire Rope. .WARNING. Wear leather gloves when handling winch wire rope. Do not handle wire rope with bare hands. Broken wires cause injury. After each use, clean and lubricate winch wire rope. Clean entire wire rope with wire brush. Do not lubri- cate winch wire rope in dry, dusty",
+      "present": true,
+      "quote": "2. Winch Wire Rope. .WARNING. Wear leather gloves when handling winch wire rope. Do not handle wire rope with bare hands. Broken wires cause injury. After each use, clean and lubricate winch wire rope. Clean entire wire rope with wire brush. Do not lubri- cate winch wire rope in dry, dusty"
+    },
+    {
+      "text": "3. Pintle. Every 3,000 mi (4,827 km), or semi- a n n u a l l y, whichever occurs first, clean pintle with wire bush and lubricate rear plate fitting with seasonal grade OE. periodic changing. Change 1 G-15 NOTES",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "4. Steering System.",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2."
+    },
+    {
+      "sentence": "Winch Wire Rope.",
+      "supported": true,
+      "quote": "Winch Wire Rope."
+    },
+    {
+      "sentence": ".WARNING.",
+      "supported": true,
+      "quote": ".WARNING."
+    },
+    {
+      "sentence": "Wear leather gloves when handling winch wire rope.",
+      "supported": true,
+      "quote": "Wear leather gloves when handling winch wire rope."
+    },
+    {
+      "sentence": "Do not handle wire rope with bare hands.",
+      "supported": true,
+      "quote": "Do not handle wire rope with bare hands."
+    },
+    {
+      "sentence": "Broken wires cause injury.",
+      "supported": true,
+      "quote": "Broken wires cause injury."
+    },
+    {
+      "sentence": "After each use, clean and lubricate winch wire rope.",
+      "supported": true,
+      "quote": "After each use, clean and lubricate winch wire rope."
+    },
+    {
+      "sentence": "Clean entire wire rope with wire brush.",
+      "supported": true,
+      "quote": "Clean entire wire rope with wire brush."
+    },
+    {
+      "sentence": "Do not lubri- cate winch wire rope in dry, dusty",
+      "supported": true,
+      "quote": "Do not lubri- cate winch wire rope in dry, dusty"
+    }
+  ]
+}

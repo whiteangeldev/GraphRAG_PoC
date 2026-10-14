@@ -41,5 +41,5 @@ select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["src/graphrag_poc/models"]
+files = ["src/graphrag_poc/models", "src/graphrag_poc/ingest", "src/graphrag_poc/cases"]
 mypy_path = "src"

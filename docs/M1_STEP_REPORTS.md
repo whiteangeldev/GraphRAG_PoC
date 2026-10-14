@@ -6,8 +6,8 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 |---|---|
 | 1. Project skeleton and data contracts | Finished, 13 October 2026 |
 | 2. Corpus register | Finished, 13 October 2026 |
-| 3. Convert documents to node files | Not started |
-| 4. Synthetic service records | Not started |
+| 3. Convert documents to node files | Finished, 14 October 2026 |
+| 4. Synthetic service records | Finished, 14 October 2026 |
 | 5. Index passages and cases | Not started |
 | 6. Hybrid retrieval and cited answers | Not started |
 | 7. Demonstration interface | Not started |
@@ -46,4 +46,45 @@ Diagnostic flowchart pages in TM 9-2320-280-20-1 are graphics. Fault questions w
 
 The Japanese document is MLIT Public Notice attachment 別添52, 117 pages, with a text layer and character bounding boxes. It is an official notice, so under Copyright Act Article 13, item 2, it is not a copyrighted work.
 
-Conversion does not start until Sodick approves this register.
+Conversion does not start until Sodick approves this register. Approval was given on 14 October 2026.
+
+## Step 3 — Convert documents to node files
+
+Finished 14 October 2026. `make ingest` writes one JSONL file per approved PDF under `data/nodes/`. The six files hold 26,706 nodes.
+
+Each document goes through the same converter. Japanese text is normalized with NFKC first, so full-width digits and letters match the half-width forms. A node keeps the pdfplumber bounding box of every line it came from. Headers, contents leaders, and pages with no body text are boilerplate and are not retrievable. Procedure steps, warnings, and cautions are separate nodes. A warning or caution is bound to the step that follows it. Table rows carry headers and cells. Part rows use item, SMR code, NSN, CAGE, part number, description, usable-on code, and quantity. Parent, sibling, caution, and reference links point at node ids in the same file. `applies_to` records M998-series models and pump models stated in the passage.
+
+| File | Nodes | Steps | Cautions | Table rows |
+|---|---:|---:|---:|---:|
+| `tm280_10.jsonl` | 2,327 | 1,299 | 159 | 41 |
+| `tm280_20_2.jsonl` | 8,412 | 6,111 | 88 | 17 |
+| `tm280_20_1.jsonl` | 2,186 | 858 | 85 | 47 |
+| `tm280_24p_1.jsonl` | 10,398 | 59 | 0 | 8,213 |
+| `tm2815_34.jsonl` | 2,342 | 1,447 | 50 | 258 |
+| `mlit_b052.jsonl` | 1,041 | 49 | 0 | 0 |
+
+A parts row keeps the description and usable-on code that sit on the same line as the item number. Table 3-1 keeps a wrapped title on the malfunction row, and the model list follows the group printed in that table: the M998 series, winch models, armament carriers, or ambulances. Specification grids such as the belt-tension table are table rows. Spellings such as UGHT remain as they are in the PDF text layer. Flowchart pages in volume 1 stay boilerplate, as agreed at approval, because the flowchart artwork is not text.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| Validator accepts every file | Passed. Every node matches Appendix A. Parent, sibling, caution, and reference ids exist. Bound cautions are caution nodes. |
+| Every page has a node or is boilerplate | Passed. Pages with body text have an element on that page. Pages with no body text have a boilerplate node. |
+| Sample matches the source pages | Passed. Operator paragraph 2-32 keeps the dusty-area procedure and the 12 psi step. The oil-cooler task binds "Do not drain oil when engine is hot" to the disconnect step. Table 3-1 row "ENGINE FAILS TO CRANK" includes the neutral-lever test. Calibration row 150 / WOT includes 28 min. Parts row 5340012564517 keeps part 5596028. The Japanese file has a section for 適用範囲 with bounding boxes. |
+
+## Step 4 — Synthetic service records
+
+Finished 14 October 2026. `make generate-cases` reads `data/cases/rules.json` and writes `data/cases/cases.jsonl`.
+
+The rules file fixes the seed, the date range, the frequency range, the search-text order, and the part-description keywords. These manuals have no separate fault-code column, so the error code is the full Table 3-1 malfunction label, including a wrapped second line. The cause and the action are one step of that same row. The part number is a PART NUMBER whose description matches that malfunction. The model comes from the Table 3-1 group: series, winch, armament carrier, or ambulance.
+
+The file has 2,000 cases. Two runs with the same rules and node files produce the same file.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| Two runs match | Passed. A second generation equals the written `cases.jsonl`. |
+| At least 2,000 records | Passed. 2,000 records, `C-000001` through `C-002000`. |
+| Every error code and part number exists in the node files | Passed. Each error code is a Table 3-1 cell. Each part number is a PART NUMBER cell. |

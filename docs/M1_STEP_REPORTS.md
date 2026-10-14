@@ -11,7 +11,7 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 | 5. Index passages and cases | Finished, 14 October 2026 |
 | 6. Hybrid retrieval and cited answers | Finished, 14 October 2026 |
 | 7. Demonstration interface | Finished, 14 October 2026 |
-| 8. Evaluation set | Not started |
+| 8. Evaluation set | Finished, 14 October 2026 |
 | 9. Evaluation runner and baseline report | Not started |
 | 10. Reproduction package and milestone note | Not started |
 
@@ -132,3 +132,28 @@ The demo uses the same embedding model as the index, `sentence-transformers/para
 | Charging lookup in the browser | Passed. The page cites `tm280_10:table:3-1:2:r4`, page 281, and shows the battery-cable step. |
 | Oil-cooler procedure in the browser | Passed. The page shows the hot-oil warning before the disconnect step, and cites task 3-8 on page 32. |
 | Unknown code in the browser | Passed. The page refuses `99. ZZZNOTACODE FAILURE` and states the question that was searched. |
+
+## Step 8 — Evaluation set
+
+Finished 14 October 2026. `python -m graphrag_poc.eval` writes `data/eval/questions.jsonl` from the node files and checks it. Each record follows Appendix C: `slice`, `question`, `expected_action`, `gold`, `required_facts`, `forbidden_facts`, `turns`, and notes naming the author.
+
+The set has 157 questions. Everyday wording (`vocabulary: user`) is 85, more than half. Eleven questions are Japanese, taken from 別添52. Relational and multi-hop questions each cite at least two passages. Every required fact is a substring of one of its gold passages.
+
+| Slice | Count | Minimum |
+|---|---:|---:|
+| Relational or multi-hop | 50 | 50 |
+| Lookup | 35 | 30 |
+| Procedure | 22 | 20 |
+| Applicability | 22 | 20 |
+| Unanswerable | 16 | 15 |
+| Troubleshooting | 9 | remaining |
+| Follow-up | 3 | remaining |
+| Total | 157 | 150 |
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| Counts | Passed. The table above meets every minimum, and everyday wording is more than half. |
+| Every gold node id exists | Passed. |
+| Every required fact is in a gold passage | Passed. |

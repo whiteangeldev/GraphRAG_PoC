@@ -55,6 +55,7 @@ files = [
     "src/graphrag_poc/retrieve",
     "src/graphrag_poc/generate",
     "src/graphrag_poc/app",
+    "src/graphrag_poc/eval",
 ]
 mypy_path = "src"
 

@@ -1,12 +1,12 @@
 {
   "id": "multi-0001",
-  "answer_sha256": "d576c03ac24ba1c28feb288991ce1ff338d7c18736f0ecc229942eba27403357",
-  "judge": "quote",
+  "answer_sha256": "44adfdc8c337311d9c4f89073df3f01b6a497c5231bc298269d701c1983bd730",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
-      "present": true,
-      "quote": "Step 1. Check battery cable connections for looseness, damage, or corrosion"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "a. General. The vehicle electrical system is used to power the winch. It is recommended to have engine running while operating the winch so the alternator recharges the battery. Increased engine rpms can be maintained by use of the hand throttle. When engaging or disengaging the clutch, it may be necessary to rotate the drum by hand to align gears.",
@@ -21,54 +21,14 @@
   ],
   "claims": [
     {
-      "sentence": "4.",
-      "supported": true,
-      "quote": "4."
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER Step 1.",
-      "supported": true,
-      "quote": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER Step 1."
-    },
-    {
-      "sentence": "Check battery cable connections for looseness, damage, or corrosion.",
-      "supported": true,
-      "quote": "Check battery cable connections for looseness, damage, or corrosion."
-    },
-    {
-      "sentence": "Notify unit maintenance of any damage to battery cables.",
-      "supported": true,
-      "quote": "Notify unit maintenance of any damage to battery cables."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Check for broken or missing alternator belts.",
-      "supported": true,
-      "quote": "Check for broken or missing alternator belts."
-    },
-    {
-      "sentence": "Notify unit maintenance if alternator belts are broken or missing.",
-      "supported": true,
-      "quote": "Notify unit maintenance if alternator belts are broken or missing."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "The question is about tracing a malfunction through the alternator step to the parts list, but none of the given passages address this specific task.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

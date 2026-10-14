@@ -1,54 +1,24 @@
 {
   "id": "lookup-0024",
-  "answer_sha256": "997254b437a661226beaed72bca288dca4699f473c5c6bedd1c60e0e929b02f6",
-  "judge": "quote",
+  "answer_sha256": "be861c23071f4e3ee0d6bf0272a844f3238861eaa7fd4f451765f2198f7da230",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",
       "present": true,
-      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable"
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
     }
   ],
   "claims": [
     {
-      "sentence": "27.",
+      "sentence": "The first test or corrective action listed in the passage is: 27.",
       "supported": true,
       "quote": "27."
     },
     {
-      "sentence": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE Step 1.",
+      "sentence": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE.",
       "supported": true,
-      "quote": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE Step 1."
-    },
-    {
-      "sentence": "Check that left lighting or right lighting fuse is serviceable.",
-      "supported": true,
-      "quote": "Check that left lighting or right lighting fuse is serviceable."
-    },
-    {
-      "sentence": "Replace fuse if blown (para.",
-      "supported": true,
-      "quote": "Replace fuse if blown (para."
-    },
-    {
-      "sentence": "2-61).",
-      "supported": true,
-      "quote": "2-61)."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "quote": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "relational-0002",
   "answer_sha256": "605d723a0d964126d8592a22171af7250bc5fd072cad1b7ebe63e3d8be9d8d63",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check oil level for overfilling (Appendix G)",

@@ -1,7 +1,7 @@
 {
   "id": "multi-0006",
   "answer_sha256": "6647329b1b7e761c5645e7eaf4737d0932f4892ec053f9365b880c350411400d",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transmission dipstick is loose",

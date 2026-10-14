@@ -1,7 +1,7 @@
 {
   "id": "multi-0024",
   "answer_sha256": "4f43c2cbc6254b61c9abd085555ecdb41f2e9d8bf4b3539cfaaecf6bfa5d4edd",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check battery fluid level and check battery cable connections for looseness, damage, or corrosion",

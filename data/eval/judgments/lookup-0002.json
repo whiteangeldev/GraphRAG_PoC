@@ -1,74 +1,19 @@
 {
   "id": "lookup-0002",
-  "answer_sha256": "0d82d1c2c63c836ce386e20974e96de12cab528821549d65b4ac7cca89a149c1",
-  "judge": "quote",
+  "answer_sha256": "2ecda80de418dcc84cad7556dc9b7f2bafe32ac3f320d0e13588cc97a4795f59",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check oil level for overfilling (Appendix G)",
-      "present": true,
-      "quote": "Step 1. Check oil level for overfilling (Appendix G)"
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
-      "sentence": "5.",
-      "supported": true,
-      "quote": "5."
-    },
-    {
-      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1.",
-      "supported": true,
-      "quote": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1."
-    },
-    {
-      "sentence": "Check oil level for overfilling (Appendix G).",
-      "supported": true,
-      "quote": "Check oil level for overfilling (Appendix G)."
-    },
-    {
-      "sentence": "Notify unit maintenance if fluid level is high.",
-      "supported": true,
-      "quote": "Notify unit maintenance if fluid level is high."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Check for restricted air cleaner.",
-      "supported": true,
-      "quote": "Check for restricted air cleaner."
-    },
-    {
-      "sentence": "If emergency situation exists, clean air cleaner element (para.",
-      "supported": true,
-      "quote": "If emergency situation exists, clean air cleaner element (para."
-    },
-    {
-      "sentence": "3-15).",
-      "supported": true,
-      "quote": "3-15)."
-    },
-    {
-      "sentence": "If emergency situation does not exist, notify unit maintenance.",
-      "supported": true,
-      "quote": "If emergency situation does not exist, notify unit maintenance."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

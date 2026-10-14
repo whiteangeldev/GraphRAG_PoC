@@ -40,4 +40,7 @@ demo:
 eval: up
 	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
 	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
+	OPENAI_BASE_URL=$${OPENAI_BASE_URL:-http://127.0.0.1:8000/v1} \
+	GENERATION_MODEL=$${GENERATION_MODEL:-Qwen3-0.6B} \
+	JUDGE_MODEL=$${JUDGE_MODEL:-Qwen3-0.6B} \
 	$(PYTHON) -m graphrag_poc.eval --reproduce

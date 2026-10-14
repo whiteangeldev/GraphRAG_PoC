@@ -1,7 +1,7 @@
 {
   "id": "procedure-0016",
-  "answer_sha256": "2adb47d5594b2d20a6fd61e9552c85b875251f1de6ed1208c3dc265650ac8951",
-  "judge": "quote",
+  "answer_sha256": "29cb5bbc57ae79eb8defc46c2ee5573543050d629f6e94559047ffea42a85e57",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8).",
@@ -23,27 +23,22 @@
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8)."
     },
     {
-      "sentence": "Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8).",
-      "supported": true,
-      "quote": "Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8)."
+      "sentence": "Remove seven clamps (10), one cap (9), and three hoses (8) from fuel injection nozzles (6).",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "4.",
-      "supported": true,
-      "quote": "4."
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "Install clamp (7) on fuel return line (6) and fuel pickup line (4) and secure to fuel line clamp (8) with screw (5).",
-      "supported": true,
-      "quote": "Install clamp (7) on fuel return line (6) and fuel pickup line (4) and secure to fuel line clamp (8) with screw (5)."
-    },
-    {
-      "sentence": "Change 3",
-      "supported": true,
-      "quote": "Change 3"
+      "sentence": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

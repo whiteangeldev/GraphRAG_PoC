@@ -1,7 +1,7 @@
 {
   "id": "procedure-0005",
   "answer_sha256": "fa50a1ca3c9d4fbb11c39e480c245f16c2f86845b1226c0b22edec4c644fd1ba",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6).",
@@ -15,8 +15,8 @@
     },
     {
       "text": "2. Remove nut and washer assembly (7) and filter element (4) from stud (5) and air cleaner assembly(6).",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6)."
     },
     {
       "text": "WARNING",
@@ -28,12 +28,12 @@
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6)."
     },
     {
       "sentence": "Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6).",
-      "supported": true,
-      "quote": "Loosen bolt (8), and remove ring clamp (1), cover (2), and gasket (3) from air cleaner assembly (6)."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

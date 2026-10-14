@@ -49,9 +49,20 @@ The cached report was produced with:
 ```bash
 EMBEDDING_BACKEND=fastembed
 EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+GENERATION_MODEL=Qwen3-0.6B
+JUDGE_MODEL=Qwen3-0.6B
 ```
 
-`GENERATION_MODEL` and `JUDGE_MODEL` were empty. `make eval` uses those embedding defaults unless the variables are already set. A run passes when every metric stays within 0.02 of the cached report (2 percentage points for the share metrics, 0.02 for MRR).
+Start that model before `make eval`. With [llama.cpp](https://github.com/ggml-org/llama.cpp), using `Qwen3-0.6B-Q8_0.gguf` from `Qwen/Qwen3-0.6B-GGUF`:
+
+```bash
+llama-server -m Qwen3-0.6B-Q8_0.gguf --host 127.0.0.1 --port 8000 -c 8192 --alias Qwen3-0.6B -ngl 99
+```
+
+`make eval` uses those defaults unless the variables are already set. A run passes when every metric stays within 0.02 of the cached report (2 percentage points for the share metrics, 0.02 for MRR).
+
+The 20-question gold-passage sample for Sodick's review is [`docs/gold_review_sample.md`](docs/gold_review_sample.md). Every quoted passage is copied from the node file.
 
 ## Demo
 
@@ -61,7 +72,7 @@ make demo
 
 Open http://127.0.0.1:8080. The page shows the answer, each citation with document and page, and the fused ranking.
 
-The five-minute demonstration is four questions: one lookup, one procedure that includes the hot-oil caution, one relational question, and one refusal. The questions, the recorded answers, and what to say about each are in [`docs/demonstration.md`](docs/demonstration.md). Regenerate that file with:
+The five-minute demonstration is four questions: one lookup, one procedure that includes the hot-oil caution, one relational question, and one refusal. The recording is [`docs/m1-demonstration.mp4`](docs/m1-demonstration.mp4). The questions, the answers, and what to say about each are in [`docs/demonstration.md`](docs/demonstration.md). Regenerate that file with:
 
 ```bash
 python -m graphrag_poc.generate --demonstrate

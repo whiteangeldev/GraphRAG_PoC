@@ -1,12 +1,12 @@
 {
   "id": "procedure-0014",
   "answer_sha256": "9854a86157f9c82978554b6dcc745eb9758abc0412f81c3389131cd95e246f0f",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove fuel tank filler cap (1).",
-      "present": true,
-      "quote": "1. Remove fuel tank filler cap (1)."
+      "present": false,
+      "quote": ""
     },
     {
       "text": "1. Disconnect large vent line (4) from filler spout (5).",
@@ -27,13 +27,13 @@
   "claims": [
     {
       "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Remove fuel tank filler cap (1).",
-      "supported": true,
-      "quote": "Remove fuel tank filler cap (1)."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

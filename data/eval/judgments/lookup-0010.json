@@ -1,44 +1,24 @@
 {
   "id": "lookup-0010",
-  "answer_sha256": "bcffa19aed112233799a975987903b5192333b17a6bf41105469a800b23e52c9",
-  "judge": "quote",
+  "answer_sha256": "d292142a6c188c102537b402258a498018029f692bc5ab65f2da86176b42f8e4",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check operating controls for correct settings",
-      "present": true,
-      "quote": "Step 1. Check operating controls for correct settings"
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
-      "sentence": "9.",
-      "supported": true,
-      "quote": "9."
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE Step 1.",
-      "supported": true,
-      "quote": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE Step 1."
-    },
-    {
-      "sentence": "Check operating controls for correct settings.",
-      "supported": true,
-      "quote": "Check operating controls for correct settings."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "The question is about a specific test or corrective action related to a malfunction, but the information is not present in the given passages.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

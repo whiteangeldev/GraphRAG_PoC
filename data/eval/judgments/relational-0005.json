@@ -1,7 +1,7 @@
 {
   "id": "relational-0005",
   "answer_sha256": "d04b0fb223a1882664e878704b6f1824d51d9b4fd95c8eba62d7bb661b79a47c",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",

@@ -1,7 +1,7 @@
 {
   "id": "trouble-0001",
-  "answer_sha256": "0ceb2bec656d9c4890f34759c4756d97142b31cbca5171b8e730a349e32298d2",
-  "judge": "quote",
+  "answer_sha256": "60e3a61bfcb66ed4b7ec39d4e89d8c7e0a9b7895bdeb818e784fe6d8b3ec598e",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
@@ -12,13 +12,18 @@
   "claims": [
     {
       "sentence": "4.",
-      "supported": true,
-      "quote": "4."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER",
-      "supported": true,
-      "quote": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER"
+      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER — WHERE DO I START?",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "[tm280_10:2-30:note page 198]",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

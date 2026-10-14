@@ -1,7 +1,7 @@
 {
   "id": "trouble-0004",
-  "answer_sha256": "9a14d8514dacd299de2ef45a8f72f6cd80f7a5d4a9ae9fb501a0f649246cb763",
-  "judge": "quote",
+  "answer_sha256": "5af135c7bf3bb48028c71b9f1d4fcf4a55fffd145a4e6f1e2633955fdcc54497",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if fan is running",
@@ -12,13 +12,18 @@
   "claims": [
     {
       "sentence": "7.",
-      "supported": true,
-      "quote": "7."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE",
-      "supported": true,
-      "quote": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE"
+      "sentence": "Engine overheats according to engine coolant temperature gauge — where do I start?",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "[tm280_10:2-34:step-5:2 page 508]",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

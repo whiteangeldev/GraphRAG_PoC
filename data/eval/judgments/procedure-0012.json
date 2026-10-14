@@ -1,7 +1,7 @@
 {
   "id": "procedure-0012",
-  "answer_sha256": "780c9f4cc1acd764273cb27c50e5be7c7b41e8a0a994e88df5b8370fe19b0387",
-  "judge": "quote",
+  "answer_sha256": "5b7e879c42240206f53a89eebbc6fe415b8cceb9e10a6fe71f6014c2f4678282",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove vent line (2) from air cleaner fitting (1) and tee fitting (7).",
@@ -15,30 +15,30 @@
     },
     {
       "text": "2. Loosen clamp (3) and disconnect vent line (4) from fuel pump (6).",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Remove vent line (2) from air cleaner fitting (1) and tee fitting (7)."
     }
   ],
   "claims": [
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Remove vent line (2) from air cleaner fitting (1) and tee fitting (7)."
     },
     {
       "sentence": "Remove vent line (2) from air cleaner fitting (1) and tee fitting (7).",
       "supported": true,
-      "quote": "Remove vent line (2) from air cleaner fitting (1) and tee fitting (7)."
+      "quote": "1. Connect vent line (2) to tee fitting (7) and air cleaner fitting (1)."
     },
     {
-      "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Connect vent line (2) to tee fitting (7) and air cleaner fitting (1).",
-      "supported": true,
-      "quote": "Connect vent line (2) to tee fitting (7) and air cleaner fitting (1)."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

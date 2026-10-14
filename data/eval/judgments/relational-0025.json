@@ -1,7 +1,7 @@
 {
   "id": "relational-0025",
   "answer_sha256": "25be44950a16ebf1843c3d31160091a137b5008e3266402181226ae114a4f117",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",

@@ -1,7 +1,7 @@
 {
   "id": "applicability-0018",
-  "answer_sha256": "b196c46106e5a569e603ed9a9fabf5f845ed59dbfbdf390bca5365c738434037",
-  "judge": "quote",
+  "answer_sha256": "7685b9cf6048f8c02c215eee46015c79a58577be42f6dc21428053d8f33a7e78",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "M1044",
@@ -11,14 +11,9 @@
   ],
   "claims": [
     {
-      "sentence": "a.",
-      "supported": true,
-      "quote": "a."
-    },
-    {
-      "sentence": "Disassembly INITIAL SETUP: Applicable Models All vehicles except: M997A2, M1025A2, M1035A2, M1043A2, M1045A2, M1097A2, M1123 Tools General mechanic’s tool kit: automotive (Appendix B, Item 1)",
-      "supported": true,
-      "quote": "Disassembly INITIAL SETUP: Applicable Models All vehicles except: M997A2, M1025A2, M1035A2, M1043A2, M1045A2, M1097A2, M1123 Tools General mechanic’s tool kit: automotive (Appendix B, Item 1)"
+      "sentence": "The vehicle model named for the content is M1044.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

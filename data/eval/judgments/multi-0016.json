@@ -1,7 +1,7 @@
 {
   "id": "multi-0016",
   "answer_sha256": "0398c9fa776cd9219930f1472bbb6fba6fd06b8b449f007e9af531ebecfa968d",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Wait 2 minutes and attempt winch operation again",

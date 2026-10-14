@@ -1,44 +1,29 @@
 {
   "id": "procedure-0013",
-  "answer_sha256": "45f700db25b81796ad42f015a1823ac83d1739086d1a588fb8584cb7716fef9e",
-  "judge": "quote",
+  "answer_sha256": "efe53c99684041966beabcace01179193f67602cd7734f80613bd6827e93f071",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container.",
       "present": true,
-      "quote": "1. Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
+      "quote": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
     },
     {
       "text": "1. Insert pushrod (9) into cylinder block (10).",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
     },
     {
       "text": "2. Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container.",
       "present": true,
-      "quote": "2. Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container."
+      "quote": "Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container."
     }
   ],
   "claims": [
     {
-      "sentence": "1.",
-      "supported": true,
-      "quote": "1."
-    },
-    {
-      "sentence": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container.",
-      "supported": true,
-      "quote": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
-    },
-    {
-      "sentence": "2.",
-      "supported": true,
-      "quote": "2."
-    },
-    {
-      "sentence": "Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container.",
-      "supported": true,
-      "quote": "Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container."
+      "sentence": "None of the passages provide information about how to carry out the job.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "id": "multi-0009",
-  "answer_sha256": "bcffa19aed112233799a975987903b5192333b17a6bf41105469a800b23e52c9",
-  "judge": "quote",
+  "answer_sha256": "eb4b91cb9bb14e566a85f3365fb222800b641a0b838519f2519e930a2a0db7d8",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check operating controls for correct settings",
-      "present": true,
-      "quote": "Step 1. Check operating controls for correct settings"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "(5) Turn heater fan switch (6) \"ON\" to desired setting, \"HIGH\" OR “LOW.\"",
@@ -21,34 +21,14 @@
   ],
   "claims": [
     {
-      "sentence": "9.",
-      "supported": true,
-      "quote": "9."
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE Step 1.",
-      "supported": true,
-      "quote": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE Step 1."
-    },
-    {
-      "sentence": "Check operating controls for correct settings.",
-      "supported": true,
-      "quote": "Check operating controls for correct settings."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "The question is about a malfunction in a heater, but the passages discuss engine cooling systems, fuel systems, and heater operations.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

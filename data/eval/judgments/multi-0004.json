@@ -1,7 +1,7 @@
 {
   "id": "multi-0004",
   "answer_sha256": "f0fc19f7e48e85f27cfafa0d41a5805763ed13fc2970adb179e77972917e5579",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if fan is running",

@@ -1,7 +1,7 @@
 {
   "id": "lookup-0008",
-  "answer_sha256": "7b427e75eedcbe302b33dc097c13fd978723c4828684101b3800502047d96e45",
-  "judge": "quote",
+  "answer_sha256": "5b1b6a20d5dd5d85c059294c1887c182682eadc81485509627cd272aad2bcbee",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for low fluid level (para",
@@ -11,12 +11,12 @@
   ],
   "claims": [
     {
-      "sentence": "13.",
-      "supported": true,
-      "quote": "13."
+      "sentence": "None of the passages provide information about what malfunction 13.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "SLIPPAGE IN ALL RANGES",
+      "sentence": "SLIPPAGE IN ALL RANGES lists as the first test or corrective action.",
       "supported": true,
       "quote": "SLIPPAGE IN ALL RANGES"
     }

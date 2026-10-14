@@ -1,7 +1,7 @@
 {
   "id": "procedure-0019",
-  "answer_sha256": "a674af8430968351419280639cfdd1640d51b182890679299e32195b5f53c3f0",
-  "judge": "quote",
+  "answer_sha256": "217b546229f5f1f3affb8534bdeabe497a9564d8a06461b61b54009e706affe5",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Disconnect vent line (2) from fuel filler spout elbow (3).",
@@ -23,22 +23,12 @@
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Disconnect vent line (2) from fuel filler spout elbow (3)."
     },
     {
       "sentence": "Disconnect vent line (2) from fuel filler spout elbow (3).",
-      "supported": true,
-      "quote": "Disconnect vent line (2) from fuel filler spout elbow (3)."
-    },
-    {
-      "sentence": "7.",
-      "supported": true,
-      "quote": "7."
-    },
-    {
-      "sentence": "Disconnect vent line (10) from elbow (8) on fuel tank (9), cut vent line (10), and remove vent line",
-      "supported": true,
-      "quote": "Disconnect vent line (10) from elbow (8) on fuel tank (9), cut vent line (10), and remove vent line"
+      "supported": false,
+      "quote": ""
     }
   ]
 }

@@ -5,7 +5,7 @@ import sys
 
 from qdrant_client import QdrantClient
 
-from graphrag_poc.generate.answer import Answer, answer_from_passages
+from graphrag_poc.generate.answer import Answer, answer_from_passages, clip_for_model
 from graphrag_poc.index.client import make_client
 from graphrag_poc.index.embed import Embedder, build_embedder
 from graphrag_poc.retrieve.fusion import FusedHit
@@ -135,6 +135,7 @@ def _demonstrate() -> int:
         "Open the demo with `make demo`, then go to http://127.0.0.1:8080.",
         "Ask these four questions in order. About five minutes covers them.",
         "The page calls `ask_with_hits`, the same function that produced the answers below.",
+        "The recording of this page answering the four questions is `docs/m1-demonstration.mp4`.",
         "",
     ]
     for title, question in DEMONSTRATION:
@@ -184,13 +185,16 @@ def _model_answer(question: str, hits: list[FusedHit]) -> Answer:
     client = OpenAI(
         base_url=os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:8000/v1"),
         api_key=os.environ.get("OPENAI_API_KEY") or "not-needed",
-        timeout=120.0,
+        timeout=180.0,
     )
-    passages = "\n\n".join(f"[{hit.node_id} page {hit.page_start}]\n{hit.text}" for hit in fused)
+    passages = "\n\n".join(
+        f"[{hit.node_id} page {hit.page_start}]\n{clip_for_model(hit.text)}" for hit in fused
+    )
     response = client.chat.completions.create(
         model=os.environ["GENERATION_MODEL"],
         temperature=grounded.temperature,
         seed=grounded.seed,
+        extra_body={"chat_template_kwargs": {"enable_thinking": False}},
         messages=[
             {
                 "role": "system",

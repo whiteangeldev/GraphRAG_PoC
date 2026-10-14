@@ -1,12 +1,12 @@
 {
   "id": "procedure-0009",
-  "answer_sha256": "1617e0eed7eb90429559a0ffd5f6205ffe05217ef1d1c138aa9da571e83cf1f7",
-  "judge": "quote",
+  "answer_sha256": "ac86445459d4338c012f3e15665baaa00804135aaa972e175eaa989e640e5445",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
-      "present": true,
-      "quote": "1. Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6)."
+      "present": false,
+      "quote": ""
     },
     {
       "text": "1. Connect hose (5) to gauge (4).",
@@ -22,33 +22,33 @@
   "claims": [
     {
       "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
-      "supported": true,
-      "quote": "Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6)."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "2.",
-      "supported": true,
-      "quote": "2."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Position gauge (4) and gasket (3) behind dash panel (6) and secure to bezel (1) with two screws (2).",
-      "supported": true,
-      "quote": "Position gauge (4) and gasket (3) behind dash panel (6) and secure to bezel (1) with two screws (2)."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "2 1 6 5 4 3 FOLLOW-ON TASK: Start engine (TM 9-2320-280-10) and check operation of air restriction gauge.",
-      "supported": true,
-      "quote": "2 1 6 5 4 3 FOLLOW-ON TASK: Start engine (TM 9-2320-280-10) and check operation of air restriction gauge."
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "3-30 Change 3",
-      "supported": true,
-      "quote": "3-30 Change 3"
+      "sentence": "Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7).",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

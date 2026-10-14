@@ -1,7 +1,7 @@
 {
   "id": "relational-0019",
   "answer_sha256": "ed89a41d8bd616b0d939d09381b579037eca607485036c9c3f15fff4d026fd62",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",

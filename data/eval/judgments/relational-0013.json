@@ -1,7 +1,7 @@
 {
   "id": "relational-0013",
   "answer_sha256": "e5f2137b45a71cce324cd670f33aebe6613344dcf21b95463dda7317cbf9a90a",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check tire air pressure",

@@ -1,7 +1,7 @@
 {
   "id": "relational-0010",
   "answer_sha256": "e919d3df8f2c3396a618c5b060344f1b81a190bd189be9d94574f5b7c417808c",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for proper shifting sequence",

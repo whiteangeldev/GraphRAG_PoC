@@ -1,12 +1,12 @@
 {
   "id": "multi-0013",
-  "answer_sha256": "b23ff3f207cf2078a77757ebfa54df29c977dd5d0fe36a2ba651d54aa0d378c7",
-  "judge": "quote",
+  "answer_sha256": "86ba3d2232f2f073fbb6dffaea0cff44e0f6e9465259bfbb8860cc10e0f0a154",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check tire air pressure",
-      "present": true,
-      "quote": "Step 1. Check tire air pressure"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "(6) Refer to para. 3-22 for tire chain installation and operation.",
@@ -21,39 +21,14 @@
   ],
   "claims": [
     {
-      "sentence": "20.",
-      "supported": true,
-      "quote": "20."
+      "sentence": "None of the passages provide information about the \"Trace malfunction 20.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR Step 1.",
-      "supported": true,
-      "quote": "EXCESSIVE OR UNEVEN TIRE WEAR Step 1."
-    },
-    {
-      "sentence": "Check tire air pressure.",
-      "supported": true,
-      "quote": "Check tire air pressure."
-    },
-    {
-      "sentence": "Inflate or deflate tires to correct air pressure.",
-      "supported": true,
-      "quote": "Inflate or deflate tires to correct air pressure."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR through the tire step to the parts list.\" Therefore, the answer cannot be determined from the given passages.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "lookup-0030",
-  "answer_sha256": "18669c3ae26a5f8945f6b33f9bb8380e2559581cf33653948b53305f1e518548",
-  "judge": "quote",
+  "answer_sha256": "a83329c5ddd6b589a7c66fa29287caae42db792a77867aae7c8b5b3c832331e6",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",
@@ -11,14 +11,14 @@
   ],
   "claims": [
     {
-      "sentence": "3.",
-      "supported": true,
-      "quote": "3."
+      "sentence": "None of the passages provide information about what malfunction 3.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "ENGINE CRANKS BUT DOES NOT START",
-      "supported": true,
-      "quote": "ENGINE CRANKS BUT DOES NOT START"
+      "sentence": "ENGINE CRANKS BUT DOES NOT START lists as the first test or corrective action.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

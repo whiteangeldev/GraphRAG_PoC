@@ -1,7 +1,7 @@
 {
   "id": "multi-0008",
   "answer_sha256": "5e0bfafc3953ada12f2972f12a2f2ab6a4a6b0eeabcfe5b120db0f0d67417526",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for low oil level (para",

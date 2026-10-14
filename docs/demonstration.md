@@ -4,6 +4,7 @@ Recorded from the M1 baseline (`docs/baseline_report.md`).
 Open the demo with `make demo`, then go to http://127.0.0.1:8080.
 Ask these four questions in order. About five minutes covers them.
 The page calls `ask_with_hits`, the same function that produced the answers below.
+The recording of this page answering the four questions is `docs/m1-demonstration.mp4`.
 
 ## Lookup
 

@@ -1,12 +1,12 @@
 {
   "id": "procedure-0004",
-  "answer_sha256": "bae9fe93eb07ac782042d642c84726baa76060e4c3115c3078decabad175b15e",
-  "judge": "quote",
+  "answer_sha256": "fdba02763a58a3cca1d3cfd2192668b6c40fec09b717329e810b5b32bae78ec0",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7).",
-      "present": true,
-      "quote": "1. Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7)."
+      "present": false,
+      "quote": ""
     },
     {
       "text": "1. Connect CDR valve oil fill tube hose (4) to oil fill tube (6) and tighten clamp (5).",
@@ -22,63 +22,33 @@
   "claims": [
     {
       "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7).",
-      "supported": true,
-      "quote": "Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7)."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "2.",
-      "supported": true,
-      "quote": "2."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "Connect to CDR valve intake manifold hose (1) to intake manifold (7) and tighten clamp (2).",
-      "supported": true,
-      "quote": "Connect to CDR valve intake manifold hose (1) to intake manifold (7) and tighten clamp (2)."
+      "sentence": "Loosen clamp (6) on CDR valve intake manifold hose (5).",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "FOLLOW-ON TASKS: Install CDR valve and bracket (para.",
-      "supported": true,
-      "quote": "FOLLOW-ON TASKS: Install CDR valve and bracket (para."
+      "sentence": "4.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "3-9).",
-      "supported": true,
-      "quote": "3-9)."
-    },
-    {
-      "sentence": "Lower and secure hood (TM 9-2320-280-10).",
-      "supported": true,
-      "quote": "Lower and secure hood (TM 9-2320-280-10)."
-    },
-    {
-      "sentence": "Install engine access cover (para.",
-      "supported": true,
-      "quote": "Install engine access cover (para."
-    },
-    {
-      "sentence": "10-15).",
-      "supported": true,
-      "quote": "10-15)."
-    },
-    {
-      "sentence": "3-18",
-      "supported": true,
-      "quote": "3-18"
-    },
-    {
-      "sentence": "3.",
-      "supported": true,
-      "quote": "3."
-    },
-    {
-      "sentence": "Loosen clamp (5) and disconnect CDR valve oil fill tube hose (4) from oil fill tube (6).",
-      "supported": true,
-      "quote": "Loosen clamp (5) and disconnect CDR valve oil fill tube hose (4) from oil fill tube (6)."
+      "sentence": "Connect CDR valve (9) to intake manifold hose (5) and tighten clamp (6).",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

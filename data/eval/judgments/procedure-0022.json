@@ -1,12 +1,12 @@
 {
   "id": "procedure-0022",
-  "answer_sha256": "512b8733badb09d89e40fa45742b149ebffe4eec52617dca844b1dfa025cde21",
-  "judge": "quote",
+  "answer_sha256": "1df88d8f95143cbb33c7fe624deee486ce9cb407b9d374183aa52c51cd650d69",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
-      "present": true,
-      "quote": "1. Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6)."
+      "present": false,
+      "quote": ""
     },
     {
       "text": "1. Install four insulators (8) on front and rear hangers (9) and (7) (if removed.)",
@@ -22,43 +22,33 @@
   "claims": [
     {
       "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
-      "supported": true,
-      "quote": "Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6)."
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove three nuts (6), lockwashers (5), washers (4), capscrews (1), washers (2), and idler pulleys.",
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "3.",
-      "supported": true,
-      "quote": "3."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "Install two rear hangers (7) on supports (6) with screws (5), washers (4), and nuts (3).",
-      "supported": true,
-      "quote": "Install two rear hangers (7) on supports (6) with screws (5), washers (4), and nuts (3)."
-    },
-    {
-      "sentence": "Tighten nuts (3) to 37 lb-ft (50 N m).",
-      "supported": true,
-      "quote": "Tighten nuts (3) to 37 lb-ft (50 N m)."
-    },
-    {
-      "sentence": "• FOLLOW-ON TASK: Install fuel tank (para.",
-      "supported": true,
-      "quote": "• FOLLOW-ON TASK: Install fuel tank (para."
-    },
-    {
-      "sentence": "3-24).",
-      "supported": true,
-      "quote": "3-24)."
-    },
-    {
-      "sentence": "Change 3 3-59",
-      "supported": true,
-      "quote": "Change 3 3-59"
+      "sentence": "Remove two nuts (6), washers (4), capscrews (3), washers (4), and idler arm (7) from frame (5).",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

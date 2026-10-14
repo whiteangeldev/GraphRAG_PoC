@@ -1,7 +1,7 @@
 {
   "id": "procedure-0017",
   "answer_sha256": "09e29a525af311ad83366f2db0d4516d517ad36d866d0186e42dd8fbb67717ec",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove clip (9) securing fuel tank vent line (3) to vent line (6).",
@@ -15,20 +15,20 @@
     },
     {
       "text": "2. Remove two capscrews (2) securing clamps (1) and (7) and vent lines (3) and (6) to brackets (8).",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Remove clip (9) securing fuel tank vent line (3) to vent line (6)."
     }
   ],
   "claims": [
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Remove clip (9) securing fuel tank vent line (3) to vent line (6)."
     },
     {
       "sentence": "Remove clip (9) securing fuel tank vent line (3) to vent line (6).",
-      "supported": true,
-      "quote": "Remove clip (9) securing fuel tank vent line (3) to vent line (6)."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

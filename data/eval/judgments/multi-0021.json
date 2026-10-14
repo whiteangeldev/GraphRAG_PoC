@@ -1,12 +1,12 @@
 {
   "id": "multi-0021",
-  "answer_sha256": "6521923d0023bfd62afe2d6d88c1020b52cb5521e7572ad6e51f03a7a837158a",
-  "judge": "quote",
+  "answer_sha256": "b8b7b39b67cd9e899516fe67f5227e3b7dfde54113626777ecc89c9efc4b4979",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Perform malfunction 26, steps 1 through 3",
-      "present": true,
-      "quote": "Step 1. Perform malfunction 26, steps 1 through 3"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
@@ -22,78 +22,93 @@
   "claims": [
     {
       "sentence": "29.",
-      "supported": true,
-      "quote": "29."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "SPOTUGHT FAILS TO ILLUMINATE Step 1.",
-      "supported": true,
-      "quote": "SPOTUGHT FAILS TO ILLUMINATE Step 1."
+      "sentence": "SPOTUGHT FAILS TO ILLUMINATE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "28.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Perform malfunction 26, steps 1 through 3.",
-      "supported": true,
-      "quote": "Perform malfunction 26, steps 1 through 3."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Check if ceiling lights illuminate.",
-      "supported": true,
-      "quote": "Check if ceiling lights illuminate."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "If dome lamps illuminate, check to ensure spotlight switch is in proper position.",
-      "supported": true,
-      "quote": "If dome lamps illuminate, check to ensure spotlight switch is in proper position."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Place spotlight switch in proper position (para.",
-      "supported": true,
-      "quote": "Place spotlight switch in proper position (para."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "2-61).",
-      "supported": true,
-      "quote": "2-61)."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Inspect bulb for serviceability.",
-      "supported": true,
-      "quote": "Inspect bulb for serviceability."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Replace bulb with known serviceable bulb (para.",
-      "supported": true,
-      "quote": "Replace bulb with known serviceable bulb (para."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "3-28).",
-      "supported": true,
-      "quote": "3-28)."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Step 4.",
-      "supported": true,
-      "quote": "Step 4."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

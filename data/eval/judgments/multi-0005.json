@@ -1,12 +1,12 @@
 {
   "id": "multi-0005",
-  "answer_sha256": "78e8f2208b090a21cca2ac1658b1edeaa8aedaf4e145897213fc21fabfd5a6db",
-  "judge": "quote",
+  "answer_sha256": "13195ed89b305666e4c84e3c547df2a0ab87e4deac3ba44700d49f86fc202f82",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
       "present": true,
-      "quote": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles"
+      "quote": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles."
     },
     {
       "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
@@ -21,39 +21,14 @@
   ],
   "claims": [
     {
-      "sentence": "10.",
-      "supported": true,
-      "quote": "10."
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT Step 1.",
-      "supported": true,
-      "quote": "NO RESPONSE TO SHIFT LEVER MOVEMENT Step 1."
-    },
-    {
-      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
-      "supported": true,
-      "quote": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles."
-    },
-    {
-      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
-      "supported": true,
-      "quote": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "The question is about a malfunction in the transmission, but the passages do not mention any specific malfunction related to the transmission or the shift lever movement.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

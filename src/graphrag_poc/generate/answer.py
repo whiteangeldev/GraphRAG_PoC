@@ -9,6 +9,7 @@ from graphrag_poc.index.tokenize import tokenize
 from graphrag_poc.retrieve.fusion import FusedHit
 
 _LABEL = re.compile(r"\d+\.\s+[A-Z][A-Z0-9 ,'/().°-]{8,}")
+MODEL_PASSAGE_LIMIT = 1500
 _STEP_NUMBER = re.compile(r"^(?:step\s+)?(\d+)\b", re.IGNORECASE)
 _STEP_LETTER = re.compile(r"^([a-z])\.\s", re.IGNORECASE)
 
@@ -29,6 +30,14 @@ class Answer:
     searched: str
     temperature: float
     seed: int
+
+
+def clip_for_model(text: str, limit: int = MODEL_PASSAGE_LIMIT) -> str:
+    """Keep the start of a passage for a model prompt. The slice stays an exact substring."""
+
+    if len(text) <= limit:
+        return text
+    return text[:limit]
 
 
 def answer_from_passages(question: str, hits: list[FusedHit]) -> Answer:

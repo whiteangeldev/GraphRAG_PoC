@@ -1,12 +1,12 @@
 {
   "id": "multi-0017",
-  "answer_sha256": "420656c657eafff179aa9a4074c55fb1b75a897b40292f8d2dc3eb3b5ed79db1",
-  "judge": "quote",
+  "answer_sha256": "e351f420a6e6973ea94eda71c52c8524c49fe39ef4ac351fb71f5d852c33cbb8",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if brake handle is in proper position (para",
-      "present": true,
-      "quote": "Step 1. Check to see if brake handle is in proper position (para"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "(4) Use weapon station brake handle (4) and turret positioning handle (1) to rotate weapon station (9) to the desired azimuth.",
@@ -21,59 +21,9 @@
   ],
   "claims": [
     {
-      "sentence": "24.",
-      "supported": true,
-      "quote": "24."
-    },
-    {
-      "sentence": "WEAPON STATION WILL NOT ROTATE OR LOCK Step 1.",
-      "supported": true,
-      "quote": "WEAPON STATION WILL NOT ROTATE OR LOCK Step 1."
-    },
-    {
-      "sentence": "Check to see if brake handle is in proper position (para.",
-      "supported": true,
-      "quote": "Check to see if brake handle is in proper position (para."
-    },
-    {
-      "sentence": "2-54).",
-      "supported": true,
-      "quote": "2-54)."
-    },
-    {
-      "sentence": "Place brake handle in proper position.",
-      "supported": true,
-      "quote": "Place brake handle in proper position."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Check for obstructions that may be restricting weapon station movement.",
-      "supported": true,
-      "quote": "Check for obstructions that may be restricting weapon station movement."
-    },
-    {
-      "sentence": "Remove obstructions.",
-      "supported": true,
-      "quote": "Remove obstructions."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "None of the passages provide information about the malfunction of the weapon station.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

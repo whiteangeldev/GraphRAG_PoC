@@ -1,7 +1,7 @@
 {
   "id": "lookup-0025",
   "answer_sha256": "80d2829fb01f980b9acd11563aa99293a78969aeafd7e0718d7a5af34e8773ac",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Inspect bulb for serviceability",

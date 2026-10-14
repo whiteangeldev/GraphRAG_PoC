@@ -1,89 +1,24 @@
 {
   "id": "lookup-0020",
-  "answer_sha256": "6ce3687550f6851052e05b6eba374dc00bb50d336453388c511cf0de1481ab39",
-  "judge": "quote",
+  "answer_sha256": "1b1a6f4531656f100ff3d724685b7645366185a53e86c4a48620dfbd3616b404",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Wait 2 minutes and attempt winch operation again",
-      "present": true,
-      "quote": "Step 1. Wait 2 minutes and attempt winch operation again"
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
-      "sentence": "23.",
-      "supported": true,
-      "quote": "23."
+      "sentence": "None of the passages provide information about the first test or corrective action listed in the malfunction 23.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "WINCH STOPS DURING NORMAL OPERATION Step 1.",
-      "supported": true,
-      "quote": "WINCH STOPS DURING NORMAL OPERATION Step 1."
-    },
-    {
-      "sentence": "Wait 2 minutes and attempt winch operation again.",
-      "supported": true,
-      "quote": "Wait 2 minutes and attempt winch operation again."
-    },
-    {
-      "sentence": "Refer to para.",
-      "supported": true,
-      "quote": "Refer to para."
-    },
-    {
-      "sentence": "2-26 for winch operation.",
-      "supported": true,
-      "quote": "2-26 for winch operation."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Check to see if clutch lever is engaged (para.",
-      "supported": true,
-      "quote": "Check to see if clutch lever is engaged (para."
-    },
-    {
-      "sentence": "2-26).",
-      "supported": true,
-      "quote": "2-26)."
-    },
-    {
-      "sentence": "If not, engage clutch lever.",
-      "supported": true,
-      "quote": "If not, engage clutch lever."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Check to see if voltmeter is in red or yellow (engine not running).",
-      "supported": true,
-      "quote": "Check to see if voltmeter is in red or yellow (engine not running)."
-    },
-    {
-      "sentence": "Start engine and charge batteries.",
-      "supported": true,
-      "quote": "Start engine and charge batteries."
-    },
-    {
-      "sentence": "Step 4.",
-      "supported": true,
-      "quote": "Step 4."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "WINCH STOPS DURING NORMAL OPERATION.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

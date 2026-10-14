@@ -1,12 +1,12 @@
 {
   "id": "multi-0007",
-  "answer_sha256": "b404b64042038eeea42231c02fab5ad1da76dddaba54565e4a87c8c22936ca76",
-  "judge": "quote",
+  "answer_sha256": "693261bfc3b02c3a70160d4b825f8ca4032fd719057605c9df85b3ef6d81b566",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for low fluid level (para",
-      "present": true,
-      "quote": "Step 1. Check for low fluid level (para"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
@@ -21,44 +21,9 @@
   ],
   "claims": [
     {
-      "sentence": "13.",
-      "supported": true,
-      "quote": "13."
-    },
-    {
-      "sentence": "SLIPPAGE IN ALL RANGES Step 1.",
-      "supported": true,
-      "quote": "SLIPPAGE IN ALL RANGES Step 1."
-    },
-    {
-      "sentence": "Check for low fluid level (para.",
-      "supported": true,
-      "quote": "Check for low fluid level (para."
-    },
-    {
-      "sentence": "3-19).",
-      "supported": true,
-      "quote": "3-19)."
-    },
-    {
-      "sentence": "Add fluid (Appendix G).",
-      "supported": true,
-      "quote": "Add fluid (Appendix G)."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "None of the passages provide information about SLIPPAGE IN ALL RANGES and its relation to the transmission step to the parts list.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

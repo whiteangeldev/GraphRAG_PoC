@@ -1,7 +1,7 @@
 {
   "id": "procedure-0021",
-  "answer_sha256": "cd3c8aa821155ed821de61f56157213dacedef8fb491e7b66bff9103d16d1cff",
-  "judge": "quote",
+  "answer_sha256": "12ffacd5f02dc328e43bd9c62ab8dc3e355200893c9a0d738469e418f3848099",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2).",
@@ -20,45 +20,20 @@
     },
     {
       "text": "WARNING Diesel fuel is highly flammable. Do not perform this procedure near fire",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2)."
     }
   ],
   "claims": [
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2)."
     },
     {
       "sentence": "Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2).",
       "supported": true,
-      "quote": "Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2)."
-    },
-    {
-      "sentence": "1.",
-      "supported": true,
-      "quote": "1."
-    },
-    {
-      "sentence": "Install hose (1) on filler spout (2) and slide on filler spout (2) until the hose (1) clears fuel tank (5).",
-      "supported": true,
-      "quote": "Install hose (1) on filler spout (2) and slide on filler spout (2) until the hose (1) clears fuel tank (5)."
-    },
-    {
-      "sentence": "2.",
-      "supported": true,
-      "quote": "2."
-    },
-    {
-      "sentence": "Slide hose (1) on to filler spout (2) until disconnected from fuel tank (5).",
-      "supported": true,
-      "quote": "Slide hose (1) on to filler spout (2) until disconnected from fuel tank (5)."
-    },
-    {
-      "sentence": "Remove hose (1) from filler spout (2).",
-      "supported": true,
-      "quote": "Remove hose (1) from filler spout (2)."
+      "quote": "1. Loosen clamps (4) and (3) securing hose (1) to fuel tank (5) and to filler spout (2)."
     }
   ]
 }

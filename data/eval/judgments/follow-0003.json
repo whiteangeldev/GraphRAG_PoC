@@ -1,7 +1,7 @@
 {
   "id": "follow-0003",
-  "answer_sha256": "c16872cd63120a11c563488fc77736bb498b1718273db395b640454e09dee309",
-  "judge": "quote",
+  "answer_sha256": "4a4c88b64ce23be824128b8c9fdde4458ac0bd282b2c1b087bf8d40986652760",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "M998",
@@ -11,14 +11,9 @@
   ],
   "claims": [
     {
-      "sentence": "a.",
-      "supported": true,
-      "quote": "a."
-    },
-    {
-      "sentence": "This section provides operating instructions for components found on M966, M966A1, M1036, M1045, M1045A1, M1045A2, M1046, M1046A1, and M1121 TOW carriers and on M1025, M1025A1, M1025A2, M1026, M1026A1, M1043, M1043A1, M1043A2, M1044, and M1044A1 armament carriers.",
-      "supported": true,
-      "quote": "This section provides operating instructions for components found on M966, M966A1, M1036, M1045, M1045A1, M1045A2, M1046, M1046A1, and M1121 TOW carriers and on M1025, M1025A1, M1025A2, M1026, M1026A1, M1043, M1043A1, M1043A2, M1044, and M1044A1 armament carriers."
+      "sentence": "None of the passages mention the M1123.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

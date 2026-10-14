@@ -1,12 +1,12 @@
 {
   "id": "multi-0003",
-  "answer_sha256": "d52d516a7fb1eeeb94dfa861a87ff6b4b6bac9b1c41a08a5e8f6adc1b739d784",
-  "judge": "quote",
+  "answer_sha256": "49f35cb57844846f282775f8c58997ee95e6f76ba2fd3116284407caa81d63f9",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for water in fuel filter by draining",
-      "present": true,
-      "quote": "Step 1. Check for water in fuel filter by draining"
+      "present": false,
+      "quote": ""
     },
     {
       "text": "(1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.",
@@ -21,69 +21,9 @@
   ],
   "claims": [
     {
-      "sentence": "6.",
-      "supported": true,
-      "quote": "6."
-    },
-    {
-      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1.",
-      "supported": true,
-      "quote": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1."
-    },
-    {
-      "sentence": "Check for water in fuel filter by draining.",
-      "supported": true,
-      "quote": "Check for water in fuel filter by draining."
-    },
-    {
-      "sentence": "Drain fuel filter (para.",
-      "supported": true,
-      "quote": "Drain fuel filter (para."
-    },
-    {
-      "sentence": "3-10).",
-      "supported": true,
-      "quote": "3-10)."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Check for restricted air cleaner.",
-      "supported": true,
-      "quote": "Check for restricted air cleaner."
-    },
-    {
-      "sentence": "If emergency situation exists, clean air cleaner element (para.",
-      "supported": true,
-      "quote": "If emergency situation exists, clean air cleaner element (para."
-    },
-    {
-      "sentence": "3-15).",
-      "supported": true,
-      "quote": "3-15)."
-    },
-    {
-      "sentence": "If emergency situation does not exist, notify unit maintenance.",
-      "supported": true,
-      "quote": "If emergency situation does not exist, notify unit maintenance."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

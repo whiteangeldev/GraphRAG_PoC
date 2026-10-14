@@ -1,7 +1,7 @@
 {
   "id": "trouble-0002",
-  "answer_sha256": "2ed5b832c2c37c768484cbf5fbba1c61458e6e839062e0051a01c4041d311435",
-  "judge": "quote",
+  "answer_sha256": "5ed38a5d1f1941ce5d324da270460a02b446c690b6517a3835108a378151d718",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check oil level for overfilling (Appendix G)",
@@ -11,14 +11,9 @@
   ],
   "claims": [
     {
-      "sentence": "5.",
-      "supported": true,
-      "quote": "5."
-    },
-    {
-      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C)",
-      "supported": true,
-      "quote": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C)"
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

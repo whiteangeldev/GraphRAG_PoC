@@ -1,7 +1,7 @@
 {
   "id": "procedure-0020",
-  "answer_sha256": "cb0ca401b3734629bef90045cf63fdfe649ecb4bb6b21e6f24fb572500fb9b2b",
-  "judge": "quote",
+  "answer_sha256": "1a0746d97abf83492ffae0b23605f82c55db5f7c185ed59bfcb3d86adcd50094",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3).",
@@ -10,45 +10,45 @@
     },
     {
       "text": "1. Coat grommet (6) with lubricating oil.",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3)."
     },
     {
       "text": "2. Remove two nuts (4), washers (5), and engine oil filler tube (3) from timing chain cover (7) and studs (8).",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "1. Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3)."
     }
   ],
   "claims": [
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3)."
     },
     {
       "sentence": "Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3).",
       "supported": true,
-      "quote": "Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3)."
+      "quote": "1. Loosen clamp (2) and disconnect CDR valve hose (1) from engine oil filler tube (3)."
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Loosen clamp (5) and disconnect CDR valve oil fill tube hose (4) from oil fill tube (6).",
+      "supported": true,
+      "quote": "3. Connect CDR valve hose (1) to engine oil filler tube (3) and tighten clamp (2)."
     },
     {
       "sentence": "3.",
-      "supported": true,
-      "quote": "3."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Connect CDR valve hose (1) to engine oil filler tube (3) and tighten clamp (2).",
-      "supported": true,
-      "quote": "Connect CDR valve hose (1) to engine oil filler tube (3) and tighten clamp (2)."
-    },
-    {
-      "sentence": "FOLLOW-ON TASK: Lower and secure hood (TM 9-2320-280-10).",
-      "supported": true,
-      "quote": "FOLLOW-ON TASK: Lower and secure hood (TM 9-2320-280-10)."
-    },
-    {
-      "sentence": "3-4",
-      "supported": true,
-      "quote": "3-4"
+      "supported": false,
+      "quote": ""
     }
   ]
 }

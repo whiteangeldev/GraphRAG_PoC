@@ -1,12 +1,12 @@
 {
   "id": "multi-0019",
-  "answer_sha256": "997254b437a661226beaed72bca288dca4699f473c5c6bedd1c60e0e929b02f6",
-  "judge": "quote",
+  "answer_sha256": "ed31e4b64a1d71ab300398a38e654a448a2150cf898a94165ebc6bc65d7fc1b2",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",
       "present": true,
-      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable"
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
     },
     {
       "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
@@ -21,44 +21,9 @@
   ],
   "claims": [
     {
-      "sentence": "27.",
-      "supported": true,
-      "quote": "27."
-    },
-    {
-      "sentence": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE Step 1.",
-      "supported": true,
-      "quote": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE Step 1."
-    },
-    {
-      "sentence": "Check that left lighting or right lighting fuse is serviceable.",
-      "supported": true,
-      "quote": "Check that left lighting or right lighting fuse is serviceable."
-    },
-    {
-      "sentence": "Replace fuse if blown (para.",
-      "supported": true,
-      "quote": "Replace fuse if blown (para."
-    },
-    {
-      "sentence": "2-61).",
-      "supported": true,
-      "quote": "2-61)."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

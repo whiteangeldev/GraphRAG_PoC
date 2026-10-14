@@ -1,7 +1,7 @@
 {
   "id": "procedure-0006",
   "answer_sha256": "6b1209b124689bdcad6b682c879448db0cb914dd26b19c0c6f45c20113e42fff",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow). Move air stream up and down length of pleats until you can not see dust being blown out.",
@@ -28,17 +28,17 @@
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow). Move air stream up and down length of pleats until you can not see dust being blown out."
     },
     {
       "sentence": "Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow).",
       "supported": true,
-      "quote": "Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow)."
+      "quote": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow)."
     },
     {
       "sentence": "Move air stream up and down length of pleats until you can not see dust being blown out.",
-      "supported": true,
-      "quote": "Move air stream up and down length of pleats until you can not see dust being blown out."
+      "supported": false,
+      "quote": ""
     }
   ]
 }

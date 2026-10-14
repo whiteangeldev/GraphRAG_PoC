@@ -6,6 +6,8 @@ import re
 from dataclasses import dataclass
 from typing import Protocol
 
+from graphrag_poc.generate.answer import clip_for_model
+
 # Japanese sentence marks are not followed by a space. ASCII marks are.
 _SENTENCE = re.compile(r".+?(?:[.!?](?=\s|$)|[\u3002\uff01\uff1f]|$)")
 
@@ -166,7 +168,7 @@ class LanguageModelJudge:
         from openai import OpenAI
 
         self.name = model
-        self._client = OpenAI(base_url=base_url, api_key=api_key or "not-needed", timeout=120.0)
+        self._client = OpenAI(base_url=base_url, api_key=api_key or "not-needed", timeout=180.0)
 
     def judge(
         self,
@@ -177,12 +179,13 @@ class LanguageModelJudge:
     ) -> Judgment:
         shown = sentences(answer)
         passages = "\n\n".join(
-            f"[{index}]\n{text}" for index, text in enumerate(cited_texts, start=1)
+            f"[{index}]\n{clip_for_model(text)}" for index, text in enumerate(cited_texts, start=1)
         )
         response = self._client.chat.completions.create(
             model=self.name,
             temperature=0,
             seed=int(os.environ.get("GENERATION_SEED", "0")),
+            extra_body={"chat_template_kwargs": {"enable_thinking": False}},
             messages=[
                 {
                     "role": "system",

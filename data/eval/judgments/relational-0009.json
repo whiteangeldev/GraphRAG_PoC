@@ -1,7 +1,7 @@
 {
   "id": "relational-0009",
   "answer_sha256": "bd46494abe29f55b44085d17928335c2b32c4e152b583d592ddd3578608f0e84",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check operating controls for correct settings",

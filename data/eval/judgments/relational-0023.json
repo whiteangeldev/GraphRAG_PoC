@@ -1,7 +1,7 @@
 {
   "id": "relational-0023",
   "answer_sha256": "8c0563c2c0ef1928d576c78e8a374dad7a0dc4c890453634072c8734ae410c92",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles",

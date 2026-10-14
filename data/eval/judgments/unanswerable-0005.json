@@ -1,18 +1,13 @@
 {
   "id": "unanswerable-0005",
-  "answer_sha256": "a92233b5737587cfd879efcd0b4a40260a48b7d32fb510c3fb478792b93a09ec",
-  "judge": "quote",
+  "answer_sha256": "f57d4f13da0c411ccf6242d6510b0220ca0f78527123055db57321a10f9e09d2",
+  "judge": "Qwen3-0.6B",
   "facts": [],
   "claims": [
     {
-      "sentence": "2-27.",
-      "supported": true,
-      "quote": "2-27."
-    },
-    {
-      "sentence": "MALFUNCTION",
-      "supported": true,
-      "quote": "MALFUNCTION"
+      "sentence": "None of the passages provide information about fault code QX-404.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

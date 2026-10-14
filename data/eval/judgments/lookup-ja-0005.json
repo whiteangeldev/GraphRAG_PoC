@@ -1,24 +1,19 @@
 {
   "id": "lookup-ja-0005",
-  "answer_sha256": "454575fde2b183d338caa6d0b04e77ca832f76194cd8920648edf603050a136c",
-  "judge": "quote",
+  "answer_sha256": "ec369127e72bff6366fe999e46d97d905c96ba5c0749505b2e26c668bc82af70",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1.2. 「0」位置(初期位置)は、本技術基準4.2.6.1.1.に規定する初期",
       "present": true,
-      "quote": "1.2. 「0」位置(初期位置)は、本技術基準4.2.6.1.1.に規定する初期"
+      "quote": "1.2. 「0」位置(初期位置)は、本技術基準4.2.6.1.1.に規定する初期傾斜に対応するも のでなければならない。"
     }
   ],
   "claims": [
     {
-      "sentence": "1.2.",
-      "supported": true,
-      "quote": "1.2."
-    },
-    {
-      "sentence": "「0」位置(初期位置)は、本技術基準4.2.6.1.1.に規定する初期傾斜に対応するも のでなければならない。",
-      "supported": true,
-      "quote": "「0」位置(初期位置)は、本技術基準4.2.6.1.1.に規定する初期傾斜に対応するも のでなければならない。"
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

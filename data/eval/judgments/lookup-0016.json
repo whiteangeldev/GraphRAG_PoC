@@ -1,69 +1,24 @@
 {
   "id": "lookup-0016",
-  "answer_sha256": "53cfab4625e8e67ed28fa6ccbec43e1ebbfdd5ed5d7cd09524f8e5d3e2230d6e",
-  "judge": "quote",
+  "answer_sha256": "361bb1220fd9a38c180303f242adaf86ba32b465f8ef5aed4a72d4ad6f1a59e6",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if wheel lug nuts are loose",
       "present": true,
-      "quote": "Step 1. Check to see if wheel lug nuts are loose"
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
     }
   ],
   "claims": [
     {
-      "sentence": "19.",
-      "supported": true,
-      "quote": "19."
+      "sentence": "None of the passages provide information about the first test or corrective action listed for malfunction 19.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "WHEELS WOBBLE OR SHIMMY Step 1.",
-      "supported": true,
-      "quote": "WHEELS WOBBLE OR SHIMMY Step 1."
-    },
-    {
-      "sentence": "Check to see if wheel lug nuts are loose.",
-      "supported": true,
-      "quote": "Check to see if wheel lug nuts are loose."
-    },
-    {
-      "sentence": "Tighten loose lug nuts (para.",
-      "supported": true,
-      "quote": "Tighten loose lug nuts (para."
-    },
-    {
-      "sentence": "3-26) and notify unit maintenance to properly torque lug nuts.",
-      "supported": true,
-      "quote": "3-26) and notify unit maintenance to properly torque lug nuts."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Inspect for mud or dirt build up inside the rim.",
-      "supported": true,
-      "quote": "Inspect for mud or dirt build up inside the rim."
-    },
-    {
-      "sentence": "Remove any mud or dirt build up.",
-      "supported": true,
-      "quote": "Remove any mud or dirt build up."
-    },
-    {
-      "sentence": "Step 3.",
-      "supported": true,
-      "quote": "Step 3."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
+      "sentence": "WHEELS WOBBLE OR SHIMMY.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

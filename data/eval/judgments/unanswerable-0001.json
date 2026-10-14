@@ -1,7 +1,7 @@
 {
   "id": "unanswerable-0001",
   "answer_sha256": "59b2c85fd65e7da255fe87d4f001b929ca559afe8b38f62b486779effe6f6908",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [],
   "claims": [
     {

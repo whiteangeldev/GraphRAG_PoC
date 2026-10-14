@@ -1,7 +1,7 @@
 {
   "id": "procedure-0015",
   "answer_sha256": "ed295237ce2a4fbd903570bca03dbe0966c4ea7d082a6dd97c9e04c3736a60e4",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
@@ -23,12 +23,12 @@
     {
       "sentence": "1.",
       "supported": true,
-      "quote": "1."
+      "quote": "1. Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8)."
     },
     {
       "sentence": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
       "supported": true,
-      "quote": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8)."
+      "quote": "1. Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8)."
     }
   ]
 }

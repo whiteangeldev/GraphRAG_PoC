@@ -1,12 +1,12 @@
 {
   "id": "procedure-0008",
-  "answer_sha256": "0efe6f6cbf15d19c239255ea122135dc6c78426f81676d01da213dc62d106232",
-  "judge": "quote",
+  "answer_sha256": "cc68498a060160b0ce7ea98f35d7bb7f8eff6cfd484f1708ae3c1becab248c6d",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove nut (5), lockwasher (4), two clamps (3), washer (2.1), and stud (2) from air horn support bracket (1) and cylinder head (7). Discard lockwasher (4).",
-      "present": true,
-      "quote": "1. Remove nut (5), lockwasher (4), two clamps (3), washer (2.1), and stud (2) from air horn support bracket (1) and cylinder head (7). Discard lockwasher (4)."
+      "present": false,
+      "quote": ""
     },
     {
       "text": "1. Install air horn support bracket (1) on cylinder head (7) with stud (2).",
@@ -22,18 +22,48 @@
   "claims": [
     {
       "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Remove nut (5), lockwasher (4), two clamps (3), washer (2.1), and stud (2) from air horn support bracket (1) and cylinder head (7).",
-      "supported": true,
-      "quote": "Remove nut (5), lockwasher (4), two clamps (3), washer (2.1), and stud (2) from air horn support bracket (1) and cylinder head (7)."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Discard lockwasher (4).",
-      "supported": true,
-      "quote": "Discard lockwasher (4)."
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove nut (5), lockwasher (4), washer (3), clamp (2), and cables (1) and (6) from stud (7).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Discard lockwasher (4).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove nut (5), lockwasher (4), washer (3), clamp (6), and cables (1) and (2) from stud (7).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Discard lockwasher (4).",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

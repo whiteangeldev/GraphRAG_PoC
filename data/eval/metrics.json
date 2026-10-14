@@ -1,7 +1,7 @@
 {
   "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-  "generation_model": "",
-  "judge": "quote",
+  "generation_model": "Qwen3-0.6B",
+  "judge": "Qwen3-0.6B",
   "rrf_k": 60,
   "evidence_limit": 10,
   "rerank": false,
@@ -161,12 +161,12 @@
       "denominator": 266
     },
     "required_fact_recall": {
-      "numerator": 65,
+      "numerator": 47,
       "denominator": 266
     },
     "claim_precision": {
-      "numerator": 938,
-      "denominator": 1141
+      "numerator": 34,
+      "denominator": 404
     },
     "action_accuracy": {
       "numerator": 93,
@@ -222,12 +222,12 @@
         "denominator": 35
       },
       "required_fact_recall": {
-        "numerator": 12,
+        "numerator": 9,
         "denominator": 35
       },
       "claim_precision": {
-        "numerator": 141,
-        "denominator": 193
+        "numerator": 8,
+        "denominator": 86
       },
       "action_accuracy": {
         "numerator": 22,
@@ -269,12 +269,12 @@
         "denominator": 72
       },
       "required_fact_recall": {
-        "numerator": 28,
+        "numerator": 33,
         "denominator": 72
       },
       "claim_precision": {
-        "numerator": 116,
-        "denominator": 116
+        "numerator": 21,
+        "denominator": 81
       },
       "action_accuracy": {
         "numerator": 22,
@@ -316,12 +316,12 @@
         "denominator": 22
       },
       "required_fact_recall": {
-        "numerator": 14,
+        "numerator": 0,
         "denominator": 22
       },
       "claim_precision": {
-        "numerator": 547,
-        "denominator": 547
+        "numerator": 0,
+        "denominator": 23
       },
       "action_accuracy": {
         "numerator": 22,
@@ -416,12 +416,12 @@
         "denominator": 75
       },
       "required_fact_recall": {
-        "numerator": 11,
+        "numerator": 3,
         "denominator": 75
       },
       "claim_precision": {
-        "numerator": 110,
-        "denominator": 173
+        "numerator": 1,
+        "denominator": 98
       },
       "action_accuracy": {
         "numerator": 12,
@@ -450,12 +450,12 @@
         "denominator": 9
       },
       "required_fact_recall": {
-        "numerator": 0,
+        "numerator": 2,
         "denominator": 9
       },
       "claim_precision": {
-        "numerator": 18,
-        "denominator": 18
+        "numerator": 4,
+        "denominator": 25
       },
       "action_accuracy": {
         "numerator": 9,
@@ -482,8 +482,8 @@
         "denominator": 3
       },
       "claim_precision": {
-        "numerator": 6,
-        "denominator": 6
+        "numerator": 0,
+        "denominator": 3
       },
       "action_accuracy": {
         "numerator": 3,

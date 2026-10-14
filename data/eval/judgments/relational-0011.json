@@ -1,7 +1,7 @@
 {
   "id": "relational-0011",
   "answer_sha256": "a3afe5f8e65af4ffa9ea19bb98d4e5525f32fac9f77ef06b1497c75d7d05e9fd",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if parking brake is partially applied",

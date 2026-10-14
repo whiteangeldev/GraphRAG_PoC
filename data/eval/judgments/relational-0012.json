@@ -1,7 +1,7 @@
 {
   "id": "relational-0012",
   "answer_sha256": "14ea82ab86b23d8893d07606985195dc6f04d4db2b93e542a59f29a151289544",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if wheel lug nuts are loose",

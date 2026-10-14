@@ -1,7 +1,7 @@
 {
   "id": "relational-0022",
   "answer_sha256": "ac3eca81bf70733e59a2ea684166b03a8a9e74a09e03cf80a5046d9fef27e3ec",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Ensure that operating controls are properly set",

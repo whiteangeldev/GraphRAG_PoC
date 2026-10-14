@@ -1,7 +1,7 @@
 {
   "id": "lookup-0001",
   "answer_sha256": "2ad4b617f5cac7754d505bf00a592488889ade5daaa8f091392eba19667640f1",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",

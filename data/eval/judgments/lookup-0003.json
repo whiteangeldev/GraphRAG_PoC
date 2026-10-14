@@ -1,7 +1,7 @@
 {
   "id": "lookup-0003",
   "answer_sha256": "8b7472ed2001a8f4a9b23073871ca0a7e1e33d62af296fdc56e4c8acc5ca1987",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for water in fuel filter by draining",

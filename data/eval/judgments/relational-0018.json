@@ -1,7 +1,7 @@
 {
   "id": "relational-0018",
   "answer_sha256": "7ff080062751ccc9176d401df54dd86408e98c3f72427388356a30eb77d0b73a",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check that interior light switch on control box is in proper position",

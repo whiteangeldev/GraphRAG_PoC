@@ -1,7 +1,7 @@
 {
   "id": "relational-0017",
   "answer_sha256": "ae286bacd7893613190a0c99de2a3ba102f31aad9f6ab1967720f817b15b57c9",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if brake handle is in proper position (para",

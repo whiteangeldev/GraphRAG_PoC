@@ -1,12 +1,12 @@
 {
   "id": "procedure-0001",
-  "answer_sha256": "d06f4bbbc5a4c3da24897e003863bf05998007214c857bb44cd79fb3927856a8",
-  "judge": "quote",
+  "answer_sha256": "7b033a29726fbbda42ad6bd10bc6364653790ced7125ad3127c3c1fa80cafce5",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "1. Remove old pages and insert new pages as indicated below.",
       "present": true,
-      "quote": "1. Remove old pages and insert new pages as indicated below."
+      "quote": "Remove old pages and insert new pages as indicated below."
     },
     {
       "text": "1. Two new models have been added to the front cover. The new cover, located at the end of the change package, replaces the existing cover.",
@@ -26,14 +26,14 @@
   ],
   "claims": [
     {
-      "sentence": "1.",
-      "supported": true,
-      "quote": "1."
+      "sentence": "None of the passages provide a direct answer to the question.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "Remove old pages and insert new pages as indicated below.",
-      "supported": true,
-      "quote": "Remove old pages and insert new pages as indicated below."
+      "sentence": "The question is about how to perform a job, but the provided passages only describe steps for removing and inserting pages, and there is no mention of the specific process for the job in question.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

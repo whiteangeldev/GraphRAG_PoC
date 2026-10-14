@@ -1,24 +1,19 @@
 {
   "id": "applicability-0019",
-  "answer_sha256": "cb42b25ba69ee5b659060ffccceb173e29d1375729077c4b2b449261375f5f93",
-  "judge": "quote",
+  "answer_sha256": "938eb419490c132b31668a67018ed0e4fecf659a10d6fac9ab524d7a57642ecf",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "M1038",
-      "present": true,
-      "quote": "M1038"
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
-      "sentence": "a.",
-      "supported": true,
-      "quote": "a."
-    },
-    {
-      "sentence": "This section provides operating instructions for components found on M998, M998A1, M1038, and M1038A1 cargo/troop carriers and M1037 and M1042 S250 shelter carriers.",
-      "supported": true,
-      "quote": "This section provides operating instructions for components found on M998, M998A1, M1038, and M1038A1 cargo/troop carriers and M1037 and M1042 S250 shelter carriers."
+      "sentence": "None of the passages mention the M1038.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

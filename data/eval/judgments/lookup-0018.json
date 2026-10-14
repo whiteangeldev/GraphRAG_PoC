@@ -1,54 +1,24 @@
 {
   "id": "lookup-0018",
-  "answer_sha256": "466066b66a7322d651c562985f15c5b3451be002282829007bf38bcc67bc2b09",
-  "judge": "quote",
+  "answer_sha256": "3d1b982994e156f23fc0fee49513e1fc66a5a191658f3a4f67c2eb127c5e141f",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check tire air pressure",
       "present": true,
-      "quote": "Step 1. Check tire air pressure"
+      "quote": "Step 1. Check tire air pressure."
     }
   ],
   "claims": [
     {
-      "sentence": "21.",
-      "supported": true,
-      "quote": "21."
+      "sentence": "None of the passages provide information about the first test or corrective action listed in the \"Malfunction 21.",
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1.",
-      "supported": true,
-      "quote": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1."
-    },
-    {
-      "sentence": "Check tire air pressure.",
-      "supported": true,
-      "quote": "Check tire air pressure."
-    },
-    {
-      "sentence": "Inflate or deflate tires to correct air pressure.",
-      "supported": true,
-      "quote": "Inflate or deflate tires to correct air pressure."
-    },
-    {
-      "sentence": "Step 2.",
-      "supported": true,
-      "quote": "Step 2."
-    },
-    {
-      "sentence": "Other causes.",
-      "supported": true,
-      "quote": "Other causes."
-    },
-    {
-      "sentence": "Notify unit maintenance.",
-      "supported": true,
-      "quote": "Notify unit maintenance."
-    },
-    {
-      "sentence": "Table 3-1.Troubleshooting (Cont'd)",
-      "supported": true,
-      "quote": "Table 3-1.Troubleshooting (Cont'd)"
+      "sentence": "Vehicle Wonders to One Side on Level Pavement\" section.",
+      "supported": false,
+      "quote": ""
     }
   ]
 }

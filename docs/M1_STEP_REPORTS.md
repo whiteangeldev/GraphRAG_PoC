@@ -206,3 +206,5 @@ The README documents the environment variables, the corpus register, `make eval`
 | A clean run reproduces the cached report within 0.02 on every metric | Passed. `make eval` reused all 157 judgments and reported that every metric is within 0.02 of the cached report. The index was already present, so it was not rebuilt. |
 | The node validator passes | Passed. `python -m graphrag_poc.ingest --check` accepted every saved node file, and `make eval` ran that check again. |
 | The Japanese sample is in the index and in the report | Passed. `適用範囲` returns a passage from `mlit_b052`. The baseline report names `mlit_b052`. |
+
+The published report was regenerated the same day with `Qwen3-0.6B` writing the answers and judging them. A fact or sentence counts only when the returned quote is an exact span of a cited passage. Retrieval metrics are unchanged. Overall required-fact recall is 17.7 and claim precision is 8.4. Twenty questions, with those gold passages copied from the node files, are in `docs/gold_review_sample.md`. The five-minute page recording is `docs/m1-demonstration.mp4`.

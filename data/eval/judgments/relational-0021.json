@@ -1,7 +1,7 @@
 {
   "id": "relational-0021",
   "answer_sha256": "ff9d6e5e6034d6e32a84e5b5420d70c0dc330e8621c16b196089aa4c3dd2585c",
-  "judge": "quote",
+  "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Perform malfunction 26, steps 1 through 3",

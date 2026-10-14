@@ -3,9 +3,11 @@
 import os
 import sys
 
+from qdrant_client import QdrantClient
+
 from graphrag_poc.generate.answer import Answer, answer_from_passages
 from graphrag_poc.index.client import make_client
-from graphrag_poc.index.embed import build_embedder
+from graphrag_poc.index.embed import Embedder, build_embedder
 from graphrag_poc.retrieve.fusion import FusedHit
 from graphrag_poc.retrieve.search import retrieve
 
@@ -32,12 +34,28 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def ask(question: str) -> Answer:
-    embedder = build_embedder()
-    client = make_client(api_key=os.environ.get("QDRANT_API_KEY") or None)
-    hits = retrieve(client, embedder, question)
+    """Answer a question. The demonstration page uses the same function."""
+
+    result, _hits = ask_with_hits(question)
+    return result
+
+
+def ask_with_hits(
+    question: str,
+    *,
+    client: QdrantClient | None = None,
+    embedder: Embedder | None = None,
+) -> tuple[Answer, list[FusedHit]]:
+    """Retrieve, then answer. Returns the fused ranking the page displays."""
+
+    active_embedder = embedder if embedder is not None else build_embedder()
+    active_client = client if client is not None else make_client(
+        api_key=os.environ.get("QDRANT_API_KEY") or None
+    )
+    hits = retrieve(active_client, active_embedder, question)
     if os.environ.get("GENERATION_MODEL", "").strip():
-        return _model_answer(question, hits)
-    return answer_from_passages(question, hits)
+        return _model_answer(question, hits), hits
+    return answer_from_passages(question, hits), hits
 
 
 def _check() -> int:

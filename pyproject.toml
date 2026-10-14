@@ -9,11 +9,14 @@ description = "Graph RAG proof of concept. Milestone 1 is the hybrid-retrieval b
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.115",
     "fastembed>=0.6",
     "openai>=1.60",
+    "python-multipart>=0.0.9",
     "pdfplumber>=0.11",
     "pydantic>=2.10",
     "qdrant-client>=1.19,<1.20",
+    "uvicorn>=0.32",
 ]
 
 [project.optional-dependencies]
@@ -51,9 +54,21 @@ files = [
     "src/graphrag_poc/index",
     "src/graphrag_poc/retrieve",
     "src/graphrag_poc/generate",
+    "src/graphrag_poc/app",
 ]
 mypy_path = "src"
 
 [[tool.mypy.overrides]]
-module = ["fastembed", "fastembed.*", "openai", "openai.*", "qdrant_client", "qdrant_client.*"]
+module = [
+    "fastapi",
+    "fastapi.*",
+    "fastembed",
+    "fastembed.*",
+    "openai",
+    "openai.*",
+    "qdrant_client",
+    "qdrant_client.*",
+    "uvicorn",
+    "uvicorn.*",
+]
 ignore_missing_imports = true

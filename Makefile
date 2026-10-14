@@ -21,7 +21,7 @@ format:
 	$(PYTHON) -m ruff check --fix .
 
 typecheck:
-	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases src/graphrag_poc/index src/graphrag_poc/retrieve src/graphrag_poc/generate
+	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases src/graphrag_poc/index src/graphrag_poc/retrieve src/graphrag_poc/generate src/graphrag_poc/app
 
 ingest:
 	$(PYTHON) -m graphrag_poc.ingest
@@ -32,6 +32,11 @@ generate-cases:
 index:
 	$(PYTHON) -m graphrag_poc.index
 
-demo eval:
+demo:
+	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
+	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
+	$(PYTHON) -m graphrag_poc.app
+
+eval:
 	@echo "target '$@' is reserved for a later step" >&2
 	@exit 1

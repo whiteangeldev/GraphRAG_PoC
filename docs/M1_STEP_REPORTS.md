@@ -10,7 +10,7 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 | 4. Synthetic service records | Finished, 14 October 2026 |
 | 5. Index passages and cases | Finished, 14 October 2026 |
 | 6. Hybrid retrieval and cited answers | Finished, 14 October 2026 |
-| 7. Demonstration interface | Not started |
+| 7. Demonstration interface | Finished, 14 October 2026 |
 | 8. Evaluation set | Not started |
 | 9. Evaluation runner and baseline report | Not started |
 | 10. Reproduction package and milestone note | Not started |
@@ -118,3 +118,17 @@ Finished 14 October 2026. A question retrieves a dense list and a sparse list, t
 | A lookup question returns the code row and cites it | Passed. The charging question cites `tm280_10:table:3-1:2:r4`, page 281, and the answer is that row, including the battery-cable and alternator-belt steps. |
 | A procedure question returns steps in order and includes the bound caution | Passed. The oil-cooler question returns the hot-oil warning, then step 1 (disconnect) and step 3 (connect), all from task 3-8 on page 32. |
 | A code that does not exist is refused | Passed. `99. ZZZNOTACODE FAILURE` is refused, and the refusal states the question that was searched. |
+
+## Step 7 — Demonstration interface
+
+Finished 14 October 2026. `make demo` serves one page at `http://127.0.0.1:8080`. The page calls `ask_with_hits`, the same retrieval and answer function as `python -m graphrag_poc.generate`. A submitted question shows the answer, each citation with its document and page, and the fused ranking with `dense` and `sparse` channel tags.
+
+The demo uses the same embedding model as the index, `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, unless `EMBEDDING_MODEL` is set.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| Charging lookup in the browser | Passed. The page cites `tm280_10:table:3-1:2:r4`, page 281, and shows the battery-cable step. |
+| Oil-cooler procedure in the browser | Passed. The page shows the hot-oil warning before the disconnect step, and cites task 3-8 on page 32. |
+| Unknown code in the browser | Passed. The page refuses `99. ZZZNOTACODE FAILURE` and states the question that was searched. |

@@ -37,7 +37,7 @@ demo:
 	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
 	$(PYTHON) -m graphrag_poc.app
 
-eval:
+eval: up
 	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
 	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
-	$(PYTHON) -m graphrag_poc.eval --score
+	$(PYTHON) -m graphrag_poc.eval --reproduce

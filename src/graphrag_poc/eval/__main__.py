@@ -11,6 +11,10 @@ def main() -> int:
         from graphrag_poc.eval.score import main as score_main
 
         return score_main()
+    if sys.argv[1:] == ["--reproduce"]:
+        from graphrag_poc.eval.reproduce import main as reproduce_main
+
+        return reproduce_main()
     questions = build_questions()
     path = write_questions(questions)
     errors = validate(questions)

@@ -57,6 +57,26 @@ def index_corpus(
     _upsert_cases(client, cases, case_collection, batch_size)
 
 
+def index_is_ready(client: QdrantClient, dimension: int) -> bool:
+    """True when both collections exist, have points, and the dense size matches."""
+
+    try:
+        passages = client.get_collection(PASSAGE_COLLECTION)
+        cases = client.get_collection(CASE_COLLECTION)
+    except Exception:
+        return False
+    if not passages.points_count or not cases.points_count:
+        return False
+    vectors = passages.config.params.vectors
+    sparse = passages.config.params.sparse_vectors
+    if not isinstance(vectors, dict) or not isinstance(sparse, dict):
+        return False
+    dense = vectors.get(DENSE)
+    if dense is None or sparse.get(SPARSE) is None:
+        return False
+    return getattr(dense, "size", None) == dimension
+
+
 def search_passages(
     client: QdrantClient,
     query: str,

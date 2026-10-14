@@ -33,6 +33,40 @@ def write_nodes(path: Path, nodes: list[Node]) -> None:
             handle.write("\n")
 
 
+def validate_saved() -> dict[str, list[str]]:
+    """Validate the node files already on disk. Does not read the PDFs into nodes again."""
+
+    import pdfplumber
+
+    from graphrag_poc.models import Node
+
+    errors: dict[str, list[str]] = {}
+    for spec in DOCUMENTS:
+        path = NODES / f"{spec.doc_key}.jsonl"
+        if not path.exists():
+            errors[spec.doc_key] = [f"missing {path}"]
+            continue
+        if not spec.path.exists():
+            errors[spec.doc_key] = [f"missing {spec.path}"]
+            continue
+        nodes: list[Node] = []
+        file_errors: list[str] = []
+        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line:
+                continue
+            try:
+                nodes.append(Node.model_validate_json(line))
+            except ValueError as exc:
+                file_errors.append(f"line {line_number}: {exc}")
+        if file_errors:
+            errors[spec.doc_key] = file_errors
+            continue
+        with pdfplumber.open(spec.path) as pdf:
+            page_count = len(pdf.pages)
+        errors[spec.doc_key] = validate_nodes(nodes, list(range(1, page_count + 1)))
+    return errors
+
+
 def convert_all(doc_keys: Sequence[str] | None = None) -> dict[str, list[str]]:
     """Write `data/nodes/{doc_key}.jsonl` and return validation errors by doc key."""
 

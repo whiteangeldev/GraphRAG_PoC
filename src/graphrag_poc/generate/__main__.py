@@ -17,7 +17,32 @@ PROCEDURE = (
     "including the warning not to drain oil when the engine is hot?"
 )
 UNKNOWN = "What is the corrective action for 99. ZZZNOTACODE FAILURE?"
+RELATIONAL = (
+    "The vehicle has this problem: 10. NO RESPONSE TO SHIFT LEVER MOVEMENT. "
+    "Which transmission part number is listed?"
+)
 HOT_OIL = "Do not drain oil when engine is hot"
+DEMONSTRATION = (
+    ("Lookup", LOOKUP),
+    ("Procedure", PROCEDURE),
+    ("Relational", RELATIONAL),
+    ("Refusal", UNKNOWN),
+)
+_DEMONSTRATION_NOTES = {
+    "Lookup": "This is operator Table 3-1, row 4, page 281. The first check is the battery cables.",
+    "Procedure": (
+        "The hot-oil warning is cited before the disconnect step. Both come from task 3-8, page 32."
+    ),
+    "Relational": (
+        "The baseline refuses. The malfunction is in the operator manual, and the question "
+        "asks which transmission part to use. The answerer reads the title plus the next word, "
+        "does not find that longer string, and does not reach the parts list."
+    ),
+    "Refusal": (
+        "99. ZZZNOTACODE FAILURE is not in the manuals. "
+        "The answer repeats the question and cites nothing."
+    ),
+}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -25,8 +50,13 @@ def main(argv: list[str] | None = None) -> int:
     _load_env_file()
     if args == ["--check"]:
         return _check()
+    if args == ["--demonstrate"]:
+        return _demonstrate()
     if not args:
-        print("usage: python -m graphrag_poc.generate --check | <question>", file=sys.stderr)
+        print(
+            "usage: python -m graphrag_poc.generate --check | --demonstrate | <question>",
+            file=sys.stderr,
+        )
         return 2
     result = ask(" ".join(args))
     _print_answer(result)
@@ -91,6 +121,45 @@ def _check() -> int:
         return 1
     print("hybrid retrieval check passed")
     return 0
+
+
+def _demonstrate() -> int:
+    """Run the four demonstration questions and record the answers."""
+
+    from pathlib import Path
+
+    sections = [
+        "# Five-minute demonstration",
+        "",
+        "Recorded from the M1 baseline (`docs/baseline_report.md`).",
+        "Open the demo with `make demo`, then go to http://127.0.0.1:8080.",
+        "Ask these four questions in order. About five minutes covers them.",
+        "The page calls `ask_with_hits`, the same function that produced the answers below.",
+        "",
+    ]
+    for title, question in DEMONSTRATION:
+        result = ask(question)
+        sections.extend(_demonstration_section(title, question, result))
+    path = Path(__file__).resolve().parents[3] / "docs" / "demonstration.md"
+    path.write_text("\n".join(sections), encoding="utf-8")
+    print(f"demonstration recorded at {path}")
+    return 0
+
+
+def _demonstration_section(title: str, question: str, result: Answer) -> list[str]:
+    lines = [f"## {title}", "", question, "", result.text, ""]
+    if result.citations:
+        lines.append("Citations:")
+        lines.append("")
+        for citation in result.citations:
+            lines.append(f"- `{citation.node_id}`, page {citation.page}")
+        lines.append("")
+    else:
+        lines.extend(["Citations: none.", ""])
+    note = _DEMONSTRATION_NOTES.get(title)
+    if note:
+        lines.extend([note, ""])
+    return lines
 
 
 def _steps_in_order(text: str) -> bool:

@@ -4,11 +4,16 @@ import argparse
 import sys
 
 from graphrag_poc.ingest.catalog import DOCUMENTS
-from graphrag_poc.ingest.convert import convert_all
+from graphrag_poc.ingest.convert import convert_all, validate_saved
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Convert the approved corpus to JSONL node files.")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Validate the saved node files without converting the PDFs again.",
+    )
     parser.add_argument(
         "--doc",
         action="append",
@@ -16,7 +21,14 @@ def main(argv: list[str] | None = None) -> int:
         help="Convert one document. Repeat to convert several. Default: all approved documents.",
     )
     args = parser.parse_args(argv)
+    if args.check:
+        errors = validate_saved()
+        return _report(errors)
     errors = convert_all(args.doc)
+    return _report(errors)
+
+
+def _report(errors: dict[str, list[str]]) -> int:
     failed = {key: messages for key, messages in errors.items() if messages}
     if failed:
         for key, messages in failed.items():

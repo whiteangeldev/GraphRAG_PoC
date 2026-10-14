@@ -13,7 +13,7 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 | 7. Demonstration interface | Finished, 14 October 2026 |
 | 8. Evaluation set | Finished, 14 October 2026 |
 | 9. Evaluation runner and baseline report | Finished, 14 October 2026 |
-| 10. Reproduction package and milestone note | Not started |
+| 10. Reproduction package and milestone note | Finished, 14 October 2026 |
 
 ## Step 1 — Project skeleton and data contracts
 
@@ -188,3 +188,21 @@ Every relational question missed at least one gold passage in the ten given to t
 |---|---|
 | A second run with the cache reproduces every metric | Passed. The second run reused all 157 judgments. `docs/baseline_report.md` and `data/eval/metrics.json` were byte-identical to the first run. |
 | The report lists every question type that has questions | Passed. The table lists lookup, procedure, applicability, relational, multi-hop, troubleshooting, follow-up, and unanswerable. |
+
+## Step 10 — Reproduction package and milestone note
+
+Finished 14 October 2026. `make eval` starts Qdrant, builds the passage and case index when it is missing or the dense vector size does not match the configured model, validates the saved node files, checks that 別添52 is in the index, scores the evaluation set, and writes `docs/baseline_report.md`. A run passes when every metric stays within 0.02 of the cached report.
+
+The README documents the environment variables, the corpus register, `make eval`, and `make demo` at http://127.0.0.1:8080. The cached report uses `EMBEDDING_BACKEND=fastembed` and `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, with `GENERATION_MODEL` and `JUDGE_MODEL` empty.
+
+`docs/demonstration.md` is the five-minute demonstration. It records four questions from the baseline: the charging lookup (Table 3-1 row 4, page 281), the oil-cooler procedure with the hot-oil warning (task 3-8, page 32), the relational question about the shift lever (refused; the parts list is not reached), and the refusal for `99. ZZZNOTACODE FAILURE`.
+
+`docs/milestone_note.md` is the one-page note: what was built, what the baseline fails to connect, and the failure classes M2 should assign.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| A clean run reproduces the cached report within 0.02 on every metric | Passed. `make eval` reused all 157 judgments and reported that every metric is within 0.02 of the cached report. The index was already present, so it was not rebuilt. |
+| The node validator passes | Passed. `python -m graphrag_poc.ingest --check` accepted every saved node file, and `make eval` ran that check again. |
+| The Japanese sample is in the index and in the report | Passed. `適用範囲` returns a passage from `mlit_b052`. The baseline report names `mlit_b052`. |

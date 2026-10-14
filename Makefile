@@ -21,7 +21,7 @@ format:
 	$(PYTHON) -m ruff check --fix .
 
 typecheck:
-	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases
+	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases src/graphrag_poc/index src/graphrag_poc/retrieve src/graphrag_poc/generate
 
 ingest:
 	$(PYTHON) -m graphrag_poc.ingest
@@ -29,6 +29,9 @@ ingest:
 generate-cases:
 	$(PYTHON) -m graphrag_poc.cases
 
-index demo eval:
+index:
+	$(PYTHON) -m graphrag_poc.index
+
+demo eval:
 	@echo "target '$@' is reserved for a later step" >&2
 	@exit 1

@@ -8,8 +8,8 @@ A step is recorded here only after its exit check passes. Source of the steps: `
 | 2. Corpus register | Finished, 13 October 2026 |
 | 3. Convert documents to node files | Finished, 14 October 2026 |
 | 4. Synthetic service records | Finished, 14 October 2026 |
-| 5. Index passages and cases | Not started |
-| 6. Hybrid retrieval and cited answers | Not started |
+| 5. Index passages and cases | Finished, 14 October 2026 |
+| 6. Hybrid retrieval and cited answers | Finished, 14 October 2026 |
 | 7. Demonstration interface | Not started |
 | 8. Evaluation set | Not started |
 | 9. Evaluation runner and baseline report | Not started |
@@ -88,3 +88,33 @@ The file has 2,000 cases. Two runs with the same rules and node files produce th
 | Two runs match | Passed. A second generation equals the written `cases.jsonl`. |
 | At least 2,000 records | Passed. 2,000 records, `C-000001` through `C-002000`. |
 | Every error code and part number exists in the node files | Passed. Each error code is a Table 3-1 cell. Each part number is a PART NUMBER cell. |
+
+## Step 5 — Index passages and cases
+
+Finished 14 October 2026. `make index` loads retrievable nodes into the Qdrant collection `passages` and the service cases into `cases`.
+
+Each passage has a named dense vector and a named sparse vector. The dense vector is the configured embedding model. This run used the local multilingual model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` because no Qwen endpoint was set. `EMBEDDING_BACKEND=openai` still calls the OpenAI-compatible endpoint when that server is available. The sparse vector is term presence after full-width folding. English and part numbers split on words. Japanese text, which has no spaces, is indexed as the short phrase and as overlapping character pairs. Qdrant applies inverse document frequency at search time. The passage payload is `node_id`, `doc_key`, `page_start`, `page_end`, `type`, `lang`, `text`, and `breadcrumb`. Boilerplate is not indexed. 22,952 passages were loaded.
+
+Cases keep a sparse vector of `search_text` and keyword indexes on `error_codes`, `parts`, and `model`. 2,000 cases were loaded.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| A known code string returns the expected passage | Passed. `4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER` returns `tm280_10:m4`, whose text is that label. The same string returns the matching case by exact match. |
+| A known part number returns the expected passage | Passed. The sample case's part number is in the top passage hits, and the case filter returns that case. |
+| A short Japanese span returns the sample passage | Passed. `適用範囲` returns a Japanese passage from `mlit_b052` that contains that span. |
+
+## Step 6 — Hybrid retrieval and cited answers
+
+Finished 14 October 2026. A question retrieves a dense list and a sparse list, then merges them with reciprocal rank fusion, `k = 60`. A passage that appears in both lists keeps its best rank and both channel names. The answer is written only from those fused passages. Each citation is a `node_id` and the passage page. Temperature is 0 and the seed is 0. The reranker stays off.
+
+`python -m graphrag_poc.generate --check` asks the three exit questions. With no generation model configured, the answer is the text of the matching passages rather than a separate model call. `GENERATION_MODEL` switches that call to the OpenAI-compatible endpoint with the same temperature and seed.
+
+### Exit check
+
+| Check | Result |
+|---|---|
+| A lookup question returns the code row and cites it | Passed. The charging question cites `tm280_10:table:3-1:2:r4`, page 281, and the answer is that row, including the battery-cable and alternator-belt steps. |
+| A procedure question returns steps in order and includes the bound caution | Passed. The oil-cooler question returns the hot-oil warning, then step 1 (disconnect) and step 3 (connect), all from task 3-8 on page 32. |
+| A code that does not exist is refused | Passed. `99. ZZZNOTACODE FAILURE` is refused, and the refusal states the question that was searched. |

@@ -9,8 +9,11 @@ description = "Graph RAG proof of concept. Milestone 1 is the hybrid-retrieval b
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastembed>=0.6",
+    "openai>=1.60",
     "pdfplumber>=0.11",
     "pydantic>=2.10",
+    "qdrant-client>=1.19,<1.20",
 ]
 
 [project.optional-dependencies]
@@ -41,5 +44,16 @@ select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["src/graphrag_poc/models", "src/graphrag_poc/ingest", "src/graphrag_poc/cases"]
+files = [
+    "src/graphrag_poc/models",
+    "src/graphrag_poc/ingest",
+    "src/graphrag_poc/cases",
+    "src/graphrag_poc/index",
+    "src/graphrag_poc/retrieve",
+    "src/graphrag_poc/generate",
+]
 mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["fastembed", "fastembed.*", "openai", "openai.*", "qdrant_client", "qdrant_client.*"]
+ignore_missing_imports = true

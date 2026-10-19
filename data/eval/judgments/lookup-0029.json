@@ -1,6 +1,6 @@
 {
   "id": "lookup-0029",
-  "answer_sha256": "0db5c60729b6552a3ed1cdf86575db78f2bd90b3a2def1908d13e2261ed6837f",
+  "answer_sha256": "83aa62edd030130e210f7b3318b3d04df51958384ff4422100ac70e396e5b07e",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,12 +11,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "1.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 2.",
+      "sentence": "2.",
       "supported": false,
       "quote": ""
     },
@@ -26,7 +26,67 @@
       "quote": ""
     },
     {
-      "sentence": "What should I check first?",
+      "sentence": "Check the starter solenoid and starter motor.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE CRANKS BUT DOES NOT START.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check the starter circuit.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check the battery.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "6.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "6.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check the charging system.",
       "supported": false,
       "quote": ""
     }

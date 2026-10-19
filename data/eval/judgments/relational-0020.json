@@ -1,6 +1,6 @@
 {
   "id": "relational-0020",
-  "answer_sha256": "c907932ae845e898aa4999f747a8d05e84f050e871da9efa72aba0b3dc335c81",
+  "answer_sha256": "9e9e962d11bb74609621777648517526a79d4a2548528f58484c3baa0a22c840",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,17 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "28.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 28.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE, which parts-list item matches LAMP?",
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE.",
       "supported": false,
       "quote": ""
     }

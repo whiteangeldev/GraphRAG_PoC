@@ -1,27 +1,67 @@
 {
   "id": "trouble-0003",
-  "answer_sha256": "a34e42787cee38e669c1e9cdf8f2ae998ba9002f6bdeac7cc840ae535bd0656d",
+  "answer_sha256": "8f2dc452262bed0a68d105a578d528d9b3729689e5c07c9bb5175614de7a8b1c",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for water in fuel filter by draining",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
     }
   ],
   "claims": [
     {
       "sentence": "6.",
+      "supported": true,
+      "quote": "6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
+    },
+    {
+      "sentence": "Check for water in fuel filter by draining.",
+      "supported": true,
+      "quote": "6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
+    },
+    {
+      "sentence": "Drain fuel filter (para.",
+      "supported": true,
+      "quote": "6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
+    },
+    {
+      "sentence": "3-10).",
+      "supported": true,
+      "quote": "6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
+    },
+    {
+      "sentence": "Step 2.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER — WHERE DO I START?",
+      "sentence": "Check for restricted air cleaner.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "[tm280_10:m2:2 page 282]",
+      "sentence": "If emergency situation exists, clean air cleaner element (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-15).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance.",
       "supported": false,
       "quote": ""
     }

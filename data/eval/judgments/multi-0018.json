@@ -1,17 +1,17 @@
 {
   "id": "multi-0018",
-  "answer_sha256": "fe426bd2886e504ad45116f824b31ffb4529ec8db551712e696cbca5995f5740",
+  "answer_sha256": "a232e735fa8a7e4afb37c93d8249d225a81677eb053aed8681bbf1bdc15a4af8",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check that interior light switch on control box is in proper position",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 2. If white light illumination is required under blackout conditions, make sure front door, rear doors, and rear steps are closed."
     },
     {
       "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Place interior light switch in proper position (para. 2-61)."
     },
     {
       "text": "MS21333-128",
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 26.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions lamp.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is about a truck's fault and the part number to look up, but none of the given passages mention a part number or provide information about the part number.",
       "supported": false,
       "quote": ""
     }

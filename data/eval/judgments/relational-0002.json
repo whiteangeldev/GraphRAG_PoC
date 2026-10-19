@@ -1,12 +1,12 @@
 {
   "id": "relational-0002",
-  "answer_sha256": "605d723a0d964126d8592a22171af7250bc5fd072cad1b7ebe63e3d8be9d8d63",
+  "answer_sha256": "730579d7410ba80eae306700605f5b39d25051fcc2d5620d3815d49ad492cdd6",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check oil level for overfilling (Appendix G)",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check oil level for overfilling (Appendix G)."
     },
     {
       "text": "SF-5597692",
@@ -16,17 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: For malfunction 5.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C), which parts-list item matches NOZZLE?",
+      "sentence": "None of the listed items match the answer.",
       "supported": false,
       "quote": ""
     }

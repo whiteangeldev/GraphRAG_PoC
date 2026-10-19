@@ -1,6 +1,6 @@
 {
   "id": "trouble-0008",
-  "answer_sha256": "c136fd126ac3920dea51beba0fc5b6edc80ba1f57196e47f7f2a336a64b3623d",
+  "answer_sha256": "3f3e0f05c2ed62a8323c9627508922b403e5957b9228c6233d093f03fcf492d1",
   "judge": "Qwen3-0.6B",
   "facts": [
     {

@@ -1,6 +1,6 @@
 {
   "id": "relational-0023",
-  "answer_sha256": "8c0563c2c0ef1928d576c78e8a374dad7a0dc4c890453634072c8734ae410c92",
+  "answer_sha256": "8f47797bfcf4aff98c5221ac784b33513549e7c34fbfd76a1b61d8e2501ce899",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,22 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: The vehicle has this problem: 1.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE FAILS TO CRANK.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Which starter part number is listed?",
+      "sentence": "None of the passages provide the starter part number listed for the problem of engine not cranking.",
       "supported": false,
       "quote": ""
     }

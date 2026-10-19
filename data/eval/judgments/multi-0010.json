@@ -1,12 +1,12 @@
 {
   "id": "multi-0010",
-  "answer_sha256": "645fe19ada16ca99c017479afbb1eb67e0c68eff9a6f01dbaf4692e111fb7ec8",
+  "answer_sha256": "23f377b6d349c9f27be64ce76b3e80c593869c19f132187e0490a61d6fb295a9",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for proper shifting sequence",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check for proper shifting sequence."
     },
     {
       "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
@@ -21,27 +21,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: My truck has this fault: 14.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions transfer.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "None of the passages provide the part number for the transfer case shift lever.",
       "supported": false,
       "quote": ""
     }

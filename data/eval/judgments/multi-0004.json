@@ -1,6 +1,6 @@
 {
   "id": "multi-0004",
-  "answer_sha256": "f0fc19f7e48e85f27cfafa0d41a5805763ed13fc2970adb179e77972917e5579",
+  "answer_sha256": "5f09e3331985ffa201e75dfeb94a60a215cd87f5de8649b972f1bea1463f5308",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 7.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions radiator.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is about finding a part number for a specific engine fault, but the passages do not mention any part numbers or related information.",
       "supported": false,
       "quote": ""
     }

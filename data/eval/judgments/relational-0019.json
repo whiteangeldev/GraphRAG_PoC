@@ -1,6 +1,6 @@
 {
   "id": "relational-0019",
-  "answer_sha256": "ed89a41d8bd616b0d939d09381b579037eca607485036c9c3f15fff4d026fd62",
+  "answer_sha256": "67d66f2126d8b9d953aa928c3b4b535f5d75a992d43b38be721a846ba421be9e",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,22 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: The vehicle has this problem: 27.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "LEFT OR RIGHT CEILING WHITE LIGHTS AND BLACKOUT LIGHT FAIL TO ILLUMINATE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Which lamp part number is listed?",
+      "sentence": "None of the passages provide the lamp part number listed in the question.",
       "supported": false,
       "quote": ""
     }

@@ -1,32 +1,62 @@
 {
   "id": "lookup-0011",
-  "answer_sha256": "f03a12319c5bf8b9aca7d832983997b50a418a1489142fb02f90b369819539c3",
+  "answer_sha256": "0f35081913b82d1ea7acab731d1073892502a553cf8ac52b747c660192adbf86",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for proper shifting sequence",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check for proper shifting sequence."
     }
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "1.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "Check for proper shifting sequence.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "Ensure proper shifting sequence is used (para.",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    },
+    {
+      "sentence": "2-11).",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    },
+    {
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    },
+    {
+      "sentence": "3.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 14.",
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What should I check first?",
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
       "supported": false,
       "quote": ""
     }

@@ -9,6 +9,7 @@ from graphrag_poc.index.tokenize import tokenize
 from graphrag_poc.retrieve.fusion import FusedHit
 
 _LABEL = re.compile(r"\d+\.\s+[A-Z][A-Z0-9 ,'/().°-]{8,}")
+_MIXED_TITLE = re.compile(r"\d+\.\s+.+?(?=\s+\u2014\s+)")
 MODEL_PASSAGE_LIMIT = 1500
 _STEP_NUMBER = re.compile(r"^(?:step\s+)?(\d+)\b", re.IGNORECASE)
 _STEP_LETTER = re.compile(r"^([a-z])\.\s", re.IGNORECASE)
@@ -78,10 +79,32 @@ def _quote(question: str, hits: list[FusedHit], temperature: float, seed: int) -
 
 
 def _requested_label(question: str) -> str | None:
+    """The malfunction title named in the question, without the words that follow it."""
+
     matches = _LABEL.findall(question)
-    if not matches:
+    if matches:
+        return _strip_title_tail(str(max(matches, key=len)))
+    mixed = _MIXED_TITLE.search(question)
+    if mixed is None:
         return None
-    return str(max(matches, key=len)).strip()
+    return mixed.group(0).strip()
+
+
+def _strip_title_tail(label: str) -> str:
+    """Drop a trailing comma or the single capital of the next word."""
+
+    trimmed = label.strip()
+    if trimmed.endswith(","):
+        trimmed = trimmed[:-1].rstrip()
+    if (
+        len(trimmed) >= 4
+        and trimmed[-3] == "."
+        and trimmed[-2] == " "
+        and trimmed[-1].isascii()
+        and trimmed[-1].isupper()
+    ):
+        trimmed = trimmed[:-3].rstrip()
+    return trimmed
 
 
 def _hits_containing(hits: list[FusedHit], label: str) -> list[FusedHit]:

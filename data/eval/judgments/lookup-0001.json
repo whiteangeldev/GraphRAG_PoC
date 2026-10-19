@@ -1,6 +1,6 @@
 {
   "id": "lookup-0001",
-  "answer_sha256": "2ad4b617f5cac7754d505bf00a592488889ade5daaa8f091392eba19667640f1",
+  "answer_sha256": "a57a65bc1ce7bb27213fc6950558fcced292ac446218c948900ec209242ec43a",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,24 +11,9 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: The truck is showing this problem: 4.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "VEHICLE NOT CHARGING ACCORDING TO VOLTMETER.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What should I check first?",
-      "supported": false,
-      "quote": ""
+      "sentence": "The truck should check the voltage gauge first.",
+      "supported": true,
+      "quote": "4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER"
     }
   ]
 }

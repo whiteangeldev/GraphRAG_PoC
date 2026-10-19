@@ -1,6 +1,6 @@
 {
   "id": "relational-0024",
-  "answer_sha256": "5385d8635984e924b3c59e291316ad475c496b70520cab30df89ebc04030a2bf",
+  "answer_sha256": "b656999eaab0d1721d71f8b852b52c099e5f13b517fa7adec6b74395dc950800",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,17 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match \"BATTERY\" in the context of malfunction 2.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 2.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE CRANKS SLOWLY, which parts-list item matches BATTERY?",
+      "sentence": "ENGINE CRANKS SLOWLY.",
       "supported": false,
       "quote": ""
     }

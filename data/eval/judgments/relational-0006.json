@@ -1,6 +1,6 @@
 {
   "id": "relational-0006",
-  "answer_sha256": "c7e196c084a358fc70a9c0e9862eb2ee013604a38a1c18f638f3eff1cd00cd69",
+  "answer_sha256": "329843076813ff61e5592f5a87597c17e7fd005f61fd3fc9e7844d2f55fbb57c",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,19 +16,14 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match \"TRANSMISSION\" for malfunction 12.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 12.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE, which parts-list item matches TRANSMISSION?",
-      "supported": false,
-      "quote": ""
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE.",
+      "supported": true,
+      "quote": "FLUID THROWN FROM TRANSMISSION FILL TUBE"
     }
   ]
 }

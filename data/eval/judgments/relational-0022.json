@@ -1,6 +1,6 @@
 {
   "id": "relational-0022",
-  "answer_sha256": "ac3eca81bf70733e59a2ea684166b03a8a9e74a09e03cf80a5046d9fef27e3ec",
+  "answer_sha256": "27118b1ba5b7faed1e39618216c1e14a517fd080a71c9c8d9a1513dc15523ab5",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,19 +16,14 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match the list item \"HEATER\" for malfunction 30.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 30.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE, which parts-list item matches HEATER?",
-      "supported": false,
-      "quote": ""
+      "sentence": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE.",
+      "supported": true,
+      "quote": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE"
     }
   ]
 }

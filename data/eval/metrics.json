@@ -22,7 +22,7 @@
       5,
       15,
       1,
-      1,
+      2,
       3,
       0,
       5,
@@ -33,7 +33,7 @@
       1,
       1,
       2,
-      1,
+      4,
       2,
       2,
       0,
@@ -41,7 +41,7 @@
       21,
       4,
       1,
-      3,
+      2,
       1,
       1,
       1,
@@ -91,7 +91,7 @@
       2,
       0,
       2,
-      2,
+      1,
       1,
       3,
       2,
@@ -150,26 +150,26 @@
       0,
       1,
       1,
-      3,
-      0,
-      2,
       1,
-      5
+      0,
+      1,
+      1,
+      7
     ],
     "evidence_recall": {
       "numerator": 104,
       "denominator": 266
     },
     "required_fact_recall": {
-      "numerator": 47,
+      "numerator": 64,
       "denominator": 266
     },
     "claim_precision": {
-      "numerator": 34,
-      "denominator": 404
+      "numerator": 78,
+      "denominator": 364
     },
     "action_accuracy": {
-      "numerator": 93,
+      "numerator": 139,
       "denominator": 157
     }
   },
@@ -189,7 +189,7 @@
         5,
         15,
         1,
-        1,
+        2,
         3,
         0,
         5,
@@ -200,7 +200,7 @@
         1,
         1,
         2,
-        1,
+        4,
         2,
         2,
         0,
@@ -211,26 +211,26 @@
         0,
         1,
         1,
-        3,
-        0,
-        2,
         1,
-        5
+        0,
+        1,
+        1,
+        7
       ],
       "evidence_recall": {
         "numerator": 25,
         "denominator": 35
       },
       "required_fact_recall": {
-        "numerator": 9,
+        "numerator": 15,
         "denominator": 35
       },
       "claim_precision": {
-        "numerator": 8,
-        "denominator": 86
+        "numerator": 31,
+        "denominator": 109
       },
       "action_accuracy": {
-        "numerator": 22,
+        "numerator": 34,
         "denominator": 35
       }
     },
@@ -243,7 +243,7 @@
       "mrr_denominators": [
         4,
         1,
-        3,
+        2,
         1,
         1,
         1,
@@ -343,7 +343,7 @@
         2,
         0,
         2,
-        2,
+        1,
         1,
         3,
         2,
@@ -366,15 +366,15 @@
         "denominator": 50
       },
       "required_fact_recall": {
-        "numerator": 0,
+        "numerator": 8,
         "denominator": 50
       },
       "claim_precision": {
-        "numerator": 0,
-        "denominator": 88
+        "numerator": 4,
+        "denominator": 45
       },
       "action_accuracy": {
-        "numerator": 0,
+        "numerator": 22,
         "denominator": 25
       }
     },
@@ -416,15 +416,15 @@
         "denominator": 75
       },
       "required_fact_recall": {
-        "numerator": 3,
+        "numerator": 6,
         "denominator": 75
       },
       "claim_precision": {
         "numerator": 1,
-        "denominator": 98
+        "denominator": 57
       },
       "action_accuracy": {
-        "numerator": 12,
+        "numerator": 24,
         "denominator": 25
       }
     },
@@ -454,8 +454,8 @@
         "denominator": 9
       },
       "claim_precision": {
-        "numerator": 4,
-        "denominator": 25
+        "numerator": 21,
+        "denominator": 46
       },
       "action_accuracy": {
         "numerator": 9,

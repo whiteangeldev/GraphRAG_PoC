@@ -186,19 +186,21 @@ def test_evidence_recall_is_the_share_of_gold_passages() -> None:
     assert metrics.mrr_denominators == (1,)
 
 
-def test_title_string_includes_the_following_word() -> None:
+def test_title_reader_stops_at_the_malfunction_title() -> None:
+    from graphrag_poc.generate.answer import _requested_label, answer_from_passages
+
     question = (
         "The vehicle has this problem: 10. NO RESPONSE TO SHIFT LEVER MOVEMENT. "
         "Which transmission part number is listed?"
     )
     passage = "10. NO RESPONSE TO SHIFT LEVER MOVEMENT Step 1. Check the lever."
-    assert label_overshoots(question, (passage,)) is True
-    assert label_overshoots(question, ("10. NO RESPONSE TO SHIFT LEVER MOVEMENT. W",)) is False
-    multi = (
-        "My truck has this fault: 10. NO RESPONSE TO SHIFT LEVER MOVEMENT. "
-        "The manual also mentions transmission."
-    )
-    assert label_overshoots(multi, (passage,)) is True
+    assert _requested_label(question) == "10. NO RESPONSE TO SHIFT LEVER MOVEMENT"
+    assert label_overshoots(question, (passage,)) is False
+    answer = answer_from_passages(question, [_fused("doc:row", passage)])
+    assert answer.refused is False
+    assert "Check the lever" in answer.text
+    mixed = "4. vehicle not charging according to voltmeter \u2014 where do I start?"
+    assert _requested_label(mixed) == "4. vehicle not charging according to voltmeter"
 
 
 def test_follow_up_query_includes_the_earlier_turn() -> None:

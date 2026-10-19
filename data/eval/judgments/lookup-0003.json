@@ -1,32 +1,62 @@
 {
   "id": "lookup-0003",
-  "answer_sha256": "8b7472ed2001a8f4a9b23073871ca0a7e1e33d62af296fdc56e4c8acc5ca1987",
+  "answer_sha256": "3ff66aa1dd69d1a3bb2ec7a0b61736eaa9e6ffbcf5fff1d41674f68f496f61b4",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for water in fuel filter by draining",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
     }
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "6.",
+      "supported": true,
+      "quote": "Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
+    },
+    {
+      "sentence": "Check for water in fuel filter by draining.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 6.",
+      "sentence": "Drain fuel filter (para.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER.",
+      "sentence": "3-10).",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "What should I check first?",
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if fuel gauge indicates “E” (empty).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Fill fuel tank, and start engine.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if the wait-to-start lamp assembly fails to light or does not go out.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance if wait-to-start lamp assembly fails to light or does not go out.",
       "supported": false,
       "quote": ""
     }

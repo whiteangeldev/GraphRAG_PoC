@@ -1,6 +1,6 @@
 {
   "id": "relational-0014",
-  "answer_sha256": "7cd7d3121f0bbab015fb497635c902408b1a260317d9e78a066e5968e8c1445c",
+  "answer_sha256": "c98def0dba5b68f4d791eb88b1557fbd68420e117cad48aa1cb5fc3bb107b4b4",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,17 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match the \"STEERING\" list item for malfunction 21.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 21.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT, which parts-list item matches STEERING?",
+      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT.",
       "supported": false,
       "quote": ""
     }

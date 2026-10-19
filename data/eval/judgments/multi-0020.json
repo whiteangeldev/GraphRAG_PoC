@@ -1,6 +1,6 @@
 {
   "id": "multi-0020",
-  "answer_sha256": "e2c0329748c11108ac787588739355e883f2709465f82b90a7b070056213d6c1",
+  "answer_sha256": "67bb1c098690d13b77f7a9d9767b82f7c721e85abcd5dec230fdb5b525a00ea5",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 28.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions lamp.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is about a truck's fault related to headlights, but the passages do not mention any part numbers for the bulbs or other components related to the headlights.",
       "supported": false,
       "quote": ""
     }

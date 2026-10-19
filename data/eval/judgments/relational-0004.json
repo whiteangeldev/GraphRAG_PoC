@@ -1,6 +1,6 @@
 {
   "id": "relational-0004",
-  "answer_sha256": "43de5a28f2a9aed36d7d4921083c27155b1042169c0071e1eaf77d69ea4d8e0f",
+  "answer_sha256": "4b25de44f2816c0ec43e8ea2498232e84f562538f734cc6b6685d74124b13637",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,17 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: For malfunction 7.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE, which parts-list item matches RADIATOR?",
+      "sentence": "None of the passages provide information about which parts match \"RADIATOR\" for the given malfunction.",
       "supported": false,
       "quote": ""
     }

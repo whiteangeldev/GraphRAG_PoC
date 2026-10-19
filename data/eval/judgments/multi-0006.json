@@ -1,6 +1,6 @@
 {
   "id": "multi-0006",
-  "answer_sha256": "6647329b1b7e761c5645e7eaf4737d0932f4892ec053f9365b880c350411400d",
+  "answer_sha256": "b76c59ac48b1f2a93c723e7a3ff250ad9ff3321f5ea0e70c4a283fc7da82582a",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: My truck has this fault: 12.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions transmission.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     }

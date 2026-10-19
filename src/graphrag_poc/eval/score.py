@@ -252,6 +252,7 @@ def render_report(info: RunInfo, rows: list[Judged]) -> str:
         "Dense and sparse lists are merged with reciprocal rank fusion.",
         f"The generator receives the first {info.evidence_limit} fused passages.",
         "The reranker is off.",
+        "The malfunction title is read without the following word. This is the improved baseline.",
         "",
         "| Setting | Value |",
         "|---|---|",

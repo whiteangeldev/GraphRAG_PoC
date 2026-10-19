@@ -1,6 +1,6 @@
 {
   "id": "lookup-0009",
-  "answer_sha256": "baf51be6bcbc716c497b8fe33f0068c28dd5dc52ffbe00dd2e9f062bca5d17e2",
+  "answer_sha256": "b70fc21fcea3a8eb377dfe1bfe7303745a24e330522328ca8bc6ee78eb71ba5d",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,22 +11,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer to the question.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 8.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What should I check first?",
+      "sentence": "The question asks what should be checked first, but none of the provided passages directly answer this.",
       "supported": false,
       "quote": ""
     }

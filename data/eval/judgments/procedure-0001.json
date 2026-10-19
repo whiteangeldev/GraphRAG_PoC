@@ -1,6 +1,6 @@
 {
   "id": "procedure-0001",
-  "answer_sha256": "7b033a29726fbbda42ad6bd10bc6364653790ced7125ad3127c3c1fa80cafce5",
+  "answer_sha256": "750e4097a2b6dfca2af6aa69748704abd20fa4561a88455dd39cd38a6384cb9c",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -31,7 +31,7 @@
       "quote": ""
     },
     {
-      "sentence": "The question is about how to perform a job, but the provided passages only describe steps for removing and inserting pages, and there is no mention of the specific process for the job in question.",
+      "sentence": "The question is about how to perform a job, but the provided passages only describe steps for removing and inserting pages, not the process of performing a job.",
       "supported": false,
       "quote": ""
     }

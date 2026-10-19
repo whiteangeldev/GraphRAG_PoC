@@ -1,6 +1,6 @@
 {
   "id": "applicability-0006",
-  "answer_sha256": "a58ae0452ae56601b21fa38ec5ef55c02591c60c3e49f37e8c52a3e73e5169ef",
+  "answer_sha256": "6597d22812c2af3ff5c903b282ef34ca75ea38ab22fb6cabf216a2ed913ce1bd",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,7 +11,7 @@
   ],
   "claims": [
     {
-      "sentence": "The vehicle model named for the content is M1043.",
+      "sentence": "The vehicle model named for the content is M1043, and it is the M1043.",
       "supported": false,
       "quote": ""
     }

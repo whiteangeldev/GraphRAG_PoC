@@ -1,6 +1,6 @@
 {
   "id": "multi-0016",
-  "answer_sha256": "0398c9fa776cd9219930f1472bbb6fba6fd06b8b449f007e9af531ebecfa968d",
+  "answer_sha256": "852afabb43aed106632701f681280af1805433b15914305d81b5f1fc8ef80e14",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: My truck has this fault: 23.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "WINCH STOPS DURING NORMAL OPERATION.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions winch.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "None of the passages provide the part number for the winch stop during normal operation.",
       "supported": false,
       "quote": ""
     }

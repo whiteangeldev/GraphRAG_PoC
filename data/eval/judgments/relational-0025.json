@@ -1,12 +1,12 @@
 {
   "id": "relational-0025",
-  "answer_sha256": "25be44950a16ebf1843c3d31160091a137b5008e3266402181226ae114a4f117",
+  "answer_sha256": "3f67a77d95606fd32ca77c4eeb2792ce14b3093efffa5bf01f150b10dc0a696f",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "3. ENGINE CRANKS BUT DOES NOT START"
     },
     {
       "text": "6472357",
@@ -16,22 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The vehicle has this problem: 3.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE CRANKS BUT DOES NOT START.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Which fuel part number is listed?",
+      "sentence": "The question is about a fuel part number, but the passages do not mention any fuel part numbers related to the engine problem.",
       "supported": false,
       "quote": ""
     }

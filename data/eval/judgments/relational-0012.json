@@ -1,6 +1,6 @@
 {
   "id": "relational-0012",
-  "answer_sha256": "14ea82ab86b23d8893d07606985195dc6f04d4db2b93e542a59f29a151289544",
+  "answer_sha256": "03c3bf40978b7ba72bc0581e568b6b8043f48f8d0b985b0174d9c9e0143cbec6",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,19 +16,14 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match \"WHEEL\" for malfunction 19.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 19.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "WHEELS WOBBLE OR SHIMMY, which parts-list item matches WHEEL?",
-      "supported": false,
-      "quote": ""
+      "sentence": "WHEELS WOBBLE OR SHIMMY.",
+      "supported": true,
+      "quote": "WHEELS WOBBLE OR SHIMMY"
     }
   ]
 }

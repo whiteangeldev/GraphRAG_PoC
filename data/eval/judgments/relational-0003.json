@@ -1,12 +1,12 @@
 {
   "id": "relational-0003",
-  "answer_sha256": "ef3d723c54072d57a26383b66a37fa7c4d5879107a9d6594e0b225a316844193",
+  "answer_sha256": "d2f2ceb65381bbbe9d2b2e00634349274b1f833dfa8a530aed25cd1f4e8114b7",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check for water in fuel filter by draining",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10)."
     },
     {
       "text": "SF-5597692",
@@ -16,22 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The vehicle has this problem: 6.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Which nozzle part number is listed?",
+      "sentence": "The question is about a nozzle part number listed in the vehicle's engine system, but the information provided in the passages is related to engine starting issues, fuel system tests, electrical tests, and engine performance tests, not nozzle part numbers.",
       "supported": false,
       "quote": ""
     }

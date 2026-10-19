@@ -1,6 +1,6 @@
 {
   "id": "applicability-0008",
-  "answer_sha256": "7e1b7ab0b05fa216ba69c50ddc4f2813e21c67edf23ddfdb3ef969737a6ef21b",
+  "answer_sha256": "aca70096b3f0293a0a8407a196912e89aecdeb7750ebd4c92f4cbc41c9176472",
   "judge": "Qwen3-0.6B",
   "facts": [
     {

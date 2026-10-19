@@ -1,6 +1,6 @@
 {
   "id": "multi-0002",
-  "answer_sha256": "13c4af10ba04e70aa788cca567b62213e9c8aa65797386cde015695fd2312a26",
+  "answer_sha256": "cf7589c3f44c3d2e4c3131fd45993ed70378880a9882e632e9a5ac0714692a92",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 5.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C).",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions nozzle.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is about finding a part number related to a specific exhaust smoke fault, but none of the passages mention a part number or provide the necessary information.",
       "supported": false,
       "quote": ""
     }

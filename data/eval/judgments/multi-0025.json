@@ -1,6 +1,6 @@
 {
   "id": "multi-0025",
-  "answer_sha256": "6a50937a48405d31093e7939c15f63015a9e0b02011908837e8c4af4394185c4",
+  "answer_sha256": "e3906375f130ae27c22ccd5207a3bd4ddb73a48ca7d8e7f6d14a25b913fb2cc2",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,7 +21,7 @@
   ],
   "claims": [
     {
-      "sentence": "None of the passages provide information about the malfunction of the engine and the specific steps to diagnose it.",
+      "sentence": "None of the passages provide information about the malfunction of the engine and the steps to fix it.",
       "supported": false,
       "quote": ""
     }

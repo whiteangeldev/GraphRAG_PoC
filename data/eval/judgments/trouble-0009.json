@@ -1,19 +1,19 @@
 {
   "id": "trouble-0009",
-  "answer_sha256": "a2dcb4fdadc43a5d8e0be3456546e0fe2b134ab50056605d8ca1fd9ac1d57c32",
+  "answer_sha256": "5c8cd0d0d12c7b98f88fe2fb83d76e890f65541a3a43cef0a5acc512daa2f49f",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check operating controls for correct settings",
-      "present": true,
-      "quote": "9."
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
       "sentence": "9.",
-      "supported": true,
-      "quote": "9."
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Check operating controls for correct settings.",

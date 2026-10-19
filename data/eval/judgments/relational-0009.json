@@ -1,12 +1,12 @@
 {
   "id": "relational-0009",
-  "answer_sha256": "bd46494abe29f55b44085d17928335c2b32c4e152b583d592ddd3578608f0e84",
+  "answer_sha256": "85c6aa204a785040c91d8a77fdbf64f309be9d7e8cd76f3fccf8e589fdbc2537",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check operating controls for correct settings",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check operating controls for correct settings."
     },
     {
       "text": "5598104",
@@ -16,22 +16,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The vehicle has this problem: 9.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Which heater part number is listed?",
+      "sentence": "The question is about a heater part number, but none of the given passages mention any heater part numbers.",
       "supported": false,
       "quote": ""
     }

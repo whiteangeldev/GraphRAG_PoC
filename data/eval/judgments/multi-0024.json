@@ -1,6 +1,6 @@
 {
   "id": "multi-0024",
-  "answer_sha256": "4f43c2cbc6254b61c9abd085555ecdb41f2e9d8bf4b3539cfaaecf6bfa5d4edd",
+  "answer_sha256": "6476b46b30cb9fe9d35d9592f4dd6389c960438e5f04ca6533b2c27a5d03d6ff",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the part number to look up.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 2.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "ENGINE CRANKS SLOWLY.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions battery.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is not answered in the given passages.",
       "supported": false,
       "quote": ""
     }

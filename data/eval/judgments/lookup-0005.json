@@ -1,6 +1,6 @@
 {
   "id": "lookup-0005",
-  "answer_sha256": "c14c57954045519bd978e3db996b53802d22159e330f5349a17073edfc045769",
+  "answer_sha256": "c77ec27af1d051e0777cc9be84477776ebd763ded7126636139455634be4d50e",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,22 +11,32 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "1.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 10.",
+      "sentence": "Check to see if transfer case lever is in \"N\" (neutral) or \"P\" (Park) for M1123 and A2 vehicles.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT.",
+      "sentence": "Place transmission shift lever in \"N\" (neutral) or \"P\" (Park) and select transfer gear range.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "What should I check first?",
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Position shift lever in \"1\" and accelerate the vehicle from 0 mph.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "No upshifts should occur in this range.",
       "supported": false,
       "quote": ""
     }

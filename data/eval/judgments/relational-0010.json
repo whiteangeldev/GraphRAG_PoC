@@ -1,6 +1,6 @@
 {
   "id": "relational-0010",
-  "answer_sha256": "e919d3df8f2c3396a618c5b060344f1b81a190bd189be9d94574f5b7c417808c",
+  "answer_sha256": "e6bf0e74b75d6f322ec50876d025d1b19d953dd5bcbdd94d785d028ca40a9f4e",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,19 +16,14 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide information about which parts match \"TRANSFER\" in the context of malfunction 14.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: For malfunction 14.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT, which parts-list item matches TRANSFER?",
-      "supported": false,
-      "quote": ""
+      "sentence": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT.",
+      "supported": true,
+      "quote": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT"
     }
   ]
 }

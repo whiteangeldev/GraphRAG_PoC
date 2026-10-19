@@ -1,6 +1,6 @@
 {
   "id": "lookup-0002",
-  "answer_sha256": "2ecda80de418dcc84cad7556dc9b7f2bafe32ac3f320d0e13588cc97a4795f59",
+  "answer_sha256": "a310041c545cb12b9ddad49c902b9d748d4d68777d25f323f93b9c32769e70d3",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,9 +11,14 @@
   ],
   "claims": [
     {
-      "sentence": "None of the passages provide the answer to the question.",
+      "sentence": "None of the passages provide information about what malfunction 5.",
       "supported": false,
       "quote": ""
+    },
+    {
+      "sentence": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) lists as the first test or corrective action.",
+      "supported": true,
+      "quote": "EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C)"
     }
   ]
 }

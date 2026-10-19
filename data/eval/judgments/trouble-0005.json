@@ -1,34 +1,34 @@
 {
   "id": "trouble-0005",
-  "answer_sha256": "8356d6cea72989e5628dc713d8cdc22a8392ecf53c89cf322e13e2c6629da9ad",
+  "answer_sha256": "8f8242002fdcd9971973da1fced7736aacd9c5bde3e1c6c721be2ae7c04f7a26",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
-      "present": true,
-      "quote": "10."
+      "present": false,
+      "quote": ""
     }
   ],
   "claims": [
     {
       "sentence": "10.",
-      "supported": true,
-      "quote": "10."
+      "supported": false,
+      "quote": ""
     },
     {
-      "sentence": "Step 1.",
-      "supported": true,
-      "quote": "10."
+      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT — Step 1.",
+      "supported": false,
+      "quote": ""
     },
     {
       "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
       "supported": true,
-      "quote": "10."
+      "quote": "Step 2. Other causes. Notify unit maintenance."
     },
     {
       "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
-      "supported": false,
-      "quote": ""
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
     },
     {
       "sentence": "2.",
@@ -36,22 +36,12 @@
       "quote": ""
     },
     {
-      "sentence": "Step 2.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Other causes.",
+      "sentence": "Hold down brake pedal and move transmission shift lever through all ranges including reverse.",
       "supported": false,
       "quote": ""
     },
     {
       "sentence": "3.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Step 4.",
       "supported": false,
       "quote": ""
     },

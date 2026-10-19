@@ -1,6 +1,6 @@
 {
   "id": "lookup-ja-0010",
-  "answer_sha256": "7c6a82e60147987207d8913d5080f404b110dfb785330cc82f9b01b9da34684b",
+  "answer_sha256": "e40ea89cbb9314844f583f8b21efd11b43736c53ec1aa5615a6e9cac61520ddf",
   "judge": "Qwen3-0.6B",
   "facts": [
     {

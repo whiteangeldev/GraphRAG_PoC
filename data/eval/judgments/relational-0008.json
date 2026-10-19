@@ -1,6 +1,6 @@
 {
   "id": "relational-0008",
-  "answer_sha256": "8298b8d22d8282265906dbd8535499020d144020fec6355268307db38a4bd07e",
+  "answer_sha256": "c42011c23b8b48dd594feab28f5eeb95cdf9ec42545fd527cf2075a57f6d2bd0",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -16,17 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: For malfunction 8.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE, which parts-list item matches OIL PUMP?",
+      "sentence": "None of the passages provide information about which parts-list item matches \"OIL PUMP\".",
       "supported": false,
       "quote": ""
     }

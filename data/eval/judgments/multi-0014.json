@@ -1,6 +1,6 @@
 {
   "id": "multi-0014",
-  "answer_sha256": "fe2198626dda4909ff3d84d17ba3b61b260602a417d094834cfe17d996d1b5d6",
+  "answer_sha256": "5ec41a09f3fea7a645d9630ba96744fb68affab1cacb388354ed59b01b20a57d",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,12 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
+      "sentence": "None of the passages provide the answer.",
       "supported": false,
       "quote": ""
     },
     {
-      "sentence": "Searched: My truck has this fault: 21.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions steering.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "The question is about a truck fault related to steering, but the passages do not mention a part number for the steering component.",
       "supported": false,
       "quote": ""
     }

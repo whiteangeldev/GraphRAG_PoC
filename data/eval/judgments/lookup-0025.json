@@ -1,6 +1,6 @@
 {
   "id": "lookup-0025",
-  "answer_sha256": "80d2829fb01f980b9acd11563aa99293a78969aeafd7e0718d7a5af34e8773ac",
+  "answer_sha256": "8206134049d1c93373952825c4cf25176c64001664007c7aff3c5eaa5fa402bd",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -11,22 +11,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: The truck is showing this problem: 28.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What should I check first?",
+      "sentence": "None of the passages provide the answer to the question.",
       "supported": false,
       "quote": ""
     }

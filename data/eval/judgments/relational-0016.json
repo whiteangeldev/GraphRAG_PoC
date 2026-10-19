@@ -1,12 +1,12 @@
 {
   "id": "relational-0016",
-  "answer_sha256": "346f9354fbce6320097e086b9e3c2f47ef54aaebeb074bea543aec9fe4f37fac",
+  "answer_sha256": "69034c0202bc30cda4c0de524cced6c47c8c96d063a63028ca66fecac57ea159",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Wait 2 minutes and attempt winch operation again",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "WINCH STOPS DURING NORMAL OPERATION Step 1. Wait 2 minutes and attempt winch operation again."
     },
     {
       "text": "W6000HMV",
@@ -16,17 +16,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: For malfunction 23.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "WINCH STOPS DURING NORMAL OPERATION, which parts-list item matches WINCH?",
+      "sentence": "None of the passages provide information about which parts-list item matches \"WINCH\" in the question.",
       "supported": false,
       "quote": ""
     }

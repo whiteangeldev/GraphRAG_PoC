@@ -1,34 +1,39 @@
 {
   "id": "lookup-0007",
-  "answer_sha256": "6d19549c723278490e69ebe24ee7d60e8b9687dfeb95bb38ba97b79064d30912",
+  "answer_sha256": "928aaae70abb3eb0e1d64554c33495da369549636e36e86129b6ae0e70cb1d7a",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
       "text": "Step 1. Check to see if transmission dipstick is loose",
-      "present": false,
-      "quote": ""
+      "present": true,
+      "quote": "Step 1. Check to see if transmission dipstick is loose."
     }
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
+      "sentence": "12.",
+      "supported": true,
+      "quote": "12."
     },
     {
-      "sentence": "Searched: The truck is showing this problem: 12.",
-      "supported": false,
-      "quote": ""
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE",
+      "supported": true,
+      "quote": "FLUID THROWN FROM TRANSMISSION FILL TUBE"
     },
     {
-      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE.",
-      "supported": false,
-      "quote": ""
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1."
     },
     {
-      "sentence": "What should I check first?",
-      "supported": false,
-      "quote": ""
+      "sentence": "Check to see if transmission dipstick is loose.",
+      "supported": true,
+      "quote": "Check to see if transmission dipstick is loose."
+    },
+    {
+      "sentence": "Secure dipstick.",
+      "supported": true,
+      "quote": "Secure dipstick."
     }
   ]
 }

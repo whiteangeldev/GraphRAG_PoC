@@ -64,6 +64,8 @@ llama-server -m Qwen3-0.6B-Q8_0.gguf --host 127.0.0.1 --port 8000 -c 8192 --alia
 
 The 20-question gold-passage sample for Sodick's review is [`docs/gold_review_sample.md`](docs/gold_review_sample.md). Every quoted passage is copied from the node file.
 
+M2 classifies every question in [`docs/M2_LIMITATION_ANALYSIS.md`](docs/M2_LIMITATION_ANALYSIS.md). The graph schema is [`docs/M2_GRAPH_SCHEMA.md`](docs/M2_GRAPH_SCHEMA.md). The improved baseline fixes the title reader. The M1 scores from before that fix are in [`docs/m1_baseline_report.md`](docs/m1_baseline_report.md).
+
 ## Demo
 
 ```bash

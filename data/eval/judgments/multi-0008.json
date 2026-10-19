@@ -1,6 +1,6 @@
 {
   "id": "multi-0008",
-  "answer_sha256": "5e0bfafc3953ada12f2972f12a2f2ab6a4a6b0eeabcfe5b120db0f0d67417526",
+  "answer_sha256": "81b42e821a500b0abe0648c641f2caae6a73ce0a843206339c79b6345a365217",
   "judge": "Qwen3-0.6B",
   "facts": [
     {
@@ -21,27 +21,7 @@
   ],
   "claims": [
     {
-      "sentence": "No retrieved passage contains the requested material.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "Searched: My truck has this fault: 8.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "The manual also mentions oil pump.",
-      "supported": false,
-      "quote": ""
-    },
-    {
-      "sentence": "What part number should I look up?",
+      "sentence": "None of the passages provide the part number for the low engine oil pressure gauge.",
       "supported": false,
       "quote": ""
     }

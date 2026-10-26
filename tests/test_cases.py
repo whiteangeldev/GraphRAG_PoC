@@ -1,5 +1,10 @@
 """Synthetic cases stay seeded, and every code and part is taken from the node files."""
 
+import hashlib
+import json
+
+import pytest
+
 from graphrag_poc.cases.generate import (
     consistent_with_source,
     generate_cases,
@@ -7,7 +12,7 @@ from graphrag_poc.cases.generate import (
     render_cases,
 )
 from graphrag_poc.cases.rules import CASES_PATH, load_rules
-from graphrag_poc.cases.sources import load_faults, load_parts, parse_steps
+from graphrag_poc.cases.sources import load_faults, load_parts, parse_steps, usable_step
 
 
 def test_step_text_is_taken_from_the_malfunction_row() -> None:
@@ -23,6 +28,46 @@ def test_step_text_is_taken_from_the_malfunction_row() -> None:
     )
     assert steps[1] == ("Other causes", "Notify unit maintenance")
     assert all(cause in body and action in body for cause, action in steps)
+
+
+@pytest.mark.parametrize(
+    ("body", "expected"),
+    [
+        (
+            "Step 1. Check for low oil level (para. 3-17). Add oil (Appendix G).",
+            ("Check for low oil level (para. 3-17)", "Add oil (Appendix G)"),
+        ),
+        (
+            "Clean and adjust parking brake (para. 3-13) "
+            "If parking brake still fails to hold vehicle, notify unit maintenance.",
+            (
+                "Clean and adjust parking brake (para. 3-13)",
+                "parking brake still fails to hold vehicle, notify unit maintenance",
+            ),
+        ),
+        ("All causes. Notify unit maintenance.", ("All causes", "Notify unit maintenance")),
+    ],
+)
+def test_references_remain_intact_in_cause_action_pairs(
+    body: str, expected: tuple[str, str]
+) -> None:
+    assert parse_steps(body) == [expected]
+
+
+@pytest.mark.parametrize(
+    ("cause", "action"),
+    [
+        ("11", "ROUGH SHIFTING All causes. Notify unit maintenance"),
+        ("Other causes", "Notify unit maintenance"),
+        ("All causes", "Notify unit maintenance"),
+        ("Check battery cables", "Notify unit maintenance of any damage to cables"),
+        ("Check the lamp", "Notify unit maintenance if the wait-to-start lamp fails"),
+        ("Check the oil", "Check the oil"),
+        ("", "Add oil"),
+    ],
+)
+def test_uninformative_pairs_are_not_eligible(cause: str, action: str) -> None:
+    assert not usable_step(cause, action)
 
 
 def test_two_runs_match_and_reference_real_rows() -> None:
@@ -52,11 +97,27 @@ def test_two_runs_match_and_reference_real_rows() -> None:
     assert "ILLUMINATE" in lights[0].error_codes[0]
     catalog = {part.number: part.description.upper() for part in load_parts(rules)}
     for case in first:
+        assert usable_step(case.cause, case.action)
+        assert case.model_extra is not None
+        assert case.model_extra["diagnosis_confirmed"] is False
+        assert case.model_extra["part_relation"] == "keyword_candidate_unverified"
         number = case.error_codes[0].split(".", 1)[0]
         description = catalog[case.parts[0]]
         assert any(word in description for word in rules.part_keywords[number])
+
+    invalid = first[0].model_copy(update={"parts": ["7X677"]})
+    assert any("7X677" in error for error in missing_references([invalid]))
 
 
 def test_saved_case_file_matches_the_generator() -> None:
     assert CASES_PATH.exists(), "run make generate-cases first"
     assert CASES_PATH.read_text(encoding="utf-8") == render_cases(generate_cases())
+
+
+def test_quality_report_matches_current_inputs() -> None:
+    report = json.loads(CASES_PATH.with_name("quality_report.json").read_text())
+    root = CASES_PATH.parents[2]
+    for name, digest in report["sha256"].items():
+        assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest
+    assert report["numeric_causes"] == report["generic_causes"] == 0
+    assert report["invalid_pairs"] == report["part_7X677"] == 0

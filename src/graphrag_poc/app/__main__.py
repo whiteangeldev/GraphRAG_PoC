@@ -4,11 +4,11 @@ import os
 
 import uvicorn
 
-from graphrag_poc.generate.__main__ import _load_env_file
+from graphrag_poc.generate.config import load_env_file
 
 
 def main() -> None:
-    _load_env_file()
+    load_env_file()
     uvicorn.run(
         "graphrag_poc.app.main:app",
         host="127.0.0.1",

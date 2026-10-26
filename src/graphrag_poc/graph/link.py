@@ -83,9 +83,7 @@ def load_term_table(driver: Driver, build: str | None = None) -> TermTable:
             number = str(record["key"])
             terms.append(Term("Part", number, number, str(record["node_id"])))
         for record in session.run(
-            "MATCH (n:Model) "
-            f"{where}"
-            "RETURN n.name AS key ORDER BY key",
+            f"MATCH (n:Model) {where}RETURN n.name AS key ORDER BY key",
             **values,
         ):
             name = str(record["key"])

@@ -1,0 +1,12 @@
+{
+  "status": "pending_client_agreement",
+  "approved_by": null,
+  "approved_at": null,
+  "approved_scope": null,
+  "question_ids": [],
+  "questions_sha256": "c48382983aa688480f28f2f7d0d92752da600ff395c39b93544608b4e90cf1ad",
+  "minimum_target_questions": 50,
+  "evidence_gain_points": 15,
+  "required_fact_gain_points": 10,
+  "note": "The 50 keyword-based questions are exploratory and excluded. Ten source-checked partial links are review candidates, not complete approved target chains."
+}

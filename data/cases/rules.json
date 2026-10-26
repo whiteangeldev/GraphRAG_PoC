@@ -1,5 +1,5 @@
 {
-  "description": "Synthetic HMMWV service cases. The error code is the Table 3-1 malfunction label, because these manuals have no separate code column. The part number is a PART NUMBER cell from the repair-parts list. Cause and action are one step of that same malfunction row. The model is one the row names, or a model the operator manual states for the M998 series when the row names none. The seed is fixed.",
+  "description": "Synthetic diagnostic instruction cases from informative Table 3-1 source pairs. Generic and escalation-only pairs are excluded. Cause is a diagnostic instruction, not a confirmed diagnosis. Parts are valid PART NUMBER cells selected by keyword and remain unverified candidates. Fixed seed; see docs/case_quality.md.",
   "seed": 20261014,
   "count": 2000,
   "date_start": "2020-01-01",

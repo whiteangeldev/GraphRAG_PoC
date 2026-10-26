@@ -5,7 +5,9 @@ import sys
 
 from qdrant_client import QdrantClient
 
-from graphrag_poc.generate.answer import Answer, Citation, answer_from_passages, clip_for_model
+from graphrag_poc.generate.answer import Answer, Citation, answer_from_passages
+from graphrag_poc.generate.config import load_env_file as _load_env_file
+from graphrag_poc.generate.model import model_answer as _model_answer
 from graphrag_poc.index.client import make_client
 from graphrag_poc.index.embed import Embedder, build_embedder
 from graphrag_poc.retrieve.fusion import FusedHit
@@ -93,7 +95,7 @@ def compose_answer(
     hits: list[FusedHit],
     frame: RelationFrame | None = None,
 ) -> Answer:
-    """Answer from these passages. A configured generation model is used when set."""
+    """Use the configured model; unset models retain the legacy offline quote demo only."""
 
     if os.environ.get("GENERATION_MODEL", "").strip():
         return _model_answer(question, hits, frame)
@@ -200,109 +202,10 @@ def _with_part(
     )
 
 
-def _model_answer(
-    question: str,
-    hits: list[FusedHit],
-    frame: RelationFrame | None = None,
-) -> Answer:
-    """Call the configured chat model. Citations must be passages that were retrieved."""
-
-    from openai import OpenAI
-
-    fused = hits
-    grounded = _with_part(answer_from_passages(question, fused), fused, frame)
-    if grounded.refused:
-        return grounded
-    client = OpenAI(
-        base_url=os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:8000/v1"),
-        api_key=os.environ.get("OPENAI_API_KEY") or "not-needed",
-        timeout=180.0,
-    )
-    passages = "\n\n".join(
-        f"[{hit.node_id} page {hit.page_start}]\n{clip_for_model(hit.text)}" for hit in fused
-    )
-    frame_text = frame.text() if frame is not None and frame.text() else ""
-    user = f"Question: {question}\n\n"
-    if frame_text:
-        user += f"Relation frame:\n{frame_text}\n\n"
-    user += f"Passages:\n{passages}"
-    system = (
-        "Answer only from the passages. Cite node_id and page. "
-        "If the passages do not contain the answer, refuse and repeat the question."
-    )
-    if frame_text:
-        system += " When the relation frame names a part number, include that part number."
-    response = client.chat.completions.create(
-        model=os.environ["GENERATION_MODEL"],
-        temperature=grounded.temperature,
-        seed=grounded.seed,
-        extra_body={"chat_template_kwargs": {"enable_thinking": False}},
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
-    )
-    text = response.choices[0].message.content or ""
-    if "Searched:" in text and question in text:
-        return Answer(text, (), True, question, grounded.temperature, grounded.seed)
-    text, extra = _ground_frame(text, fused, frame, question)
-    cited_list = [citation for citation in grounded.citations if citation.node_id in text]
-    cited_list.extend(citation for citation in extra if citation not in cited_list)
-    if not cited_list:
-        cited_list = [*grounded.citations, *extra]
-    return Answer(text, tuple(cited_list), False, question, grounded.temperature, grounded.seed)
-
-
-def _ground_frame(
-    text: str,
-    hits: list[FusedHit],
-    frame: RelationFrame | None,
-    question: str,
-) -> tuple[str, list[Citation]]:
-    """Add frame lines that are exact spans of a retrieved passage."""
-
-    citations: list[Citation] = []
-    if frame is None or "part" not in question.lower():
-        return text, citations
-    lines = [line for line in (frame.cause, frame.part_number) if line]
-    for line in lines:
-        if line in text:
-            continue
-        hit = next((item for item in hits if line in item.text), None)
-        if line == frame.part_number and frame.part_node_id:
-            matched = next(
-                (item for item in hits if item.node_id == frame.part_node_id and line in item.text),
-                None,
-            )
-            if matched is not None:
-                hit = matched
-        if hit is None:
-            continue
-        text = f"{text.rstrip()}\n{line}"
-        citation = Citation(hit.node_id, hit.page_start)
-        if citation not in citations:
-            citations.append(citation)
-    return text, citations
-
-
 def _print_answer(result: Answer) -> None:
     print(result.text)
     for citation in result.citations:
         print(f"cite {citation.node_id} page {citation.page}")
-
-
-def _load_env_file() -> None:
-    from pathlib import Path
-
-    path = Path(".env")
-    if not path.exists():
-        return
-    for line in path.read_text(encoding="utf-8").splitlines():
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#") or "=" not in stripped:
-            continue
-        key, value = stripped.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip())
 
 
 if __name__ == "__main__":

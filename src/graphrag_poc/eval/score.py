@@ -8,6 +8,12 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from graphrag_poc.eval.check import load_questions, validate
+from graphrag_poc.eval.config import (
+    configure_evaluation,
+    evaluation_fingerprint,
+    validate_evaluation_models,
+)
+from graphrag_poc.eval.gold import questions_digest
 from graphrag_poc.eval.judge import (
     Judge,
     Judgment,
@@ -86,6 +92,8 @@ class RunInfo:
     seed: int
     rrf_k: int = RRF_K
     evidence_limit: int = EVIDENCE_LIMIT
+    questions_sha256: str = ""
+    evaluation_config_sha256: str = ""
 
 
 def retrieval_query(record: dict[str, object]) -> str:
@@ -180,7 +188,8 @@ def judge_attempt(attempt: Attempt, judge: Judge, cache_dir: Path) -> tuple[Judg
 
     digest = _digest(attempt)
     path = cache_dir / f"{_safe_id(attempt.id)}.json"
-    cached = _read_cache(path, digest=digest, judge_name=judge.name)
+    cache_key = str(getattr(judge, "cache_key", judge.name))
+    cached = _read_cache(path, digest=digest, judge_name=judge.name, cache_key=cache_key)
     if cached is not None:
         return cached, True
     judgment = judge.judge(
@@ -190,6 +199,7 @@ def judge_attempt(attempt: Attempt, judge: Judge, cache_dir: Path) -> tuple[Judg
     )
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = judgment.to_dict(question_id=attempt.id, answer_sha256=digest)
+    payload["judge_cache_key"] = cache_key
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return judgment, False
 
@@ -254,7 +264,8 @@ def render_report(info: RunInfo, rows: list[Judged]) -> str:
         "Dense and sparse lists are merged with reciprocal rank fusion.",
         f"The generator receives the first {info.evidence_limit} fused passages.",
         "The reranker is off.",
-        "The malfunction title is read without the following word. This is the improved baseline.",
+        "The configured model decides answers, refusals, and citations without a title gate.",
+        "Citations are accepted only for the supplied node IDs and pages; none are added by rules.",
         "",
         "| Setting | Value |",
         "|---|---|",
@@ -319,9 +330,7 @@ def relational_note(rows: list[Judged]) -> str:
     if dropped:
         sentences.append(
             f"{len(dropped)} placed every gold passage in that set, "
-            "but the answer left out a required fact. "
-            "The answer is taken from the passages it cites, "
-            "and those citations did not include every gold passage."
+            "but at least one required fact was not supported in the judged answer."
         )
     complete = retrieved - len(dropped)
     sentences.append(
@@ -331,9 +340,6 @@ def relational_note(rows: list[Judged]) -> str:
     examples = _examples(part_only or other_miss or dropped)
     if examples:
         sentences.append("Examples: " + "; ".join(examples) + ".")
-    overshoot = _overshoot_sentence(rows)
-    if overshoot:
-        sentences.append(overshoot)
     return " ".join(sentences)
 
 
@@ -357,42 +363,13 @@ def applicability_note(rows: list[Judged]) -> str:
 
 
 def refusal_note(rows: list[Judged]) -> str:
-    """Unanswerable questions are refused when they read as a missing malfunction title."""
+    """Report observed refusals without attributing model decisions to a title regex."""
 
     unanswerable = [row for row in rows if row.question_type == "unanswerable"]
     if not unanswerable:
         return ""
     refused = [row for row in unanswerable if row.attempt.refused]
-    titled = [row for row in refused if row.attempt.looks_like_title]
-    quoted = len(unanswerable) - len(refused)
-    sentence = f"{len(refused)} of {len(unanswerable)} unanswerable questions were refused."
-    if titled:
-        sentence += (
-            f" {len(titled)} of those read as a malfunction title that is not in the "
-            "retrieved passages."
-        )
-    if quoted:
-        sentence += (
-            f" The other {quoted} do not read as a title, so the answerer quotes a "
-            "retrieved passage."
-        )
-    return sentence
-
-
-def _overshoot_sentence(rows: list[Judged]) -> str:
-    counted: list[str] = []
-    for name in ("relational", "lookup", "multi_hop"):
-        total = sum(1 for row in rows if row.question_type == name and row.attempt.label_overshoot)
-        if total:
-            counted.append(f"{total} {name.replace('_', '-')} questions")
-    if not counted:
-        return ""
-    listed = counted[0] if len(counted) == 1 else ", ".join(counted[:-1]) + ", and " + counted[-1]
-    return (
-        "The answerer refused questions whose retrieved passages contain the malfunction "
-        f"title: {listed}. The title string it read from the question also included "
-        "the comma or the next word, and that longer string is not in the passage."
-    )
+    return f"{len(refused)} of {len(unanswerable)} unanswerable questions were refused."
 
 
 def write_outputs(
@@ -445,7 +422,10 @@ def run_baseline(
     errors = validate(records)
     if errors:
         raise RuntimeError(errors[0])
+    validate_evaluation_models()
     active_judge = judge if judge is not None else build_judge()
+    if active_judge.name != os.environ["JUDGE_MODEL"].strip():
+        raise RuntimeError("The active judge must match the validated JUDGE_MODEL")
     attempts = _retrieve_all(records)
     rows, reused = score_attempts(attempts, active_judge, cache_dir or JUDGMENTS_DIR)
     info = RunInfo(
@@ -454,6 +434,8 @@ def run_baseline(
         judge=active_judge.name,
         temperature=attempts[0].temperature if attempts else 0.0,
         seed=attempts[0].seed if attempts else 0,
+        questions_sha256=questions_digest(records),
+        evaluation_config_sha256=evaluation_fingerprint(),
     )
     report = write_outputs(
         info,
@@ -490,6 +472,8 @@ def _metrics_json(info: RunInfo, rows: list[Judged]) -> str:
         "embedding_model": info.embedding_model,
         "generation_model": info.generation_model,
         "judge": info.judge,
+        "questions_sha256": info.questions_sha256,
+        "evaluation_config_sha256": info.evaluation_config_sha256,
         "rrf_k": info.rrf_k,
         "evidence_limit": info.evidence_limit,
         "rerank": False,
@@ -524,6 +508,9 @@ def _result_line(row: Judged) -> str:
         "question_type": attempt.question_type,
         "language": attempt.language,
         "expected_action": attempt.expected_action,
+        "answer": attempt.answer_text,
+        "citation_ids": list(attempt.citation_ids),
+        "evidence_ids": list(attempt.evidence_ids),
         "refused": attempt.refused,
         "first_gold_rank": first_gold_rank(attempt.gold_ids, attempt.ranked_ids),
         "missing_gold": _missing_gold(row),
@@ -621,7 +608,17 @@ def _judge_label(info: RunInfo) -> str:
 
 
 def _digest(attempt: Attempt) -> str:
-    body = attempt.answer_text + "\n" + "\n".join(attempt.citation_ids)
+    body = json.dumps(
+        [
+            "judgment-input-v2",
+            attempt.answer_text,
+            attempt.refused,
+            attempt.citation_ids,
+            attempt.cited_texts,
+            attempt.required_facts,
+        ],
+        ensure_ascii=False,
+    )
     return hashlib.sha256(body.encode()).hexdigest()
 
 
@@ -631,7 +628,7 @@ def _safe_id(question_id: str) -> str:
     return question_id
 
 
-def _read_cache(path: Path, *, digest: str, judge_name: str) -> Judgment | None:
+def _read_cache(path: Path, *, digest: str, judge_name: str, cache_key: str) -> Judgment | None:
     if not path.exists():
         return None
     try:
@@ -640,7 +637,11 @@ def _read_cache(path: Path, *, digest: str, judge_name: str) -> Judgment | None:
         return None
     if not isinstance(payload, dict):
         return None
-    if payload.get("answer_sha256") != digest or payload.get("judge") != judge_name:
+    if (
+        payload.get("answer_sha256") != digest
+        or payload.get("judge") != judge_name
+        or payload.get("judge_cache_key") != cache_key
+    ):
         return None
     return judgment_from_payload(payload, judge=judge_name)
 
@@ -680,20 +681,8 @@ def _fact_texts(record: dict[str, object]) -> tuple[str, ...]:
     return tuple(texts)
 
 
-def _load_env_file() -> None:
-    path = Path(".env")
-    if not path.exists():
-        return
-    for line in path.read_text(encoding="utf-8").splitlines():
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#") or "=" not in stripped:
-            continue
-        key, value = stripped.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip())
-
-
 def main() -> int:
-    _load_env_file()
+    configure_evaluation()
     try:
         run_baseline()
     except RuntimeError as exc:

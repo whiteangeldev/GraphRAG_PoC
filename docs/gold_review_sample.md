@@ -2,6 +2,8 @@
 
 Twenty questions from `data/eval/questions.jsonl` for Sodick's review.
 Each gold passage below is copied from the node file named in the heading.
+Relational/multi-hop gold is keyword-based, exploratory, and excluded from M3 targets.
+Revised wording and source relations still need client review.
 An unanswerable question has no gold passage. The correct action is to refuse.
 
 | # | Id | Type | Language | Action |
@@ -34,30 +36,7 @@ An unanswerable question has no gold passage. The correct action is to refuse.
 - Language: en
 - Expected action: answer
 
-The truck is showing this problem: 4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER. What should I check first?
-
-Required facts:
-
-- (step) Step 1. Check battery cable connections for looseness, damage, or corrosion
-
-Gold passages:
-
-### tm280_10:table:3-1:2:r4
-
-Page 281.
-
-````
-4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER Step 1. Check battery cable connections for looseness, damage, or corrosion. Notify unit maintenance of any damage to battery cables. Step 2. Check for broken or missing alternator belts. Notify unit maintenance if alternator belts are broken or missing. Step 3. Other causes. Notify unit maintenance.
-````
-
-## 2. lookup-0002
-
-- Type: lookup
-- Vocabulary: manual
-- Language: en
-- Expected action: answer
-
-What does malfunction 5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) list as the first test or corrective action?
+The truck is showing this problem: 5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C). What should I check first?
 
 Required facts:
 
@@ -71,6 +50,29 @@ Page 282.
 
 ````
 5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1. Check oil level for overfilling (Appendix G). Notify unit maintenance if fluid level is high. Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
+````
+
+## 2. lookup-0002
+
+- Type: lookup
+- Vocabulary: manual
+- Language: en
+- Expected action: answer
+
+What does malfunction 6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER list as the first test or corrective action?
+
+Required facts:
+
+- (step) Step 1. Check for water in fuel filter by draining
+
+Gold passages:
+
+### tm280_10:table:3-1:2:r6
+
+Page 282.
+
+````
+6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10). Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
 ````
 
 ## 3. lookup-ja-0001
@@ -345,29 +347,31 @@ Page 25.
 - Language: en
 - Expected action: answer
 
-The vehicle has this problem: 4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER. Which alternator part number is listed?
+Even after the engine warms up, there's a lot of smoke from the exhaust. Can you help me work out whether any replacement part is called for and find its part number?
+
+Benchmark slice: `keyword_exploratory`. Evidence basis: `keyword_heuristic`. M3 target eligible: `False`.
 
 Required facts:
 
-- (step) Step 1. Check battery cable connections for looseness, damage, or corrosion
-- (value) 12339317
+- (step) Step 1. Check oil level for overfilling (Appendix G)
+- (value) SF-5597692
 
 Gold passages:
 
-### tm280_10:table:3-1:2:r4
+### tm280_10:table:3-1:2:r5
 
-Page 281.
-
-````
-4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER Step 1. Check battery cable connections for looseness, damage, or corrosion. Notify unit maintenance of any damage to battery cables. Step 2. Check for broken or missing alternator belts. Notify unit maintenance if alternator belts are broken or missing. Step 3. Other causes. Notify unit maintenance.
-````
-
-### tm280_24p_1:parts:r1229
-
-Page 200.
+Page 282.
 
 ````
-23 MOOZZ 19207 12339317 LEAD,ELECTRICAL 200 AMP,MAKE FROM WIRE,P/N M13486/1-14,58 INCHES LONG USE WITH 200 AMP ALTERNATOR AVY,A15,BVY,B15,B16,HVY,H15,H16 NNN 1
+5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1. Check oil level for overfilling (Appendix G). Notify unit maintenance if fluid level is high. Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
+````
+
+### tm280_24p_1:parts:r4992
+
+Page 725.
+
+````
+4 PAOZZ 5640013093866 34623 SF-5597692 INSULATION,NOZZLE R.H.,USBL EFF 46162 AND ABOVE 1
 ````
 
 ## 12. relational-0005
@@ -377,12 +381,14 @@ Page 200.
 - Language: en
 - Expected action: answer
 
-The vehicle has this problem: 10. NO RESPONSE TO SHIFT LEVER MOVEMENT. Which transmission part number is listed?
+Moving the gear selector doesn't make the truck respond. What should be checked before deciding whether there is a part I need to order?
+
+Benchmark slice: `keyword_exploratory`. Evidence basis: `keyword_heuristic`. M3 target eligible: `False`.
 
 Required facts:
 
 - (step) Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles
-- (value) 9C234
+- (value) 12460092-2
 
 Gold passages:
 
@@ -405,33 +411,35 @@ Page 373.
 ## 13. relational-0010
 
 - Type: relational
-- Vocabulary: manual
+- Vocabulary: user
 - Language: en
 - Expected action: answer
 
-For malfunction 14. TRANSFER CASE SHIFT LEVER WILL NOT SHIFT, which parts-list item matches TRANSFER?
+The brake warning light is on. What needs checking before I can know whether a replacement part is required?
+
+Benchmark slice: `keyword_exploratory`. Evidence basis: `keyword_heuristic`. M3 target eligible: `False`.
 
 Required facts:
 
-- (step) Step 1. Check for proper shifting sequence
-- (value) 5938705
+- (step) Step 1. Check to see if parking brake is partially applied
+- (value) 12460229
 
 Gold passages:
 
-### tm280_10:table:3-1:4:r14
+### tm280_10:table:3-1:4:r17
 
-Page 283.
-
-````
-14. TRANSFER CASE SHIFT LEVER WILL NOT SHIFT Step 1. Check for proper shifting sequence. Ensure proper shifting sequence is used (para. 2-11). Step 2. Other causes. Notify unit maintenance.
-````
-
-### tm280_24p_1:parts:r1715
-
-Page 261.
+Page 284.
 
 ````
-8 PAOZZ 6220013615084 34623 5938705 LIGHT,INDICATOR USE WITH TRANSFER ASSEMBLY P/N 5937387 OR P/N 12447125 67-1 AVY,A11,A13,A14,A15,A20,A24,A25 A26,A27,BVY,B15,B16,B17,B18,B20,B24 B25,C17,HVY,NNN END OF FIGURE 1
+17. BRAKE WARNING LAMP ASSEMBLY ON Step 1. Check to see if parking brake is partially applied. Disengage parking brake. Step 2. Check for low brake fluid level (TM 9-2320-280-20). Add brake fluid (Appendix G). Step 3. Other causes. Notify unit maintenance.
+````
+
+### tm280_24p_1:parts:r1403
+
+Page 217.
+
+````
+11 PAOZZ 3040014445640 34623 12460229 CONNECTING LINK,RIG BRAKE LIGHT SWITCH BVY,B15,B20,B24,B25,C17,NNN 1
 ````
 
 ## 14. multi-0002
@@ -441,22 +449,24 @@ Page 261.
 - Language: en
 - Expected action: answer
 
-My truck has this fault: 5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C). The manual also mentions nozzle. What part number should I look up?
+My engine starts but runs rough and feels weak. Walk me through the checks and any follow-up work, then show the part number only if those findings support a replacement.
+
+Benchmark slice: `keyword_exploratory`. Evidence basis: `keyword_heuristic`. M3 target eligible: `False`.
 
 Required facts:
 
-- (step) Step 1. Check oil level for overfilling (Appendix G)
+- (step) Step 1. Check for water in fuel filter by draining
 - (step) (1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.
 - (value) SF-5597692
 
 Gold passages:
 
-### tm280_10:table:3-1:2:r5
+### tm280_10:table:3-1:2:r6
 
 Page 282.
 
 ````
-5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1. Check oil level for overfilling (Appendix G). Notify unit maintenance if fluid level is high. Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
+6. ENGINE STARTS BUT MISFIRES, RUNS ROUGH, OR LACKS POWER Step 1. Check for water in fuel filter by draining. Drain fuel filter (para. 3-10). Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
 ````
 
 ### tm280_10:2-27:step-b:2:step-p1:2
@@ -467,7 +477,7 @@ Page 195.
 (1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.
 ````
 
-### tm280_24p_1:parts:r4993
+### tm280_24p_1:parts:r4992
 
 Page 725.
 
@@ -482,38 +492,40 @@ Page 725.
 - Language: en
 - Expected action: answer
 
-My truck has this fault: 7. ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE. The manual also mentions radiator. What part number should I look up?
+I'm getting a low oil-pressure reading. What checks and servicing instructions apply, and what evidence would I need before choosing a replacement from the parts list?
+
+Benchmark slice: `keyword_exploratory`. Evidence basis: `keyword_heuristic`. M3 target eligible: `False`.
 
 Required facts:
 
-- (step) Step 1. Check to see if fan is running
-- (step) (2) Check for foreign objects in front of radiator and clean as required.
-- (value) 5584077
+- (step) Step 1. Check for low oil level (para
+- (step) 2. Loosen nut (2) and remove RPM sensor (1) from oil pump drive (6).
+- (value) 8682194
 
 Gold passages:
 
-### tm280_10:table:3-1:2:r7
+### tm280_10:table:3-1:2:r8
 
 Page 282.
 
 ````
-7. ENGINE OVERHEATS ACCORDING TO ENGINE COOLANT TEMPERATURE GAUGE Step 1. Check to see if fan is running. If fan is not running, perform emergency fan clutch override procedure (para. 3-23). Step 2. Allow engine to cool and check for low coolant level. Add coolant as necessary (para. 3-9). Step 3. Check for debris blocking radiator fins. Remove debris. Step 4. Check for broken or missing fan belts. Notify unit maintenance if belts are broken or missing. Step 5. Other causes. Notify unit maintenance.
+8. LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE Step 1. Check for low oil level (para. 3-17). Add oil (Appendix G). Step 2. Other causes. Notify unit maintenance.
 ````
 
-### tm280_10:2-34:step-b:2:step-p2:2
+### tm280_20_2:4-32:2:step-a:3:2:step-2:2
 
-Page 202.
-
-````
-(2) Check for foreign objects in front of radiator and clean as required.
-````
-
-### tm280_24p_1:parts:r4553
-
-Page 671.
+Page 291.
 
 ````
-10 PFOZZ 5340012127711 34623 5584077 BRACKET,ANGLE LOWER RADIATOR MOUNT 1
+2. Loosen nut (2) and remove RPM sensor (1) from oil pump drive (6).
+````
+
+### tm280_24p_1:parts:r3014
+
+Page 461.
+
+````
+5 XAHZZ 7X677 8682194 BODY,OIL PUMP 1995,96 BVY,B15,B20,B24,B25,C17,NNN 1
 ````
 
 ## 16. trouble-0001
@@ -523,20 +535,20 @@ Page 671.
 - Language: en
 - Expected action: answer
 
-4. vehicle not charging according to voltmeter — where do I start?
+5. excessive exhaust smoke after engine reaches normal operating temperature 190°-230°f (88°-110°c) — where do I start?
 
 Required facts:
 
-- (step) Step 1. Check battery cable connections for looseness, damage, or corrosion
+- (step) Step 1. Check oil level for overfilling (Appendix G)
 
 Gold passages:
 
-### tm280_10:table:3-1:2:r4
+### tm280_10:table:3-1:2:r5
 
-Page 281.
+Page 282.
 
 ````
-4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER Step 1. Check battery cable connections for looseness, damage, or corrosion. Notify unit maintenance of any damage to battery cables. Step 2. Check for broken or missing alternator belts. Notify unit maintenance if alternator belts are broken or missing. Step 3. Other causes. Notify unit maintenance.
+5. EXCESSIVE EXHAUST SMOKE AFTER ENGINE REACHES NORMAL OPERATING TEMPERATURE 190°-230°F (88°-110°C) Step 1. Check oil level for overfilling (Appendix G). Notify unit maintenance if fluid level is high. Step 2. Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance. Step 3. Other causes. Notify unit maintenance.
 ````
 
 ## 17. trouble-0005

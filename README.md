@@ -1,5 +1,18 @@
 # GraphRAG PoC
 
+The 26 October feedback data revision is described in [the case quality note](docs/case_quality.md).
+Saved baseline/M3/M4 scores describe the earlier data. Corrected nodes and cases require
+reindexing and fresh evaluation. [The question revision](docs/question_revision.md) rewrites
+all 50 relational/multi-hop prompts and removes the two invalid procedure entries.
+The current set has 155 questions; independent gold and client review remain pending.
+
+Ten source-checked partial links are in [the relation review](docs/source_relation_review.md).
+The existing 50 keyword questions are explicitly exploratory. `make gold-check` validates
+the source manifest. `make eval` and M3 acceptance stop before inference until the reviewed
+target set and scope agreement are ready; the +15/+10 targets remain unchanged.
+The [model evaluation revision](docs/model_evaluation_revision.md) removes the title gate
+and citation/part patching from the model path and configures separate answer/judge models.
+
 Hybrid retrieval over an approved public corpus, a Neo4j graph, and an installable library Sodick can call from its own retriever.
 
 ## Corpus
@@ -29,8 +42,13 @@ Copy `.env.example` to `.env` when you want a local override. Secrets stay in th
 | `EMBEDDING_MODEL` | Model name. The cached report uses `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. |
 | `OPENAI_BASE_URL` | Base URL when the backend or the generator is `openai`. Default `http://127.0.0.1:8000/v1`. |
 | `OPENAI_API_KEY` | Key for that endpoint. The local server accepts any value. |
-| `GENERATION_MODEL` | Chat model for answers. Empty means the answer is the text of the cited passages. |
-| `JUDGE_MODEL` | Model that judges required facts and claims. Empty means the quote check. A quote must be an exact span of a cited passage either way. |
+| `GENERATION_MODEL` | Answer model. Evaluation defaults to `Qwen/Qwen3-8B`; empty is rejected for evaluation. |
+| `JUDGE_MODEL` | Separate judge. Evaluation defaults to `Qwen/Qwen3-14B`; empty or the same model as the generator is rejected. Positive judgments require exact source quotes. |
+| `GENERATION_BASE_URL`, `GENERATION_API_KEY` | Optional answer endpoint/key overrides; otherwise use `OPENAI_BASE_URL` / `OPENAI_API_KEY`. |
+| `JUDGE_BASE_URL`, `JUDGE_API_KEY` | Judge endpoint/key overrides; otherwise use `OPENAI_BASE_URL` / `OPENAI_API_KEY`. |
+| `GENERATION_MAX_TOKENS`, `JUDGE_MAX_TOKENS` | Output limits, default 1536 / 4096. Truncation stops the run. |
+| `GENERATION_EXTRA_BODY`, `JUDGE_EXTRA_BODY` | Optional JSON server extensions. Qwen3 defaults disable thinking; set `{}` if the server does not support the extension. |
+| `GENERATION_CACHE_DIR` | Evaluation defaults to `data/eval/answers`; explicitly empty disables answer caching. |
 | `GENERATION_TEMPERATURE` | `0` during evaluation. |
 | `GENERATION_SEED` | `0` during evaluation. |
 | `RERANK_ENABLED` | Leave `false` for the reported baseline. |
@@ -40,35 +58,45 @@ Copy `.env.example` to `.env` when you want a local override. Secrets stay in th
 | `NEO4J_PASSWORD` | Neo4j password. Default `graphrag-poc`. |
 | `GRAPH_BUILD` | Build id the service reads when a request omits one. Default `corpus`. |
 
-## Reproduce the baseline
+## Evaluate the revised benchmark
 
 ```bash
-make eval
+make model-check
 ```
 
-That command starts Qdrant, builds the passage and case index when either collection is missing or the dense vector size does not match the configured model, validates the saved node files, checks that 別添52 is in the index, scores `data/eval/questions.jsonl`, and writes `docs/baseline_report.md`. Judgments already in `data/eval/judgments/` are reused when the answer is unchanged.
+This checks model settings without contacting endpoints. Defaults are `Qwen/Qwen3-8B`
+for answers and `Qwen/Qwen3-14B` for judging. Configure the actual served model IDs and
+endpoints in `.env` or exported variables. The same settings apply to both baseline
+and graph subprocesses. Docker Compose starts the stores and graph service; model servers
+must be supplied separately. See [the model setup and validation note](docs/model_evaluation_revision.md).
 
-The cached report was produced with:
+After client agreement on gold and scope, rebuild the indexes and establish a fresh baseline:
 
 ```bash
-EMBEDDING_BACKEND=fastembed
-EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-OPENAI_BASE_URL=http://127.0.0.1:8000/v1
-GENERATION_MODEL=Qwen3-0.6B
-JUDGE_MODEL=Qwen3-0.6B
+make up
+make index
+make graph
+make baseline
+make m3
 ```
 
-Start that model before `make eval`. With [llama.cpp](https://github.com/ggml-org/llama.cpp), using `Qwen3-0.6B-Q8_0.gguf` from `Qwen/Qwen3-0.6B-GGUF`:
+`make baseline`, `make m3`, and `make eval` check acceptance readiness and model configuration
+before starting services. Rebuild both indexes and the graph from corrected data before scoring; existing
+collections with matching vector sizes can still contain earlier data.
 
-```bash
-llama-server -m Qwen3-0.6B-Q8_0.gguf --host 127.0.0.1 --port 8000 -c 8192 --alias Qwen3-0.6B -ngl 99
-```
+Use `make eval` to reproduce the new baseline and graph reports after that first run.
+It rejects a different question fingerprint or model protocol before indexing/inference.
+Historical reports used Qwen3-0.6B for both roles and the earlier 157-question set;
+those scores remain historical and cannot validate the revised benchmark.
 
-`make eval` uses those defaults unless the variables are already set. A run passes when every metric stays within 0.02 of the cached report (2 percentage points for the share metrics, 0.02 for MRR).
+Answers, validated citation IDs, and evidence IDs are retained in the run results.
+Answer caching reuses identical prompts and settings; judge caching also tracks facts,
+source text, judge endpoint/settings, and protocol version. Changing the inputs invalidates
+the corresponding cache. The 20-question client review sample is
+[`docs/gold_review_sample.md`](docs/gold_review_sample.md).
 
-The 20-question gold-passage sample for Sodick's review is [`docs/gold_review_sample.md`](docs/gold_review_sample.md). Every quoted passage is copied from the node file.
-
-M2 classifies every question in [`docs/M2_LIMITATION_ANALYSIS.md`](docs/M2_LIMITATION_ANALYSIS.md). The graph schema is [`docs/M2_GRAPH_SCHEMA.md`](docs/M2_GRAPH_SCHEMA.md). The improved baseline fixes the title reader. The M1 scores from before that fix are in [`docs/m1_baseline_report.md`](docs/m1_baseline_report.md).
+M2's earlier classification is in [`docs/M2_LIMITATION_ANALYSIS.md`](docs/M2_LIMITATION_ANALYSIS.md).
+The graph schema is [`docs/M2_GRAPH_SCHEMA.md`](docs/M2_GRAPH_SCHEMA.md).
 
 ## Demo
 

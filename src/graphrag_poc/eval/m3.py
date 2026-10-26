@@ -8,6 +8,12 @@ import time
 from pathlib import Path
 
 from graphrag_poc.eval.check import load_questions, validate
+from graphrag_poc.eval.config import (
+    configure_evaluation,
+    evaluation_fingerprint,
+    validate_evaluation_models,
+)
+from graphrag_poc.eval.gold import acceptance_errors, questions_digest
 from graphrag_poc.eval.metrics import Ratio, SliceMetrics, evidence_hits, format_mrr, format_percent
 from graphrag_poc.eval.score import (
     EVIDENCE_LIMIT,
@@ -35,9 +41,7 @@ _TARGETS = ("relational", "multi_hop")
 
 
 def main(argv: list[str] | None = None) -> int:
-    from graphrag_poc.eval.score import _load_env_file
-
-    _load_env_file()
+    configure_evaluation()
     args = list(sys.argv[1:] if argv is None else argv)
     reproduce = args == ["--reproduce"]
     saved = None
@@ -77,9 +81,20 @@ def run_graph() -> tuple[str, str]:
     errors = validate(records)
     if errors:
         raise RuntimeError(errors[0])
+    target_errors = acceptance_errors(records)
+    if target_errors:
+        raise RuntimeError(target_errors[0])
+    validate_evaluation_models()
     if not BASELINE_METRICS.exists():
         raise RuntimeError("the improved baseline metrics are missing")
     baseline = json.loads(BASELINE_METRICS.read_text(encoding="utf-8"))
+    if baseline.get("questions_sha256") != questions_digest(records):
+        raise RuntimeError(
+            "Baseline belongs to a different/unversioned benchmark; rebaseline first."
+        )
+    if baseline.get("evaluation_config_sha256") != evaluation_fingerprint():
+        raise RuntimeError("Baseline model/protocol settings changed; run make baseline first.")
+    judge = build_judge()
     embedder = build_embedder()
     client = make_client(api_key=os.environ.get("QDRANT_API_KEY") or None)
     driver = make_driver()
@@ -112,7 +127,7 @@ def run_graph() -> tuple[str, str]:
             if record.get("id") == "relational-0001":
                 used = any("graph" in hit.channels for hit in hits[:EVIDENCE_LIMIT])
                 demo = (
-                    "relational-0001 asks which alternator part is listed for the charging fault.\n"
+                    f"{record['id']}: {record.get('question', '')}\n"
                     f"The graph channel is in the top {EVIDENCE_LIMIT}: {used}.\n"
                     f"Relation frame:\n{frame.text() or 'empty'}"
                 )
@@ -120,7 +135,6 @@ def run_graph() -> tuple[str, str]:
                 print(f"retrieved {index} of {len(records)}", flush=True)
     finally:
         driver.close()
-    judge = build_judge()
     rows, reused = score_attempts(attempts, judge, JUDGMENTS_PATH)
     print(f"judgments reused {reused} of {len(rows)}")
     info = RunInfo(
@@ -129,6 +143,8 @@ def run_graph() -> tuple[str, str]:
         judge=judge.name,
         temperature=attempts[0].temperature if attempts else 0.0,
         seed=attempts[0].seed if attempts else 0,
+        questions_sha256=questions_digest(records),
+        evaluation_config_sha256=evaluation_fingerprint(),
     )
     _write_results(rows)
     report = _render(info, rows, baseline, lookup_base, lookup_graph, demo)
@@ -136,6 +152,8 @@ def run_graph() -> tuple[str, str]:
         "embedding_model": info.embedding_model,
         "generation_model": info.generation_model,
         "judge": info.judge,
+        "questions_sha256": info.questions_sha256,
+        "evaluation_config_sha256": info.evaluation_config_sha256,
         "graph_weight": GRAPH_WEIGHT,
         "hop_depth": HOP_DEPTH,
         "node_cap": NODE_CAP,
@@ -196,7 +214,7 @@ def _render(
     lines = [
         "# Graph comparison",
         "",
-        "The same 157 questions were scored with the improved baseline and with the graph.",
+        f"The same {overall.questions} questions were scored with the improved baseline and graph.",
         f"Graph weight is {GRAPH_WEIGHT}. Hop depth is {HOP_DEPTH}. "
         f"The traversal cap is {NODE_CAP}.",
         "The reranker is off. Hit@10 still uses the first 10 fused passages.",
@@ -247,7 +265,10 @@ def _same_metrics(previous_text: str, current_text: str) -> bool:
     current = json.loads(current_text)
     if not isinstance(previous, dict) or not isinstance(current, dict):
         return False
-    return previous.get("by_type") == current.get("by_type")
+    return all(
+        previous.get(key) == current.get(key)
+        for key in ("by_type", "questions_sha256", "evaluation_config_sha256")
+    )
 
 
 def _type_gate(
@@ -348,6 +369,9 @@ def _write_results(rows: list[Judged]) -> None:
                 {
                     "id": row.attempt.id,
                     "question_type": row.question_type,
+                    "answer": row.attempt.answer_text,
+                    "refused": row.attempt.refused,
+                    "citation_ids": list(row.attempt.citation_ids),
                     "evidence_ids": list(row.attempt.evidence_ids),
                     "missing_gold": [
                         node_id

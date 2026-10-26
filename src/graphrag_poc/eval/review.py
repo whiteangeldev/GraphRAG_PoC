@@ -48,6 +48,8 @@ def render_sample(
         "",
         "Twenty questions from `data/eval/questions.jsonl` for Sodick's review.",
         "Each gold passage below is copied from the node file named in the heading.",
+        "Relational/multi-hop gold is keyword-based, exploratory, and excluded from M3 targets.",
+        "Revised wording and source relations still need client review.",
         "An unanswerable question has no gold passage. The correct action is to refuse.",
         "",
         "| # | Id | Type | Language | Action |",
@@ -86,6 +88,16 @@ def _section(index: int, record: dict[str, object], texts: dict[str, str]) -> li
         str(record.get("question", "")),
         "",
     ]
+    evaluation = record.get("evaluation")
+    if isinstance(evaluation, dict):
+        lines.extend(
+            [
+                f"Benchmark slice: `{evaluation.get('benchmark_slice', '')}`. "
+                f"Evidence basis: `{evaluation.get('evidence_basis', '')}`. "
+                f"M3 target eligible: `{evaluation.get('m3_target_eligible', False)}`.",
+                "",
+            ]
+        )
     lines.extend(_facts("Required facts", record.get("required_facts")))
     lines.extend(_facts("Forbidden facts", record.get("forbidden_facts")))
     gold = record.get("gold")

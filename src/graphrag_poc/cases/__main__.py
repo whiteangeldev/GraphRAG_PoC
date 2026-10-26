@@ -8,6 +8,7 @@ from graphrag_poc.cases.generate import (
     missing_references,
     write_cases,
 )
+from graphrag_poc.cases.report import write_quality_report
 from graphrag_poc.cases.rules import load_rules
 from graphrag_poc.cases.sources import load_faults
 
@@ -32,6 +33,7 @@ def main() -> int:
             print(problem, file=sys.stderr)
         return 1
     path = write_cases(first)
+    write_quality_report(first, rules)
     print(f"wrote {len(first)} cases to {path}")
     return 0
 

@@ -244,10 +244,9 @@ def test_corpus_graph_is_deterministic_and_links_the_oil_cooler() -> None:
     ]
     assert nxt == [f"passage:{OIL_COOLER_NEXT}"]
     assert cautions == [f"passage:{item}" for item in OIL_COOLER_CAUTIONS]
+    charging = next(row["id"] for row in first.malfunctions if str(row["code"]).startswith("4. "))
     candidates = [
-        edge
-        for edge in first.edges
-        if edge.type == "CANDIDATE_PART" and edge.start_id == "malfunction:tm280_10:table:3-1:2:r4"
+        edge for edge in first.edges if edge.type == "CANDIDATE_PART" and edge.start_id == charging
     ]
     assert candidates
     assert {edge.keyword for edge in candidates} <= {"ALTERNATOR", "GENERATOR"}

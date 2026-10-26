@@ -6,11 +6,14 @@ from pathlib import Path
 
 from graphrag_poc.cases.rules import load_rules
 from graphrag_poc.eval.check import AUTHOR, QUESTIONS_PATH, load_node_text
+from graphrag_poc.eval.wording import apply_wording
 from graphrag_poc.ingest.catalog import NODES
 
 _STEP_FACT = re.compile(r"Step 1\.[^.]+")
 _MODEL = re.compile(r"\bM\d{3,4}(?:A\d)?\b")
 _DATE = "14 October 2026"
+# Front-matter groups reported as procedure-0001 and procedure-0003 by the client.
+_EXCLUDED_PROCEDURE_PREFIXES = {"tm280_10", "tm280_20_2"}
 
 
 def build_questions(nodes_dir: Path | None = None) -> list[dict[str, object]]:
@@ -28,7 +31,7 @@ def build_questions(nodes_dir: Path | None = None) -> list[dict[str, object]]:
     questions.extend(_troubleshooting(nodes, texts))
     questions.extend(_follow_ups(nodes, texts))
     questions.extend(_japanese(nodes, texts))
-    return questions
+    return apply_wording(questions)
 
 
 def write_questions(questions: list[dict[str, object]], path: Path | None = None) -> Path:
@@ -80,9 +83,15 @@ def _procedures(nodes: list[dict[str, object]], texts: dict[str, str]) -> list[d
             continue
         grouped.setdefault(_task_prefix(str(node["node_id"])), []).append(node)
     made: list[dict[str, object]] = []
+    candidate_index = 0
     for prefix, steps in sorted(grouped.items()):
         ordered = sorted(steps, key=lambda item: _step_number(str(item["text"])))
         if len(ordered) < 2:
+            continue
+        candidate_index += 1
+        if candidate_index > 22:
+            break
+        if prefix in _EXCLUDED_PROCEDURE_PREFIXES:
             continue
         chosen = ordered[:3]
         facts = [{"type": "step", "text": str(step["text"])} for step in chosen]
@@ -93,7 +102,8 @@ def _procedures(nodes: list[dict[str, object]], texts: dict[str, str]) -> list[d
             warning = _warning_fact(str(caution["text"]))
             if warning:
                 facts.append({"type": "caution", "text": warning})
-        everyday = len(made) % 2 == 0
+        # Preserve the original IDs and vocabulary of the surviving questions.
+        everyday = candidate_index % 2 == 1
         title = str(chosen[0]["text"])
         question = (
             f"How do I carry out this job, in order? It starts with: {title}"
@@ -102,7 +112,7 @@ def _procedures(nodes: list[dict[str, object]], texts: dict[str, str]) -> list[d
         )
         made.append(
             _record(
-                f"procedure-{len(made) + 1:04d}",
+                f"procedure-{candidate_index:04d}",
                 "procedure",
                 everyday,
                 "en",
@@ -114,8 +124,6 @@ def _procedures(nodes: list[dict[str, object]], texts: dict[str, str]) -> list[d
                 [],
             )
         )
-        if len(made) == 22:
-            break
     return made
 
 
@@ -397,7 +405,7 @@ def _record(
     forbidden: list[dict[str, str]],
     turns: list[dict[str, str]] | None = None,
 ) -> dict[str, object]:
-    return {
+    record: dict[str, object] = {
         "id": qid,
         "slice": {
             "question_type": question_type,
@@ -417,6 +425,14 @@ def _record(
         "turns": turns,
         "notes": f"written by {AUTHOR}, {_DATE}",
     }
+    if question_type in {"relational", "multi_hop"}:
+        record["evaluation"] = {
+            "evidence_basis": "keyword_heuristic",
+            "benchmark_slice": "keyword_exploratory",
+            "m3_target_eligible": False,
+            "reason": "Gold and graph use the same keyword map; not acceptance evidence.",
+        }
+    return record
 
 
 def _fault_part_pairs(

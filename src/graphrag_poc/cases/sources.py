@@ -9,7 +9,7 @@ from graphrag_poc.cases.rules import Rules
 from graphrag_poc.ingest.catalog import NODES
 
 _STEP = re.compile(r"\bStep\s+\d+\.\s*")
-_IF = re.compile(r"\.\s+If\s+")
+_IF = re.compile(r"(?<=[.)])\s+If\s+")
 _IF_PREFIX = re.compile(
     r"^(?:not|any of these conditions exist),\s*",
     re.IGNORECASE,
@@ -136,7 +136,7 @@ def parse_steps(body: str) -> list[tuple[str, str]]:
             cause = chunk[: match.start()].strip(" .") or chunk
             action = _IF_PREFIX.sub("", chunk[match.end() :]).strip(" .") or chunk
         else:
-            pieces = [piece.strip(" .") for piece in chunk.split(". ") if piece.strip(" .")]
+            pieces = _sentences(chunk)
             if len(pieces) >= 2:
                 cause = pieces[0]
                 action = ". ".join(pieces[1:])
@@ -150,6 +150,55 @@ def parse_steps(body: str) -> list[tuple[str, str]]:
             )
         )
     return steps
+
+
+def _sentences(text: str) -> list[str]:
+    """Split outside references; `para. 2-23` is not a sentence boundary."""
+
+    pieces: list[str] = []
+    start = depth = 0
+    for index, char in enumerate(text):
+        if char == "(":
+            depth += 1
+        elif char == ")":
+            depth = max(0, depth - 1)
+        elif char == "." and not depth and text[index + 1 : index + 2] == " ":
+            word = text[start : index + 1].lower().split()[-1]
+            if word in {"para.", "paras.", "fig.", "figs.", "no.", "e.g.", "i.e."}:
+                continue
+            piece = text[start:index].strip(" .")
+            if piece:
+                pieces.append(piece)
+            start = index + 1
+    remaining = text[start:].strip(" .")
+    if remaining:
+        pieces.append(remaining)
+    return pieces
+
+
+def usable_step(cause: str, action: str) -> bool:
+    """An informative diagnostic instruction with an actionable, sourced response.
+
+    This does not turn an inspection into a confirmed field diagnosis.
+    """
+
+    cause = _norm(cause).strip(" .")
+    action = _norm(action).strip(" .")
+    if len(cause.split()) < 2 or len(action.split()) < 2 or cause == action:
+        return False
+    if cause.lower() in {"all causes", "other causes"}:
+        return False
+    if "notify unit maintenance" in action.lower():
+        corrective = action.lower().split("notify unit maintenance", 1)[0]
+        return bool(
+            re.search(
+                r"\b(add|adjust|charge|clean|disengage|drain|engage|fill|inflate|deflate|"
+                r"place|purge|remove|replace|secure|select|start|tighten)\b",
+                corrective,
+                re.IGNORECASE,
+            )
+        )
+    return True
 
 
 def _rows(doc_key: str, nodes_dir: Path | None) -> list[dict[str, object]]:

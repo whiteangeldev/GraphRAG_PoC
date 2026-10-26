@@ -1,0 +1,61 @@
+{
+  "revision": "m1-feedback-data-v2",
+  "cases": 2000,
+  "eligible_faults": 22,
+  "excluded_faults": [
+    {
+      "code": "11. ROUGH SHIFTING",
+      "source_node_id": "tm280_10:table:3-1:3:r11",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "9. HOT WATERPERSONNEL HEATER FAILS TO PRODUCE HEAT AFTER ENGINE REACHES OPERATING TEMPERATURE",
+      "source_node_id": "tm280_10:table:3-1:3:r9",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "15. POOR SERVICE BRAKING ACTION",
+      "source_node_id": "tm280_10:table:3-1:4:r15",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "16. SERVICE BRAKES DRAGGING",
+      "source_node_id": "tm280_10:table:3-1:4:r16",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "18. PARKING BRAKE FAILS TO HOLD VEHICLE",
+      "source_node_id": "tm280_10:table:3-1:4:r18",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "25. CARGO SHELL DOOR WILL NOT SEAL PROPERLY",
+      "source_node_id": "tm280_10:table:3-1:5:r25",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "2. ENGINE CRANKS SLOWLY",
+      "source_node_id": "tm280_10:table:3-1:r2",
+      "reason": "no informative actionable pair"
+    },
+    {
+      "code": "4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER",
+      "source_node_id": "tm280_10:table:3-1:r4",
+      "reason": "no informative actionable pair"
+    }
+  ],
+  "numeric_causes": 0,
+  "generic_causes": 0,
+  "invalid_pairs": 0,
+  "part_7X677": 0,
+  "case_kind": "synthetic_diagnostic_instruction",
+  "diagnosis_confirmed": false,
+  "part_relation": "keyword_candidate_unverified",
+  "sha256": {
+    "data/nodes/tm280_10.jsonl": "2c19f9e36b800202cf5db53829009d9387ae2487ab16e117c9961e26047c5e6e",
+    "data/nodes/tm280_24p_1.jsonl": "5f47c7e8b087faf2adcddae09b9272874a74fc9c50366b293810f6e09cdcc276",
+    "data/cases/rules.json": "9e18f6a34c22636de3b68fcf07d3a4e924bfc1f02b47411b9c5c06f16971b243",
+    "data/cases/cases.jsonl": "74759f03a8c85395942da4edbbf9f958a26d2419a39999930ebde3d3be278420"
+  },
+  "evaluation_status": "Historical scores; corrected data needs reindexing, independent gold review, realistic questions, and fresh evaluation."
+}

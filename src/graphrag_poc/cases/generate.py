@@ -9,10 +9,10 @@ from graphrag_poc.cases.rules import CASES_PATH, Rules, load_rules
 from graphrag_poc.cases.sources import (
     CatalogPart,
     Fault,
-    cell_values,
     load_faults,
     load_parts,
     load_stated_models,
+    usable_step,
 )
 from graphrag_poc.models import CaseRecord
 
@@ -28,6 +28,9 @@ def generate_cases(
     if active.count < 1:
         raise ValueError("count must be at least 1")
     faults = load_faults(active, nodes_dir)
+    eligible = [fault for fault in faults if any(usable_step(*step) for step in fault.steps)]
+    if not eligible:
+        raise ValueError("no faults contain an informative cause/action pair")
     parts = load_parts(active, nodes_dir)
     stated = load_stated_models(active.fault_doc_key, nodes_dir)
     family = tuple(model for model in active.family_models if model in stated)
@@ -45,11 +48,12 @@ def generate_cases(
     rng = random.Random(active.seed)
     cases: list[CaseRecord] = []
     for index in range(active.count):
-        fault = faults[index % len(faults)]
+        fault = eligible[index % len(eligible)]
         models = fault.models or family
         model = models[rng.randrange(len(models))]
         part = _related_part(fault, parts, active, rng)
-        cause, action = fault.steps[rng.randrange(len(fault.steps))]
+        steps = [step for step in fault.steps if usable_step(*step)]
+        cause, action = steps[rng.randrange(len(steps))]
         occurred = start + timedelta(days=rng.randrange(span + 1))
         frequency = rng.randint(active.frequency_min, active.frequency_max)
         fields = {
@@ -75,6 +79,9 @@ def generate_cases(
                     "frequency": frequency,
                     "search_text": search,
                     "source_node_id": fault.node_id,
+                    "case_kind": "synthetic_diagnostic_instruction",
+                    "diagnosis_confirmed": False,
+                    "part_relation": "keyword_candidate_unverified",
                 }
             )
         )
@@ -121,16 +128,18 @@ def missing_references(
     *,
     nodes_dir: Path | None = None,
 ) -> list[str]:
-    """Error codes and part numbers that are not table cells in the node files."""
+    """Check typed fault labels and PART NUMBER cells, rather than arbitrary cells."""
 
-    values = cell_values(nodes_dir)
+    rules = load_rules()
+    codes = {fault.code for fault in load_faults(rules, nodes_dir)}
+    parts = {part.number for part in load_parts(rules, nodes_dir)}
     missing: list[str] = []
     for case in cases:
         for code in case.error_codes:
-            if code not in values:
+            if code not in codes:
                 missing.append(f"{case.case_id}: error code {code!r} is not in the node files")
         for part in case.parts:
-            if part not in values:
+            if part not in parts:
                 missing.append(f"{case.case_id}: part number {part!r} is not in the node files")
     return missing
 
@@ -151,6 +160,10 @@ def consistent_with_source(cases: list[CaseRecord], faults: list[Fault]) -> list
         pair = (case.cause, case.action)
         if pair not in fault.steps:
             errors.append(f"{case.case_id}: cause and action are not a step of {fault.node_id}")
+        if not usable_step(*pair):
+            errors.append(
+                f"{case.case_id}: cause/action is generic, incomplete, or escalation-only"
+            )
         allowed = fault.models
         if allowed and case.model not in allowed:
             errors.append(f"{case.case_id}: model {case.model} is not stated on {fault.node_id}")

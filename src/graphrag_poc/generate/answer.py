@@ -1,4 +1,4 @@
-"""Answers written only from the fused passages."""
+"""Legacy offline quote demo and shared answer types; model evaluation bypasses its rules."""
 
 import math
 import os

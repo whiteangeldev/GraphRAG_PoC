@@ -5,6 +5,13 @@ import os
 import sys
 from pathlib import Path
 
+from graphrag_poc.eval.check import load_questions
+from graphrag_poc.eval.config import (
+    configure_evaluation,
+    evaluation_fingerprint,
+    validate_evaluation_models,
+)
+from graphrag_poc.eval.gold import questions_digest
 from graphrag_poc.eval.metrics import REPRODUCTION_TOLERANCE, metric_drifts
 from graphrag_poc.eval.score import METRICS_PATH, REPORT_PATH, RESULTS_PATH, run_baseline
 from graphrag_poc.index.store import CASE_COLLECTION, PASSAGE_COLLECTION
@@ -15,9 +22,7 @@ _SNAPSHOTS = (METRICS_PATH, REPORT_PATH, RESULTS_PATH)
 
 
 def main() -> int:
-    from graphrag_poc.eval.score import _load_env_file
-
-    _load_env_file()
+    configure_evaluation()
     if not os.environ.get("EMBEDDING_MODEL", "").strip():
         print(
             "EMBEDDING_MODEL is empty. The cached report names the model to use.",
@@ -25,6 +30,17 @@ def main() -> int:
         )
         return 1
     try:
+        validate_evaluation_models()
+        if METRICS_PATH.exists():
+            previous = json.loads(METRICS_PATH.read_text(encoding="utf-8"))
+            if (
+                previous.get("questions_sha256") != questions_digest(load_questions())
+                or previous.get("evaluation_config_sha256") != evaluation_fingerprint()
+            ):
+                raise RuntimeError(
+                    "Saved benchmark/model protocol is different; run make baseline first. "
+                    "No indexing or inference was started."
+                )
         ensure_index()
     except RuntimeError as exc:
         print(str(exc), file=sys.stderr)

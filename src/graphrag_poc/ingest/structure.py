@@ -51,7 +51,7 @@ VEHICLE_MODELS = {
 CHAPTER_RE = re.compile(r"^CHAPTER\s+(\d+)\b\s*(.*)$", re.IGNORECASE)
 SECTION_RE = re.compile(r"^SECTION\s+([IVXLC0-9]+)\.?\s*(.*)$", re.IGNORECASE)
 PARA_RE = re.compile(r"^(\d{1,2}-\d{1,3}(?:\.\d+)*)\.\s+(\S.*)$")
-TABLE_RE = re.compile(r"^Table\s+(\d{1,2}-\d{1,3})\.\s+\S", re.IGNORECASE)
+TABLE_RE = re.compile(r"^Table\s+(\d{1,2}-\d{1,3})\.\s*\S", re.IGNORECASE)
 FIGURE_RE = re.compile(r"^(?:Figure|Fig\.)\s+(\d{1,2}-\d{1,3})\.?\s*(.*)$", re.IGNORECASE)
 CALLOUT_RE = re.compile(r"^(WARNING|CAUTION|NOTE|警告|注意)$")
 LETTER_STEP_RE = re.compile(r"^([a-z])\.\s+(\S.*)$")
@@ -71,7 +71,7 @@ FIG_REF_RE = re.compile(
 JA_REF_RE = re.compile(r"(?<!\d)(\d+(?:\.\d+)+)(?!\d)")
 SMR_RE = re.compile(r"^[A-Z]{5}$")
 NSN_RE = re.compile(r"^\d{13}$")
-CAGE_RE = re.compile(r"^\d{5}$")
+CAGE_RE = re.compile(r"^[A-Z0-9]{5}$")
 PARTS_HEADERS = [
     "ITEM NO",
     "SMR CODE",
@@ -205,6 +205,9 @@ class OpenBlock:
     bound_cautions: list[str] = field(default_factory=list)
     emit_row: bool = False
     number: str = ""
+    title_line_count: int = 1
+    malfunction_table_id: str | None = None
+    malfunction_models: tuple[str, ...] = ()
 
 
 @dataclass
@@ -471,6 +474,8 @@ class Builder:
             )
             block.emit_row = True
             block.number = match.group(1)
+            block.malfunction_table_id = self.table_id
+            block.malfunction_models = self.group_models
             self.heading = block
         elif kind == "table":
             self._close_nested()
@@ -568,8 +573,11 @@ class Builder:
             and target is self.heading
             and self.heading.kind == "malfunction"
             and not self.heading.has_steps
+            and len(self.heading.lines) == self.heading.title_line_count
+            and _mostly_upper(line.text)
         ):
             self.heading.title = _clean(f"{self.heading.title} {line.text}")
+            self.heading.title_line_count += 1
         target.lines.append(line)
 
     def _start(self, kind: str, base_id: str, title: str, line: RawLine, parent: str) -> OpenBlock:
@@ -647,10 +655,10 @@ class Builder:
             bound_cautions=list(block.bound_cautions),
         )
         if block.emit_row:
-            self._apply_group_models(node)
+            self._apply_group_models(node, block.malfunction_models)
         self.nodes.append(node)
         if block.emit_row:
-            self._emit_malfunction_row(block, node)
+            self._emit_malfunction_row(block)
 
     def _close_section(self) -> None:
         self._close_heading()
@@ -704,37 +712,45 @@ class Builder:
             )
         )
 
-    def _emit_malfunction_row(self, block: OpenBlock, node: Node) -> None:
-        if self.table_id is None:
+    def _emit_malfunction_row(self, block: OpenBlock) -> None:
+        if block.malfunction_table_id is None:
             return
         steps = [
             item.text
             for item in self.nodes
             if item.parent == block.node_id and item.type is NodeType.STEP
         ]
-        body = " ".join(steps) if steps else node.text
+        unnumbered = [line.text for line in block.lines[block.title_line_count :]]
+        body = " ".join([*unnumbered, *steps])
         cells = [block.title, body]
-        row_id = self._alloc(f"{self.table_id}:r{block.number}")
+        row_id = self._alloc(f"{block.malfunction_table_id}:r{block.number}")
         row = self._node(
             node_id=row_id,
             node_type=NodeType.TABLE_ROW,
             breadcrumb=self._crumb(block.title),
             lines=block.lines,
-            parent=self.table_id,
+            parent=block.malfunction_table_id,
             text=" ".join(cells),
             table=TableContent(headers=MALFUNCTION_HEADERS, cells=cells),
         )
-        self._apply_group_models(row)
+        self._apply_group_models(row, block.malfunction_models)
         self.nodes.append(row)
 
     def _ensure_table(self, suffix: str, title: str, line: RawLine) -> str:
         node_id = self._alloc(f"{self.spec.doc_key}:{suffix}")
-        parent = self.heading.node_id if self.heading else self._heading_parent()
+        parent = (
+            self.heading.node_id
+            if self.heading and self.heading.kind != "malfunction"
+            else self._heading_parent()
+        )
         self.nodes.append(
             self._node(
                 node_id=node_id,
                 node_type=NodeType.TABLE,
-                breadcrumb=self._crumb(title),
+                breadcrumb=self._crumb(
+                    title,
+                    include_heading=self.heading is None or self.heading.kind != "malfunction",
+                ),
                 lines=[line],
                 parent=parent,
                 text=title,
@@ -792,9 +808,9 @@ class Builder:
         row.page_end = max(row.page_end, line.page)
         row.text = " ".join(cell for cell in cells if cell)
 
-    def _apply_group_models(self, node: Node) -> None:
-        if self.group_models and node.type in {NodeType.PROCEDURE, NodeType.TABLE_ROW}:
-            node.applies_to.models = list(self.group_models)
+    def _apply_group_models(self, node: Node, models: tuple[str, ...]) -> None:
+        if models and node.type in {NodeType.PROCEDURE, NodeType.TABLE_ROW}:
+            node.applies_to.models = list(models)
 
     def _emit_grid_row(self, line: RawLine) -> None:
         cells = _split_cells(line)
@@ -943,13 +959,13 @@ class Builder:
                 return candidate
         return self._heading_parent()
 
-    def _crumb(self, label: str) -> list[str]:
+    def _crumb(self, label: str, *, include_heading: bool = True) -> list[str]:
         crumbs = [self.spec.title]
         if self.chapter:
             crumbs.append(self.chapter.title)
         if self.section:
             crumbs.append(self.section.title)
-        if self.heading and label != self.heading.title:
+        if include_heading and self.heading and label != self.heading.title:
             crumbs.append(self.heading.title)
         short = label if len(label) <= 140 else label[:137] + "..."
         if not crumbs or crumbs[-1] != short:
@@ -1244,20 +1260,29 @@ def _parse_parts(line: RawLine) -> _PartsFields | None:
         return None
     if not re.fullmatch(r"\d{1,4}", tokens[0][1]) or not SMR_RE.fullmatch(tokens[1][1]):
         return None
+    # In this manual the item and SMR columns are at the left margin. Group
+    # headings such as "1000 FRONT AXLE ASSEMBLY" have the same token shapes,
+    # but start in the description column instead.
+    if not 0 <= tokens[0][0] < tokens[1][0] < 100:
+        return None
     rest = tokens[2:]
     qty_tokens = [token for x, token in rest if x >= 530 and re.fullmatch(r"\d{1,4}", token)]
-    body = [token for x, token in rest if x < 530]
+    body = [(x, token) for x, token in rest if x < 530]
     qty = qty_tokens[-1] if qty_tokens else ""
     if not body:
         return None
     nsn = ""
-    if NSN_RE.fullmatch(body[0]):
-        nsn = body.pop(0)
-    cage = body.pop(0) if body and CAGE_RE.fullmatch(body[0]) else ""
-    part = body.pop(0) if body else ""
-    if not part:
+    if body[0][0] < 175 and NSN_RE.fullmatch(body[0][1]):
+        _, nsn = body.pop(0)
+    cage = ""
+    if body and 175 <= body[0][0] < 210 and CAGE_RE.fullmatch(body[0][1]):
+        _, cage = body.pop(0)
+    # A five-character part number is valid in the part column. Its shape alone
+    # must never make it a CAGE code when that cell (or the NSN cell) is blank.
+    if not body or not 210 <= body[0][0] < 320:
         return None
-    desc = " ".join(body).strip(" .")
+    _, part = body.pop(0)
+    desc = " ".join(token for _, token in body).strip(" .")
     return _PartsFields(tokens[0][1], tokens[1][1], nsn, cage, part, desc, "", qty)
 
 

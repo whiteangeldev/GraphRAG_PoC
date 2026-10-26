@@ -1,0 +1,54 @@
+{
+  "id": "lookup-0017",
+  "answer_sha256": "fa7dc8970bbec94f0b77d84dd3374e0a65b49cb180f6c0f1f8aba8c544f6ab9f",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": true,
+      "quote": "20."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- 20.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR Step 1.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "- 20.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR Step 2.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": true,
+      "quote": "20."
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

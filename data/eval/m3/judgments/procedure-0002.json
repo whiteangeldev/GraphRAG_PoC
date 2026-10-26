@@ -1,0 +1,29 @@
+{
+  "id": "procedure-0002",
+  "answer_sha256": "aa5935ba7f8743de9972db0a8a2c2d9559368fe4d32485ac03820a96055a2202",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "2. Winch Wire Rope. .WARNING. Wear leather gloves when handling winch wire rope. Do not handle wire rope with bare hands. Broken wires cause injury. After each use, clean and lubricate winch wire rope. Clean entire wire rope with wire brush. Do not lubri- cate winch wire rope in dry, dusty",
+      "present": true,
+      "quote": ".WARNING. Wear leather gloves when handling winch wire rope."
+    },
+    {
+      "text": "3. Pintle. Every 3,000 mi (4,827 km), or semi- a n n u a l l y, whichever occurs first, clean pintle with wire bush and lubricate rear plate fitting with seasonal grade OE. periodic changing. Change 1 G-15 NOTES",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "4. Steering System.",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the provided passages contain the answer.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

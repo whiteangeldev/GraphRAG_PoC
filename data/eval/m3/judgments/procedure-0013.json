@@ -1,0 +1,29 @@
+{
+  "id": "procedure-0013",
+  "answer_sha256": "efe53c99684041966beabcace01179193f67602cd7734f80613bd6827e93f071",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container.",
+      "present": true,
+      "quote": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
+    },
+    {
+      "text": "1. Insert pushrod (9) into cylinder block (10).",
+      "present": true,
+      "quote": "Loosen clamp (14) and disconnect fuel inlet line (13) from fuel pump (2) and allow fuel to drain into container."
+    },
+    {
+      "text": "2. Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container.",
+      "present": true,
+      "quote": "Disconnect fuel outlet line (12) from fuel pump (2) and allow fuel to drain into container."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about how to carry out the job.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

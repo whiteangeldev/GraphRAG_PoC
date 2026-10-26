@@ -1,0 +1,44 @@
+{
+  "id": "relational-0019",
+  "answer_sha256": "3bb9cfaf88492ac8a716ccd22c5109afce0fd3fd60d0ea6b4a74df320bc54caf",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",
+      "present": true,
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The lamp part number listed is MS21333-128 CLAMP, LOOP 100 AMP, SERIAL NUMBER 196900 AND BELOW 41-1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check that left lighting or right lighting fuse is serviceable.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Replace fuse if blown (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2-61).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "trouble-0002",
+  "answer_sha256": "2ecda80de418dcc84cad7556dc9b7f2bafe32ac3f320d0e13588cc97a4795f59",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check oil level for overfilling (Appendix G)",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

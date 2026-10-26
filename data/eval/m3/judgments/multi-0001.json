@@ -1,0 +1,54 @@
+{
+  "id": "multi-0001",
+  "answer_sha256": "f93f94c9737e787d82d2d367fce525c40701bffe79de6c0147bf88203ef761a0",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "a. General. The vehicle electrical system is used to power the winch. It is recommended to have engine running while operating the winch so the alternator recharges the battery. Increased engine rpms can be maintained by use of the hand throttle. When engaging or disengaging the clutch, it may be necessary to rotate the drum by hand to align gears.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12339317",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about tracing a malfunction through the alternator step to the parts list, but the relevant information is not present in the given passages.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check battery cable connections for looseness, damage, or corrosion.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance of any damage to battery cables.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "12339317",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

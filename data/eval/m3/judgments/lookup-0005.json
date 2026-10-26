@@ -1,0 +1,54 @@
+{
+  "id": "lookup-0005",
+  "answer_sha256": "5f2e130df813c6c2242a4d0cb98b12123ba5eced3b0e8629df40a20eec6d1f6a",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 283, page: 283, relation: code: 10.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "NO RESPONSE TO SHIFT LEVER MOVEMENT",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- node_id: 283, page: 283, relation: cause: Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- node_id: 283, page: 283, relation: remedy: Step 2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

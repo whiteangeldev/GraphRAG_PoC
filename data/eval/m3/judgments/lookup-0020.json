@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0020",
+  "answer_sha256": "05497c26e5f5cc1efc49f88de840d43675050de902f2169a0c48ce9451b110e1",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Wait 2 minutes and attempt winch operation again",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about what malfunction 23.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WINCH STOPS DURING NORMAL OPERATION lists as the first test or corrective action.",
+      "supported": true,
+      "quote": "WINCH STOPS DURING NORMAL OPERATION Step 1. Wait 2 minutes and attempt winch operation again."
+    }
+  ]
+}

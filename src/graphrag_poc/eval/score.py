@@ -25,6 +25,7 @@ from graphrag_poc.eval.metrics import (
 from graphrag_poc.generate.__main__ import compose_answer
 from graphrag_poc.generate.answer import _requested_label
 from graphrag_poc.retrieve.fusion import RRF_K, FusedHit
+from graphrag_poc.retrieve.graph import RelationFrame
 
 ROOT = Path(__file__).resolve().parents[3]
 REPORT_PATH = ROOT / "docs" / "baseline_report.md"
@@ -146,11 +147,12 @@ def attempt_from_hits(
     hits: list[FusedHit],
     *,
     question: str,
+    frame: RelationFrame | None = None,
 ) -> Attempt:
     """Give the generator the first ten fused passages and keep the full ranking."""
 
     evidence = hits[:EVIDENCE_LIMIT]
-    answer = compose_answer(question, evidence)
+    answer = compose_answer(question, evidence, frame)
     cited = {hit.node_id: hit.text for hit in evidence}
     citation_ids = tuple(citation.node_id for citation in answer.citations)
     return Attempt(

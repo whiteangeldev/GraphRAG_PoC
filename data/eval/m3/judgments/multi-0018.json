@@ -1,0 +1,64 @@
+{
+  "id": "multi-0018",
+  "answer_sha256": "c14581995f4ec9daf86e76f495d0273d53b8833ca57673b7c536f82119f70499",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check that interior light switch on control box is in proper position",
+      "present": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 26.",
+      "supported": true,
+      "quote": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE"
+    },
+    {
+      "sentence": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "- page: 286",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "- part_number: MS21333-128 CLAMP,LOOP 100 AMP,SERIAL NUMBER 196900 AND BELOW 41-1",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check that interior light switch on control box is in proper position.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Place interior light switch in proper position (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2-61).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

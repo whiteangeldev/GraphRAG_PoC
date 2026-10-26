@@ -1,0 +1,44 @@
+{
+  "id": "lookup-0011",
+  "answer_sha256": "70728a928f4e527f7d2ff177b5f78da633243b5dd44403c5a20542fc814549eb",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for proper shifting sequence",
+      "present": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- 14.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "TRANSFER CASE SHIFT LEVER WILL NOT SHIFT Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "Check for proper shifting sequence.",
+      "supported": true,
+      "quote": "Step 1. Check for proper shifting sequence."
+    },
+    {
+      "sentence": "Ensure proper shifting sequence is used (para.",
+      "supported": true,
+      "quote": "Ensure proper shifting sequence is used (para. 2-11)."
+    },
+    {
+      "sentence": "2-11).",
+      "supported": true,
+      "quote": "Ensure proper shifting sequence is used (para. 2-11)."
+    },
+    {
+      "sentence": "- 5938705 LIGHT,INDICATOR USE WITH TRANSFER ASSEMBLY P/N 5937387 OR P/N 12447125 67-1.",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    }
+  ]
+}

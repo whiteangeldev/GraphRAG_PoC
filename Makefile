@@ -1,7 +1,7 @@
 # python3.12 -m venv .venv && .venv/bin/pip install -e ".[dev]"
 PYTHON ?= .venv/bin/python
 
-.PHONY: up down test lint format typecheck ingest generate-cases index demo eval
+.PHONY: up down test lint format typecheck ingest generate-cases index demo eval graph m3 service
 
 up:
 	docker compose up -d --wait
@@ -21,7 +21,7 @@ format:
 	$(PYTHON) -m ruff check --fix .
 
 typecheck:
-	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases src/graphrag_poc/index src/graphrag_poc/retrieve src/graphrag_poc/generate src/graphrag_poc/app src/graphrag_poc/eval
+	$(PYTHON) -m mypy src/graphrag_poc/models src/graphrag_poc/ingest src/graphrag_poc/cases src/graphrag_poc/index src/graphrag_poc/retrieve src/graphrag_poc/generate src/graphrag_poc/graph src/graphrag_poc/library src/graphrag_poc/service src/graphrag_poc/app src/graphrag_poc/eval
 
 ingest:
 	$(PYTHON) -m graphrag_poc.ingest
@@ -37,6 +37,20 @@ demo:
 	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
 	$(PYTHON) -m graphrag_poc.app
 
+service:
+	docker compose up -d --build --wait graph
+
+graph: up
+	$(PYTHON) -m graphrag_poc.graph
+
+m3: up
+	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
+	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
+	OPENAI_BASE_URL=$${OPENAI_BASE_URL:-http://127.0.0.1:8000/v1} \
+	GENERATION_MODEL=$${GENERATION_MODEL:-Qwen3-0.6B} \
+	JUDGE_MODEL=$${JUDGE_MODEL:-Qwen3-0.6B} \
+	$(PYTHON) -m graphrag_poc.eval.m3
+
 eval: up
 	EMBEDDING_BACKEND=$${EMBEDDING_BACKEND:-fastembed} \
 	EMBEDDING_MODEL=$${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} \
@@ -44,3 +58,4 @@ eval: up
 	GENERATION_MODEL=$${GENERATION_MODEL:-Qwen3-0.6B} \
 	JUDGE_MODEL=$${JUDGE_MODEL:-Qwen3-0.6B} \
 	$(PYTHON) -m graphrag_poc.eval --reproduce
+	$(PYTHON) -m graphrag_poc.eval.m3 --reproduce

@@ -1,0 +1,39 @@
+{
+  "id": "lookup-0008",
+  "answer_sha256": "e56f6508c86960b4c3ab91f6d7b440747dd89d1800eeba31101acd067c5f2562",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low fluid level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the malfunction 13.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SLIPPAGE IN ALL RANGES is Step 1.",
+      "supported": true,
+      "quote": "SLIPPAGE IN ALL RANGES Step 1."
+    },
+    {
+      "sentence": "Check for low fluid level (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-19).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Add fluid (Appendix G).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

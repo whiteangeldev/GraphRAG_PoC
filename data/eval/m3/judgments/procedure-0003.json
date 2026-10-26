@@ -1,0 +1,34 @@
+{
+  "id": "procedure-0003",
+  "answer_sha256": "7f0988c06217e4a51871ef648595f865f8378118415c4fa0ca9f2c453088bf5d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Do not operate your vehicle engine in enclosed areas.",
+      "present": true,
+      "quote": "Do not operate your vehicle engine in enclosed areas."
+    },
+    {
+      "text": "1. Remove old pages and insert new pages as indicated below.",
+      "present": true,
+      "quote": "Do not operate your vehicle engine in enclosed areas."
+    },
+    {
+      "text": "1. Two new models have been added to the front cover. The new cover, located at the end of the change package, replaces the existing cover.",
+      "present": true,
+      "quote": "Do not operate your vehicle engine in enclosed areas."
+    },
+    {
+      "text": "WARNING",
+      "present": true,
+      "quote": "Do not operate your vehicle engine in enclosed areas."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

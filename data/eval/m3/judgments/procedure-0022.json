@@ -1,0 +1,54 @@
+{
+  "id": "procedure-0022",
+  "answer_sha256": "1df88d8f95143cbb33c7fe624deee486ce9cb407b9d374183aa52c51cd650d69",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Install four insulators (8) on front and rear hangers (9) and (7) (if removed.)",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Twist two front hangers (9) until tee handles (2) clear slots (11) in supports (1) and remove front hangers (9). NNOOTTEE Perform step 3 for “A2” vehicles only.",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove two nuts (3), washers (4), screws (5), and rear hangers (7) from supports (6).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove three nuts (6), lockwashers (5), washers (4), capscrews (1), washers (2), and idler pulleys.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove two nuts (6), washers (4), capscrews (3), washers (4), and idler arm (7) from frame (5).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

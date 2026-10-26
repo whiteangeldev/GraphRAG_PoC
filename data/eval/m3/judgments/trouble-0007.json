@@ -1,0 +1,19 @@
+{
+  "id": "trouble-0007",
+  "answer_sha256": "7a15e01064dd51b5db3df399cc3ea0b8a52a0587c83cb540941772fc6c720242",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low fluid level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

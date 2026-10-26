@@ -1,0 +1,54 @@
+{
+  "id": "multi-0013",
+  "answer_sha256": "fe231a02cd4021cb2b6e1bf65825b256d3ef43712f94691031f6089e9c87cbdd",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(6) Refer to para. 3-22 for tire chain installation and operation.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "89305",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about tracing a malfunction through the tire step to the parts list, but the information given does not include the part number or the relation frame details.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "89305",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

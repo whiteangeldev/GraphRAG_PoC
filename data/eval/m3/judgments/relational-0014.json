@@ -1,0 +1,39 @@
+{
+  "id": "relational-0014",
+  "answer_sha256": "7f94eae2be3ac6dea0ae92453fa4d20b2339152b6b9840aa5d85a072e8f74857",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 21, page: 284, relation: code, part: 5591280 COVER,STEERING ARM L.H",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

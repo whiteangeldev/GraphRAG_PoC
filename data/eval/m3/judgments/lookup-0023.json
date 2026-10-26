@@ -1,0 +1,59 @@
+{
+  "id": "lookup-0023",
+  "answer_sha256": "1e4241eb608fa2a3c4645202608bfdb0148f6c2f2869c197280609dee875570b",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check that interior light switch on control box is in proper position",
+      "present": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 26.",
+      "supported": true,
+      "quote": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE"
+    },
+    {
+      "sentence": "ALL CEILING WHITE UGHTS, BLACKOUT UGHTS, AND SPOTLIGHTS FAIL TO ILLUMINATE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- page: 286",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- relation_frame: code",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- part_number: 5583395",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- step: 1.",
+      "supported": true,
+      "quote": "Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "Check that interior light switch on control box is in proper position.",
+      "supported": true,
+      "quote": "Place interior light switch in proper position (para. 2-61)"
+    },
+    {
+      "sentence": "Place interior light switch in proper position (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2-61).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

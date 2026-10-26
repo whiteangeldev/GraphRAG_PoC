@@ -1,0 +1,39 @@
+{
+  "id": "relational-0025",
+  "answer_sha256": "f12fbbbefe8638e23efaea0cc4cf7a1e380390fd9ceff10e16e6fdf2f6fac250",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",
+      "present": true,
+      "quote": "Step 1. Check to see if fuel gauge indicates “E” (empty)."
+    },
+    {
+      "text": "6472357",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 281, page: 281, part: 6472357.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if fuel gauge indicates “E” (empty).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Fill fuel tank, and start engine.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

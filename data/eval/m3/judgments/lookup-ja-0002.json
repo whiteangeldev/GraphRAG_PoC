@@ -1,0 +1,19 @@
+{
+  "id": "lookup-ja-0002",
+  "answer_sha256": "3cf0b32236e627272cf2709a1e6ede9e4a7a11ad51c51f96ef2fa91fd95e04b2",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1.1. すれ違い用前照灯の下方への垂直傾斜は、いかなる場合であっても、取扱説明",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

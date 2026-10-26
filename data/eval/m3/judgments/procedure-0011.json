@@ -1,0 +1,29 @@
+{
+  "id": "procedure-0011",
+  "answer_sha256": "c90a37faec3e67f63ce02a9d6e87971b8e955667846cd8a92ce8a4b19480c5cc",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove oil dipstick (5) from oil dipstick tube (4).",
+      "present": true,
+      "quote": "1. Remove oil dipstick (5) from oil dipstick tube (4)."
+    },
+    {
+      "text": "1. Apply RTV sealant to O-ring (9) and install O-ring (9) on oil dipstick tube (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove plain-assembled nut (3) and capscrew (13) from harness clamp (2) and upper dipstick tube bracket (6). Discard plain-assembled nut (3).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about how to carry out the job.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

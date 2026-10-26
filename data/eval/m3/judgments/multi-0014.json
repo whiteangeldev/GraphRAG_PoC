@@ -1,0 +1,54 @@
+{
+  "id": "multi-0014",
+  "answer_sha256": "88fe3ce8f98f39574b122ac7287c8b27fbfe96c317a02d9c4d215f49b66aefb1",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "j. Lock steering wheel with cable (2) and chock wheels if tactical situation permits. A1, A2, AND M1123 MODELS A1, A2, AND M1123 MODELS Change 1 2-111",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5591280 COVER,STEERING ARM L.H",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- page: 284",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- relation_frame: part",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

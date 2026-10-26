@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0013",
+  "answer_sha256": "96531ff7ff32c3c6049f9995337331588cf68a33c80d2b9018fab72a08793120",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about the \"cage code 00000 part ZZZZ\".",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "relational-0003",
+  "answer_sha256": "7aa29103d21638fc91e8b9f49f94a628dba9eee08887bd1e889fdfddd5a0d125",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The nozzle part number listed is SF-5597692.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check for water in fuel filter by draining.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Drain fuel filter (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-10).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0018",
+  "answer_sha256": "13f1faf43c0e46b0151279d765df7f48ee7cf85fe5989cd08aff95b5fa033a92",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the relation frame 21.",
+      "supported": true,
+      "quote": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1. Check tire air pressure. Inflate or deflate tires to correct air pressure."
+    },
+    {
+      "sentence": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT is \"Step 1.",
+      "supported": true,
+      "quote": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1. Check tire air pressure. Inflate or deflate tires to correct air pressure."
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": true,
+      "quote": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1. Check tire air pressure. Inflate or deflate tires to correct air pressure."
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.\"",
+      "supported": true,
+      "quote": "VEHICLE WANDERS TO ONE SIDE ON LEVEL PAVEMENT Step 1. Check tire air pressure. Inflate or deflate tires to correct air pressure."
+    }
+  ]
+}

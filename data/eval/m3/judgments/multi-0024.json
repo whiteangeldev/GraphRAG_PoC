@@ -1,0 +1,54 @@
+{
+  "id": "multi-0024",
+  "answer_sha256": "88e85bd7da8040189a2f8c6000a3448956be68a501492d36e7a879a56bc91410",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check battery fluid level and check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "a. Removal of companion seat assembly and battery box cover.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "A52425-1",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 281, page: 281, part: A52425-1 ADAPTER,BATTERY TER",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "node_id: 281, page: 281, part: A52425-1 ADAPTER,BATTERY TER",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "node_id: 281, page: 281, part: A52425-1 ADAPTER,BATTERY TER",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check battery fluid level and check battery cable connections for looseness, damage, or corrosion.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "If any of these conditions exist, notify unit maintenance.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

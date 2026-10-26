@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0001",
+  "answer_sha256": "23e0fae77c7c82aff850e5ccfc252efcafcb55022f9f9ee9e9538c6fe2c88232",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1097",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages mention the M1097.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

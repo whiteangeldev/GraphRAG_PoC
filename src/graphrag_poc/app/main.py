@@ -8,15 +8,17 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Form, Request
 from fastapi.responses import HTMLResponse
 
-from graphrag_poc.generate.__main__ import LOOKUP, PROCEDURE, UNKNOWN, ask_with_hits
+from graphrag_poc.generate.__main__ import LOOKUP, PROCEDURE, RELATIONAL, UNKNOWN, ask_with_hits
 from graphrag_poc.generate.answer import Answer
 from graphrag_poc.index.client import make_client
 from graphrag_poc.index.embed import build_embedder
 from graphrag_poc.retrieve.fusion import FusedHit
+from graphrag_poc.retrieve.graph import RelationFrame
 
 EXAMPLES = (
     ("Charging lookup", LOOKUP),
     ("Oil-cooler procedure", PROCEDURE),
+    ("Shift-lever part", RELATIONAL),
     ("Unknown code", UNKNOWN),
 )
 
@@ -41,12 +43,12 @@ def ask_question(request: Request, question: str = Form()) -> str:
     cleaned = " ".join(question.split())
     if not cleaned:
         return _page("", notice="Enter a question.")
-    answer, hits = ask_with_hits(
+    answer, hits, frame = ask_with_hits(
         cleaned,
         client=request.app.state.client,
         embedder=request.app.state.embedder,
     )
-    return _page(cleaned, answer=answer, hits=hits)
+    return _page(cleaned, answer=answer, hits=hits, frame=frame)
 
 
 def _page(
@@ -54,20 +56,21 @@ def _page(
     *,
     answer: Answer | None = None,
     hits: list[FusedHit] | None = None,
+    frame: RelationFrame | None = None,
     notice: str = "",
 ) -> str:
     examples = "\n".join(
-        "<form method=\"post\" action=\"/\">"
-        f"<input type=\"hidden\" name=\"question\" value=\"{html.escape(text, quote=True)}\">"
-        f"<button type=\"submit\">{html.escape(label)}</button>"
+        '<form method="post" action="/">'
+        f'<input type="hidden" name="question" value="{html.escape(text, quote=True)}">'
+        f'<button type="submit">{html.escape(label)}</button>'
         "</form>"
         for label, text in EXAMPLES
     )
     body = ""
     if notice:
-        body += f"<p class=\"notice\">{html.escape(notice)}</p>"
+        body += f'<p class="notice">{html.escape(notice)}</p>'
     if answer is not None and hits is not None:
-        body += _result(answer, hits)
+        body += _result(answer, hits, frame)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,11 +110,11 @@ def _page(
 """
 
 
-def _result(answer: Answer, hits: list[FusedHit]) -> str:
+def _result(answer: Answer, hits: list[FusedHit], frame: RelationFrame | None) -> str:
     kind = "answer refused" if answer.refused else "answer"
     citations = "\n".join(
         "<li>"
-        f"<span class=\"document\">{html.escape(_document(citation.node_id))}</span>, "
+        f'<span class="document">{html.escape(_document(citation.node_id))}</span>, '
         f"page {citation.page} "
         f"(<code>{html.escape(citation.node_id)}</code>)"
         "</li>"
@@ -120,10 +123,17 @@ def _result(answer: Answer, hits: list[FusedHit]) -> str:
     if not citations:
         citations = "<li>None</li>"
     rows = "\n".join(_rank_row(index, hit) for index, hit in enumerate(hits, start=1))
+    relation = ""
+    if frame is not None and frame.text():
+        relation = (
+            "<h2>Relation frame</h2>"
+            f'<pre id="frame" class="answer">{html.escape(frame.text())}</pre>'
+        )
     return f"""
 <section id="result">
   <h2 class="{kind}">{html.escape(kind.capitalize())}</h2>
   <div class="answer {kind}">{html.escape(answer.text)}</div>
+  {relation}
   <h2>Citations</h2>
   <ul id="citations">{citations}</ul>
   <h2>Fused ranking</h2>
@@ -136,12 +146,12 @@ def _result(answer: Answer, hits: list[FusedHit]) -> str:
 
 
 def _rank_row(rank: int, hit: FusedHit) -> str:
-    tags = "".join(f"<span class=\"tag\">{html.escape(channel)}</span>" for channel in hit.channels)
+    tags = "".join(f'<span class="tag">{html.escape(channel)}</span>' for channel in hit.channels)
     snippet = hit.text if len(hit.text) <= 180 else hit.text[:177] + "..."
     return (
         "<tr>"
         f"<td>{rank}</td>"
-        f"<td class=\"channels\">{tags}</td>"
+        f'<td class="channels">{tags}</td>'
         f"<td>{html.escape(hit.doc_key)}</td>"
         f"<td>{hit.page_start}</td>"
         f"<td><code>{html.escape(hit.node_id)}</code> {html.escape(snippet)}</td>"

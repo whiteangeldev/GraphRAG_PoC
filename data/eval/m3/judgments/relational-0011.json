@@ -1,0 +1,39 @@
+{
+  "id": "relational-0011",
+  "answer_sha256": "96dbefc425c53500b7efc122303bb7635a1cc503b39502bf66c671aa592ba9b4",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if parking brake is partially applied",
+      "present": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "text": "12460229",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The brake part number listed is 12460229.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "sentence": "Check to see if parking brake is partially applied.",
+      "supported": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "sentence": "Disengage parking brake.",
+      "supported": true,
+      "quote": "Disengage parking brake."
+    }
+  ]
+}

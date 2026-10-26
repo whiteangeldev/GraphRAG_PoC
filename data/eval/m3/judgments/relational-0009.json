@@ -1,0 +1,34 @@
+{
+  "id": "relational-0009",
+  "answer_sha256": "0ce3bbe92e2e3091e047a47ab8ed27f5861da4b6abf8bc222eb30549d92caee0",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check operating controls for correct settings",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5598104",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 280_10_3, page: 282, part: 5598104.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check operating controls for correct settings.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

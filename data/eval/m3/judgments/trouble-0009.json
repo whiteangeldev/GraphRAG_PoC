@@ -1,0 +1,24 @@
+{
+  "id": "trouble-0009",
+  "answer_sha256": "5c8cd0d0d12c7b98f88fe2fb83d76e890f65541a3a43cef0a5acc512daa2f49f",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check operating controls for correct settings",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "9.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check operating controls for correct settings.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

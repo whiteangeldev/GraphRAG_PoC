@@ -1,0 +1,49 @@
+{
+  "id": "multi-0012",
+  "answer_sha256": "96f151d8393d0b6451cd84e23c84ba55e3e5ebcc2e52074f72fd9dc89b8a00f3",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if wheel lug nuts are loose",
+      "present": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "text": "j. Lock steering wheel with cable (2) and chock wheels if tactical situation permits. A1, A2, AND M1123 MODELS A1, A2, AND M1123 MODELS Change 1 2-111",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5740512",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5740512, page: 284",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "sentence": "Check to see if wheel lug nuts are loose.",
+      "supported": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "sentence": "Tighten loose lug nuts (para.",
+      "supported": true,
+      "quote": "Tighten loose lug nuts (para. 3-26) and notify unit maintenance to properly torque lug nuts."
+    },
+    {
+      "sentence": "3-26) and notify unit maintenance to properly torque lug nuts.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "lookup-ja-0003",
+  "answer_sha256": "d3eca143a7be256822df9b5ded8b83d551884e927b29e0c454ecf8f627141d24",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1.1.1. 前照灯照射方向調節装置の操作装置には、すれ違い用前照灯の垂直傾斜の",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.1.1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "前照灯照射",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

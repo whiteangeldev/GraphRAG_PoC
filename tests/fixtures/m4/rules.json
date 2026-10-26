@@ -1,0 +1,17 @@
+{
+  "description": "Fixture rules for the library test.",
+  "seed": 1,
+  "count": 1,
+  "date_start": "2020-01-01",
+  "date_end": "2020-01-02",
+  "frequency_min": 1,
+  "frequency_max": 1,
+  "fault_doc_key": "m4fix",
+  "fault_header": "MALFUNCTION",
+  "parts_doc_key": "m4fix",
+  "part_header": "PART NUMBER",
+  "min_part_length": 5,
+  "family_models": ["M4FIX"],
+  "search_text_fields": ["symptom"],
+  "part_keywords": {"1": ["STARTER"]}
+}

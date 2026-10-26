@@ -1,0 +1,64 @@
+{
+  "id": "multi-0020",
+  "answer_sha256": "f242f7033029d84fdb5d129b93692c2b3d1fb599a95dec88ded651b4d8ccdd83",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "g. Place rotary switch (1) to “RUN” and wait until WAIT-TO-START lamp assembly (2) goes out. 2-106 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 28.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- page: 286",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- part_number: MS21333-128 CLAMP,LOOP 100 AMP,SERIAL NUMBER 196900 AND BELOW 41-1",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Inspect bulb for serviceability.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Replace bulb with known serviceable bulb (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-28).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

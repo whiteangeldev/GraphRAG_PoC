@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0001",
+  "answer_sha256": "162c9bf2d5792c16086e1653dc31367ac1695b6f3a1902379a03fc1b6dd9d94b",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about checking a truck's problem related to the vehicle not charging according to the voltage meter, but the relation frame and passages do not contain the answer.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

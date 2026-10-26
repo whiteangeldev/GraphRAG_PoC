@@ -23,11 +23,17 @@ class FusedHit:
     rrf_score: float
 
 
-def fuse(channels: dict[str, list[Hit]], *, k: int = RRF_K) -> list[FusedHit]:
+def fuse(
+    channels: dict[str, list[Hit]],
+    *,
+    k: int = RRF_K,
+    weights: dict[str, float] | None = None,
+) -> list[FusedHit]:
     """Merge ranked lists. A duplicate keeps its best rank and the union of channels.
 
-    The score is reciprocal rank fusion: each list contributes 1 / (k + rank).
-    Rank is 1-based. A repeated node inside one list keeps its first, best rank.
+    The score is reciprocal rank fusion: each list contributes weight / (k + rank).
+    The default weight is 1. Rank is 1-based. A repeated node inside one list
+    keeps its first, best rank.
     """
 
     scores: dict[str, float] = {}
@@ -40,7 +46,8 @@ def fuse(channels: dict[str, list[Hit]], *, k: int = RRF_K) -> list[FusedHit]:
             if hit.node_id in seen:
                 continue
             seen.add(hit.node_id)
-            scores[hit.node_id] = scores.get(hit.node_id, 0.0) + 1.0 / (k + rank)
+            weight = 1.0 if weights is None else weights.get(name, 1.0)
+            scores[hit.node_id] = scores.get(hit.node_id, 0.0) + weight / (k + rank)
             previous = best_rank.get(hit.node_id)
             best_rank[hit.node_id] = rank if previous is None else min(previous, rank)
             seen_channels.setdefault(hit.node_id, set()).add(name)

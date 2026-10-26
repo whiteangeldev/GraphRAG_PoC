@@ -1,0 +1,13 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY pyproject.toml README.md ./
+COPY src ./src
+RUN pip install --no-cache-dir .
+
+ENV NEO4J_URI=bolt://neo4j:7687
+ENV NEO4J_USER=neo4j
+ENV NEO4J_PASSWORD=graphrag-poc
+ENV GRAPH_BUILD=corpus
+EXPOSE 8088
+CMD ["uvicorn", "graphrag_poc.service.app:app", "--host", "0.0.0.0", "--port", "8088"]

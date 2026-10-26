@@ -1,0 +1,59 @@
+{
+  "id": "procedure-0018",
+  "answer_sha256": "2a655f8bcc7b4fb0b06331d575da9fa29874596fc2ba60064d7714c2f0af73ca",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "present": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "text": "1. Apply sealing compound to fitting (2) and install fitting (2) on filler spout (12).",
+      "present": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "text": "1. Unscrew “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "present": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "sentence": "Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12).",
+      "supported": true,
+      "quote": "1. Unscrew filler cap “T” handle (7) and remove filler cap (6) from filler spout (12)."
+    },
+    {
+      "sentence": "2.",
+      "supported": true,
+      "quote": "2. Detach cap chain clip (8) from filler spout (12) and remove filler cap (6)."
+    },
+    {
+      "sentence": "Detach cap chain clip (8) from filler spout (12) and remove filler cap (6).",
+      "supported": true,
+      "quote": "6. Remove locknut (13), washer (14), capscrew (16), washer (14), and clamp (15) from filler spout (12). Discard locknut (13)."
+    },
+    {
+      "sentence": "6.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove locknut (16), washer (7), capscrew (8), washer (7) and clamp (6) from filler spout (5).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Discard locknut (16).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

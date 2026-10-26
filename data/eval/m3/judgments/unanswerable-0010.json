@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0010",
+  "answer_sha256": "56c8e3eb10f6ad5ea595d3709f74edd7fd523869d502d27c229e24ec2313d08b",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about the meaning of Table 99-9 in the manual.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

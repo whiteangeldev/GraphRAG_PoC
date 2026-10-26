@@ -1,0 +1,49 @@
+{
+  "id": "relational-0004",
+  "answer_sha256": "7ae05c8293ad41ab0af6bd0f5e1bd866e613234d18c538b8eda0642235a1d4cd",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "text": "5584077",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about which parts-list item matches \"RADIATOR\".",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "Check to see if fan is running.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "If fan is not running, perform emergency fan clutch override procedure (para.",
+      "supported": true,
+      "quote": "If fan is not running, perform emergency fan clutch override procedure (para. 3-23)."
+    },
+    {
+      "sentence": "3-23).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "5584077",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0009",
+  "answer_sha256": "5b2f13f22c7363d35eaa475afa6060a557040f68bcbf21452b09352cfe1caaf7",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "page 282, code 8.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "LOW ENGINE OIL PRESSURE ACCORDING TO OIL PRESSURE GAUGE, part 5740018.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

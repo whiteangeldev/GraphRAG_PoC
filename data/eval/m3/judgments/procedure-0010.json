@@ -1,0 +1,44 @@
+{
+  "id": "procedure-0010",
+  "answer_sha256": "bd0a173cc7c7e91f3dd558c89ba3363191a8fef6c9320a8c55c140059fa2375a",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1).",
+      "present": true,
+      "quote": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1)."
+    },
+    {
+      "text": "1. Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4).",
+      "present": true,
+      "quote": "1. Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4)."
+    },
+    {
+      "text": "2. Disconnect hose (6) from air cleaner assembly (7).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1)."
+    },
+    {
+      "sentence": "Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1).",
+      "supported": true,
+      "quote": "1. Loosen three clamps (2) from air restriction gauge hose (6) and “A” beam (1)."
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7) and gauge (4).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

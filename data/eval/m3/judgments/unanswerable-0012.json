@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0012",
+  "answer_sha256": "62bf6762223f52c7deeb1e7c347d6225f46f2e796ee524027e6c3486dc9d8565",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about the meaning of the manual reference \"pump model DB0000-0000\".",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

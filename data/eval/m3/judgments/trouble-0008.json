@@ -1,0 +1,19 @@
+{
+  "id": "trouble-0008",
+  "answer_sha256": "3f3e0f05c2ed62a8323c9627508922b403e5957b9228c6233d093f03fcf492d1",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

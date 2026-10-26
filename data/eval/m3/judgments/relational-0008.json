@@ -1,0 +1,44 @@
+{
+  "id": "relational-0008",
+  "answer_sha256": "ebed37ae3a37c183b0cd3b3b0714bb46db9fca777679f1be0374c833e888ed3f",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": true,
+      "quote": "Step 1. Check for low oil level (para. 3-17)."
+    },
+    {
+      "text": "7X677",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5740018, part: OIL PUMP",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check for low oil level (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-17).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Add oil (Appendix G).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

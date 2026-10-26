@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0010",
+  "answer_sha256": "790590309e3869df220c9ecc5c4b81bfa8e0562f988370d9a5b0800ca6e84354",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check operating controls for correct settings",
+      "present": true,
+      "quote": "Step 1. Check operating controls for correct settings."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the relation frame is \"Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check operating controls for correct settings."
+    },
+    {
+      "sentence": "Check operating controls for correct settings.\" The part number is 5598104.",
+      "supported": true,
+      "quote": "Step 1. Check operating controls for correct settings."
+    }
+  ]
+}

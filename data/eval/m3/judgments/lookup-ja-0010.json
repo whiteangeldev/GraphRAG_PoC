@@ -1,0 +1,19 @@
+{
+  "id": "lookup-ja-0010",
+  "answer_sha256": "7c6a82e60147987207d8913d5080f404b110dfb785330cc82f9b01b9da34684b",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1.5. 多車線道路及び郊外部の道路は、600mを超える直線かつ水平な道路を含み",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

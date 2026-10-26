@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "graphrag-poc"
 version = "0.1.0"
-description = "Graph RAG proof of concept. Milestone 1 is the hybrid-retrieval baseline."
+description = "Graph RAG proof of concept: hybrid retrieval and an installable graph library."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -13,6 +13,7 @@ dependencies = [
     "fastembed>=0.6",
     "openai>=1.60",
     "python-multipart>=0.0.9",
+    "neo4j>=5.26,<6",
     "pdfplumber>=0.11",
     "pydantic>=2.10",
     "qdrant-client>=1.19,<1.20",
@@ -53,6 +54,9 @@ files = [
     "src/graphrag_poc/cases",
     "src/graphrag_poc/index",
     "src/graphrag_poc/retrieve",
+    "src/graphrag_poc/graph",
+    "src/graphrag_poc/library",
+    "src/graphrag_poc/service",
     "src/graphrag_poc/generate",
     "src/graphrag_poc/app",
     "src/graphrag_poc/eval",

@@ -1,0 +1,59 @@
+{
+  "id": "multi-0003",
+  "answer_sha256": "3c24cfdb5ca3dbac47374a6285b1ad0ccd25db95ca6c8a1640860e056cdfd946",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": true,
+      "quote": "Step 1. Check for water in fuel filter by draining."
+    },
+    {
+      "text": "(1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.",
+      "present": true,
+      "quote": "Drain fuel filter (para. 3-10)"
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about tracing a malfunction through a specific step, but the passages do not mention the step or the relation frame.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check for water in fuel filter by draining."
+    },
+    {
+      "sentence": "Check for water in fuel filter by draining.",
+      "supported": true,
+      "quote": "Step 1. Check for water in fuel filter by draining."
+    },
+    {
+      "sentence": "Drain fuel filter (para.",
+      "supported": true,
+      "quote": "Drain fuel filter (para. 3-10)"
+    },
+    {
+      "sentence": "3-10).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SF-5597692",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

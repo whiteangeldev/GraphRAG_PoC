@@ -1,0 +1,79 @@
+{
+  "id": "multi-0017",
+  "answer_sha256": "9beecef321d238191979f522359f88812d45667490a6238a48e9d337d996b976",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if brake handle is in proper position (para",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(4) Use weapon station brake handle (4) and turret positioning handle (1) to rotate weapon station (9) to the desired azimuth.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12340298",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 24.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WEAPON STATION WILL NOT ROTATE OR LOCK",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "page: 285",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "relation_frame: code",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- node_id: 5715976G1 TRAY,WEAPON,VEHICUL",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "page: 285",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "relation_frame: part",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if brake handle is in proper position (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2-54).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Place brake handle in proper position.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "procedure-0006",
+  "answer_sha256": "6b1209b124689bdcad6b682c879448db0cb914dd26b19c0c6f45c20113e42fff",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow). Move air stream up and down length of pleats until you can not see dust being blown out.",
+      "present": true,
+      "quote": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow). Move air stream up and down length of pleats until you can not see dust being blown out."
+    },
+    {
+      "text": "1. Remove screen or rag from housing opening.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Prepare a solution of five gallons warm water (80-110° F (26.7-43.3° C)) and approximately one cup of non-sudsing detergent in a container large enough to submerge the element (1). Never use gasoline or solvents of any kind to clean elements.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "WARNING Compressed air used for cleaning purpose will not exceed 30 psi (207 kPa",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow). Move air stream up and down length of pleats until you can not see dust being blown out."
+    },
+    {
+      "sentence": "Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow).",
+      "supported": true,
+      "quote": "1. Hold nozzle at least one inch away from element (1) and direct compressed air against clean side of element (1) (in direction opposite to normal air flow)."
+    },
+    {
+      "sentence": "Move air stream up and down length of pleats until you can not see dust being blown out.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

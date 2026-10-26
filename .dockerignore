@@ -1,0 +1,10 @@
+.git
+.venv
+.mypy_cache
+.ruff_cache
+.pytest_cache
+data
+docs
+tests
+*.mp4
+.DS_Store

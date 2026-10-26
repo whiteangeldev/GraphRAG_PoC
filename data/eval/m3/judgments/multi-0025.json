@@ -1,0 +1,44 @@
+{
+  "id": "multi-0025",
+  "answer_sha256": "560871d4292d0fbd7d80afa87cc4fabd4ec23cf1fe655a982ef2ca7d619809ef",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fuel gauge indicates “E” (empty)",
+      "present": true,
+      "quote": "Check to see if fuel gauge indicates “E” (empty)."
+    },
+    {
+      "text": "(3) Fuel gauge (9) should indicate fuel level in fuel tank.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "6472357",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 2815_34_2-34_4, page: 152, relation_frame: code, part: 6472357 PUMP,FUEL,CAM ACTUA, cases: C-000030, C-000060, C-000090, C-000120, C-000150.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if fuel gauge indicates “E” (empty).",
+      "supported": true,
+      "quote": "Check to see if fuel gauge indicates “E” (empty)."
+    },
+    {
+      "sentence": "Fill fuel tank, and start engine.",
+      "supported": true,
+      "quote": "Fill fuel tank, and start engine."
+    }
+  ]
+}

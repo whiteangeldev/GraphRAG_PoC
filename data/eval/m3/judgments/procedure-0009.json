@@ -1,0 +1,54 @@
+{
+  "id": "procedure-0009",
+  "answer_sha256": "ac86445459d4338c012f3e15665baaa00804135aaa972e175eaa989e640e5445",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Connect hose (5) to gauge (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Disconnect air restriction gauge hose (5) from gauge (4) and remove gauge (4).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove two screws (2) and bezel (1) from air restriction gauge (4), and remove gauge (4) and gasket (3) from behind dash panel (6).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Position gauge (4) and gasket (3) behind dash panel (6) and secure to bezel (1) with two screws (2).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Route hose (6) through three clamps (2) and two grommets (3) in “A” beam (1) to air cleaner assembly (7).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

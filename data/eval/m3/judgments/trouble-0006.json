@@ -1,0 +1,19 @@
+{
+  "id": "trouble-0006",
+  "answer_sha256": "968f53c1889fea004d40d80ab86d55143b7f2f8ceb6ae4ae958f4c644009932d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

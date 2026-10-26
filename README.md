@@ -1,6 +1,6 @@
 # GraphRAG PoC
 
-Milestone 1 baseline: hybrid retrieval over an approved public corpus, cited answers, and a fixed evaluation. Graph construction is a later milestone.
+Hybrid retrieval over an approved public corpus, a Neo4j graph, and an installable library Sodick can call from its own retriever.
 
 ## Corpus
 
@@ -15,7 +15,7 @@ python3.12 -m venv .venv
 .venv/bin/pip install -e ".[dev]"
 ```
 
-Qdrant runs from Docker Compose (`qdrant/qdrant:v1.19.2` on port 6333).
+Qdrant and Neo4j run from Docker Compose. Qdrant is `qdrant/qdrant:v1.19.2` on port 6333. Neo4j Community is `neo4j:5.26.12` on Bolt port 7687.
 
 ## Environment
 
@@ -35,6 +35,10 @@ Copy `.env.example` to `.env` when you want a local override. Secrets stay in th
 | `GENERATION_SEED` | `0` during evaluation. |
 | `RERANK_ENABLED` | Leave `false` for the reported baseline. |
 | `DEMO_PORT` | Demo page port. Default `8080`. |
+| `NEO4J_URI` | Bolt URI. Default `bolt://localhost:7687`. The service container uses `bolt://neo4j:7687`. |
+| `NEO4J_USER` | Neo4j user. Default `neo4j`. |
+| `NEO4J_PASSWORD` | Neo4j password. Default `graphrag-poc`. |
+| `GRAPH_BUILD` | Build id the service reads when a request omits one. Default `corpus`. |
 
 ## Reproduce the baseline
 
@@ -81,6 +85,16 @@ python -m graphrag_poc.generate --demonstrate
 ```
 
 Use the same embedding variables as `make eval`.
+
+## Library and service
+
+The Appendix A.4 functions are `build_graph`, `link_entities`, `traverse`, `route`, and `fuse` in `graphrag_poc.library`. The Appendix A.5 service listens on port 8088:
+
+```bash
+make service
+```
+
+`GET /health` returns the active build id. The guides are [`docs/architecture.md`](docs/architecture.md), [`docs/operations.md`](docs/operations.md), [`docs/integration.md`](docs/integration.md), and [`docs/schema_reference.md`](docs/schema_reference.md). The measured graph result is [`docs/m3_report.md`](docs/m3_report.md). The M4 report is [`docs/m4_report.md`](docs/m4_report.md).
 
 ## Milestone
 

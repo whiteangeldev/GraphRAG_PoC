@@ -1,0 +1,24 @@
+{
+  "id": "lookup-ja-0009",
+  "answer_sha256": "29a69491a6e1aa98a099003b36a99f898ccdab10768e4a653197c949ef85a84d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1.4. 郊外部の道路は、2車線の道路及び4車線以上の道路で構成するものとし、か",
+      "present": true,
+      "quote": "か"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.4.",
+      "supported": true,
+      "quote": "か"
+    },
+    {
+      "sentence": "郊外部の道路は、2車線の道路及び4車線以上の道路で構成するものとする。",
+      "supported": true,
+      "quote": "か"
+    }
+  ]
+}

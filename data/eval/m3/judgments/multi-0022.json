@@ -1,0 +1,59 @@
+{
+  "id": "multi-0022",
+  "answer_sha256": "c3276d3bd2cdf66ecdd30cf744937801bf71070f7ac24967e5932540b1b49393",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Ensure that operating controls are properly set",
+      "present": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    },
+    {
+      "text": "(5) Turn heater fan switch (6) \"ON\" to desired setting, \"HIGH\" OR “LOW.\"",
+      "present": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    },
+    {
+      "text": "5598104",
+      "present": true,
+      "quote": "Set operating controls (para. 2-61)."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about finding the part number for a heater, but the relevant information is not present in the provided passages.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    },
+    {
+      "sentence": "Ensure that operating controls are properly set.",
+      "supported": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    },
+    {
+      "sentence": "Set operating controls (para.",
+      "supported": true,
+      "quote": "Set operating controls (para. 2-61)."
+    },
+    {
+      "sentence": "2-61).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "5598104",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

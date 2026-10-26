@@ -1,0 +1,49 @@
+{
+  "id": "relational-0023",
+  "answer_sha256": "1468213544d9590b79891323feb7c05efec5d10efa2b0797c83ba5980d33af2e",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles",
+      "present": true,
+      "quote": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles."
+    },
+    {
+      "text": "MFY-6701UT",
+      "present": true,
+      "quote": "MFY-6701UT"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about a starter part number listed in the relation frame, but the passage does not mention any such part number.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles.",
+      "supported": true,
+      "quote": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles."
+    },
+    {
+      "sentence": "If not, place lever in“N” (neutral) or “P” (park).",
+      "supported": true,
+      "quote": "If not, place lever in“N” (neutral) or “P” (park)."
+    },
+    {
+      "sentence": "MFY-6701UT",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

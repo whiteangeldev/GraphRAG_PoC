@@ -1,0 +1,54 @@
+{
+  "id": "multi-0004",
+  "answer_sha256": "1d9014ddc51510c32fc7d496401ce2eadc05fbce31d661d58292e22631dd4fa3",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(2) Check for foreign objects in front of radiator and clean as required.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5584077",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5584077, page: 282, relation: part",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- node_id: 5584077, page: 282, relation: BRACKET,ANGLE LOWER RADIATOR MOUNT",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if fan is running.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "If fan is not running, perform emergency fan clutch override procedure (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-23).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

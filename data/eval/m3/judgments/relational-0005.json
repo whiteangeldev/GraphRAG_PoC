@@ -1,0 +1,49 @@
+{
+  "id": "relational-0005",
+  "answer_sha256": "c196083155f10e43dda28d5628ef564b07de8c61d10bdeeca10740a706fc85ac",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": true,
+      "quote": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles."
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about a transmission part number, but the answer is not included in the given passages.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
+      "supported": true,
+      "quote": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles."
+    },
+    {
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
+      "supported": true,
+      "quote": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range."
+    },
+    {
+      "sentence": "9C234",
+      "supported": true,
+      "quote": "9C234"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "unanswerable-0004",
+  "answer_sha256": "b3d0bde81e350a32ce798c37861cc45ed478cc34726533497b028e9a4a98e960",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "No retrieved passage contains the requested material.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Searched: What does this mean in the manual: malfunction 88.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "INVENTED GEARBOX WHISTLE?",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

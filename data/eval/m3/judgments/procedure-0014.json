@@ -1,0 +1,39 @@
+{
+  "id": "procedure-0014",
+  "answer_sha256": "9854a86157f9c82978554b6dcc745eb9758abc0412f81c3389131cd95e246f0f",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove fuel tank filler cap (1).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Disconnect large vent line (4) from filler spout (5).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Thoroughly clean outside of tank (17) to prevent dirt contamination.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "WARNING Drycleaning solvent is flammable and will not be used near an open flame",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove fuel tank filler cap (1).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

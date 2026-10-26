@@ -1,0 +1,54 @@
+{
+  "id": "relational-0013",
+  "answer_sha256": "dc79b57e92d77657e2a8c1f9bc84593b88dca771f756f1a1201717bc4bffbff4",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": true,
+      "quote": "Step 1. Check tire air pressure."
+    },
+    {
+      "text": "89305",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 20.",
+      "supported": true,
+      "quote": "20. EXCESSIVE OR UNEVEN TIRE WEAR"
+    },
+    {
+      "sentence": "EXCESSIVE OR UNEVEN TIRE WEAR",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "page: 284",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "part: 89305 WHEEL AND RUN FLAT USE WITH BIAS TIRE ONLY",
+      "supported": true,
+      "quote": "Step 1. Check tire air pressure."
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Check tire air pressure."
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": true,
+      "quote": "Inflate or deflate tires to correct air pressure."
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

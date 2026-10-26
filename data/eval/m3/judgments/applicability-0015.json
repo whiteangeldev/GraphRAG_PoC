@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0015",
+  "answer_sha256": "ae2562a943f7b000bff64475077ff37bcae9f75dc6848c2bd59902af1814da81",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1042",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages mention the M1042.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

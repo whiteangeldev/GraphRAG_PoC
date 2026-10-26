@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0016",
+  "answer_sha256": "fbed45d323213b853841cf33010dd4ad89d8272fe6e81591ed226e005c7dc3df",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if wheel lug nuts are loose",
+      "present": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the relation frame is \"Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "sentence": "Check to see if wheel lug nuts are loose.",
+      "supported": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "sentence": "Tighten loose lug nuts (para.",
+      "supported": true,
+      "quote": "Tighten loose lug nuts (para. 3-26) and notify unit maintenance to properly torque lug nuts."
+    },
+    {
+      "sentence": "3-26) and notify unit maintenance to properly torque lug nuts.\"",
+      "supported": true,
+      "quote": "Tighten loose lug nuts (para. 3-26) and notify unit maintenance to properly torque lug nuts."
+    }
+  ]
+}

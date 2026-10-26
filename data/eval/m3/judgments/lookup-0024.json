@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0024",
+  "answer_sha256": "810f2f2f5e06a259933abf9c0f4a6b1c56a569718f8e0d9f8e2611eb1b880d4d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check that left lighting or right lighting fuse is serviceable",
+      "present": true,
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the passage is \"Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
+    },
+    {
+      "sentence": "Check that left lighting or right lighting fuse is serviceable.",
+      "supported": true,
+      "quote": "Step 1. Check that left lighting or right lighting fuse is serviceable."
+    },
+    {
+      "sentence": "Replace fuse if blown (para.",
+      "supported": true,
+      "quote": "Replace fuse if blown (para. 2-61)."
+    },
+    {
+      "sentence": "2-61).\" The part number is 5583395.",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    }
+  ]
+}

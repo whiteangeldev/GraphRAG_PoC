@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0003",
+  "answer_sha256": "e7f4e942181d9761852fdd264d5ca83e9b8e45f8a9d7388409e65637de0725af",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about part number ZZ-NO-SUCH-PART.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0009",
+  "answer_sha256": "ff9a52e4c73a33be97885317d03bd8d758a63e448efd046878d50bb2c400d8e7",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about model M0000A9 belt tension.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

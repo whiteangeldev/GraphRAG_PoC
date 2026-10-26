@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0011",
+  "answer_sha256": "40f66e1d36f57af964d96c3c34ffc59fa811da92d46d6666fdbe2d1d34870516",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M998",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages mention the M998.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

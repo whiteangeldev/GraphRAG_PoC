@@ -1,0 +1,44 @@
+{
+  "id": "relational-0015",
+  "answer_sha256": "19127deeca7eeacd46faa062886428041f5526dbe2ab8b371dd80b607d9a1758",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check tire air pressure",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5591280",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 22.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "HARD STEERING, page: 285, part: 5591280 COVER,STEERING ARM L.H",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check tire air pressure.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Inflate or deflate tires to correct air pressure.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

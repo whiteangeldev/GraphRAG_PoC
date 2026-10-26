@@ -1,0 +1,54 @@
+{
+  "id": "relational-0006",
+  "answer_sha256": "dcc939bdee04cad6abccb23d4371a7179c9be846959d5d311b6b2dca604826f2",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": true,
+      "quote": "Step 1."
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide a direct match for the question.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question asks for a part-list item that matches \"TRANSMISSION\" in relation to malfunction 12.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE, but the passages do not contain such a part-list item.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "Check to see if transmission dipstick is loose.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "Secure dipstick.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "9C234",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

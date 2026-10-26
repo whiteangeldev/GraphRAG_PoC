@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0026",
+  "answer_sha256": "ef2d35a964e60ae3e0c6ffb7ab3d9bfa1ad510cf6ad782242f2eef68befd5395",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Perform malfunction 26, steps 1 through 3",
+      "present": true,
+      "quote": "Step 1. Perform malfunction 26, steps 1 through 3."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the relation frame is \"Step 1.",
+      "supported": true,
+      "quote": "Step 1. Perform malfunction 26, steps 1 through 3."
+    },
+    {
+      "sentence": "Perform malfunction 26, steps 1 through 3.\"",
+      "supported": true,
+      "quote": "Step 1. Perform malfunction 26, steps 1 through 3."
+    }
+  ]
+}

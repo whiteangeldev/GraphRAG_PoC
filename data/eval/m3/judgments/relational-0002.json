@@ -1,0 +1,39 @@
+{
+  "id": "relational-0002",
+  "answer_sha256": "e6ad103cbcd5edfbddd6b939145714dfdb1780f8cf64191948a83e5c27a2b44e",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check oil level for overfilling (Appendix G)",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 282, page: 282, part: SF-5597692 INSULATION,NOZZLE R.H.,USBL EFF 46162 AND ABOVE.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check oil level for overfilling (Appendix G).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance if fluid level is high.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

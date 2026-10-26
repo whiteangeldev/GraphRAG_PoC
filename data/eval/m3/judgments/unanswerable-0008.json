@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0008",
+  "answer_sha256": "64648954a8ab9155f3e2a34ea9e4200a5cce82ebb00db31a982a9413d0a6fbd0",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about a warning related to a flux capacitor.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

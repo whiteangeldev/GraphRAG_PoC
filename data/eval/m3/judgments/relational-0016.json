@@ -1,0 +1,44 @@
+{
+  "id": "relational-0016",
+  "answer_sha256": "67eb4b3495c408900130b1b0b1770c0df994a5005b6ee155a5f2561f5055a2a2",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Wait 2 minutes and attempt winch operation again",
+      "present": true,
+      "quote": "Step 1. Wait 2 minutes and attempt winch operation again."
+    },
+    {
+      "text": "W6000HMV",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 7783, page: 1085, part: W6000HMV WINCH,DRUM,VEHICLE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "Wait 2 minutes and attempt winch operation again.",
+      "supported": true,
+      "quote": "Step 1. Wait 2 minutes and attempt winch operation again."
+    },
+    {
+      "sentence": "Refer to para.",
+      "supported": true,
+      "quote": "Refer to para."
+    },
+    {
+      "sentence": "2-26 for winch operation.",
+      "supported": true,
+      "quote": "2-26 for winch operation."
+    }
+  ]
+}

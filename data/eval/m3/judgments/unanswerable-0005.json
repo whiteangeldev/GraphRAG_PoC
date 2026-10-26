@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0005",
+  "answer_sha256": "f57d4f13da0c411ccf6242d6510b0220ca0f78527123055db57321a10f9e09d2",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about fault code QX-404.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

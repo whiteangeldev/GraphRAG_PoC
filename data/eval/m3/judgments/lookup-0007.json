@@ -1,0 +1,49 @@
+{
+  "id": "lookup-0007",
+  "answer_sha256": "f7cd9ac0ed5a088881a747543c0ca2ad125ace0f92ac5b2dfb75b2eaf6a185b5",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- 12.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "FLUID THROWN FROM TRANSMISSION FILL TUBE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- Check to see if transmission dipstick is loose.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Secure dipstick.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "- Check fluid level for overfilling (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-19).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance if fluid level is high.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "multi-0002",
+  "answer_sha256": "31dd79f2dc43dd70df718c8680f35ee3b52a9da5c30f8619af2667a2f00541f5",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check oil level for overfilling (Appendix G)",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "(1) To operate fire extinguisher (4), remove from stowage bracket (5). Remove locking pin (2) and direct nozzle (6) to source of flames.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "SF-5597692",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 282, page: 282, part: SF-5597692.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check oil level for overfilling (Appendix G).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance if fluid level is high.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

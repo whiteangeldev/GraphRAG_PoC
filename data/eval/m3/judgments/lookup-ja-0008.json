@@ -1,0 +1,19 @@
+{
+  "id": "lookup-ja-0008",
+  "answer_sha256": "9f666e9327b41d04eb96d80dcbf566cbfef7d578efb045d74e9ad81f3a8a432d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1.3. 都市部の道路は、照明のある道路と照明のない道路で構成するものとする。",
+      "present": true,
+      "quote": "2.3. 都市部の道路は、照明のある道路と照明のない道路で構成するものとする。"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

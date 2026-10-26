@@ -1,0 +1,54 @@
+{
+  "id": "multi-0011",
+  "answer_sha256": "4bc0758aeb4814695fe2974779c0b288d1f546a967bcfe1c0eb2d0f2c177cb1c",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if parking brake is partially applied",
+      "present": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "text": "e. Depress service brake pedal (6). Depress parking brake release button and release parking brake lever (4). The brake warning lamp assembly (1) should go out. 2-108 Change 1",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "12460229",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question is about tracing a malfunction through a step to a parts list, but the relevant information is not present in the provided passages.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "sentence": "Check to see if parking brake is partially applied.",
+      "supported": true,
+      "quote": "Step 1. Check to see if parking brake is partially applied."
+    },
+    {
+      "sentence": "Disengage parking brake.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "12460229",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

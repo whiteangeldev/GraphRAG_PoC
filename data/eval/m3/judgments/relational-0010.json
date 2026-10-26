@@ -1,0 +1,44 @@
+{
+  "id": "relational-0010",
+  "answer_sha256": "5920f743cdf619100f148c64af3dab99a8f6f06b85c461ce1fc141348f9d5ce3",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for proper shifting sequence",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "5938705",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 283, page: 283, part: 5938705, relation: code, node_id: 283, page: 283, part: 5938705, relation: cause, node_id: 283, page: 283, part: 5938705, relation: remedy, node_id: 283, page: 283, part: 5938705, relation: cases.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check for proper shifting sequence.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Ensure proper shifting sequence is used (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2-11).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

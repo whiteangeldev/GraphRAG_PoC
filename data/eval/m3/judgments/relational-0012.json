@@ -1,0 +1,44 @@
+{
+  "id": "relational-0012",
+  "answer_sha256": "3356a191e5844ab11c5eba13d1c6414b4b77420173a38123bfe67e7a63623231",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if wheel lug nuts are loose",
+      "present": true,
+      "quote": "Step 1. Check to see if wheel lug nuts are loose."
+    },
+    {
+      "text": "5740512",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5740512, page: 284, relation: part.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if wheel lug nuts are loose.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Tighten loose lug nuts (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-26) and notify unit maintenance to properly torque lug nuts.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

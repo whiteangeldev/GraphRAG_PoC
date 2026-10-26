@@ -1,0 +1,19 @@
+{
+  "id": "follow-0001",
+  "answer_sha256": "4a4c88b64ce23be824128b8c9fdde4458ac0bd282b2c1b087bf8d40986652760",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M998",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages mention the M1123.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

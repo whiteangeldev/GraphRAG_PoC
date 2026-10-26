@@ -1,0 +1,49 @@
+{
+  "id": "relational-0021",
+  "answer_sha256": "c3fcf9cd264dd6a5ff744196c246c6ed017cc7d2a3d4def7ab555d486036004d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Perform malfunction 26, steps 1 through 3",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 29.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SPOTUGHT FAILS TO ILLUMINATE",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "page: 286",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "part: MS21333-128 CLAMP,LOOP 100 AMP,SERIAL NUMBER 196900 AND BELOW 41-1",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Perform malfunction 26, steps 1 through 3.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

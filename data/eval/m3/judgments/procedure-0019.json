@@ -1,0 +1,34 @@
+{
+  "id": "procedure-0019",
+  "answer_sha256": "217b546229f5f1f3affb8534bdeabe497a9564d8a06461b61b54009e706affe5",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Disconnect vent line (2) from fuel filler spout elbow (3).",
+      "present": true,
+      "quote": "1. Disconnect vent line (2) from fuel filler spout elbow (3)."
+    },
+    {
+      "text": "1. Install vent line (10) and connect to elbow (8) on fuel tank (9). NNOOTTEE Upper and lower straps should be approximately 1/2 in. (12 mm) apart after tightening locknuts. Straps should not touch when properly installed. Straps must be replaced if upper and lower straps touch.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove locknut (7), washer (5), capscrew (4), and washer (5) securing vent line (2) and clamp (6) to body (1). Discard locknut (7).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1. Disconnect vent line (2) from fuel filler spout elbow (3)."
+    },
+    {
+      "sentence": "Disconnect vent line (2) from fuel filler spout elbow (3).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

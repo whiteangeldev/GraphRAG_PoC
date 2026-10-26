@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0028",
+  "answer_sha256": "f1091132118b7a30926569b0a8773f2a3e2d85a59a56a59a00b5b8d3e1b3b042",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission shift lever is in “N” (neutral) or “P” (park) for M1123 and A2 vehicles",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about the first test or corrective action listed in the relation frame \"malfunction 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE FAILS TO CRANK\".",
+      "supported": true,
+      "quote": "1. ENGINE FAILS TO CRANK"
+    }
+  ]
+}

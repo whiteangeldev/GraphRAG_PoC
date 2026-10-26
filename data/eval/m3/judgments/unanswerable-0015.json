@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0015",
+  "answer_sha256": "19554034df0413c83b165c7f3244d07c0111b5a2d37056f0446c3e4d371ab71b",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about document tm000_00 page 9999.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

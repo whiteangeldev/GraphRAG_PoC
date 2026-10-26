@@ -1,0 +1,49 @@
+{
+  "id": "relational-0018",
+  "answer_sha256": "3bdd6931878c98dc579057a85980e0f1f8ed64886fef50638bf7ad0ed5bfec53",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check that interior light switch on control box is in proper position",
+      "present": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "text": "MS21333-128",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about which parts-list item matches \"LAMP\".",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "Check that interior light switch on control box is in proper position.",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "Place interior light switch in proper position (para.",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "2-61).",
+      "supported": true,
+      "quote": "Step 1. Check that interior light switch on control box is in proper position."
+    },
+    {
+      "sentence": "MS21333-128",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

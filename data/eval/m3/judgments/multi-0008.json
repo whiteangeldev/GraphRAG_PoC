@@ -1,0 +1,49 @@
+{
+  "id": "multi-0008",
+  "answer_sha256": "e8bce6ab4f0c805a952501e1ae084221ef570107ba9749a68104606cebdc1a9d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low oil level (para",
+      "present": true,
+      "quote": "Step 1."
+    },
+    {
+      "text": "2. Loosen nut (2) and remove RPM sensor (1) from oil pump drive (6).",
+      "present": true,
+      "quote": "Step 1."
+    },
+    {
+      "text": "7X677",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 5740018, page: 282",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check for low oil level (para.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "3-17).",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "Add oil (Appendix G).",
+      "supported": true,
+      "quote": "Step 1."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "multi-0007",
+  "answer_sha256": "143ee9753d5856768ce8fed15e4e284d14525af78abbe7b82b6da8769c2ccea7",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for low fluid level (para",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "Question: Trace malfunction 13.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SLIPPAGE IN ALL RANGES through the transmission step to the parts list.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Relation frame: code: 13.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "SLIPPAGE IN ALL RANGES",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "part: 9C234 12460092-2 LIGHT,INDICATOR TRANSMISSION",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check for low fluid level (para.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3-19).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Add fluid (Appendix G).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

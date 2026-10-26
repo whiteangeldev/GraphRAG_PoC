@@ -1,0 +1,24 @@
+{
+  "id": "lookup-0021",
+  "answer_sha256": "c21b41361ea1dd071ecf706f05742c073723d29fd61f123ba90097c047bbf342",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if brake handle is in proper position (para",
+      "present": true,
+      "quote": "Step 1. Check to see if brake handle is in proper position (para. 2-54)."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 2-54, page: 285, relation: cause",
+      "supported": true,
+      "quote": "Step 1. Check to see if brake handle is in proper position (para. 2-54)."
+    },
+    {
+      "sentence": "- node_id: 5715976G1 TRAY,WEAPON,VEHICUL, page: 285, relation: part",
+      "supported": true,
+      "quote": "Step 1. Check to see if brake handle is in proper position (para. 2-54)."
+    }
+  ]
+}

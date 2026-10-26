@@ -1,0 +1,54 @@
+{
+  "id": "relational-0020",
+  "answer_sha256": "9f8659818062379ba9b980ac99b08b7c8374f4d72a3d807a594de160ba292c53",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": true,
+      "quote": "Step 1. Inspect bulb for serviceability."
+    },
+    {
+      "text": "MS21333-128",
+      "present": true,
+      "quote": "MS21333-128"
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide a direct answer to the question.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "The question asks which parts-list item matches \"LAMP,\" but the passages do not contain any relevant information about parts or items related to \"LAMP.\"",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1. Inspect bulb for serviceability."
+    },
+    {
+      "sentence": "Inspect bulb for serviceability.",
+      "supported": true,
+      "quote": "Step 1. Inspect bulb for serviceability."
+    },
+    {
+      "sentence": "Replace bulb with known serviceable bulb (para.",
+      "supported": true,
+      "quote": "Replace bulb with known serviceable bulb (para. 3-28)."
+    },
+    {
+      "sentence": "3-28).",
+      "supported": true,
+      "quote": "Replace bulb with known serviceable bulb (para. 3-28)."
+    },
+    {
+      "sentence": "MS21333-128",
+      "supported": true,
+      "quote": "MS21333-128"
+    }
+  ]
+}

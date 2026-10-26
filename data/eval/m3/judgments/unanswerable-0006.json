@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0006",
+  "answer_sha256": "122d01f3b9d3157ae85ead30c3297773f668dc15a78bea74e414554a93e03a5d",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about the meaning of NSN 0000000000000.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

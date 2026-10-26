@@ -1,0 +1,54 @@
+{
+  "id": "procedure-0004",
+  "answer_sha256": "fdba02763a58a3cca1d3cfd2192668b6c40fec09b717329e810b5b32bae78ec0",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Connect CDR valve oil fill tube hose (4) to oil fill tube (6) and tighten clamp (5).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Inspect adapter (3) for breaks or cracks. Replace if defective.",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Loosen clamp (2) and disconnect CDR valve intake manifold hose (1) from intake manifold (7).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Loosen clamp (6) on CDR valve intake manifold hose (5).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "4.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Connect CDR valve (9) to intake manifold hose (5) and tighten clamp (6).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

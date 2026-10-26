@@ -1,0 +1,29 @@
+{
+  "id": "lookup-0025",
+  "answer_sha256": "8437b056c9bb37d842c384079923b736a6de8fffeefc1f68e13f98ca229662f6",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Inspect bulb for serviceability",
+      "present": true,
+      "quote": "Step 1. Inspect bulb for serviceability."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first thing to check is Step 1: Inspect the bulbs for serviceability.",
+      "supported": true,
+      "quote": "Step 1. Inspect bulb for serviceability."
+    },
+    {
+      "sentence": "Replace the bulb with a known serviceable bulb (para.",
+      "supported": true,
+      "quote": "Replace bulb with known serviceable bulb (para. 3-28)."
+    },
+    {
+      "sentence": "3-28).",
+      "supported": true,
+      "quote": "Step 2. Other causes. Notify unit maintenance."
+    }
+  ]
+}

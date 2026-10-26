@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0004",
+  "answer_sha256": "889d4bb6b8e0b97e2f41913207c39a7c3d068f53cb5f3e142fdebb95d3839d2d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": true,
+      "quote": "Step 1. Check to see if fan is running."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The first test or corrective action listed in the relation frame is \"Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "Check to see if fan is running.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "If fan is not running, perform emergency fan clutch override procedure (para.",
+      "supported": true,
+      "quote": "If fan is not running, perform emergency fan clutch override procedure (para. 3-23)."
+    },
+    {
+      "sentence": "3-23).\" The part number is 65139.",
+      "supported": true,
+      "quote": "Step 2. Allow engine to cool and check for low coolant level. Add coolant as necessary (para. 3-9). Step 3. Check for debris blocking radiator fins. Remove debris. Step 4. Check for broken or missing fan belts. Notify unit maintenance if belts are broken or missing. Step 5. Other causes. Notify unit maintenance."
+    }
+  ]
+}

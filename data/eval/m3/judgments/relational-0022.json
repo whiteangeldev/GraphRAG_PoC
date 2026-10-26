@@ -1,0 +1,54 @@
+{
+  "id": "relational-0022",
+  "answer_sha256": "08ffffa3a54ebba742c6409bf64118c7128e9bd0d3a6143eb5e0efbe29676ecb",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Ensure that operating controls are properly set",
+      "present": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    },
+    {
+      "text": "5598104",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about which parts-list item matches \"HEATER\" for malfunction 30.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE.",
+      "supported": true,
+      "quote": "POOR HEATING, VENTILATING, OR AIR-CONDITIONING PERFORMANCE"
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": true,
+      "quote": "Step 1."
+    },
+    {
+      "sentence": "Ensure that operating controls are properly set.",
+      "supported": true,
+      "quote": "Ensure that operating controls are properly set."
+    },
+    {
+      "sentence": "Set operating controls (para.",
+      "supported": true,
+      "quote": "Set operating controls (para. 2-61)"
+    },
+    {
+      "sentence": "2-61).",
+      "supported": true,
+      "quote": "5598104"
+    },
+    {
+      "sentence": "5598104",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

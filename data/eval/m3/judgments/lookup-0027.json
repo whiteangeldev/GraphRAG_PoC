@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0027",
+  "answer_sha256": "74fd7af9bfa220896f30577f958f0295f5c64835f4288003862aa66493b69f93",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Ensure that operating controls are properly set",
+      "present": true,
+      "quote": "Step 1. Ensure that operating controls are properly set."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 287, page: 287, relation: code",
+      "supported": true,
+      "quote": "Set operating controls (para. 2-61)"
+    },
+    {
+      "sentence": "- node_id: 287, page: 287, relation: cause",
+      "supported": true,
+      "quote": "Other causes. Notify unit maintenance"
+    },
+    {
+      "sentence": "- node_id: 287, page: 287, relation: part",
+      "supported": true,
+      "quote": "Service HVAC filters (para. 3-28)"
+    },
+    {
+      "sentence": "- node_id: 287, page: 287, relation: cases",
+      "supported": true,
+      "quote": "Notify unit maintenance"
+    }
+  ]
+}

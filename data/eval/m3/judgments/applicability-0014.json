@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0014",
+  "answer_sha256": "b04bd2d10d51ef19fadff0183579de08740dd91e3e8bb9855bf2ea9610cf132a",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1035A1",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The vehicle model named for the content is M1035A1, and it is the M1035A1.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

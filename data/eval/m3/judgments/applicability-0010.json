@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0010",
+  "answer_sha256": "6e31dd358b36fbda3c2968e78d41767f00d8e04fb4e11a3c125642df9d282d99",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1046",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about a vehicle model named for the content and whether it is the M1046.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

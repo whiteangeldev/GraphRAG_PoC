@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0021",
+  "answer_sha256": "76836c5708ec583da81438a61038807e09bb9c69ffa99cffd184be311e54005d",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1097A2",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The instruction mentions M1097A2.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

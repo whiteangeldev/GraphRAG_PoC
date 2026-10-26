@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0006",
+  "answer_sha256": "1b7105798b37cd4d06af398e0b5d6fea2a60c7ce129057a09fc3fe87aa9af9a4",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M1043",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "The vehicle model named for the content is M1043.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

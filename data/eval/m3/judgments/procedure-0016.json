@@ -1,0 +1,44 @@
+{
+  "id": "procedure-0016",
+  "answer_sha256": "29cb5bbc57ae79eb8defc46c2ee5573543050d629f6e94559047ffea42a85e57",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8).",
+      "present": true,
+      "quote": "1. Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8)."
+    },
+    {
+      "text": "1. Apply sealing compound to threads of fuel return line (6) and fuel pickup line (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "2. Remove fuel pickup line (4) from supply tube (3) on fuel tank (1).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1. Remove screw (5) and clamp (7), securing fuel return line (6) and fuel pickup line (4) to fuel line clamp(8)."
+    },
+    {
+      "sentence": "Remove seven clamps (10), one cap (9), and three hoses (8) from fuel injection nozzles (6).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Loosen clamps (7) and disconnect hoses (6) from fuel tank return and supply lines (8).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

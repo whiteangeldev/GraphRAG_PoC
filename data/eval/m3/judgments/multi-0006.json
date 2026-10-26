@@ -1,0 +1,49 @@
+{
+  "id": "multi-0006",
+  "answer_sha256": "154a6348d5cd7f36e3ffc850032e63b8d62ae0559ba51ef416ad1860a1517e4a",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transmission dipstick is loose",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "f. Place transmission shift lever (8) in “N” (neutral) and transfer case shift lever (7) in desired range. See table 1-9 for transfer case range selection.",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "9C234",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 12460092-2, page: 283, relation: part.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if transmission dipstick is loose.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Secure dipstick.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "9C234",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

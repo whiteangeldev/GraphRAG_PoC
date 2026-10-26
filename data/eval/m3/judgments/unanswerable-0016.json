@@ -1,0 +1,13 @@
+{
+  "id": "unanswerable-0016",
+  "answer_sha256": "521d9d59d1e038627d9b6a78a14c654c6ebd91a5a2b207a12cc28c23a0f08ab1",
+  "judge": "Qwen3-0.6B",
+  "facts": [],
+  "claims": [
+    {
+      "sentence": "None of the passages provide the answer to the question.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

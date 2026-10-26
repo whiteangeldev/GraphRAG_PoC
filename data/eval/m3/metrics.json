@@ -1,0 +1,124 @@
+{
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "generation_model": "Qwen3-0.6B",
+  "judge": "Qwen3-0.6B",
+  "graph_weight": 1.0,
+  "hop_depth": 2,
+  "node_cap": 200,
+  "lookup_p95_baseline_ms": 135.30479200016998,
+  "lookup_p95_graph_ms": 200.81562499944994,
+  "by_type": {
+    "lookup": {
+      "hit_at_10": {
+        "numerator": 29,
+        "denominator": 35
+      },
+      "evidence_recall": {
+        "numerator": 29,
+        "denominator": 35
+      },
+      "required_fact_recall": {
+        "numerator": 18,
+        "denominator": 35
+      }
+    },
+    "procedure": {
+      "hit_at_10": {
+        "numerator": 22,
+        "denominator": 22
+      },
+      "evidence_recall": {
+        "numerator": 28,
+        "denominator": 72
+      },
+      "required_fact_recall": {
+        "numerator": 33,
+        "denominator": 72
+      }
+    },
+    "applicability": {
+      "hit_at_10": {
+        "numerator": 1,
+        "denominator": 22
+      },
+      "evidence_recall": {
+        "numerator": 1,
+        "denominator": 22
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 22
+      }
+    },
+    "relational": {
+      "hit_at_10": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "evidence_recall": {
+        "numerator": 48,
+        "denominator": 50
+      },
+      "required_fact_recall": {
+        "numerator": 18,
+        "denominator": 50
+      }
+    },
+    "multi_hop": {
+      "hit_at_10": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "evidence_recall": {
+        "numerator": 48,
+        "denominator": 75
+      },
+      "required_fact_recall": {
+        "numerator": 15,
+        "denominator": 75
+      }
+    },
+    "troubleshooting": {
+      "hit_at_10": {
+        "numerator": 9,
+        "denominator": 9
+      },
+      "evidence_recall": {
+        "numerator": 9,
+        "denominator": 9
+      },
+      "required_fact_recall": {
+        "numerator": 2,
+        "denominator": 9
+      }
+    },
+    "follow_up": {
+      "hit_at_10": {
+        "numerator": 0,
+        "denominator": 3
+      },
+      "evidence_recall": {
+        "numerator": 0,
+        "denominator": 3
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 3
+      }
+    },
+    "unanswerable": {
+      "hit_at_10": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "evidence_recall": {
+        "numerator": 0,
+        "denominator": 0
+      },
+      "required_fact_recall": {
+        "numerator": 0,
+        "denominator": 0
+      }
+    }
+  }
+}

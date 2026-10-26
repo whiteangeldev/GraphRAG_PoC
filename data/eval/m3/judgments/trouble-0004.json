@@ -1,0 +1,104 @@
+{
+  "id": "trouble-0004",
+  "answer_sha256": "f223b9f2af7250913cafa5adee8788bbd1ca024175cfc259fd31fbca2f837a61",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if fan is running",
+      "present": true,
+      "quote": "Step 1. Check to see if fan is running."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "7.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Engine overheats according to engine coolant temperature gauge — Step 1.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "Check to see if fan is running.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running."
+    },
+    {
+      "sentence": "If fan is not running, perform emergency fan clutch override procedure (para.",
+      "supported": true,
+      "quote": "Step 1. Check to see if fan is running. If fan is not running, perform emergency fan clutch override procedure (para. 3-23)."
+    },
+    {
+      "sentence": "3-23).",
+      "supported": true,
+      "quote": "Step 2. Allow engine to cool and check for low coolant level."
+    },
+    {
+      "sentence": "Step 2.",
+      "supported": true,
+      "quote": "Step 2. Allow engine to cool and check for low coolant level."
+    },
+    {
+      "sentence": "Allow engine to cool and check for low coolant level.",
+      "supported": true,
+      "quote": "Step 2. Allow engine to cool and check for low coolant level. Add coolant as necessary (para. 3-9)."
+    },
+    {
+      "sentence": "Add coolant as necessary (para.",
+      "supported": true,
+      "quote": "Step 3. Check for debris blocking radiator fins."
+    },
+    {
+      "sentence": "3-9).",
+      "supported": true,
+      "quote": "Step 3. Check for debris blocking radiator fins."
+    },
+    {
+      "sentence": "Step 3.",
+      "supported": true,
+      "quote": "Step 3. Check for debris blocking radiator fins. Remove debris."
+    },
+    {
+      "sentence": "Check for debris blocking radiator fins.",
+      "supported": true,
+      "quote": "Step 4. Check for broken or missing fan belts."
+    },
+    {
+      "sentence": "Remove debris.",
+      "supported": true,
+      "quote": "Step 4. Check for broken or missing fan belts."
+    },
+    {
+      "sentence": "Step 4.",
+      "supported": true,
+      "quote": "Step 4. Check for broken or missing fan belts. Notify unit maintenance if belts are broken or missing."
+    },
+    {
+      "sentence": "Check for broken or missing fan belts.",
+      "supported": true,
+      "quote": "Step 5. Other causes. Notify unit maintenance."
+    },
+    {
+      "sentence": "Notify unit maintenance if belts are broken or missing.",
+      "supported": true,
+      "quote": "Step 5. Other causes."
+    },
+    {
+      "sentence": "Step 5.",
+      "supported": true,
+      "quote": "Step 5. Other causes. Notify unit maintenance."
+    },
+    {
+      "sentence": "Other causes.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Notify unit maintenance.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

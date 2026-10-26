@@ -1,0 +1,64 @@
+{
+  "id": "procedure-0007",
+  "answer_sha256": "f88342038c0a3c7da1271d0e6e4ac3e368e10969478af9b95a7eb72daf93dc93",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "1. Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7). Discard flat washers (4).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Install clamp (1) on air horn (5).",
+      "present": false,
+      "quote": ""
+    },
+    {
+      "text": "1. Loosen two clamps (3) and remove elbow (4) from air cleaner assembly (1) and air horn (2).",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove two screws (2), washers (3), and flat washers (4) securing air horn (5) to intake manifold (7).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Discard flat washers (4).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Coat threads of screws (2) with sealing compound.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Install air horn (5) on intake manifold (7) with two flat washers (4), washers (3), and screws (2).",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Tighten screws (2) to 40-45 lb-in.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "(5-6 N•m).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

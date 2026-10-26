@@ -1,0 +1,34 @@
+{
+  "id": "lookup-0029",
+  "answer_sha256": "c7fb2447c206f883912a0da3919d44b4f390528321b3f64c92475d96ab039eb8",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check battery fluid level and check battery cable connections for looseness, damage, or corrosion",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 281, page: 281, relation_frame: code: 2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "ENGINE CRANKS SLOWLY, cause: Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check battery fluid level and check battery cable connections for looseness, damage, or corrosion.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "If any of these conditions exist, notify unit maintenance.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

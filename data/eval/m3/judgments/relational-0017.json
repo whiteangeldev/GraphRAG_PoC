@@ -1,0 +1,59 @@
+{
+  "id": "relational-0017",
+  "answer_sha256": "b7b6bc84e950f9e6337beb7e21c14f135b68731c63863d880cf8dfd6702bdf2e",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if brake handle is in proper position (para",
+      "present": true,
+      "quote": "Step 1. Check to see if brake handle is in proper position (para"
+    },
+    {
+      "text": "12340298",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "node_id: 24.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "WEAPON STATION WILL NOT ROTATE OR LOCK",
+      "supported": true,
+      "quote": "WEAPON STATION WILL NOT ROTATE OR LOCK"
+    },
+    {
+      "sentence": "page: 285",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "part: 5715976G1 TRAY,WEAPON,VEHICUL",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Step 1.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Check to see if brake handle is in proper position (para.",
+      "supported": true,
+      "quote": "Check to see if brake handle is in proper position (para"
+    },
+    {
+      "sentence": "2-54).",
+      "supported": true,
+      "quote": "2-54)"
+    },
+    {
+      "sentence": "Place brake handle in proper position.",
+      "supported": true,
+      "quote": "Place brake handle in proper position."
+    }
+  ]
+}

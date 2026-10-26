@@ -73,9 +73,7 @@ def assign_all(rows: list[dict[str, object]]) -> list[Assignment]:
         if not qid or qid in seen:
             raise ValueError(f"duplicate or empty result id {qid!r}")
         seen.add(qid)
-        assigned.append(
-            Assignment(qid, str(row.get("question_type", "")), classify_row(row))
-        )
+        assigned.append(Assignment(qid, str(row.get("question_type", "")), classify_row(row)))
     return assigned
 
 
@@ -98,9 +96,7 @@ def load_results(path: Path | None = None) -> list[dict[str, object]]:
     return rows
 
 
-def write_assignments(
-    assigned: list[Assignment], path: Path | None = None
-) -> Path:
+def write_assignments(assigned: list[Assignment], path: Path | None = None) -> Path:
     destination = path or ASSIGNMENTS_PATH
     lines = [
         json.dumps(

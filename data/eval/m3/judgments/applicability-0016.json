@@ -1,0 +1,19 @@
+{
+  "id": "applicability-0016",
+  "answer_sha256": "0ec041f7f8ffa031bb326dd9dcaf9fa53799eb3b19486291f7a7f60998cedb30",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "M996A2",
+      "present": false,
+      "quote": ""
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "None of the passages provide information about a vehicle model named for the content and whether it is the M996A2.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "trouble-0005",
+  "answer_sha256": "b6d2f63374277c07c4fbb3ff23cf47e22f092082bf39eefd9cdfb1005602bbf0",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles",
+      "present": true,
+      "quote": "1."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "1.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Check to see if transfer case lever is in “N” (neutral) or “P” (Park) for M1123 and A2 vehicles.",
+      "supported": true,
+      "quote": "1."
+    },
+    {
+      "sentence": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range.",
+      "supported": true,
+      "quote": "Place transmission shift lever in “N” (neutral) or “P” (Park) and select transfer gear range."
+    },
+    {
+      "sentence": "2.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Hold down brake pedal and move transmission shift lever through all ranges including reverse.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "3.",
+      "supported": false,
+      "quote": ""
+    },
+    {
+      "sentence": "Remove transfer shift lever (10) by sliding down and out from shift controls housing (7).",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

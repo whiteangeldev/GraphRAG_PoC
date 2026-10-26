@@ -5,11 +5,11 @@ import sys
 
 from qdrant_client import QdrantClient
 
-from graphrag_poc.generate.answer import Answer, answer_from_passages, clip_for_model
+from graphrag_poc.generate.answer import Answer, Citation, answer_from_passages, clip_for_model
 from graphrag_poc.index.client import make_client
 from graphrag_poc.index.embed import Embedder, build_embedder
 from graphrag_poc.retrieve.fusion import FusedHit
-from graphrag_poc.retrieve.search import retrieve
+from graphrag_poc.retrieve.graph import RelationFrame, retrieve_question
 
 LOOKUP = "What is the corrective action for 4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER?"
 PROCEDURE = (
@@ -66,7 +66,7 @@ def main(argv: list[str] | None = None) -> int:
 def ask(question: str) -> Answer:
     """Answer a question. The demonstration page uses the same function."""
 
-    result, _hits = ask_with_hits(question)
+    result, _hits, _frame = ask_with_hits(question)
     return result
 
 
@@ -75,8 +75,8 @@ def ask_with_hits(
     *,
     client: QdrantClient | None = None,
     embedder: Embedder | None = None,
-) -> tuple[Answer, list[FusedHit]]:
-    """Retrieve, then answer. Returns the fused ranking the page displays."""
+) -> tuple[Answer, list[FusedHit], RelationFrame]:
+    """Retrieve, then answer. Returns the fused ranking and the relation frame."""
 
     active_embedder = embedder if embedder is not None else build_embedder()
     active_client = (
@@ -84,16 +84,20 @@ def ask_with_hits(
         if client is not None
         else make_client(api_key=os.environ.get("QDRANT_API_KEY") or None)
     )
-    hits = retrieve(active_client, active_embedder, question)
-    return compose_answer(question, hits), hits
+    hits, _decision, frame = retrieve_question(active_client, active_embedder, question)
+    return compose_answer(question, hits, frame), hits, frame
 
 
-def compose_answer(question: str, hits: list[FusedHit]) -> Answer:
+def compose_answer(
+    question: str,
+    hits: list[FusedHit],
+    frame: RelationFrame | None = None,
+) -> Answer:
     """Answer from these passages. A configured generation model is used when set."""
 
     if os.environ.get("GENERATION_MODEL", "").strip():
-        return _model_answer(question, hits)
-    return answer_from_passages(question, hits)
+        return _model_answer(question, hits, frame)
+    return _with_part(answer_from_passages(question, hits), hits, frame)
 
 
 def _check() -> int:
@@ -173,13 +177,40 @@ def _steps_in_order(text: str) -> bool:
     return first < later
 
 
-def _model_answer(question: str, hits: list[FusedHit]) -> Answer:
+def _with_part(
+    answer: Answer,
+    hits: list[FusedHit],
+    frame: RelationFrame | None,
+) -> Answer:
+    if frame is None or not frame.part_number or answer.refused:
+        return answer
+    cited = {citation.node_id for citation in answer.citations}
+    extra = [hit for hit in hits if frame.part_number in hit.text and hit.node_id not in cited]
+    if not extra:
+        return answer
+    chosen = next((hit for hit in extra if hit.node_id == frame.part_node_id), extra[0])
+    citations = (*answer.citations, Citation(chosen.node_id, chosen.page_start))
+    return Answer(
+        answer.text + "\n" + chosen.text,
+        citations,
+        False,
+        answer.searched,
+        answer.temperature,
+        answer.seed,
+    )
+
+
+def _model_answer(
+    question: str,
+    hits: list[FusedHit],
+    frame: RelationFrame | None = None,
+) -> Answer:
     """Call the configured chat model. Citations must be passages that were retrieved."""
 
     from openai import OpenAI
 
     fused = hits
-    grounded = answer_from_passages(question, fused)
+    grounded = _with_part(answer_from_passages(question, fused), fused, frame)
     if grounded.refused:
         return grounded
     client = OpenAI(
@@ -190,29 +221,68 @@ def _model_answer(question: str, hits: list[FusedHit]) -> Answer:
     passages = "\n\n".join(
         f"[{hit.node_id} page {hit.page_start}]\n{clip_for_model(hit.text)}" for hit in fused
     )
+    frame_text = frame.text() if frame is not None and frame.text() else ""
+    user = f"Question: {question}\n\n"
+    if frame_text:
+        user += f"Relation frame:\n{frame_text}\n\n"
+    user += f"Passages:\n{passages}"
+    system = (
+        "Answer only from the passages. Cite node_id and page. "
+        "If the passages do not contain the answer, refuse and repeat the question."
+    )
+    if frame_text:
+        system += " When the relation frame names a part number, include that part number."
     response = client.chat.completions.create(
         model=os.environ["GENERATION_MODEL"],
         temperature=grounded.temperature,
         seed=grounded.seed,
         extra_body={"chat_template_kwargs": {"enable_thinking": False}},
         messages=[
-            {
-                "role": "system",
-                "content": (
-                    "Answer only from the passages. Cite node_id and page. "
-                    "If the passages do not contain the answer, refuse and repeat the question."
-                ),
-            },
-            {"role": "user", "content": f"Question: {question}\n\nPassages:\n{passages}"},
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
         ],
     )
     text = response.choices[0].message.content or ""
     if "Searched:" in text and question in text:
         return Answer(text, (), True, question, grounded.temperature, grounded.seed)
-    cited = tuple(citation for citation in grounded.citations if citation.node_id in text)
-    if not cited:
-        cited = grounded.citations
-    return Answer(text, cited, False, question, grounded.temperature, grounded.seed)
+    text, extra = _ground_frame(text, fused, frame, question)
+    cited_list = [citation for citation in grounded.citations if citation.node_id in text]
+    cited_list.extend(citation for citation in extra if citation not in cited_list)
+    if not cited_list:
+        cited_list = [*grounded.citations, *extra]
+    return Answer(text, tuple(cited_list), False, question, grounded.temperature, grounded.seed)
+
+
+def _ground_frame(
+    text: str,
+    hits: list[FusedHit],
+    frame: RelationFrame | None,
+    question: str,
+) -> tuple[str, list[Citation]]:
+    """Add frame lines that are exact spans of a retrieved passage."""
+
+    citations: list[Citation] = []
+    if frame is None or "part" not in question.lower():
+        return text, citations
+    lines = [line for line in (frame.cause, frame.part_number) if line]
+    for line in lines:
+        if line in text:
+            continue
+        hit = next((item for item in hits if line in item.text), None)
+        if line == frame.part_number and frame.part_node_id:
+            matched = next(
+                (item for item in hits if item.node_id == frame.part_node_id and line in item.text),
+                None,
+            )
+            if matched is not None:
+                hit = matched
+        if hit is None:
+            continue
+        text = f"{text.rstrip()}\n{line}"
+        citation = Citation(hit.node_id, hit.page_start)
+        if citation not in citations:
+            citations.append(citation)
+    return text, citations
 
 
 def _print_answer(result: Answer) -> None:

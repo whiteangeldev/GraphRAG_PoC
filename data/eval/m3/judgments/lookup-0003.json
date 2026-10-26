@@ -1,0 +1,19 @@
+{
+  "id": "lookup-0003",
+  "answer_sha256": "4689229262020f90ceab998872c32b2460469875e09e29bb671d5949e1e31e21",
+  "judge": "Qwen3-0.6B",
+  "facts": [
+    {
+      "text": "Step 1. Check for water in fuel filter by draining",
+      "present": true,
+      "quote": "Step 1. Check for water in fuel filter by draining."
+    }
+  ],
+  "claims": [
+    {
+      "sentence": "- node_id: 6472357, page: 282, relation: part.",
+      "supported": false,
+      "quote": ""
+    }
+  ]
+}

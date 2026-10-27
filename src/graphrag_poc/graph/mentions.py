@@ -4,9 +4,9 @@ import re
 
 from graphrag_poc.graph.build import Edge, GraphData
 from graphrag_poc.graph.config import MENTION_WEIGHT
+from graphrag_poc.graph.part_match import PartMatcher
 
 _MODEL = re.compile(r"\bM\d{3,4}(?:A\d)?\b")
-_PART = re.compile(r"[A-Za-z0-9][A-Za-z0-9/-]{4,}")
 _RULE = "surface form in the passage text"
 
 
@@ -17,7 +17,7 @@ def derive_mentions(graph: GraphData) -> list[Edge]:
     """
 
     models = {row["name"] for row in graph.models}
-    parts = {row["part_number"].upper(): row["part_number"] for row in graph.parts}
+    parts = PartMatcher(row["part_number"] for row in graph.parts)
     edges: dict[tuple[str, str, str], Edge] = {}
     for passage in graph.passages:
         text = str(passage["text"])
@@ -28,12 +28,7 @@ def derive_mentions(graph: GraphData) -> list[Edge]:
             if name not in models:
                 continue
             _add(edges, start, f"model:{name}", doc_key, page, name)
-        seen: set[str] = set()
-        for token in _PART.findall(text):
-            number = parts.get(token.upper())
-            if number is None or number in seen:
-                continue
-            seen.add(number)
+        for number in parts.find(text):
             _add(edges, start, f"part:{number}", doc_key, page, number)
     return sorted(edges.values(), key=lambda edge: (edge.start_id, edge.end_id, edge.keyword))
 

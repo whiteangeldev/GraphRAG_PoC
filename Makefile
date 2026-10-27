@@ -1,7 +1,7 @@
 # python3.12 -m venv .venv && .venv/bin/pip install -e ".[dev]"
 PYTHON ?= .venv/bin/python
 
-.PHONY: up down test lint format typecheck ingest generate-cases index demo eval graph m3 service gold-check model-check baseline
+.PHONY: up down test lint format typecheck ingest generate-cases index demo eval graph m3 service gold-check model-check baseline review-check model-smoke-plan model-probe model-smoke bounded-plan
 
 up:
 	docker compose up -d --wait
@@ -52,8 +52,23 @@ m3:
 gold-check:
 	$(PYTHON) -m graphrag_poc.eval.gold
 
+review-check:
+	$(PYTHON) -m graphrag_poc.eval.review_package
+
+bounded-plan:
+	$(PYTHON) -m graphrag_poc.eval.stage --plan
+
 model-check:
 	$(PYTHON) -m graphrag_poc.eval.config
+
+model-smoke-plan:
+	$(PYTHON) -m graphrag_poc.eval.smoke --plan
+
+model-probe:
+	$(PYTHON) -m graphrag_poc.eval.smoke --probe
+
+model-smoke:
+	$(PYTHON) -m graphrag_poc.eval.smoke --run
 
 baseline:
 	$(PYTHON) -m graphrag_poc.eval.gold --acceptance

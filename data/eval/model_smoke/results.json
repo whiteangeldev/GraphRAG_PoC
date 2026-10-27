@@ -1,0 +1,222 @@
+{
+  "observed_at": "2026-10-27T03:20:19.313057+00:00",
+  "purpose": "model smoke test only; not M3 acceptance",
+  "hardware": {
+    "os": "Darwin",
+    "architecture": "arm64",
+    "memory_bytes": 17179869184,
+    "cpu": "Apple M2"
+  },
+  "plan": {
+    "protocol": "supplied-evidence-smoke-v1",
+    "purpose": "model smoke test only; not M3 acceptance",
+    "evaluation_config_sha256": "e35e9b48b66f2b11f9afbc9bcd39f9f81061f82dff8e3bc9aace19416eded707",
+    "max_generation_requests": 3,
+    "max_judge_requests": 3,
+    "cache_policy": "live run bypasses generator and judge caches",
+    "failure_policy": "stop on first failure; no SDK automatic retries",
+    "cases": [
+      {
+        "id": "oil-level",
+        "question": "Should I check the engine oil level with the engine running or stopped?",
+        "node_ids": [
+          "tm280_10:3-17:step-a:2:note"
+        ],
+        "required_facts": [
+          "Engine oil level is checked with engine off."
+        ],
+        "expected_refusal": false,
+        "passages": [
+          {
+            "node_id": "tm280_10:3-17:step-a:2:note",
+            "page": 300,
+            "text_sha256": "f1f54ba96c975d88d8ef6cbad77d54c41aadb75672f04cc39e2817261c6d0830",
+            "shown_text": "NOTE · Engine oil level is checked with engine off. · If oil level checks above 'FULL,\" it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level. · Vehicles equipped with deep fording kit will have a sealed dipstick."
+          }
+        ]
+      },
+      {
+        "id": "bulb-warning",
+        "question": "One ceiling light in the ambulance has failed. If inspection shows it needs a bulb, what must be turned off before changing it?",
+        "node_ids": [
+          "tm280_10:table:3-1:6:r28",
+          "tm280_10:3-28:step-a:2:caution"
+        ],
+        "required_facts": [
+          "When changing light bulbs, ensure the system in which the bulb is being replaced is turned off."
+        ],
+        "expected_refusal": false,
+        "passages": [
+          {
+            "node_id": "tm280_10:table:3-1:6:r28",
+            "page": 286,
+            "text_sha256": "59cca5321f4f2115c38ac712019d368ecd83686323ad313e4f78bbbb1d7b9224",
+            "shown_text": "28. CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE Step 1. Inspect bulb for serviceability. Replace bulb with known serviceable bulb (para. 3-28). Step 2. Other causes. Notify unit maintenance."
+          },
+          {
+            "node_id": "tm280_10:3-28:step-a:2:caution",
+            "page": 318,
+            "text_sha256": "e39f5426fa797b4afe1917ae9f787ade11dde1f64763f7bb7e68c4507d8b4e06",
+            "shown_text": "WARNING When changing light bulbs, ensure the system in which the bulb is being replaced is turned off. Failure to do so may cause injury."
+          }
+        ]
+      },
+      {
+        "id": "insufficient-evidence",
+        "question": "What is the tightening torque for part ZZ-NO-SUCH-PART?",
+        "node_ids": [
+          "tm280_10:3-17:step-a:2:note"
+        ],
+        "required_facts": [],
+        "expected_refusal": true,
+        "passages": [
+          {
+            "node_id": "tm280_10:3-17:step-a:2:note",
+            "page": 300,
+            "text_sha256": "f1f54ba96c975d88d8ef6cbad77d54c41aadb75672f04cc39e2817261c6d0830",
+            "shown_text": "NOTE · Engine oil level is checked with engine off. · If oil level checks above 'FULL,\" it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level. · Vehicles equipped with deep fording kit will have a sealed dipstick."
+          }
+        ]
+      }
+    ],
+    "smoke_inputs_sha256": "b10e56c63099af6b6911096fe7b5c8d5767ee546745fb5b4e65c72528379c9ec"
+  },
+  "endpoints": [
+    {
+      "role": "generation",
+      "model": "qwen3:8b",
+      "endpoint": "http://127.0.0.1:11434/v1",
+      "status": "ready",
+      "available_model_ids": [
+        "qwen3:14b",
+        "qwen3:8b"
+      ]
+    },
+    {
+      "role": "judge",
+      "model": "qwen3:14b",
+      "endpoint": "http://127.0.0.1:11434/v1",
+      "status": "ready",
+      "available_model_ids": [
+        "qwen3:14b",
+        "qwen3:8b"
+      ]
+    }
+  ],
+  "status": "passed",
+  "judge_calibration": {
+    "judge": "qwen3:14b",
+    "facts": [
+      {
+        "text": "Engine oil level is checked with engine off.",
+        "present": true,
+        "quote": "Engine oil level is checked with engine off."
+      },
+      {
+        "text": "The manual specifies purple oil.",
+        "present": false,
+        "quote": ""
+      }
+    ],
+    "claims": [
+      {
+        "sentence": "Check the oil level with the engine stopped.",
+        "supported": true,
+        "quote": "Engine oil level is checked with engine off."
+      },
+      {
+        "sentence": "The manual specifies purple oil.",
+        "supported": false,
+        "quote": ""
+      }
+    ]
+  },
+  "judge_calibration_passed": true,
+  "cases": [
+    {
+      "id": "oil-level",
+      "passed": true,
+      "answer": {
+        "text": "You should check the engine oil level with the engine off. If the oil level is above 'FULL,' operate the engine for one minute, shut it down, wait one minute, and recheck the oil level.",
+        "citations": [
+          {
+            "node_id": "tm280_10:3-17:step-a:2:note",
+            "page": 300
+          }
+        ],
+        "refused": false,
+        "searched": "Should I check the engine oil level with the engine running or stopped?",
+        "temperature": 0.0,
+        "seed": 0
+      },
+      "judgment": {
+        "judge": "qwen3:14b",
+        "facts": [
+          {
+            "text": "Engine oil level is checked with engine off.",
+            "present": true,
+            "quote": "Engine oil level is checked with engine off."
+          }
+        ],
+        "claims": [
+          {
+            "sentence": "You should check the engine oil level with the engine off.",
+            "supported": true,
+            "quote": "Engine oil level is checked with engine off."
+          },
+          {
+            "sentence": "If the oil level is above 'FULL,' operate the engine for one minute, shut it down, wait one minute, and recheck the oil level.",
+            "supported": true,
+            "quote": "If oil level checks above 'FULL,\" it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level."
+          }
+        ]
+      }
+    },
+    {
+      "id": "bulb-warning",
+      "passed": true,
+      "answer": {
+        "text": "The system in which the bulb is being replaced must be turned off before changing it.",
+        "citations": [
+          {
+            "node_id": "tm280_10:3-28:step-a:2:caution",
+            "page": 318
+          }
+        ],
+        "refused": false,
+        "searched": "One ceiling light in the ambulance has failed. If inspection shows it needs a bulb, what must be turned off before changing it?",
+        "temperature": 0.0,
+        "seed": 0
+      },
+      "judgment": {
+        "judge": "qwen3:14b",
+        "facts": [
+          {
+            "text": "When changing light bulbs, ensure the system in which the bulb is being replaced is turned off.",
+            "present": true,
+            "quote": "WARNING When changing light bulbs, ensure the system in which the bulb is being replaced is turned off. Failure to do so may cause injury."
+          }
+        ],
+        "claims": [
+          {
+            "sentence": "The system in which the bulb is being replaced must be turned off before changing it.",
+            "supported": true,
+            "quote": "WARNING When changing light bulbs, ensure the system in which the bulb is being replaced is turned off. Failure to do so may cause injury."
+          }
+        ]
+      }
+    },
+    {
+      "id": "insufficient-evidence",
+      "passed": true,
+      "answer": {
+        "text": "The tightening torque for part ZZ-NO-SUCH-PART is not provided in the supplied passages.",
+        "citations": [],
+        "refused": true,
+        "searched": "What is the tightening torque for part ZZ-NO-SUCH-PART?",
+        "temperature": 0.0,
+        "seed": 0
+      }
+    }
+  ]
+}

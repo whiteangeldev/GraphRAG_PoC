@@ -221,3 +221,4 @@ __marimo__/
 
 # Full-text Neo4j import files
 data/graph/import/
+data/graph/backups/

@@ -1,5 +1,9 @@
 # M2 graph schema proposal
 
+> Historical design proposal. Its model-extraction wording and title-reader discussion
+> describe the earlier design. Current `MENTIONS` is deterministic surface matching;
+> see [the implemented schema](schema_reference.md) and [current M4 status](m4_report.md).
+
 Proposed schema for M3. It uses the node files and case records already produced in M1. Extra properties are allowed. Names below are the ones M3 should create. A traversal reads them; it does not invent a second copy of the passage text.
 
 Provenance is required on every edge: `doc_key` and `page_start` for an edge that comes from a manual, or `case_id` for an edge that comes from a service case. `rule` names the deterministic rule. `derived` is true only when a model extracted the edge from prose, and those edges carry a lower weight until someone reviews them.

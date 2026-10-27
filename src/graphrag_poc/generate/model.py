@@ -51,7 +51,13 @@ def parse_model_answer(
     return Answer(payload.answer, citations, payload.refused, question, temperature, seed)
 
 
-def model_answer(question: str, hits: list[FusedHit], frame: RelationFrame | None = None) -> Answer:
+def model_answer(
+    question: str,
+    hits: list[FusedHit],
+    frame: RelationFrame | None = None,
+    *,
+    use_cache: bool = True,
+) -> Answer:
     """Let the model decide answer/refusal even when no exact title matches."""
 
     from openai import OpenAI
@@ -68,7 +74,7 @@ def model_answer(question: str, hits: list[FusedHit], frame: RelationFrame | Non
         user["unverified_graph_hints"] = frame.text()
     cache_dir = os.environ.get("GENERATION_CACHE_DIR", "").strip()
     cache_path = None
-    if cache_dir:
+    if cache_dir and use_cache:
         digest = fingerprint([ANSWER_PROTOCOL, settings.fingerprint(), temperature, seed, user])
         cache_path = Path(cache_dir) / f"{digest}.json"
         if cache_path.exists():

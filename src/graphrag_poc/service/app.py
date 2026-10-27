@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from graphrag_poc.library.api import CORPUS_BUILD, build_graph, graph_stats, link_entities, traverse
@@ -49,14 +49,18 @@ def stats(build: str = "") -> dict[str, object]:
 @app.post("/graph/build")
 def build(body: BuildBody) -> dict[str, object]:
     destination = body.out or os.environ.get("NEO4J_URI", "bolt://localhost:7687")
-    report = build_graph(
-        [Path(path) for path in body.node_files],
-        Path(body.case_file) if body.case_file else None,
-        Path(body.rules),
-        destination,
-        body.build,
-    )
-    app.state.build = body.build
+    try:
+        report = build_graph(
+            [Path(path) for path in body.node_files],
+            Path(body.case_file) if body.case_file else None,
+            Path(body.rules),
+            destination,
+            body.build,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    if destination.startswith(("bolt://", "neo4j://")):
+        app.state.build = body.build
     return report.model_dump()
 
 

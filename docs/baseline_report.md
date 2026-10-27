@@ -1,5 +1,9 @@
 # Baseline report
 
+> Historical snapshot before the client-feedback revision.
+> Its scores, counts, model behavior and demonstration outputs do not validate the
+> corrected data or current implementation. See [current M4 status](m4_report.md).
+
 The Step 6 retriever scored every question in `data/eval/questions.jsonl`.
 Dense and sparse lists are merged with reciprocal rank fusion.
 The generator receives the first 10 fused passages.

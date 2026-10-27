@@ -1,10 +1,33 @@
 # GraphRAG PoC
 
+The [client review follow-up](docs/client_review/README.md) records the client's Choice B
+approval and acceptance of the first 25 cases with catalogue corrections. Another 25
+independent cases are prepared for review, with normal evaluation records and source
+evidence. The minimum remains 50 and M3 is blocked until the full set is reviewed and
+frozen. Validate the prepared cases against the source PDFs with `make review-check`.
+
+While client review is pending, [model readiness and smoke checks](docs/model_smoke.md)
+can proceed separately: `make model-smoke-plan` makes no endpoint calls;
+`make model-probe` lists served models without inference. `make model-smoke` explicitly
+runs the bounded live suite after the endpoints pass their probes.
+
 The 26 October feedback data revision is described in [the case quality note](docs/case_quality.md).
 Saved baseline/M3/M4 scores describe the earlier data. Corrected nodes and cases require
 reindexing and fresh evaluation. [The question revision](docs/question_revision.md) rewrites
 all 50 relational/multi-hop prompts and removes the two invalid procedure entries.
-The current set has 155 questions; independent gold and client review remain pending.
+The active legacy set has 155 questions. The new 50-case bounded set is prepared
+separately in `data/eval/bounded_questions.jsonl`; its second batch still needs review.
+
+The [current M4 delivery status](docs/m4_report.md) separates implemented interfaces,
+local checks and remaining acceptance work. The [schema mapping](docs/schema_mapping.md)
+is a draft; GitLab delivery and attended handover sessions remain pending.
+
+[Bounded traversal preparation](docs/traversal_alignment.md) adds actual procedure
+resolution and explicit part/reference paths. `make bounded-plan` checks the proposed
+50 targets plus 105 retained controls without activating data or calling models.
+The local corpus has been rebuilt with the revised code; the
+[verification record](docs/verification_status.md) records the current checks.
+Approval and the final benchmark freeze remain pending.
 
 Ten source-checked partial links are in [the relation review](docs/source_relation_review.md).
 The existing 50 keyword questions are explicitly exploratory. `make gold-check` validates

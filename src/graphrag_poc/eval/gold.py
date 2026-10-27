@@ -94,8 +94,17 @@ def validate_relations(relations: list[SourceRelation], nodes: dict[str, Node]) 
             pattern = rf"\bpara\.\s*{re.escape(relation.reference)}(?![\d.-])"
             if not re.search(pattern, relation.source.quote, re.IGNORECASE):
                 errors.append(f"{relation.id}: source does not state the paragraph reference")
-            if relation.target.node_id != f"{relation.source.doc_key}:{relation.reference}":
+            root = f"{relation.source.doc_key}:{relation.reference}"
+            if not re.fullmatch(re.escape(root) + r"(?::[1-9]\d*)?", relation.target.node_id):
                 errors.append(f"{relation.id}: reference resolves to another paragraph/document")
+            elif (
+                target is None
+                or target.type != "procedure"
+                or not re.match(re.escape(relation.reference) + r"\.\s", target.text)
+            ):
+                errors.append(
+                    f"{relation.id}: reference must resolve to an actual procedure, not a TOC entry"
+                )
     return errors
 
 
@@ -116,8 +125,15 @@ def acceptance_errors(records: list[dict[str, object]], path: Path = TARGET_SET_
         or not contract.get("approved_scope")
     ):
         errors.append(
-            "M3 acceptance is pending client agreement on source-supported target slices."
+            "M3 acceptance is pending client agreement on all targets and benchmark freeze."
         )
+    for field, expected in (
+        ("minimum_target_questions", 50),
+        ("evidence_gain_points", 15),
+        ("required_fact_gain_points", 10),
+    ):
+        if type(contract.get(field)) is not int or contract.get(field) != expected:
+            errors.append(f"M3 agreement {field} must remain {expected}.")
     targets: list[dict[str, object]] = []
     for record in records:
         slice_ = record.get("slice")
@@ -129,11 +145,14 @@ def acceptance_errors(records: list[dict[str, object]], path: Path = TARGET_SET_
                 or metadata.get("m3_target_eligible") is not True
                 or metadata.get("evidence_basis") != "manual_supported"
                 or not metadata.get("source_chain_review")
+                or metadata.get("client_review_status") != "client_accepted"
             ):
                 errors.append(
                     f"{record.get('id')}: exploratory/unreviewed gold cannot count toward M3."
                 )
-    ids = [str(record["id"]) for record in targets]
+    ids = [str(record.get("id", "")) for record in targets]
+    if len(set(ids)) != len(ids) or not all(ids):
+        errors.append("M3 target IDs must be nonempty and unique.")
     if len(ids) < 50:
         errors.append(
             f"M3 needs at least 50 reviewed target questions; found {len(ids)} candidates."
@@ -142,6 +161,10 @@ def acceptance_errors(records: list[dict[str, object]], path: Path = TARGET_SET_
         errors.append("M3 target IDs differ from the frozen agreement.")
     if contract.get("questions_sha256") != questions_digest(records):
         errors.append("M3 questions differ from the frozen agreement.")
+    if "accepted_candidate_ids" in contract and contract["accepted_candidate_ids"] != ids:
+        errors.append("M3 accepted candidate IDs differ from the frozen targets.")
+    if contract.get("pending_candidate_ids"):
+        errors.append("M3 candidate review is still pending.")
     return errors
 
 
@@ -169,9 +192,12 @@ def main() -> int:
         if len(errors) > 5:
             print(f"{len(errors)} readiness errors in total; no model calls were made.")
         return 1
+    contract = json.loads(TARGET_SET_PATH.read_text(encoding="utf-8"))
+    accepted = contract.get("accepted_candidate_ids", [])
     print(
         f"{len(relations)} source-backed partial links validated; "
-        "0 approved complete M3 target chains. Client review pending."
+        f"{len(accepted)} Choice B candidates accepted. "
+        "Full target review and benchmark freeze pending; no M3 scoring."
     )
     return 0
 

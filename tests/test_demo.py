@@ -21,7 +21,7 @@ def test_demo_page_answers_the_three_questions(monkeypatch: pytest.MonkeyPatch) 
         "EMBEDDING_MODEL",
         "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
     )
-    monkeypatch.delenv("GENERATION_MODEL", raising=False)
+    monkeypatch.setenv("GENERATION_MODEL", "")
     from graphrag_poc.app.main import app
 
     with TestClient(app) as client:
@@ -32,7 +32,7 @@ def test_demo_page_answers_the_three_questions(monkeypatch: pytest.MonkeyPatch) 
         lookup = client.post("/", data={"question": LOOKUP})
         assert lookup.status_code == 200
         assert "Check battery cable connections" in lookup.text
-        assert "tm280_10:table:3-1:2:r4" in lookup.text
+        assert "tm280_10:table:3-1:r4" in lookup.text
         assert "page 281" in lookup.text
         assert 'class="tag"' in lookup.text
 

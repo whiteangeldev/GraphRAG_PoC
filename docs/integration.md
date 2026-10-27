@@ -27,15 +27,27 @@ build_graph(
 )
 ```
 
-Use a new build id for each load you may want to delete later. The public corpus id is `corpus`.
+Use the same build ID to replace a named graph atomically. Different named builds must
+have globally disjoint document keys, passage IDs, part numbers, model names and case
+IDs; an overlap is rejected before replacement. The public corpus ID `corpus` is
+reserved. Use a separate database for overlapping snapshots.
 
 ## Call traversal from another retriever
 
 ```python
-from graphrag_poc.library import Entity, fuse, link_entities, route, traverse
+from graphrag_poc.library import Entity, Seed, fuse, link_entities, route, traverse
 
 entities = [Entity(text=question, type="")]
 seeds = link_entities(entities, "plant-2026")
+if question_type in {"relational", "multi_hop"}:
+    baseline = fuse(
+        {"dense": dense_candidates, "sparse": sparse_candidates},
+        {"dense": 1.0, "sparse": 1.0},
+    )
+    seeds.extend(
+        Seed(node_id=hit.passage_node_id, confidence=1.0, matched_form=question, label="Passage")
+        for hit in baseline[:10]
+    )
 decision = route(question_type, seeds)
 if decision.enabled:
     result = traverse(seeds, question_type, decision.hops, 200, "plant-2026", question=question)
@@ -48,9 +60,13 @@ fused = fuse(
 )
 ```
 
-`Candidate.passage_node_id` is the node id to join back to the caller's passage store. `channels` lists every list that found the passage. `via` lists the edge types on the graph path. The default graph weight is 1.0 and the default hop depth is 2. Those are the values measured in `docs/m3_report.md`.
+`Candidate.passage_node_id` is the node id to join back to the caller's passage store. `channels` lists every list that found the passage. `via` lists the edge types on the graph path. `GraphPath.provenance` contains one source record per edge, in the same order as `via`, including `derived` and `weight`; it defaults to an empty list for older callers. Graph weight remains 1.0; legacy routes default to two hops and bounded manual routes use three. The scores in `docs/m3_report.md` describe the historical implementation, not this change.
 
-The router turns the graph on for `relational`, `multi_hop`, `troubleshooting`, and `applicability`. A lookup stays off unless a seed is a malfunction, a part, or a case. A lookup that only names a model stays off.
+The router turns the graph on for `relational`, `multi_hop`, `troubleshooting`, and
+`applicability`. Relational/multi-hop routes use explicit manual links and a three-edge
+limit; pass `decision.hops` to traversal. A lookup stays off unless a seed is a
+malfunction, part or case. A model-only lookup stays off. Bounded paths do not supply a
+keyword part frame; inspect the returned passages and paths instead.
 
 ## Service
 
@@ -65,6 +81,13 @@ Build, link, traverse, and stats are also HTTP on port 8088. `route` and `fuse` 
 | GET | `/graph/stats?build=` |  |
 
 `POST /graph/build` writes through Bolt using `NEO4J_URI`. Set `out` to a directory path when the caller wants CSV instead.
+CSV export leaves the active database build unchanged. Input paths are paths inside
+the service process. The Docker image contains the package, not the corpus or fixtures;
+mount input files into the container or copy them there before calling the build API.
+
+For HTTP bounded reference traversal, specify `hops: 3`; the HTTP body's compatibility
+default remains 2. A `Passage` seed can be a source passage returned by the caller's
+retriever. Use actual source IDs; traversal does not read evaluation gold.
 
 ## Tune
 

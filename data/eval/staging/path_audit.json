@@ -1,0 +1,309 @@
+{
+  "purpose": "Source-seeded path availability only; no question retrieval, answer generation, judge calls, acceptance or gain measurement.",
+  "cases": 50,
+  "cases_with_missing_required_sources": 0,
+  "model_calls_made": false,
+  "benchmark_activated": false,
+  "results": [
+    {
+      "id": "review-no-crank-cable",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-no-start-purge",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-smoke-air-cleaner",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-overheat-fan",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-overheat-coolant",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-oil-level-engine-off",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-fill-tube-fluid-level",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-transfer-shift-precautions",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-parking-brake-start",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-wheel-lug-follow-up",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-hard-steering-fluid",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-winch-reset",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-mount-unlock",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-ambulance-fuse",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-ceiling-bulb-safety",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-water-pump-62",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-water-pump-65",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-fuel-tank-branch",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-right-cable-bracket",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-left-cable-bracket",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-retaining-nut-upgrade",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-alternator-pulley",
+      "required_source_nodes": 3,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-brake-adapter-access",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-cover-basic-front-left",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-cover-basic-front-right",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-slow-crank-slave-connection",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-rough-running-filter-drain",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-rough-running-element-cleaning",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-all-range-slip-level-check",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-all-ambulance-lights-normal",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-ambulance-spotlight-bulb-base",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-ambulance-spotlight-switch",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-ambulance-cooling-engine-running",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-ambulance-outlet-isolate",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-transmission-electronic-codes",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-steering-test-rpm-setting",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-oil-adapter-filter-followon",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-oil-pan-starter-support",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-drainage-bracket-dust-unloader",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-return-check-valve-air-horn",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-filter-element-bleed-endpoint",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-muffler-tailpipe-fasteners",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-crossover-rear-heat-shield",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-radiator-refill-heater-valve",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-oil-cooler-steering-lines",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-tank-vent-propeller-inspection",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-fuel-pump-ground-first",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-filter-bleed-transducer-seal",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 3
+    },
+    {
+      "id": "review-surge-tank-stock-replacement",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    },
+    {
+      "id": "review-surge-hose-trim-adaptation",
+      "required_source_nodes": 2,
+      "missing": [],
+      "maximum_actual_edges": 2
+    }
+  ]
+}

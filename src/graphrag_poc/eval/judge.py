@@ -172,7 +172,7 @@ class LanguageModelJudge:
         self.name = self._settings.model
         self.cache_key = fingerprint(
             [
-                "judge-quotes-v2",
+                "judge-quotes-v3",
                 self._settings.fingerprint(),
                 os.environ.get("GENERATION_SEED", "0"),
             ]
@@ -221,6 +221,11 @@ class LanguageModelJudge:
                         "claims is a list of {sentence, supported, quote} for every answer "
                         "sentence, in the same order. supported is true only when quote is an "
                         "exact substring of a cited passage that supports that sentence. "
+                        "Copy every quote character-for-character from the passage, including "
+                        "OCR errors, unusual punctuation, quotation marks and bullet characters. "
+                        "Do not correct, normalize or paraphrase quoted evidence. Escape "
+                        "characters only as required by JSON; the decoded quote must match "
+                        "the source exactly. "
                         "Use an empty quote when present or supported is false."
                     ),
                 },

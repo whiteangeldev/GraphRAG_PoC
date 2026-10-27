@@ -1,6 +1,6 @@
 """Deterministic rule edges from the node files and the service cases.
 
-MENTIONS is not produced here. That edge comes from a model in a later step.
+MENTIONS is added separately by the deterministic surface-mention pass.
 """
 
 import hashlib
@@ -10,6 +10,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from graphrag_poc.cases.rules import CASES_PATH, Rules, load_rules
+from graphrag_poc.graph.references import ReferenceResolver
 from graphrag_poc.ingest.catalog import DOCUMENTS, NODES, DocumentSpec
 
 _MODEL = re.compile(r"\bM\d{3,4}(?:A\d)?\b")
@@ -237,6 +238,7 @@ def _structure_edges(
     model_names: set[str],
     known_models: set[str],
 ) -> None:
+    references = ReferenceResolver(passages)
     for node in passages:
         node_id = str(node["node_id"])
         start = f"passage:{node_id}"
@@ -262,13 +264,13 @@ def _structure_edges(
                     ),
                 )
         for reference_id in _id_list(node.get("references")):
-            if reference_id in by_node and reference_id != node_id:
+            for target_id in references.resolve(node, reference_id):
                 _add(
                     edges,
                     Edge(
                         "REFERS_TO",
                         start,
-                        f"passage:{reference_id}",
+                        f"passage:{target_id}",
                         RULE_REFERS,
                         doc_key,
                         page,

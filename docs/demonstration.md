@@ -1,5 +1,9 @@
 # Five-minute demonstration
 
+> Historical snapshot before the client-feedback revision.
+> Its scores, counts, model behavior and demonstration outputs do not validate the
+> corrected data or current implementation. See [current M4 status](m4_report.md).
+
 Recorded from the M1 baseline (`docs/baseline_report.md`).
 Open the demo with `make demo`, then go to http://127.0.0.1:8080.
 Ask these four questions in order. About five minutes covers them.

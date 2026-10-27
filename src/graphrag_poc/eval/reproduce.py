@@ -11,7 +11,7 @@ from graphrag_poc.eval.config import (
     evaluation_fingerprint,
     validate_evaluation_models,
 )
-from graphrag_poc.eval.gold import questions_digest
+from graphrag_poc.eval.gold import acceptance_errors, questions_digest
 from graphrag_poc.eval.metrics import REPRODUCTION_TOLERANCE, metric_drifts
 from graphrag_poc.eval.score import METRICS_PATH, REPORT_PATH, RESULTS_PATH, run_baseline
 from graphrag_poc.index.store import CASE_COLLECTION, PASSAGE_COLLECTION
@@ -30,11 +30,15 @@ def main() -> int:
         )
         return 1
     try:
+        records = load_questions()
+        target_errors = acceptance_errors(records)
+        if target_errors:
+            raise RuntimeError(target_errors[0])
         validate_evaluation_models()
         if METRICS_PATH.exists():
             previous = json.loads(METRICS_PATH.read_text(encoding="utf-8"))
             if (
-                previous.get("questions_sha256") != questions_digest(load_questions())
+                previous.get("questions_sha256") != questions_digest(records)
                 or previous.get("evaluation_config_sha256") != evaluation_fingerprint()
             ):
                 raise RuntimeError(

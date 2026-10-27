@@ -6,8 +6,10 @@ import sys
 from pathlib import Path
 
 from graphrag_poc.generate.config import fingerprint, load_env_file, model_settings
+from graphrag_poc.graph.config import GRAPH_WEIGHT, HOP_DEPTH, NODE_CAP, REFERENCE_HOP_DEPTH
 
-EVALUATION_PROTOCOL = "model-json-citations-v1-judge-quotes-v2"
+EVALUATION_PROTOCOL = "model-json-citations-v1-judge-quotes-v3-explicit-manual-graph-v2"
+_QWEN_SIZE = re.compile(r"qwen3[:-](\d+(?:\.\d+)?)b(?:\b|_)")
 
 
 def configure_evaluation() -> None:
@@ -34,10 +36,13 @@ def validate_evaluation_models() -> None:
         raise RuntimeError("Evaluation requires GENERATION_MODEL and a separate JUDGE_MODEL")
     generator_id = generation.model.rsplit("/", 1)[-1].casefold()
     judge_id = judge.model.rsplit("/", 1)[-1].casefold()
-    if generator_id == judge_id:
+    generator_size = _QWEN_SIZE.search(generator_id)
+    judge_size = _QWEN_SIZE.search(judge_id)
+    if generator_id == judge_id or (
+        generator_size and judge_size and float(generator_size[1]) == float(judge_size[1])
+    ):
         raise RuntimeError("Evaluation requires different generator and judge models")
-    size = re.search(r"qwen3-(\d+(?:\.\d+)?)b", generator_id)
-    if size and float(size.group(1)) < 8:
+    if generator_size and float(generator_size[1]) < 8:
         raise RuntimeError("The feedback requires Qwen3-8B or larger, or a suitable hosted model")
     try:
         temperature = float(os.environ.get("GENERATION_TEMPERATURE", "0"))
@@ -52,6 +57,7 @@ def evaluation_fingerprint() -> str:
     return fingerprint(
         [
             EVALUATION_PROTOCOL,
+            [GRAPH_WEIGHT, HOP_DEPTH, REFERENCE_HOP_DEPTH, NODE_CAP],
             model_settings("GENERATION").fingerprint(),
             model_settings("JUDGE").fingerprint(),
             os.environ.get("GENERATION_TEMPERATURE", "0"),

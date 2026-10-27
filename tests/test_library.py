@@ -18,7 +18,7 @@ from graphrag_poc.library import (
     route,
     traverse,
 )
-from graphrag_poc.library.models import Candidate
+from graphrag_poc.library.models import Candidate, GraphPath
 from graphrag_poc.retrieve.fusion import FusedHit
 
 ROOT = Path(__file__).resolve().parent / "fixtures" / "m4"
@@ -40,6 +40,7 @@ def test_build_writes_csv_and_counts_mentions(tmp_path: Path) -> None:
 
 
 def test_route_and_fuse_follow_the_contract() -> None:
+    assert GraphPath(passage_node_id="old-caller", via=[], score=1).provenance == []
     assert route("lookup", []).enabled is False
     assert route("relational", []).enabled is True
     seed = Seed(
@@ -98,8 +99,8 @@ def test_fixture_answers_five_questions() -> None:
             question="Which starter part is listed?",
         )
         assert any(item.passage_node_id == "m4fix:part" for item in walked.candidates)
-        assert walked.frame is not None
-        assert "M4FIXPART" in walked.frame.part
+        assert walked.frame is None
+        assert any(path.via == ["MENTIONS", "LISTS"] for path in walked.paths)
         procedure = traverse(
             [
                 Seed(

@@ -6,8 +6,9 @@ import pytest
 
 from graphrag_poc.graph.build import GraphData
 from graphrag_poc.graph.client import make_driver
-from graphrag_poc.graph.config import HOP_DEPTH, NODE_CAP
+from graphrag_poc.graph.config import NODE_CAP, REFERENCE_HOP_DEPTH
 from graphrag_poc.graph.link import Link, Term, TermTable, link_text
+from graphrag_poc.graph.load import CHARGING_MALFUNCTION
 from graphrag_poc.graph.mentions import derive_mentions
 from graphrag_poc.graph.traverse import Seeds, traverse
 from graphrag_poc.index.embed import Embedder
@@ -16,7 +17,7 @@ from graphrag_poc.retrieve.graph import route
 _CODE = "4. VEHICLE NOT CHARGING ACCORDING TO VOLTMETER"
 _TABLE = TermTable(
     (
-        Term("Malfunction", _CODE, _CODE, "tm280_10:table:3-1:2:r4"),
+        Term("Malfunction", _CODE, _CODE, CHARGING_MALFUNCTION),
         Term("Part", "12339317", "12339317", "tm280_24p_1:parts:r1229"),
         Term("Model", "M998", "M998", "M998"),
         Term("Part", "9999999", "alternator housing", "tm280_24p_1:parts:r9"),
@@ -42,7 +43,7 @@ def test_exact_forms_link_the_code_the_part_and_the_model() -> None:
     links = link_text(question, _TABLE)
     found = {link.label: link for link in links}
     assert found["Malfunction"].key == _CODE
-    assert found["Malfunction"].node_id == "tm280_10:table:3-1:2:r4"
+    assert found["Malfunction"].node_id == CHARGING_MALFUNCTION
     assert found["Part"].key == "12339317"
     assert found["Model"].key == "M998"
     assert {link.method for link in links} == {"exact"}
@@ -66,7 +67,10 @@ def test_router_uses_the_graph_for_relational_and_not_for_a_plain_lookup() -> No
     assert plain.reason == "simple lookup"
     relational = route("relational", [])
     assert relational.use_graph is True
-    assert relational.hops == HOP_DEPTH
+    assert relational.hops == REFERENCE_HOP_DEPTH
+    assert "REFERS_TO" in relational.edge_types
+    assert "MENTIONS" in relational.edge_types
+    assert "CANDIDATE_PART" not in relational.edge_types
     linked = route("lookup", [Link("Malfunction", _CODE, "row", "exact", 1.0)])
     assert linked.use_graph is True
     assert linked.reason == "linked entity has table or case edges"
@@ -136,7 +140,7 @@ def test_oil_cooler_and_charging_fault_and_latency() -> None:
         assert any(hit.provenance[0]["doc_key"] == "tm280_20_2" for hit in oil)
         charging = traverse(
             driver,
-            Seeds(malfunctions=("tm280_10:table:3-1:2:r4",)),
+            Seeds(malfunctions=(CHARGING_MALFUNCTION,)),
             ("CANDIDATE_PART", "LISTS", "STATES"),
             hops=2,
             cap=NODE_CAP,

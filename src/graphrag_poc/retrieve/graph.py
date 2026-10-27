@@ -6,7 +6,7 @@ from neo4j import Driver
 from qdrant_client import QdrantClient
 
 from graphrag_poc.graph.client import make_driver
-from graphrag_poc.graph.config import GRAPH_WEIGHT, HOP_DEPTH
+from graphrag_poc.graph.config import GRAPH_WEIGHT, HOP_DEPTH, REFERENCE_HOP_DEPTH
 from graphrag_poc.graph.link import Link, TermTable, link_text, load_term_table
 from graphrag_poc.graph.traverse import Seeds, traverse
 from graphrag_poc.index.embed import Embedder
@@ -15,7 +15,7 @@ from graphrag_poc.retrieve.fusion import RRF_K, FusedHit, fuse
 
 _GRAPH_TYPES = frozenset({"relational", "multi_hop", "troubleshooting", "applicability"})
 _ADD_PASSAGES = frozenset({"relational", "multi_hop"})
-_FRAME_TYPES = frozenset({"lookup", "troubleshooting", "relational", "multi_hop"})
+_FRAME_TYPES = frozenset({"lookup", "troubleshooting"})
 _TABLE: TermTable | None = None
 _DRIVER: Driver | None = None
 _DRIVER_CHECKED = False
@@ -74,13 +74,20 @@ def route(question_type: str, links: list[Link]) -> Decision:
     else:
         use_graph = False
         reason = "simple lookup"
-    return Decision(use_graph, reason, edge_types_for(question_type), HOP_DEPTH)
+    depth = REFERENCE_HOP_DEPTH if question_type in _ADD_PASSAGES else HOP_DEPTH
+    return Decision(use_graph, reason, edge_types_for(question_type), depth)
 
 
 def infer_question_type(question: str, links: list[Link]) -> str:
     """A type for a question that did not come from the evaluation set."""
 
     lowered = question.lower()
+    if any(
+        term in lowered for term in ("catalogue", "catalog", "parts list", "part number", "nsn")
+    ):
+        return "relational"
+    if any(term in lowered for term in ("paragraph", "referenced", "follow-on")):
+        return "multi_hop"
     has_fault = any(link.label == "Malfunction" for link in links)
     if has_fault and "part" in lowered:
         return "relational"
@@ -113,20 +120,30 @@ def retrieve_question(
     if graph is None or active_table is None:
         decision = Decision(False, "simple lookup", (), HOP_DEPTH)
         return baseline, decision, RelationFrame()
-    links = link_text(question, active_table, embedder=embedder)
+    # Source passages seed bounded references directly; no dense entity guessing is
+    # needed for these questions, and no reviewed gold IDs enter retrieval.
+    bounded = question_type in _ADD_PASSAGES or infer_question_type(question, []) in _ADD_PASSAGES
+    links = link_text(question, active_table, embedder=None if bounded else embedder)
     kind = question_type or infer_question_type(question, links)
     decision = route(kind, links)
     fault = next((link for link in links if link.label == "Malfunction"), None)
-    frame = _frame(graph, fault, question) if kind in _FRAME_TYPES else RelationFrame()
+    frame = _frame(graph, fault, question, "corpus") if kind in _FRAME_TYPES else RelationFrame()
     if not decision.use_graph:
         return baseline, decision, frame
-    step_ids = tuple(hit.node_id for hit in baseline if kind == "procedure" and hit.type == "step")
+    passage_ids = tuple(
+        hit.node_id
+        for hit in baseline
+        if kind in _ADD_PASSAGES or (kind == "procedure" and hit.type == "step")
+    )
     seeds = Seeds(
-        passages=step_ids[:5],
+        passages=passage_ids[: 10 if kind in _ADD_PASSAGES else 5],
         malfunctions=tuple(link.node_id for link in links if link.label == "Malfunction"),
+        parts=tuple(link.key for link in links if link.label == "Part"),
         models=tuple(link.key for link in links if link.label == "Model"),
     )
-    walked = traverse(graph, seeds, decision.edge_types, hops=decision.hops, question=question)
+    walked = traverse(
+        graph, seeds, decision.edge_types, hops=decision.hops, question=question, build="corpus"
+    )
     if kind not in _ADD_PASSAGES:
         order = {hit.node_id: index for index, hit in enumerate(baseline)}
         walked = [hit for hit in walked if hit.node_id in order]
@@ -160,17 +177,19 @@ def edge_types_for(question_type: str) -> tuple[str, ...]:
     return _edge_types(question_type)
 
 
-def frame_for(driver: Driver, node_id: str, code: str, question: str = "") -> RelationFrame:
+def frame_for(
+    driver: Driver, node_id: str, code: str, question: str = "", *, build: str | None = None
+) -> RelationFrame:
     """Relation frame for one malfunction node."""
 
-    return _frame(driver, Link("Malfunction", code, node_id, "exact", 1.0), question)
+    return _frame(driver, Link("Malfunction", code, node_id, "exact", 1.0), question, build)
 
 
 def _edge_types(question_type: str) -> tuple[str, ...]:
     if question_type == "procedure":
         return ("NEXT", "BOUND_CAUTION")
     if question_type in {"relational", "multi_hop"}:
-        return ("CANDIDATE_PART", "LISTS", "STATES")
+        return ("REFERS_TO", "PARENT", "MENTIONS", "LISTS", "STATES")
     if question_type in {"applicability", "follow_up"}:
         return ("APPLIES_TO",)
     if question_type in {"lookup", "troubleshooting"}:
@@ -178,25 +197,47 @@ def _edge_types(question_type: str) -> tuple[str, ...]:
     return ()
 
 
-def _frame(driver: Driver, fault: Link | None, question: str) -> RelationFrame:
+def _frame(
+    driver: Driver, fault: Link | None, question: str, build: str | None = None
+) -> RelationFrame:
     if fault is None:
         return RelationFrame()
+    scope = (
+        "WHERE ($build IS NULL OR ("
+        "all(v IN nodes(path) WHERE coalesce(v.build, 'corpus') = $build) AND "
+        "all(e IN relationships(path) WHERE coalesce(e.build, 'corpus') = $build))) "
+    )
     with driver.session() as session:
-        steps = session.run(
-            "MATCH (m:Malfunction {node_id: $id})-[h:HAS_STEP]->() "
-            "RETURN h.step_number AS number, h.step_text AS text",
+        source = session.run(
+            "MATCH (m:Malfunction {node_id: $id}) "
+            "WHERE $build IS NULL OR coalesce(m.build, 'corpus') = $build "
+            "RETURN m.node_id AS node_id",
             id=fault.node_id,
+            build=build,
+        ).single()
+        if source is None:
+            return RelationFrame()
+        steps = session.run(
+            "MATCH path=(m:Malfunction {node_id: $id})-[h:HAS_STEP]->() "
+            + scope
+            + "RETURN h.step_number AS number, h.step_text AS text",
+            id=fault.node_id,
+            build=build,
         ).data()
         parts = session.run(
-            "MATCH (m:Malfunction {node_id: $id})-[r:CANDIDATE_PART]->(p:Part) "
-            "RETURN p.part_number AS number, p.description AS description, "
+            "MATCH path=(m:Malfunction {node_id: $id})-[r:CANDIDATE_PART]->(p:Part) "
+            + scope
+            + "RETURN p.part_number AS number, p.description AS description, "
             "p.node_id AS node_id, r.keyword AS keyword ORDER BY p.node_id",
             id=fault.node_id,
+            build=build,
         ).data()
         cases = session.run(
-            "MATCH (c:Case)-[:ABOUT]->(m:Malfunction {node_id: $id}) "
-            "RETURN c.case_id AS case_id ORDER BY case_id LIMIT 5",
+            "MATCH path=(c:Case)-[:ABOUT]->(m:Malfunction {node_id: $id}) "
+            + scope
+            + "RETURN c.case_id AS case_id ORDER BY case_id LIMIT 5",
             id=fault.node_id,
+            build=build,
         ).data()
     folded = question.lower()
     matched = [row for row in parts if str(row["keyword"]).lower() in folded]
@@ -248,5 +289,5 @@ def _cached_driver() -> Driver | None:
 def _cached_table(driver: Driver) -> TermTable:
     global _TABLE
     if _TABLE is None:
-        _TABLE = load_term_table(driver)
+        _TABLE = load_term_table(driver, build="corpus")
     return _TABLE

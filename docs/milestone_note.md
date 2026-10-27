@@ -1,5 +1,9 @@
 # M1 milestone note
 
+> Historical snapshot before the client-feedback revision.
+> Its scores, counts, model behavior and demonstration outputs do not validate the
+> corrected data or current implementation. See [current M4 status](m4_report.md).
+
 14 October 2026.
 
 ## What was built

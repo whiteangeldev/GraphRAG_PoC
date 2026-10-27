@@ -1,6 +1,11 @@
 # Source relation review candidates
 
-26 October 2026. These links were selected from explicit source statements, independently of graph keyword rules. Every quote was checked against its saved node and source PDF page; node text hashes detect later changes. Client review remains pending.
+Historical ten-link manifest from 26 October 2026. These links were selected from explicit source statements, independently of graph keyword rules. Every quote was checked against its saved node and source PDF page; node text hashes detect later changes. Current question approval is recorded in the separate Choice B package below.
+
+The [client review follow-up](client_review/README.md) records Choice B approval and
+acceptance of 25 corrected questions, with another 25 prepared for review. Full repair
+chains are not required. This original link manifest remains unchanged; its records are
+not the approved/frozen question set, and the new 50-question set still needs final review.
 
 Eight maintenance-to-catalogue links and two fault-to-operator references are recorded. None is a complete approved fault → operator instruction → maintenance task → catalogue part chain. Do not count them or the existing 50 keyword questions toward M3 acceptance targets. The +15/+10 thresholds and 50-question minimum remain unchanged.
 

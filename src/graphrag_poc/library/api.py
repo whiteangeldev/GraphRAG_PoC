@@ -9,7 +9,7 @@ from graphrag_poc.cases.rules import load_rules
 from graphrag_poc.graph.build import GraphData
 from graphrag_poc.graph.build import build_graph as build_rule_graph
 from graphrag_poc.graph.client import make_driver
-from graphrag_poc.graph.config import HOP_DEPTH, NODE_CAP
+from graphrag_poc.graph.config import HOP_DEPTH, NODE_CAP, REFERENCE_HOP_DEPTH
 from graphrag_poc.graph.export import write_csv
 from graphrag_poc.graph.link import link_text, load_term_table
 from graphrag_poc.graph.mentions import derive_mentions
@@ -119,7 +119,7 @@ def traverse(
     if active is None:
         active = make_driver()
     try:
-        classified = _classify(active, seeds)
+        classified = _classify(active, seeds, build)
         hits = walk(
             active,
             classified,
@@ -127,6 +127,7 @@ def traverse(
             hops=hops,
             cap=cap,
             question=question or " ".join(seed.matched_form for seed in seeds),
+            build=build,
         )
         candidates = [
             Candidate(
@@ -138,10 +139,19 @@ def traverse(
             for hit in hits
         ]
         paths = [
-            GraphPath(passage_node_id=hit.node_id, via=list(hit.path), score=hit.score)
+            GraphPath(
+                passage_node_id=hit.node_id,
+                via=list(hit.path),
+                score=hit.score,
+                provenance=list(hit.provenance),
+            )
             for hit in hits
         ]
-        frame = _frame(active, seeds, question)
+        frame = (
+            None
+            if question_type in {"relational", "multi_hop"}
+            else _frame(active, seeds, question, build)
+        )
         return TraversalResult(candidates=candidates, paths=paths, frame=frame)
     finally:
         if owns:
@@ -157,7 +167,8 @@ def route(question_type: str, seeds: list[Seed]) -> RouterDecision:
     linked = [seed for seed in seeds if seed.label in {"Malfunction", "Part", "Case", ""}]
     model_only = bool(seeds) and all(seed.label == "Model" for seed in seeds)
     if question_type in {"relational", "multi_hop", "troubleshooting", "applicability"}:
-        return RouterDecision(enabled=True, hops=HOP_DEPTH, reason=question_type)
+        depth = REFERENCE_HOP_DEPTH if question_type in {"relational", "multi_hop"} else HOP_DEPTH
+        return RouterDecision(enabled=True, hops=depth, reason=question_type)
     if linked and not model_only:
         return RouterDecision(
             enabled=True,
@@ -298,7 +309,7 @@ def _assemble(node_files: list[Path], case_file: Path | None, rules_path: Path) 
     return graph
 
 
-def _classify(driver: Driver, seeds: list[Seed]) -> WalkSeeds:
+def _classify(driver: Driver, seeds: list[Seed], build: str | None = None) -> WalkSeeds:
     passages: list[str] = []
     malfunctions: list[str] = []
     parts: list[str] = []
@@ -306,7 +317,7 @@ def _classify(driver: Driver, seeds: list[Seed]) -> WalkSeeds:
     cases: list[str] = []
     with driver.session() as session:
         for seed in seeds:
-            label = seed.label or _label_of(session, seed.node_id)
+            label = seed.label or _label_of(session, seed.node_id, build)
             if label == "Passage":
                 passages.append(seed.node_id)
             elif label == "Malfunction":
@@ -326,18 +337,25 @@ def _classify(driver: Driver, seeds: list[Seed]) -> WalkSeeds:
     )
 
 
-def _label_of(session: object, node_id: str) -> str:
+def _label_of(session: object, node_id: str, build: str | None = None) -> str:
     record = session.run(  # type: ignore[attr-defined]
         "OPTIONAL MATCH (p:Passage {node_id: $id}) "
+        "WHERE $build IS NULL OR coalesce(p.build, 'corpus') = $build "
         "OPTIONAL MATCH (m:Malfunction {node_id: $id}) "
+        "WHERE $build IS NULL OR coalesce(m.build, 'corpus') = $build "
         "OPTIONAL MATCH (part:Part {part_number: $id}) "
+        "WHERE $build IS NULL OR coalesce(part.build, 'corpus') = $build "
         "OPTIONAL MATCH (part_row:Part {node_id: $id}) "
+        "WHERE $build IS NULL OR coalesce(part_row.build, 'corpus') = $build "
         "OPTIONAL MATCH (model:Model {name: $id}) "
+        "WHERE $build IS NULL OR coalesce(model.build, 'corpus') = $build "
         "OPTIONAL MATCH (c:Case {case_id: $id}) "
+        "WHERE $build IS NULL OR coalesce(c.build, 'corpus') = $build "
         "RETURN p IS NOT NULL AS passage, m IS NOT NULL AS malfunction, "
         "part IS NOT NULL OR part_row IS NOT NULL AS part, "
         "model IS NOT NULL AS model, c IS NOT NULL AS case_node",
         id=node_id,
+        build=build,
     ).single()
     if record is None:
         return ""
@@ -354,18 +372,23 @@ def _label_of(session: object, node_id: str) -> str:
     return ""
 
 
-def _frame(driver: Driver, seeds: list[Seed], question: str) -> RelationFrame | None:
+def _frame(
+    driver: Driver, seeds: list[Seed], question: str, build: str | None = None
+) -> RelationFrame | None:
     for seed in seeds:
         if seed.label not in {"", "Malfunction"}:
             continue
         with driver.session() as session:
             record = session.run(
-                "MATCH (m:Malfunction {node_id: $id}) RETURN m.code AS code",
+                "MATCH (m:Malfunction {node_id: $id}) "
+                "WHERE $build IS NULL OR coalesce(m.build, 'corpus') = $build "
+                "RETURN m.code AS code",
                 id=seed.node_id,
+                build=build,
             ).single()
         if record is None:
             continue
-        raw = frame_for(driver, seed.node_id, str(record["code"]), question)
+        raw = frame_for(driver, seed.node_id, str(record["code"]), question, build=build)
         return RelationFrame(
             code=raw.code,
             cause=raw.cause,

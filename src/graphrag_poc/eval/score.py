@@ -13,7 +13,7 @@ from graphrag_poc.eval.config import (
     evaluation_fingerprint,
     validate_evaluation_models,
 )
-from graphrag_poc.eval.gold import questions_digest
+from graphrag_poc.eval.gold import acceptance_errors, questions_digest
 from graphrag_poc.eval.judge import (
     Judge,
     Judgment,
@@ -419,6 +419,9 @@ def run_baseline(
     """Retrieve, answer, judge, and write the baseline report."""
 
     records = questions if questions is not None else load_questions()
+    target_errors = acceptance_errors(records)
+    if target_errors:
+        raise RuntimeError(target_errors[0])
     errors = validate(records)
     if errors:
         raise RuntimeError(errors[0])

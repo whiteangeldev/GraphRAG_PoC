@@ -1,0 +1,27 @@
+{
+  "model": "qwen3:14b",
+  "finish_reason": "stop",
+  "raw": "{\n  \"facts\": [\n    {\n      \"text\": \"Engine oil level is checked with engine off.\",\n      \"present\": true,\n      \"quote\": \"Engine oil level is checked with engine off.\"\n    }\n  ],\n  \"claims\": [\n    {\n      \"sentence\": \"You should check the engine oil level with the engine off.\",\n      \"supported\": true,\n      \"quote\": \"Engine oil level is checked with engine off.\"\n    },\n    {\n      \"sentence\": \"If the oil level is above 'FULL,' operate the engine for one minute, shut it down, wait one minute, and recheck the oil level.\",\n      \"supported\": true,\n      \"quote\": \"If oil level checks above 'FULL,' it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level.\"\n    }\n  ]\n}",
+  "verified": {
+    "judge": "qwen3:14b",
+    "facts": [
+      {
+        "text": "Engine oil level is checked with engine off.",
+        "present": true,
+        "quote": "Engine oil level is checked with engine off."
+      }
+    ],
+    "claims": [
+      {
+        "sentence": "You should check the engine oil level with the engine off.",
+        "supported": true,
+        "quote": "Engine oil level is checked with engine off."
+      },
+      {
+        "sentence": "If the oil level is above 'FULL,' operate the engine for one minute, shut it down, wait one minute, and recheck the oil level.",
+        "supported": false,
+        "quote": ""
+      }
+    ]
+  }
+}

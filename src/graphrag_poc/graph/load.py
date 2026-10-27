@@ -31,7 +31,7 @@ class SpotCheck(TypedDict):
     edges_without_provenance: int
 
 
-CHARGING_MALFUNCTION = "tm280_10:table:3-1:2:r4"
+CHARGING_MALFUNCTION = "tm280_10:table:3-1:r4"
 
 
 OIL_COOLER_STEP = "tm280_20_2:3-8:step-a:3:2:step-1:2"
@@ -105,7 +105,8 @@ def spot_check() -> SpotCheck:
             part = session.run(
                 "MATCH (m:Malfunction {node_id: $node_id})-[r:CANDIDATE_PART]->(p:Part) "
                 "WHERE r.keyword IN ['ALTERNATOR', 'GENERATOR'] "
-                "RETURN m.code AS code, p.part_number AS part, r.keyword AS keyword LIMIT 1",
+                "RETURN m.code AS code, p.part_number AS part, r.keyword AS keyword "
+                "ORDER BY part, keyword LIMIT 1",
                 node_id=CHARGING_MALFUNCTION,
             ).single()
             missing = session.run(
@@ -116,8 +117,12 @@ def spot_check() -> SpotCheck:
             ).single()
     finally:
         driver.close()
-    if part is None or missing is None:
-        raise RuntimeError("the imported graph is missing the spot check")
+    if part is None:
+        raise RuntimeError(
+            f"the imported graph has no ALTERNATOR/GENERATOR candidate for {CHARGING_MALFUNCTION}"
+        )
+    if missing is None:
+        raise RuntimeError("the imported graph did not return a provenance count")
     return {
         "next": nxt,
         "cautions": cautions,

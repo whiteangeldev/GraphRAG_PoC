@@ -67,6 +67,14 @@ judgments require a literal Boolean true, the correct fact/sentence identity, an
 exact quote from a passage shown to the judge. Missing or mismatched rows receive no
 credit. Missing citations skip the judge request and receive no support credit.
 
+The `judge-quotes-v3` prompt explicitly requires character-for-character evidence,
+including OCR punctuation and quotation marks. A local smoke failure exposed a judge
+that marked an oil-level sentence supported but corrected punctuation inside its quote;
+the exact-match validator correctly rejected that quote. The stricter instruction keeps
+the validation rule unchanged. The judge cache key and evaluation protocol were bumped
+so earlier judgments and baseline configurations cannot silently carry over. The failed
+smoke result and a raw diagnostic judgment are retained under `data/eval/model_smoke/`.
+
 Output limits default to 1,536 generator tokens and 4,096 judge tokens. The existing
 1,500-character passage limit is retained. Temperature is zero with a fixed seed;
 SDK automatic retries are disabled. Truncation requires an explicit configuration

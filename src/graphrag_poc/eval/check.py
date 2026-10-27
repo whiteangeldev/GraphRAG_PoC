@@ -2,6 +2,7 @@
 
 import json
 from pathlib import Path
+from typing import Literal
 
 from graphrag_poc.ingest.catalog import NODES
 
@@ -44,13 +45,15 @@ def load_node_text(nodes_dir: Path | None = None) -> dict[str, str]:
 def validate(
     questions: list[dict[str, object]] | None = None,
     nodes: dict[str, str] | None = None,
+    *,
+    profile: Literal["full", "bounded_targets"] = "full",
 ) -> list[str]:
     """Return errors. An empty list means the Appendix C exit check passes."""
 
     records = questions if questions is not None else load_questions()
     texts = nodes if nodes is not None else load_node_text()
     errors: list[str] = []
-    if len(records) < 150:
+    if profile == "full" and len(records) < 150:
         errors.append(f"expected at least 150 questions, found {len(records)}")
 
     counts: dict[str, int] = {}
@@ -111,13 +114,16 @@ def validate(
     relational = counts.get("relational", 0) + counts.get("multi_hop", 0)
     if relational < MINIMUMS["relational_or_multi_hop"]:
         errors.append(f"relational or multi-hop {relational} is below 50")
-    for name in ("lookup", "procedure", "applicability", "unanswerable"):
-        if counts.get(name, 0) < MINIMUMS[name]:
-            errors.append(f"{name} {counts.get(name, 0)} is below {MINIMUMS[name]}")
+    if profile == "full":
+        for name in ("lookup", "procedure", "applicability", "unanswerable"):
+            if counts.get(name, 0) < MINIMUMS[name]:
+                errors.append(f"{name} {counts.get(name, 0)} is below {MINIMUMS[name]}")
     if everyday * 2 < len(records):
         errors.append(f"everyday wording {everyday} is below half of {len(records)}")
-    if japanese < 8:
+    if profile == "full" and japanese < 8:
         errors.append(f"Japanese subset has {japanese} questions")
-    if counts.get("troubleshooting", 0) < 1 or counts.get("follow_up", 0) < 1:
+    if profile == "full" and (
+        counts.get("troubleshooting", 0) < 1 or counts.get("follow_up", 0) < 1
+    ):
         errors.append("troubleshooting and follow-up questions are missing")
     return errors

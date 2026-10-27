@@ -1,5 +1,8 @@
 # Question revision — 26 October 2026
 
+Historical revision of the legacy keyword benchmark. The current Choice B records and
+approval status are described in [the client review follow-up](client_review/README.md).
+
 Client feedback item 2 is implemented for review: all 25 relational and 25 multi-hop
 questions now use individually edited symptom descriptions, without copied malfunction
 titles, diagnostic keyword hints, or answer part numbers. Replacement requests are
@@ -29,12 +32,17 @@ not validate those heuristic relationships. None counts toward the M3 acceptance
 The source-chain and scope agreement remain pending, with the +15/+10 targets unchanged.
 The [review sample](gold_review_sample.md) now displays this limitation beside the gold.
 
-Regenerate locally, without inference:
+Historical regeneration commands, without inference:
 
 ```bash
 .venv/bin/python -m graphrag_poc.eval
 .venv/bin/python -m graphrag_poc.eval.review
 ```
+
+The first command overwrites the active `data/eval/questions.jsonl` with the legacy
+keyword set. Do not use it to stage or activate the bounded benchmark, or after a
+reviewed bounded set has been activated. Use `make bounded-plan` for a report that
+preserves the active questions and approval contract.
 
 The pending target manifest fingerprints the revised set. Any later question edit must
 update that fingerprint before agreement; an approved set must undergo renewed review.

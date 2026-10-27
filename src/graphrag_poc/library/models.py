@@ -42,6 +42,7 @@ class GraphPath(BaseModel):
     passage_node_id: str
     via: list[str]
     score: float
+    provenance: list[dict[str, str | int | float | bool | None]] = Field(default_factory=list)
 
 
 class RelationFrame(BaseModel):

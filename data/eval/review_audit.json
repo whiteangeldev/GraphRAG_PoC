@@ -1,0 +1,1086 @@
+{
+  "status": "choice_b_additional_review_pending",
+  "candidate_questions": 50,
+  "by_scope": {
+    "operator_reference_and_instruction": 23,
+    "maintenance_catalogue_identity": 12,
+    "maintenance_reference_and_instruction": 15
+  },
+  "by_question_type": {
+    "multi_hop": 38,
+    "relational": 12
+  },
+  "distinct_operator_fault_rows": 20,
+  "distinct_operator_paragraphs": 15,
+  "distinct_maintenance_instruction_nodes": 10,
+  "complete_fault_to_part_chains_in_package": 0,
+  "accepted_candidate_questions": 25,
+  "pending_candidate_questions": 25,
+  "benchmark_frozen": false,
+  "required_target_questions": 50,
+  "full_repair_chains_required": false,
+  "prepared_question_shortfall": 0,
+  "accepted_question_shortfall": 25,
+  "prepared_questions_sha256": "4ff95074af1bf933d8b196b012b28433a343702cd48eb561045601f26f18ce6c",
+  "node_inventory_sha256": {
+    "mlit_b052.jsonl": "3c01da5d8eaf9b288faab29e1602d808a6d7207d052c1ae501eb67f51e1740e6",
+    "tm280_10.jsonl": "2c19f9e36b800202cf5db53829009d9387ae2487ab16e117c9961e26047c5e6e",
+    "tm280_20_1.jsonl": "7c7e67beff9e51eda263556fdf5b2fc751d192d103d5b4433c8fa1cb18c6606a",
+    "tm280_20_2.jsonl": "254beec9a50f20d022e9947dfbd12b427162e1d794c458f4fd50bdbbf3d46a0a",
+    "tm280_24p_1.jsonl": "5f47c7e8b087faf2adcddae09b9272874a74fc9c50366b293810f6e09cdcc276",
+    "tm2815_34.jsonl": "5385b5003acf2882fd6a9d32e5fb5553c46d9eb01843e587dbc1c17211a70d0f"
+  },
+  "candidates_sha256": "6e17a71320a38139dd27098e918489ac381dd02c6575b9a0628afcf7cc485243",
+  "text_audit": {
+    "operator_fault_rows": 30,
+    "distinct_fault_paragraph_references": 25,
+    "references_resolving_in_operator_nodes": 25,
+    "labelled_part_number_mentions_matching_catalogue": 14,
+    "distinct_labelled_part_numbers_matching_catalogue": 11,
+    "method": "Exact para. references and labelled P/N or part number tokens; no keyword map.",
+    "limits": "Not an exhaustive chain census: unlabelled numbers, graphics, OCR, and cross-manual reasoning are outside this scan. No complete repair-chain absence is claimed. Candidate identities and meaning require human review."
+  },
+  "quarantined_references": [
+    {
+      "source": "tm280_10:table:3-1:7:r30",
+      "reference": "3-28",
+      "target": "tm280_10:3-28",
+      "reason": "HVAC filter service points to interior light bulb replacement; semantic mismatch.",
+      "action": "Excluded; client/source-owner clarification required, not silently corrected.",
+      "source_page": 287,
+      "source_quote": "Service HVAC filters (para. 3-28).",
+      "target_page": 318,
+      "target_quote": "3-28. AMBULANCE INTERIOR LIGHT BULB REPLACEMENT"
+    }
+  ],
+  "pdf_sha256": {
+    "tm280_10": "86bbc5a991eb696347a576042ed66b47fd0e6cb6f4c05c430bcf819e471c1ca2",
+    "tm280_20_1": "4606773be7d6914f23fa9f9d51dcdb1f4b054dea99db9cd4109fb5d412a21c7d",
+    "tm280_20_2": "f195cb1c8b7cfdcdd64497c7716615bc0db0610a02cdd11216d3b5e1feb558fc",
+    "tm280_24p_1": "8d8c134e3561baf798c67cfd18f4994eb4af723a854e98b47d229ad9ef444624"
+  },
+  "span_checks": [
+    {
+      "node_id": "tm280_10:2-11",
+      "doc_key": "tm280_10",
+      "pdf_page": 160,
+      "quote": "2-11. PLACING VEHICLE IN MOTION",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-11:step-a:2:caution",
+      "doc_key": "tm280_10",
+      "pdf_page": 160,
+      "quote": "Vehicle must be stopped, engine off, and transmission shift lever placed in “N” (Neutral), before transfer case can be shifted.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-23",
+      "doc_key": "tm280_10",
+      "pdf_page": 179,
+      "quote": "2-23. SLAVE STARTING OPERATION",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-23:step-c:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 179,
+      "quote": "Ensure all battery cables in disabled vehicle are properly connected before connecting slave cable.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-23:step-c:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 179,
+      "quote": "Use a twisting motion when installing slave cable to the receptacle.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-26",
+      "doc_key": "tm280_10",
+      "pdf_page": 189,
+      "quote": "2-26. ELECTRIC WINCH OPERATION",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-26:step-d:2:note",
+      "doc_key": "tm280_10",
+      "pdf_page": 190,
+      "quote": "If after five minutes winch is still inoperative, notify unit maintenance.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-54",
+      "doc_key": "tm280_10",
+      "pdf_page": 249,
+      "quote": "2-54. TOW WEAPON STATION OPERATION",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-54:step-a:2:step-p3:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 249,
+      "quote": "Raise weapon station brake handle (4) to unlock weapon station (9).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-61",
+      "doc_key": "tm280_10",
+      "pdf_page": 259,
+      "quote": "2-61. AMBULANCE INTERIOR ELECTRICAL CONTROLS",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-61:step-a:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 259,
+      "quote": "The engine must be running to operate the air-conditioner compressor.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-61:step-b:2:step-p1:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 259,
+      "quote": "Place interior light switch (1) on electrical control panel (3) in \"NORMAL\" position. The blackout lights will illuminate.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-61:step-b:2:step-p3:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 259,
+      "quote": "To activate spotlights, engage switch on back of spotlight assembly.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:2-61:step-e:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 260,
+      "quote": "All fuses in the control box are 20 amp.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:r1",
+      "doc_key": "tm280_10",
+      "pdf_page": 281,
+      "quote": "Attempt to slave-start vehicle (para. 2-23).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:r2",
+      "doc_key": "tm280_10",
+      "pdf_page": 281,
+      "quote": "Attempt to slave-start vehicle (para. 2-23).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:r3",
+      "doc_key": "tm280_10",
+      "pdf_page": 281,
+      "quote": "Purge fuel system of air (para. 3-10).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r5",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "Check for restricted air cleaner. If emergency situation exists, clean air cleaner element (para. 3-15). If emergency situation does not exist, notify unit maintenance.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r6",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "Drain fuel filter (para. 3-10).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r6",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "If emergency situation exists, clean air cleaner element (para. 3-15).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r7",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "Allow engine to cool and check for low coolant level. Add coolant as necessary (para. 3-9).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r7",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "If fan is not running, perform emergency fan clutch override procedure (para. 3-23).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:2:r8",
+      "doc_key": "tm280_10",
+      "pdf_page": 282,
+      "quote": "Check for low oil level (para. 3-17).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:3:r12",
+      "doc_key": "tm280_10",
+      "pdf_page": 283,
+      "quote": "Check fluid level for overfilling (para. 3-19). Notify unit maintenance if fluid level is high.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:3:r13",
+      "doc_key": "tm280_10",
+      "pdf_page": 283,
+      "quote": "Check for low fluid level (para. 3-19).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:3:r14",
+      "doc_key": "tm280_10",
+      "pdf_page": 283,
+      "quote": "Ensure proper shifting sequence is used (para. 2-11).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:4:r18",
+      "doc_key": "tm280_10",
+      "pdf_page": 284,
+      "quote": "Clean and adjust parking brake (para. 3-13) If parking brake still fails to hold vehicle, notify unit maintenance.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:4:r19",
+      "doc_key": "tm280_10",
+      "pdf_page": 284,
+      "quote": "Tighten loose lug nuts (para. 3-26) and notify unit maintenance to properly torque lug nuts.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:5:r22",
+      "doc_key": "tm280_10",
+      "pdf_page": 285,
+      "quote": "Check power steering reservoir for low fluid level (para. 3-20).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:5:r23",
+      "doc_key": "tm280_10",
+      "pdf_page": 285,
+      "quote": "Refer to para. 2-26 for winch operation.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:5:r24",
+      "doc_key": "tm280_10",
+      "pdf_page": 285,
+      "quote": "Check to see if brake handle is in proper position (para. 2-54).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:6:r26",
+      "doc_key": "tm280_10",
+      "pdf_page": 286,
+      "quote": "Place interior light switch in proper position (para. 2-61).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:6:r27",
+      "doc_key": "tm280_10",
+      "pdf_page": 286,
+      "quote": "Replace fuse if blown (para. 2-61).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:6:r28",
+      "doc_key": "tm280_10",
+      "pdf_page": 286,
+      "quote": "Replace bulb with known serviceable bulb (para. 3-28).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:6:r29",
+      "doc_key": "tm280_10",
+      "pdf_page": 286,
+      "quote": "Place spotlight switch in proper position (para. 2-61).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:6:r29",
+      "doc_key": "tm280_10",
+      "pdf_page": 286,
+      "quote": "Replace bulb with known serviceable bulb (para. 3-28).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:table:3-1:7:r30",
+      "doc_key": "tm280_10",
+      "pdf_page": 287,
+      "quote": "Set operating controls (para. 2-61).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-9",
+      "doc_key": "tm280_10",
+      "pdf_page": 290,
+      "quote": "3-9. SERVICING COOLANT SURGE TANK",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-9:caution",
+      "doc_key": "tm280_10",
+      "pdf_page": 290,
+      "quote": "Extreme care should be taken when removing surge tank filler cap if temperature gauge reads above 165°F (74°C).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-10",
+      "doc_key": "tm280_10",
+      "pdf_page": 291,
+      "quote": "3-10. FUEL FILTER MAINTENANCE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-10:step-a:2:step-p3:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 291,
+      "quote": "Open fuel draincock (4) and allow approximately 1 pint (0.47 L) of fuel to drain into a suitable container.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-10:step-b:2:step-p4:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 291,
+      "quote": "Crank engine until rag is wet with fuel.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-13",
+      "doc_key": "tm280_10",
+      "pdf_page": 295,
+      "quote": "3-13. PARKING BRAKE ADJUSTMENT AND CLEANING",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-13:step-a:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 295,
+      "quote": "Chock wheels and release parking brake handle (5).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-15",
+      "doc_key": "tm280_10",
+      "pdf_page": 296,
+      "quote": "3-15. AIR CLEANER SERVICING (EMERGENCY PROCEDURE)",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-15:step-a:2:caution",
+      "doc_key": "tm280_10",
+      "pdf_page": 296,
+      "quote": "Do not operate engine without air cleaner element.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-15:step-c:2:step-p1:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 298,
+      "quote": "Hold filter element (1) so open end faces ground.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-17",
+      "doc_key": "tm280_10",
+      "pdf_page": 300,
+      "quote": "3-17. ENGINE OIL SERVICING",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-17:step-a:2:note",
+      "doc_key": "tm280_10",
+      "pdf_page": 300,
+      "quote": "Engine oil level is checked with engine off.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-19",
+      "doc_key": "tm280_10",
+      "pdf_page": 302,
+      "quote": "3-19. TRANSMISSION FLUID SERVICING",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-19:step-c:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 302,
+      "quote": "While depressing service brake pedal, move transmission shift lever through all operating ranges and \"R\" (reverse) before checking fluid level in \"N\" (neutral) with parking brake applied.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-19:step-d:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 302,
+      "quote": "At normal operating temperature, fluid level should be at crosshatch marks (3).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-20",
+      "doc_key": "tm280_10",
+      "pdf_page": 303,
+      "quote": "3-20. POWER STEERING FLUID SERVICING",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-20:step-b:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 303,
+      "quote": "Pull out cap/dipstick (5) and check steering fluid level. If engine is warm, level should be between \"HOT” and “COLD” marks. If engine is cool, level should be between “ADD\" and “COLD\" marks. In either condition, fluid must be added if level reads below \"ADD” mark.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-23",
+      "doc_key": "tm280_10",
+      "pdf_page": 310,
+      "quote": "3-23. EMERGENCY FAN CLUTCH OVERRIDE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-23:step-b:2:note",
+      "doc_key": "tm280_10",
+      "pdf_page": 310,
+      "quote": "Stop engine (para. 2-12) prior to disconnecting time delay module.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-26",
+      "doc_key": "tm280_10",
+      "pdf_page": 313,
+      "quote": "3-26. WHEEL ASSEMBLY REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-26:step-b:2:step-p4:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 314,
+      "quote": "Notify unit maintenance to tighten lug nuts (9) to proper torque as soon as possible.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-28",
+      "doc_key": "tm280_10",
+      "pdf_page": 318,
+      "quote": "3-28. AMBULANCE INTERIOR LIGHT BULB REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-28:step-a:2:caution",
+      "doc_key": "tm280_10",
+      "pdf_page": 318,
+      "quote": "When changing light bulbs, ensure the system in which the bulb is being replaced is turned off.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-28:step-d:2:note",
+      "doc_key": "tm280_10",
+      "pdf_page": 318,
+      "quote": "This procedure covers M996 and M996A1 spotlight bulb replacement for M996 and M996A1 vehicles.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-28:step-d:2:step-p1:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 318,
+      "quote": "Remove base (8) from wall socket (7).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_10:3-28:step-d:2:step-p2:2",
+      "doc_key": "tm280_10",
+      "pdf_page": 318,
+      "quote": "Remove four screws (6) securing lens assembly (11) to base (8) and remove lens assembly (11).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:table:2-1:20",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 115,
+      "quote": "Reefer to para. 2-39, electrical troubleshooting, if voltage is not within the specified range.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-34:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 504,
+      "quote": "(4L80-E) Transmission system tests, refer to (para. 2-35).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-35:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 515,
+      "quote": "2-35. TRANSMISSION SYSTEM TESTS (4L80-E)",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-35:2:caution",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 515,
+      "quote": "Do not disconnect battery without recording Trouble Codes. Failure to do so will result in loss of diagnostic test codes.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-37:2:step-b:5:2:step-11:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 573,
+      "quote": "Connect STE/ICE-R to vehicle diagnostic connector and set for measuring RPM (para. 2-43).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-39:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 599,
+      "quote": "2-39. AMBULANCE ELECTRICAL SYSTEM TESTS",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-39:2:step-p5:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 599,
+      "quote": "Always isolate the system where the malfunction occurs and then locate the defective component.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-43:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 830,
+      "quote": "2-43. STE/ICE-R TEST PROCEDURES",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_1:2-43:2:step-1:2",
+      "doc_key": "tm280_20_1",
+      "pdf_page": 831,
+      "quote": "Set TEST SELECT switches to 10",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-4:step-b:3:2:step-2:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 25,
+      "quote": "FOLLOW-ON TASK: Install engine oil filter (para. 3-5).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-5:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 26,
+      "quote": "3-5. ENGINE OIL SERVICE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-5:2:step-c:3:2:step-2:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 26,
+      "quote": "Install oil filter (1) on oil filter adapter (2) and tighten by hand until gasket contacts filter adapter (2). Tighten additional 1/2-3/4 turn by hand.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-6:2:step-a:3:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 28,
+      "quote": "Starter removed (para. 4-8).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-8:step-c:3:2:step-6:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 33,
+      "quote": "Install power steering cooler (para. 8-28).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-12:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 41,
+      "quote": "3-12. AIR CLEANER ASSEMBLY AND DUST UNLOADER MAINTENANCE (Cont'd)",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-12:2:step-10:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 41,
+      "quote": "Install dust unloader (16) on air cleaner assembly (9) and tighten clamp (15) to 45-50 lb-in. (5-6 N.m).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-14:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 46,
+      "quote": "3-14. AIR HORN REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-14:2:step-b:3:2:step-3:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 46,
+      "quote": "Coat threads of screws (2) with sealing compound. Install air horn (5) on intake manifold (7) with two flat washers (4), washers (3), and screws (2). Tighten screws (2) to 40-45 lb-in. (5-6 N•m).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-21:2:step-b:3:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 54,
+      "quote": "FOLLOW-ON TASK: Install air cleaner assembly (para. 3-12).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-23:2:step-b:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 56,
+      "quote": "Battery ground cable disconnected (para. 4-73).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-24:6:step-c:2:step-8:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 62,
+      "quote": "Perform steps 8.1 through 8.5 for vehicles with fuel tank P/N 12460105.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-29:3",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 79,
+      "quote": "FOLLOW-ON TASK: Install rear propeller shaft (para. 6-4).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-32:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 82,
+      "quote": "3-32. FUEL FILTER MAINTENANCE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-32:2:step-c:3:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 83,
+      "quote": "Install fuel pressure transducer (para. 4-26).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-32:2:step-c:3:2:step-5:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 83,
+      "quote": "Crank engine and watch fuel. When air bubbles stop coming through the line, remove bleeder tool and replace bleed screw (6). Dispose of fuel in accordance with local SOP.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-33:3:step-c:2:step-7:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 85,
+      "quote": "FOLLOW-ON TASK: Bleed fuel filter (para. 3-32).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-35:3",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 89,
+      "quote": "FOLLOW-ON TASKS: Install air horn assembly (para. 3-14).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-47:3",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 109,
+      "quote": "3-47. TAILPIPE REPLACEMENT (Cont’d)",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-47:3:step-b:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 109,
+      "quote": "Install gasket (8) and tailpipe (1) on muffler (7) with three washers (6), capscrews (5), washers (6), and locknuts (9). Tighten locknuts (9) to 26 lb-ft (35 N.m).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-48:2:step-b:3:2:step-4:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 111,
+      "quote": "FOLLOW-ON TASK: Install tailpipe (para. 3-47).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-50:2:step-b:3:2:step-5:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 115,
+      "quote": "Install right exhaust manifold rear heat shield (para. 3-54).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-54:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 120,
+      "quote": "3-54. RIGHT EXHAUST MANIFOLD REAR HEAT SHIELD REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-54:2:step-b:3:2:step-2:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 120,
+      "quote": "Install clamp (1) and rear heat shield (7) on transmission dipstick tube (3) with capscrew (2) and locknut (6).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-60:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 130,
+      "quote": "3-60. COOLING SYSTEM SERVICING",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-60:2:step-d:3:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 130,
+      "quote": "Ensure radiator draincock (4) is closed and heater control valve (3) is open (pull “TEMP” knob on dash to “MAX” position).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-61:3:step-12:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 137,
+      "quote": "Fill cooling system (para. 3-60).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-64:2:step-b:2:note",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 140,
+      "quote": "When current stocks of the four-quart surge tank (12340062) are exhausted, the four and one-half quart surge tank (12340061) will be provided in ita place.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-70:2:step-b:8:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 150,
+      "quote": "If the vehicle is equipped with surge tank (12340061) and surge tank-to-lower-radiator tube hose (12339163) is received, cut approximately four inches from surge tank end of hose prior to installation.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-76.1:3:step-c:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 156,
+      "quote": "Ensure water pump P/N 12534772 is used on 6.5L and 6.5L detuned engines, or damage to equipment will result.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:3-76.1:3:step-c:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 156,
+      "quote": "Ensure water pump P/N 251-591 is used on 6.2L engines, or damage to equipment will result.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-3:2:step-b:3:2:step-4:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 195,
+      "quote": "For 200 amp alternators (12447109 or 12338796-1), tighten locknut to 115-125 lb-ft (156-169 N m).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-8:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 242,
+      "quote": "4-8. STARTER REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-8:2:step-b:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 242,
+      "quote": "Starter must be supported during removal and installation. Failure to support starter may cause injury to personnel or damage to equipment.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-26:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 283,
+      "quote": "4-26. FUEL PRESSURE TRANSDUCER REPLACEMENT",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-26:2:step-b:3:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 283,
+      "quote": "Apply sealing compound to threads of fuel pressure transducer (1).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-73:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 354,
+      "quote": "4-73. BATTERY CABLE MAINTENANCE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:4-73:2:step-i:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 354,
+      "quote": "When removing battery cable clamps, disconnect both ground cables first. Ensure all switches are in OFF position before disconnecting.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:6-4:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 638,
+      "quote": "6-4. REAR PROPELLER SHAFT MAINTENANCE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:6-4:2:step-b:3:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 638,
+      "quote": "Inspect propeller shaft (5) for cracks and dents. Replace if cracked or dented.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:6-11:2:step-b:3:2:step-2:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 660,
+      "quote": "If geared hub received is P/N 5598766 and left front or right rear installation is required, replace steering arm cover P/N 5591279 with P/N 5591280 for basic and A1 vehicles and P/N 6005121 for M 1123 and A2 vehicles. • If geared hub received is P/N 5598767 and right front or left rear installation is required, replace steering arm cover P/N 5591280 with P/N 5591279 for basic and A1 vehicles and P/N 6005120 for M 1123 and A2 vehicles. • Use existing steering arm cover if serviceable.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:6-13:2:step-b:2:step-3:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 666,
+      "quote": "If four-slotted retaining nut TN-07 is present, it is recommended to replace it with eight-slotted retaining nut 12342680.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:6-21:2:step-b:2:note",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 684,
+      "quote": "The following procedure applies to vehicles with new brake adapters, P/N 10453002.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:7-23:2:step-b:3:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 771,
+      "quote": "Ensure clamp bracket (P/N 12342965) is installed on vehicle.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:7-24:4:step-b:2:step-1:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 775,
+      "quote": "Ensure clamp bracket (P/N 12342966) is installed on vehicle.",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:8-28:3",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 891,
+      "quote": "8-28. POWER STEERING COOLER REPLACEMENT (Cont’d)",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_20_2:8-28:3:step-2:2",
+      "doc_key": "tm280_20_2",
+      "pdf_page": 891,
+      "quote": "Connect two hoses (2) and (3) to cooler (8) with two clamps (4). Tighten clamps (4) 35-45 lb-in. (4-5 N·m).",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r415",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 95,
+      "quote": "12460105",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r415",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 95,
+      "quote": "2910014473911",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r606",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 123,
+      "quote": "12340061",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r606",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 123,
+      "quote": "2930012565350",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r610",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 123,
+      "quote": "12339163",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r610",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 123,
+      "quote": "4720011961636",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r671",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 133,
+      "quote": "251-591",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r671",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 133,
+      "quote": "2930013535794",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r671",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 133,
+      "quote": "USE WITH 1990 ENGINE AND ABOVE",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r672",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 133,
+      "quote": "12534772",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r672",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 133,
+      "quote": "2930014446649",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r860",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 157,
+      "quote": "12447109",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r860",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 157,
+      "quote": "2920014209968",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r886",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 163,
+      "quote": "12338796-1",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r886",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 163,
+      "quote": "2920012646542",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3550",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 530,
+      "quote": "2530012035662",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3550",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 530,
+      "quote": "5591280",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3551",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 530,
+      "quote": "12342680",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3551",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 530,
+      "quote": "5310013825031",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3565",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 532,
+      "quote": "2530012035663",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3565",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 532,
+      "quote": "5591279",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3980",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 581,
+      "quote": "12342965",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3980",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 581,
+      "quote": "5340013942408",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3985",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 581,
+      "quote": "12342966",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r3985",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 581,
+      "quote": "5340013948496",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r4034",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 587,
+      "quote": "10453002",
+      "normalised_exact_match": true
+    },
+    {
+      "node_id": "tm280_24p_1:parts:r4034",
+      "doc_key": "tm280_24p_1",
+      "pdf_page": 587,
+      "quote": "2530013141129",
+      "normalised_exact_match": true
+    }
+  ]
+}

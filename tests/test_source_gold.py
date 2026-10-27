@@ -107,3 +107,68 @@ def test_partial_links_cannot_be_marked_eligible_by_a_flag() -> None:
     payload["m3_target_eligible"] = True
     with pytest.raises(ValueError):
         SourceRelation.model_validate(payload)
+
+
+@pytest.fixture
+def accepted_contract(tmp_path: Path) -> tuple[list[dict], Path]:
+    records = [
+        {
+            "id": f"approved-test-{index}",
+            "slice": {"question_type": "multi_hop"},
+            "evaluation": {
+                "m3_target_eligible": True,
+                "evidence_basis": "manual_supported",
+                "source_chain_review": "test-review.md",
+                "client_review_status": "client_accepted",
+            },
+        }
+        for index in range(50)
+    ]
+    path = tmp_path / "agreement.json"
+    path.write_text(
+        json.dumps(
+            {
+                "status": "approved",
+                "approved_by": "test reviewer",
+                "approved_at": "2026-10-27",
+                "approved_scope": "test scope",
+                "question_ids": [r["id"] for r in records],
+                "questions_sha256": questions_digest(records),
+                "minimum_target_questions": 50,
+                "evidence_gain_points": 15,
+                "required_fact_gain_points": 10,
+                "accepted_candidate_ids": [r["id"] for r in records],
+                "pending_candidate_ids": [],
+            }
+        )
+    )
+    assert acceptance_errors(records, path) == []
+    return records, path
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("minimum_target_questions", 25),
+        ("evidence_gain_points", 10),
+        ("required_fact_gain_points", 5),
+        ("pending_candidate_ids", ["unreviewed"]),
+    ],
+)
+def test_acceptance_cannot_relax_agreed_gates(
+    accepted_contract: tuple, field: str, value: object
+) -> None:
+    records, path = accepted_contract
+    contract = json.loads(path.read_text())
+    contract[field] = value
+    path.write_text(json.dumps(contract))
+    assert acceptance_errors(records, path)
+
+
+def test_eligibility_flag_does_not_override_pending_review(accepted_contract: tuple) -> None:
+    records, path = accepted_contract
+    records[0]["evaluation"]["client_review_status"] = "source_checked_pending_client"
+    contract = json.loads(path.read_text())
+    contract["questions_sha256"] = questions_digest(records)
+    path.write_text(json.dumps(contract))
+    assert any("unreviewed" in error for error in acceptance_errors(records, path))

@@ -8,25 +8,25 @@ The counts are the counts in the database.
 | Label | Count |
 |---|---:|
 | Document | 6 |
-| Passage | 22952 |
+| Passage | 22956 |
 | Malfunction | 30 |
-| Part | 4478 |
+| Part | 5088 |
 | Model | 43 |
 | Case | 2000 |
-| IN_DOCUMENT | 22952 |
-| PARENT | 22946 |
+| IN_DOCUMENT | 22956 |
+| PARENT | 22950 |
 | NEXT | 7952 |
 | BOUND_CAUTION | 382 |
-| REFERS_TO | 1518 |
+| REFERS_TO | 3346 |
 | STATES | 30 |
 | HAS_STEP | 77 |
-| APPLIES_TO | 13620 |
-| LISTS | 8099 |
-| CANDIDATE_PART | 1065 |
+| APPLIES_TO | 13705 |
+| LISTS | 8095 |
+| CANDIDATE_PART | 1195 |
 | ABOUT | 2000 |
 | INSTALLED | 2000 |
 | ON_MODEL | 2000 |
-| MENTIONS | 12398 |
+| MENTIONS | 12418 |
 
 ## Orphan nodes
 
@@ -40,7 +40,7 @@ This build has no orphan nodes.
 
 ## Derived edges
 
-The sample lists 100 of 12398 derived edges.
+The sample lists 100 of 12418 derived edges.
 
 | Type | Start | End | Rule | Weight |
 |---|---|---|---|---:|

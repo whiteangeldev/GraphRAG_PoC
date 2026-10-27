@@ -1,5 +1,9 @@
 # Graph comparison
 
+> Historical snapshot before the client-feedback revision.
+> Its scores, counts, model behavior and demonstration outputs do not validate the
+> corrected data or current implementation. See [current M4 status](m4_report.md).
+
 The same 157 questions were scored with the improved baseline and with the graph.
 Graph weight is 1.0. Hop depth is 2. The traversal cap is 200.
 The reranker is off. Hit@10 still uses the first 10 fused passages.

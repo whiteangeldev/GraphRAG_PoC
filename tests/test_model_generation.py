@@ -153,7 +153,15 @@ def test_generation_cache_reuses_only_identical_prompt_and_model_settings(
 
 @pytest.mark.parametrize(
     ("generator", "judge"),
-    [("", "judge"), ("generator", ""), ("Qwen3-8B", "Qwen/Qwen3-8B"), ("Qwen3-0.6B", "judge")],
+    [
+        ("", "judge"),
+        ("generator", ""),
+        ("Qwen3-8B", "Qwen/Qwen3-8B"),
+        ("Qwen3-0.6B", "judge"),
+        ("qwen3:0.6b", "qwen3:14b"),
+        ("qwen3:8b", "Qwen/Qwen3-8B"),
+        ("qwen3:8b-q4_K_M", "Qwen/Qwen3-8B"),
+    ],
 )
 def test_invalid_model_roles_fail_preflight(
     monkeypatch: pytest.MonkeyPatch, generator: str, judge: str
@@ -217,6 +225,27 @@ def test_judge_rejects_string_booleans_and_misaligned_rows(flag: object, text: s
         judge="test",
     )
     assert not judgment.facts[0].present
+
+
+def test_judge_keeps_source_punctuation_verbatim(monkeypatch: pytest.MonkeyPatch) -> None:
+    source = "If oil level checks above 'FULL,\" it may be due to oil cooler drain back."
+    corrected = "If oil level checks above 'FULL,' it may be due to oil cooler drain back."
+    answer = "An above-full reading may be caused by oil cooler drain back."
+    payload = {
+        "facts": [],
+        "claims": [{"sentence": answer, "supported": True, "quote": source}],
+    }
+    requests, _ = _fake_sdk(monkeypatch, json.dumps(payload))
+    judgment = LanguageModelJudge().judge(answer=answer, facts=(), cited_texts=(source,))
+    assert judgment.claims[0].supported
+    assert judgment.claims[0].quote == source
+    assert "character-for-character" in requests[0]["messages"][0]["content"]
+    payload["claims"][0]["quote"] = corrected
+    rejected = verify_model_judgment(
+        json.dumps(payload), facts=(), shown=[answer], cited_texts=(source,), judge="test"
+    )
+    assert not rejected.claims[0].supported
+    assert rejected.claims[0].quote == ""
 
 
 @pytest.mark.parametrize("change", ["facts", "source", "judge"])

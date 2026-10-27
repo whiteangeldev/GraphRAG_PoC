@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-10-27T02:05:42.198436+00:00",
+  "purpose": "model smoke test only; not M3 acceptance",
+  "hardware": {
+    "os": "Darwin",
+    "architecture": "arm64",
+    "memory_bytes": 17179869184,
+    "cpu": "Apple M2"
+  },
+  "plan": {
+    "protocol": "supplied-evidence-smoke-v1",
+    "purpose": "model smoke test only; not M3 acceptance",
+    "evaluation_config_sha256": "aad34c872d9766b7bbc0a597123607043e1a98f3bde04446f483b0d97de70cfc",
+    "max_generation_requests": 3,
+    "max_judge_requests": 3,
+    "cache_policy": "live run bypasses generator and judge caches",
+    "failure_policy": "stop on first failure; no SDK automatic retries",
+    "cases": [
+      {
+        "id": "oil-level",
+        "question": "Should I check the engine oil level with the engine running or stopped?",
+        "node_ids": [
+          "tm280_10:3-17:step-a:2:note"
+        ],
+        "required_facts": [
+          "Engine oil level is checked with engine off."
+        ],
+        "expected_refusal": false,
+        "passages": [
+          {
+            "node_id": "tm280_10:3-17:step-a:2:note",
+            "page": 300,
+            "text_sha256": "f1f54ba96c975d88d8ef6cbad77d54c41aadb75672f04cc39e2817261c6d0830",
+            "shown_text": "NOTE · Engine oil level is checked with engine off. · If oil level checks above 'FULL,\" it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level. · Vehicles equipped with deep fording kit will have a sealed dipstick."
+          }
+        ]
+      },
+      {
+        "id": "bulb-warning",
+        "question": "One ceiling light in the ambulance has failed. If inspection shows it needs a bulb, what must be turned off before changing it?",
+        "node_ids": [
+          "tm280_10:table:3-1:6:r28",
+          "tm280_10:3-28:step-a:2:caution"
+        ],
+        "required_facts": [
+          "When changing light bulbs, ensure the system in which the bulb is being replaced is turned off."
+        ],
+        "expected_refusal": false,
+        "passages": [
+          {
+            "node_id": "tm280_10:table:3-1:6:r28",
+            "page": 286,
+            "text_sha256": "59cca5321f4f2115c38ac712019d368ecd83686323ad313e4f78bbbb1d7b9224",
+            "shown_text": "28. CEIUNG WHITE UGHT OR BLACKOUT UGHT FAILS TO ILLUMINATE Step 1. Inspect bulb for serviceability. Replace bulb with known serviceable bulb (para. 3-28). Step 2. Other causes. Notify unit maintenance."
+          },
+          {
+            "node_id": "tm280_10:3-28:step-a:2:caution",
+            "page": 318,
+            "text_sha256": "e39f5426fa797b4afe1917ae9f787ade11dde1f64763f7bb7e68c4507d8b4e06",
+            "shown_text": "WARNING When changing light bulbs, ensure the system in which the bulb is being replaced is turned off. Failure to do so may cause injury."
+          }
+        ]
+      },
+      {
+        "id": "insufficient-evidence",
+        "question": "What is the tightening torque for part ZZ-NO-SUCH-PART?",
+        "node_ids": [
+          "tm280_10:3-17:step-a:2:note"
+        ],
+        "required_facts": [],
+        "expected_refusal": true,
+        "passages": [
+          {
+            "node_id": "tm280_10:3-17:step-a:2:note",
+            "page": 300,
+            "text_sha256": "f1f54ba96c975d88d8ef6cbad77d54c41aadb75672f04cc39e2817261c6d0830",
+            "shown_text": "NOTE · Engine oil level is checked with engine off. · If oil level checks above 'FULL,\" it may be due to oil cooler drain back. Operate the engine for one minute, shut down, wait one minute, and recheck oil level. · Vehicles equipped with deep fording kit will have a sealed dipstick."
+          }
+        ]
+      }
+    ],
+    "smoke_inputs_sha256": "b10e56c63099af6b6911096fe7b5c8d5767ee546745fb5b4e65c72528379c9ec"
+  },
+  "status": "planned_no_endpoint_calls"
+}

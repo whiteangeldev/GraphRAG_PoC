@@ -18,7 +18,10 @@ The demonstration page does the same steps for the public corpus and shows the r
 
 Neo4j holds the graph. Qdrant holds the dense and sparse passage vectors for the demonstration retriever. The library does not read Qdrant. A caller that already has a retriever passes its own ranked lists into `fuse`.
 
-The live labels are the ones in `docs/schema_reference.md`. They are the schema M3 loaded. Appendix A.3's example names (`ErrorCode`, `NEXT_STEP`) are the generic sketch in the requirements. This repository did not rename the working graph.
+The implemented labels are in [the schema reference](schema_reference.md). The draft
+[requirements mapping](schema_mapping.md) explains local equivalents for `ErrorCode`
+and `NEXT_STEP`; final compatibility needs the original requirements and client review.
+The revised M3 measurements remain pending.
 
 ## Build id
 
@@ -26,4 +29,14 @@ Each Bolt write stamps `build` on the nodes and relationships it creates. The co
 
 ## What the walk returns
 
-Traversal returns passages, not parts or cases. A malfunction seed walks `CANDIDATE_PART` and `LISTS` to the parts-list row, and `STATES` back to the malfunction row. A step seed walks `NEXT` and `BOUND_CAUTION`. The relation frame carries the case ids and the part description beside those passages.
+Traversal returns passages, not parts or cases. The bounded route starts from retrieved
+passages and follows explicit paragraph references into procedure instructions, or
+literal part-number mentions through `Part` and `LISTS` to catalogue rows. It omits the
+keyword part frame. A step seed can walk `NEXT` and `BOUND_CAUTION`. Legacy routes retain
+their unverified keyword candidates. [Traversal preparation](traversal_alignment.md)
+describes the new build and three-edge limit; applying it requires a graph rebuild.
+
+Keyword candidates and synthetic case links are unverified hints. Source provenance
+does not establish a complete repair chain. The model answer path receives the frame
+as context and must produce its own supported answer and citations; no rule appends
+part numbers or fallback citations to that output.

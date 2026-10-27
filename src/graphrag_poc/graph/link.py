@@ -8,10 +8,10 @@ from typing import Any
 from neo4j import Driver
 
 from graphrag_poc.graph.config import DENSE_LINK_THRESHOLD
+from graphrag_poc.graph.part_match import PartMatcher
 from graphrag_poc.index.embed import Embedder
 
 _MODEL = re.compile(r"\bM\d{3,4}(?:A\d)?\b")
-_PART = re.compile(r"[A-Za-z0-9][A-Za-z0-9/-]{4,}")
 _CODE_LIKE = re.compile(r"\d+\.\s+\S+")
 _TABLE_OR_CASE = frozenset({"Malfunction", "Part", "Case"})
 
@@ -137,12 +137,8 @@ def _exact_links(question: str, table: TermTable) -> list[Link]:
         kept.append(term)
         found.append(Link("Malfunction", term.key, term.node_id, "exact", 1.0))
     numbers = {term.key.upper(): term for term in table.terms if term.label == "Part"}
-    seen_parts: set[str] = set()
-    for match in _PART.findall(question):
-        part = numbers.get(match.upper())
-        if part is None or part.key in seen_parts:
-            continue
-        seen_parts.add(part.key)
+    for number in sorted(PartMatcher(term.key for term in numbers.values()).find(question)):
+        part = numbers[number.upper()]
         found.append(Link("Part", part.key, part.node_id, "exact", 1.0))
     names = {term.key for term in table.terms if term.label == "Model"}
     for name in _MODEL.findall(question):

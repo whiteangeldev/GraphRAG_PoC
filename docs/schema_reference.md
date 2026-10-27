@@ -1,6 +1,9 @@
 # Schema reference
 
-These are the labels in the database M3 loaded. Additional properties are allowed. The names below are the ones the library reads and writes.
+These are the labels the library reads and writes. Additional properties are allowed.
+Current loaded counts need verification after the corrected-data rebuild. The
+[requirements mapping](schema_mapping.md) is a draft pending the original requirements
+and client confirmation.
 
 ## Nodes
 
@@ -38,6 +41,10 @@ A Bolt build also sets `build` on each node. Corpus nodes loaded by `neo4j-admin
 
 Every edge has `rule`, `derived`, and `weight`. A manual edge also has `doc_key` and `page_start`. A case edge has `case_id` and not a page. `CANDIDATE_PART` stores `keyword` and `description`. `HAS_STEP` stores `step_number` and `step_text`. `MENTIONS` is the only derived edge. Its weight is 0.4.
 
+`MENTIONS` uses deterministic surface-form matching; it does not use a language model.
+`CANDIDATE_PART` is a keyword hypothesis, and `INSTALLED` copies synthetic case data.
+Neither `derived=false` nor provenance alone proves a confirmed fault-to-part repair.
+
 ## Constraints
 
 Uniqueness: `Document.doc_key`, `Passage.node_id`, `Malfunction.node_id`, `Part.part_number`, `Model.name`, `Case.case_id`.
@@ -46,4 +53,10 @@ Indexes: `Passage.page_start`, `Malfunction.code`.
 
 ## Traversal
 
-Relational and multi-hop walks use `CANDIDATE_PART`, `LISTS`, and `STATES`. Procedure walks use `NEXT` and `BOUND_CAUTION`. Applicability walks `APPLIES_TO`. Lookup and troubleshooting may also walk `ABOUT` and `INSTALLED`. The default cap is 200 passages. The default depth is 2.
+Relational and multi-hop walks use explicit `REFERS_TO`, reverse `PARENT`, and
+`MENTIONS`/`LISTS` paths, with `STATES` for an explicit malfunction seed. Paragraph
+references resolve to actual body/continuation occurrences during a new build.
+The bounded route has a three-edge limit; other routes retain a two-edge default.
+Procedure walks use `NEXT` and `BOUND_CAUTION`; applicability walks `APPLIES_TO`.
+Legacy lookup/troubleshooting may still use keyword candidates and case links.
+The cap remains 200 passages. See [traversal preparation](traversal_alignment.md).

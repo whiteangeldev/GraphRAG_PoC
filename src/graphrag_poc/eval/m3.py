@@ -14,10 +14,16 @@ from graphrag_poc.eval.config import (
     validate_evaluation_models,
 )
 from graphrag_poc.eval.gold import acceptance_errors, questions_digest
-from graphrag_poc.eval.metrics import Ratio, SliceMetrics, evidence_hits, format_mrr, format_percent
+from graphrag_poc.eval.metrics import (
+    SHARE_KEYS,
+    Ratio,
+    SliceMetrics,
+    evidence_hits,
+    format_mrr,
+    format_percent,
+)
 from graphrag_poc.eval.score import (
     EVIDENCE_LIMIT,
-    TYPE_ORDER,
     Judged,
     RunInfo,
     attempt_from_hits,
@@ -27,7 +33,8 @@ from graphrag_poc.eval.score import (
     slice_metrics,
 )
 from graphrag_poc.graph.client import make_driver
-from graphrag_poc.graph.config import GRAPH_WEIGHT, HOP_DEPTH, NODE_CAP
+from graphrag_poc.graph.config import GRAPH_WEIGHT, HOP_DEPTH, NODE_CAP, REFERENCE_HOP_DEPTH
+from graphrag_poc.retrieve.fusion import FusedHit
 from graphrag_poc.retrieve.graph import retrieve_question
 from graphrag_poc.retrieve.search import retrieve
 
@@ -73,27 +80,36 @@ def main(argv: list[str] | None = None) -> int:
 def run_graph() -> tuple[str, str]:
     """Retrieve with the graph, judge, and render the before/after report."""
 
-    from graphrag_poc.eval.judge import build_judge
-    from graphrag_poc.index.client import make_client
-    from graphrag_poc.index.embed import build_embedder
-
     records = load_questions()
-    errors = validate(records)
-    if errors:
-        raise RuntimeError(errors[0])
     target_errors = acceptance_errors(records)
     if target_errors:
         raise RuntimeError(target_errors[0])
+    errors = validate(records)
+    if errors:
+        raise RuntimeError(errors[0])
     validate_evaluation_models()
     if not BASELINE_METRICS.exists():
         raise RuntimeError("the improved baseline metrics are missing")
-    baseline = json.loads(BASELINE_METRICS.read_text(encoding="utf-8"))
+    try:
+        baseline = json.loads(BASELINE_METRICS.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise RuntimeError("Baseline metrics are missing or invalid; rebaseline first.") from exc
+    if not isinstance(baseline, dict):
+        raise RuntimeError("Baseline metrics must be an object; rebaseline first.")
     if baseline.get("questions_sha256") != questions_digest(records):
         raise RuntimeError(
             "Baseline belongs to a different/unversioned benchmark; rebaseline first."
         )
     if baseline.get("evaluation_config_sha256") != evaluation_fingerprint():
         raise RuntimeError("Baseline model/protocol settings changed; run make baseline first.")
+    baseline_errors = _baseline_errors(baseline, records)
+    if baseline_errors:
+        raise RuntimeError(baseline_errors[0])
+
+    from graphrag_poc.eval.judge import build_judge
+    from graphrag_poc.index.client import make_client
+    from graphrag_poc.index.embed import build_embedder
+
     judge = build_judge()
     embedder = build_embedder()
     client = make_client(api_key=os.environ.get("QDRANT_API_KEY") or None)
@@ -124,13 +140,8 @@ def run_graph() -> tuple[str, str]:
                 lookup_graph.append(graph_ms)
             attempt = attempt_from_hits(record, hits, question=question, frame=frame)
             attempts.append(attempt)
-            if record.get("id") == "relational-0001":
-                used = any("graph" in hit.channels for hit in hits[:EVIDENCE_LIMIT])
-                demo = (
-                    f"{record['id']}: {record.get('question', '')}\n"
-                    f"The graph channel is in the top {EVIDENCE_LIMIT}: {used}.\n"
-                    f"Relation frame:\n{frame.text() or 'empty'}"
-                )
+            if not demo and question_type in _TARGETS:
+                demo = _demonstration(record, hits)
             if index % 10 == 0 or index == len(records):
                 print(f"retrieved {index} of {len(records)}", flush=True)
     finally:
@@ -156,6 +167,7 @@ def run_graph() -> tuple[str, str]:
         "evaluation_config_sha256": info.evaluation_config_sha256,
         "graph_weight": GRAPH_WEIGHT,
         "hop_depth": HOP_DEPTH,
+        "reference_hop_depth": REFERENCE_HOP_DEPTH,
         "node_cap": NODE_CAP,
         "lookup_p95_baseline_ms": _p95(lookup_base),
         "lookup_p95_graph_ms": _p95(lookup_graph),
@@ -164,6 +176,84 @@ def run_graph() -> tuple[str, str]:
         },
     }
     return report, json.dumps(payload, indent=2) + "\n"
+
+
+def _ratio_counts(value: object) -> tuple[int, int] | None:
+    if not isinstance(value, dict):
+        return None
+    numerator, denominator = value.get("numerator"), value.get("denominator")
+    if (
+        not isinstance(numerator, int)
+        or isinstance(numerator, bool)
+        or not isinstance(denominator, int)
+        or isinstance(denominator, bool)
+        or not 0 <= numerator <= denominator
+    ):
+        return None
+    return numerator, denominator
+
+
+def _baseline_errors(baseline: dict[str, object], records: list[dict[str, object]]) -> list[str]:
+    """Require complete comparable metrics before constructing models or clients."""
+
+    groups: dict[str, list[dict[str, object]]] = {}
+    for record in records:
+        slice_ = record.get("slice")
+        name = str(slice_.get("question_type", "")) if isinstance(slice_, dict) else ""
+        groups.setdefault(name, []).append(record)
+    by_type = baseline.get("by_type")
+    if not isinstance(by_type, dict) or set(by_type) != set(groups):
+        return ["Baseline question types differ from the frozen records; rebaseline first."]
+    errors: list[str] = []
+    blocks = [("overall", baseline.get("overall"), records)]
+    blocks.extend((name, by_type[name], questions) for name, questions in groups.items())
+    for name, block, questions in blocks:
+        prefix = f"Baseline {name}"
+        if not isinstance(block, dict):
+            errors.append(f"{prefix} metrics are missing or invalid.")
+            continue
+        count = block.get("questions")
+        if not isinstance(count, int) or isinstance(count, bool) or count != len(questions):
+            errors.append(f"{prefix} question count differs from the frozen records.")
+        gold_counts = []
+        fact_count = 0
+        for question in questions:
+            gold = question.get("gold")
+            ids = gold.get("node_ids") if isinstance(gold, dict) else None
+            gold_counts.append(len(ids) if isinstance(ids, list) else 0)
+            facts = question.get("required_facts")
+            fact_count += len(facts) if isinstance(facts, list) else 0
+        expected_denominators = {
+            "hit_at_10": sum(count > 0 for count in gold_counts),
+            "evidence_recall": sum(gold_counts),
+            "required_fact_recall": fact_count,
+            "action_accuracy": len(questions),
+        }
+        for key in SHARE_KEYS:
+            counts = _ratio_counts(block.get(key))
+            if counts is None:
+                errors.append(f"{prefix} {key} must contain valid integer ratio counts.")
+            elif key in expected_denominators and counts[1] != expected_denominators[key]:
+                errors.append(f"{prefix} {key} denominator differs from the frozen records.")
+        ranks = block.get("mrr_denominators")
+        if (
+            not isinstance(ranks, list)
+            or len(ranks) != expected_denominators["hit_at_10"]
+            or any(
+                not isinstance(rank, int) or isinstance(rank, bool) or rank < 0 for rank in ranks
+            )
+        ):
+            errors.append(f"{prefix} MRR ranks are missing or invalid.")
+    return errors
+
+
+def _demonstration(record: dict[str, object], hits: list[FusedHit]) -> str:
+    evidence = [hit.node_id for hit in hits[:EVIDENCE_LIMIT] if "graph" in hit.channels]
+    return (
+        f"{record.get('id')}: {record.get('question', '')}\n"
+        f"Graph-channel passages among the first {EVIDENCE_LIMIT}: "
+        f"{', '.join(evidence) if evidence else 'none'}."
+    )
 
 
 def _render(
@@ -197,11 +287,14 @@ def _render(
         ),
         _gate("lookup p95 latency", lookup_delta, 100, higher_is_better=False),
     ]
-    for name in TYPE_ORDER:
-        current = by_type.get(name)
+    if set(by_type) != set(base_types):
+        raise RuntimeError("Baseline and graph question types differ; comparison is incomplete.")
+    if len(lookup_base) != len(lookup_graph) or len(lookup_base) != by_type["lookup"].questions:
+        raise RuntimeError("Lookup latency samples do not match the scored lookup controls.")
+    for name, current in by_type.items():
         previous = base_types.get(name)
-        if current is None or not isinstance(previous, dict):
-            continue
+        if not isinstance(previous, dict):
+            raise RuntimeError(f"Baseline {name} metrics are missing or invalid.")
         gates.append(_type_gate(name, "hit@10", current.hit_at_10, previous.get("hit_at_10")))
         gates.append(
             _type_gate(
@@ -215,7 +308,8 @@ def _render(
         "# Graph comparison",
         "",
         f"The same {overall.questions} questions were scored with the improved baseline and graph.",
-        f"Graph weight is {GRAPH_WEIGHT}. Hop depth is {HOP_DEPTH}. "
+        f"Graph weight is {GRAPH_WEIGHT}. Legacy hop depth is {HOP_DEPTH}; "
+        f"bounded manual-reference depth is {REFERENCE_HOP_DEPTH}. "
         f"The traversal cap is {NODE_CAP}.",
         "The reranker is off. Hit@10 still uses the first 10 fused passages.",
         "",
@@ -226,6 +320,7 @@ def _render(
         f"| Judge | {info.judge} |",
         f"| Graph weight | {GRAPH_WEIGHT} |",
         f"| Hop depth | {HOP_DEPTH} |",
+        f"| Bounded manual-reference depth | {REFERENCE_HOP_DEPTH} |",
         "",
         "## Scores with the graph",
         "",
@@ -277,16 +372,12 @@ def _type_gate(
     current: object,
     previous: object,
 ) -> tuple[str, float, float, bool]:
-    if not isinstance(current, Ratio) or not isinstance(previous, dict):
-        return (f"{name} {label}", 0.0, -1, True)
-    numerator = previous.get("numerator")
-    denominator = previous.get("denominator")
-    if isinstance(numerator, bool) or isinstance(denominator, bool):
-        return (f"{name} {label}", 0.0, -1, True)
-    if not isinstance(numerator, int) or not isinstance(denominator, int):
-        return (f"{name} {label}", 0.0, -1, True)
-    before = _points(numerator, denominator)
-    after = _points(current.numerator, current.denominator)
+    before_counts = _ratio_counts(previous)
+    after_counts = _ratio_counts(_ratio(current)) if isinstance(current, Ratio) else None
+    if before_counts is None or after_counts is None or before_counts[1] != after_counts[1]:
+        raise RuntimeError(f"{name} {label}: missing, invalid or incomparable ratio counts.")
+    before = _points(*before_counts)
+    after = _points(*after_counts)
     change = after - before
     return (f"{name} {label}", change, -1, change >= -1)
 
@@ -307,13 +398,15 @@ def _pooled(by_type: dict[str, object], key: str) -> tuple[int, int]:
     numerator = denominator = 0
     for name in _TARGETS:
         metrics = by_type.get(name)
-        if not isinstance(metrics, dict):
+        if metrics is None:
             continue
-        ratio = metrics.get(key)
-        if not isinstance(ratio, dict):
-            continue
-        numerator += int(ratio["numerator"])
-        denominator += int(ratio["denominator"])
+        ratio = _ratio_counts(metrics.get(key)) if isinstance(metrics, dict) else None
+        if ratio is None:
+            raise RuntimeError(f"Baseline {name} {key} ratio is missing or invalid.")
+        numerator += ratio[0]
+        denominator += ratio[1]
+    if denominator == 0:
+        raise RuntimeError(f"Baseline target {key} has no scored denominator.")
     return numerator, denominator
 
 
@@ -350,8 +443,10 @@ def _points(numerator: int, denominator: int) -> float:
 
 
 def _p95(values: list[float]) -> float:
-    if not values:
-        return 0.0
+    if not values or any(
+        isinstance(value, bool) or not math.isfinite(value) or value < 0 for value in values
+    ):
+        raise RuntimeError("Lookup p95 requires nonempty, finite, nonnegative latency samples.")
     ordered = sorted(values)
     return ordered[min(len(ordered) - 1, math.ceil(0.95 * len(ordered)) - 1)]
 

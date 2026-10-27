@@ -1,56 +1,145 @@
-# M4 report
+# M4 delivery status
 
-The graph measured in M3 is now a library and a service. This report records the result, the limits that remain, and what to do with Sodick's own node files. The numbers are copied from `docs/m3_report.md` and `docs/graph_build_report.md`. The 157 questions were not scored again for this milestone.
+Updated 27 October 2026. The current engineering checks pass. Revised M3 measurements and
+final M4 acceptance are pending. The previous report is preserved as a
+[historical snapshot](historical/m4_report_pre_feedback.md); its scores and graph counts
+describe the earlier data and model path.
 
-## Result
+## Implemented deliverables and validation
 
-The comparison is the improved baseline against the same retriever plus the graph. The graph weight is 1.0. The hop depth is 2. The traversal cap is 200. Hit@10 still uses the first 10 fused passages. The reranker is off. Generation and judging used Qwen3-0.6B. A judged fact counts only when its quote is an exact span of a cited passage.
+The package exposes `build_graph`, `link_entities`, `route`, `traverse`, and `fuse` in
+`graphrag_poc.library`. The HTTP service exposes health, graph build, entity linking,
+traversal and statistics. Installation and use are described in the
+[architecture](architecture.md), [integration](integration.md),
+[operations](operations.md) and [schema reference](schema_reference.md) guides.
 
-| Question type | hit@10 | Evidence recall | Required-fact recall |
-|---|---:|---:|---:|
-| Overall | 78.7 | 61.3 | 32.3 |
-| lookup | 82.9 | 82.9 | 51.4 |
-| procedure | 100.0 | 38.9 | 45.8 |
-| applicability | 4.5 | 4.5 | 0.0 |
-| relational | 100.0 | 96.0 | 36.0 |
-| multi_hop | 100.0 | 64.0 | 20.0 |
-| troubleshooting | 100.0 | 100.0 | 22.2 |
-| follow_up | 0.0 | 0.0 | 0.0 |
+Historical local check output supplied on 26 October records:
 
-Against the improved baseline, evidence recall on relational and multi-hop questions rose 44.0 points. Required-fact recall on those questions rose 15.2 points. No question type lost more than 1 point of hit@10 or required-fact recall. Lookup latency at the 95th percentile rose 65.5 ms, inside the 100 ms limit.
+| Check | Observed result |
+|---|---|
+| Review package | 25 draft candidates validated against nodes and PDFs; 0 approved targets |
+| Source relations | 10 source-backed partial links validated; 0 approved complete target chains |
+| Model configuration | Qwen/Qwen3-8B generator and Qwen/Qwen3-14B judge valid; no endpoint calls |
+| Lint and formatting | Passed; 126 files already formatted |
+| Type checking | Passed on 71 source files |
+| Tests | 168 passed, 8 skipped; 1 Qdrant server-version warning |
 
-The relational gain is the parts-list row. The malfunction row was often already retrieved. The walk from that malfunction, through the keyword on `CANDIDATE_PART` and the canonical `LISTS` row, puts the part passage in the graph list. Fusion then places it in the ten passages given to the generator. The relation frame names the code, the first two steps, the part number, and up to five cases. When the question asks for a part, those lines are added to the answer only if they are exact spans of a retrieved passage.
+These historical results verify the code and source checks exercised then. They do not
+establish live model quality or successful database integration. The skipped tests and unavailable
+Qdrant compatibility check remain qualifications; rerun the relevant integration checks
+with the stores available. Mocked model tests do not establish real endpoint readiness.
 
-The corpus graph has 22,952 passages, 30 malfunctions, 4,478 parts, 2,000 cases, and 12,398 derived `MENTIONS` edges. No node is an orphan. No edge is missing a page or a case id. A sample of 100 derived edges is in `docs/graph_build_report.md`.
+Historical live verification on 26 October: the corrected-data index command passed.
+The graph import completed but its final spot check used a stale charging-fault node
+ID. After correcting that ID, 19 focused graph, library/service and demonstration
+tests passed with no skips. Lint/formatting and type checking also passed. Read-only
+comparison of the imported database with the corrected source build and saved report
+confirmed all node/edge counts, oil-cooler links and charging-fault candidate links,
+with zero orphans and zero missing/doubled provenance. The existing import was retained.
+These checks establish the exercised local integrations, not a clean-install check or
+live answer/judge model quality.
 
-## Limits
+## Current evaluation and data limits
 
-Applicability hit@10 stays at 4.5. The questions ask whether one instruction mentions a model. `APPLIES_TO` connects many passages to that model, and boosting passages that were already retrieved does not find an instruction the keyword search missed.
+The active legacy benchmark has 155 questions. Its 50 keyword-derived relational/multi-hop
+questions remain exploratory and excluded from acceptance. The client has approved
+Choice B and accepted the first 25 corrected cases; full repair chains are not required.
+Another 25 independent cases are prepared for review. All 50 are converted to normal
+evaluation records in `data/eval/bounded_questions.jsonl`, separate from the active
+legacy benchmark. The complete 50-question set is not approved or frozen, and M3 remains
+blocked. The 50-target minimum and +15/+10 thresholds are unchanged.
 
-Follow-up stays at 0. The three questions depend on the previous turn naming a different model. The router does not treat a model-only link as a table or case edge, so the graph stays off. Turning it on without a better seed would add a fan-out of model passages and risk the lookup scores.
+The new batch has 8 operator references, 2 maintenance/catalogue links and 15 maintenance
+task references from both maintenance volumes. All 146 selected excerpts match the
+physical PDFs across 76 pages after whitespace normalization. The prepared source pack
+and [M4 schema mapping](schema_mapping.md) are available for review. Stored TOC aliases
+now resolve to actual body occurrences and compatible continuations through the explicit
+reference resolver. The bounded route follows references into instructions with at most
+three actual edges, or exact part-number mentions to all matching catalogue rows within
+the cap. It excludes the keyword part frame. These are implemented code changes;
+the production graph has now been rebuilt from the revised code. See the
+[current verification record](verification_status.md) and
+[traversal preparation](traversal_alignment.md).
 
-Unanswerable questions are still a generator policy. A code that is not in the term table does not become a different malfunction. The graph does not refuse for the caller. The demonstration answerer refuses when the requested title is absent from the retrieved passages.
+The earlier 27 October test run passed 172 tests with 8 store-dependent integration tests
+skipped and one Qdrant compatibility warning because the stores were unavailable.
+Lint/formatting and type checking passed. These historical checks do not replace a fresh
+live integration run after traversal changes or the client-approved baseline/graph comparison.
 
-Procedure hit@10 was already 100. The graph stays off for a procedure that does not name a code, a part, or a case, so procedure evidence stays 38.9. The traversal API still returns the next step and the bound caution when the caller passes the step as a seed. The oil-cooler check does that.
+An earlier traversal check passed 195 tests with two Qdrant-dependent
+tests skipped and one compatibility warning because Qdrant was stopped. Lint/formatting
+and type checking passed. Source/PDF review validated all 50 cases, with 25 accepted and
+25 pending. No model calls or M3 scoring were made. The production corpus was retained;
+those earlier fixture checks did not establish production retrieval quality.
 
-Two relational questions do not reach their gold part. The gold row's description contains the keyword and the canonical part row does not, so `CANDIDATE_PART` is not drawn. That is fault 8, keyword `OIL PUMP`.
+The deeper recheck passed 280 tests with no skips. After the final CSV-export fix,
+all 28 focused storage/library/API tests passed. Lint/formatting, type checking and
+dependency checks passed. The direct baseline, reproduction and M3 commands all stop
+before runtime work while approval is pending. Fresh measurements remain required.
 
-Derived `MENTIONS` edges are surface forms: a model token or a part number written in the passage, with weight 0.4. They are not a second copy of `APPLIES_TO`. Sodick's review of 50 of the 100 sampled edges is still open. The sample is the review set. It is not a claim that the review has been done.
+`make bounded-plan` writes a report for replacing the legacy targets with the 50 bounded
+targets while retaining 105 controls for per-type regression and lookup latency checks.
+It does not activate the benchmark or call models. Readiness remains blocked by the
+25 pending targets and final freeze. The target-only digest is separate from the contract's
+full-run digest, which must cover the same ordered 155 records for baseline and graph.
 
-The required-fact gain depends on the answer containing the part number and the step span. The frame supplies those strings only when the retrieved passage contains them. A model that paraphrases and drops the number loses the fact under the quote rule. The measured run appends the frame line in that case.
+The historical corrected-node and synthetic-case store build was verified with
+22,956 passages, 5,088 parts, 30 malfunctions, 2,000 cases and
+12,403 `MENTIONS` edges; those counts are preserved in the
+[previous build report](historical/graph_build_report_before_explicit_refs_2026_10_27.md).
+The current [build report](graph_build_report.md) records 3,346 `REFERS_TO` and
+12,418 `MENTIONS` edges, no orphan nodes and no missing/doubled provenance. Keyword
+`CANDIDATE_PART` edges propose candidates; they do not prove a repair relationship.
+Synthetic case part links do not independently confirm a diagnosis or part fit.
+`MENTIONS` records deterministic surface-form matches, not model-extracted repair facts.
+Neither a deterministic rule nor its `derived` flag establishes semantic validity.
 
-## Recommendations
+The model answer path now uses structured model output with validated citations. It
+bypasses title gating and does not append part numbers, frame lines or fallback
+citations. A separate offline quote helper remains for demonstration/testing and does
+not validate the model answer path. The bounded route supplies no keyword relation
+frame; frames retained by legacy lookup/troubleshooting routes are unverified hints.
 
-Keep the public function names in Appendix A.4. Keep the labels in `docs/schema_reference.md` until a review asks for a rename. Appendix A.3's example labels are a generic sketch. Renaming the loaded graph would break the measured reports.
+| Revised measurement | Status |
+|---|---|
+| Live generator/judge smoke test | Historical pass on 26 October with local Ollama qwen3:8b / qwen3:14b; supplied-evidence suite only |
+| Comparable baseline and graph measurements | Pending final target review/freeze and fresh same-model measurements |
+| Evidence recall gain | Pending; current threshold at least +15 percentage points |
+| Required-fact recall gain | Pending; current threshold at least +10 percentage points |
+| Per-type regression | Pending; loss no greater than 1 percentage point in hit@10 or required-fact recall |
+| Lookup p95 added latency | Pending; current limit 100 ms |
+| Reproduction of revised comparison | Pending fresh results |
 
-Build the first Sodick graph from a small node file, on the pattern of `tests/fixtures/m4`, before loading a full manual. Call `link_entities` and `traverse` from the existing retriever. Start with graph weight 1.0 and hop depth 2. Change those two numbers only, and keep hit@10 on the first 10 fused passages.
+Use the same frozen questions, generator, independent judge, embedding model and first
+10 fused passages for both measurements. Current graph defaults are weight 1.0, depth
+2 for other routes, up to 3 actual edges for bounded references, and cap 200. These are
+configuration values, not a new measured result. Keep the reranker off for the agreed
+comparison. A smoke pass alone does not satisfy these gates.
 
-Use a new `build` id for each customer load. Roll that id back with `clear_build` if the load is wrong. Leave `corpus` in place until the customer graph replaces the demonstration.
+The passing smoke result is in `data/eval/model_smoke/results.json`. Judge calibration,
+both cited positive answers and the missing-evidence refusal passed. A prior quote
+punctuation failure was diagnosed and preserved; the `judge-quotes-v3` instruction keeps
+exact quote validation unchanged. That protocol revision historically passed 47 focused
+tests, lint and type checking. The protocol and traversal changes require fresh comparable
+baseline/graph runs.
 
-Do not raise the cutoff, and do not turn the reranker on to chase applicability or follow-up. Those two types need a seed that names the instruction, not a longer walk. The Japanese sample is already in the node files. The same library reads it. No English-only branch is required.
+## Completion and handover
 
-Review the derived-edge sample against the source pages as part of the joint M3 and M4 check. If a sampled edge's surface form is not on that page, delete that rule before using `MENTIONS` on plant documents.
+1. Obtain review of the [additional 25](client_review/additional_25_candidates.md), apply
+   corrections and fill any rejected-case gap. Scope and the corrected first 25 are
+   accepted. Record explicit approval and freeze the 50 targets together with the 105
+   controls using the full-run digest.
+2. Retain the verified current corpus graph/service and the historical
+   [live smoke result](model_smoke.md). Rebuild affected artifacts if source data or
+   code changes; recheck models when their answer/judge settings or prompts change.
+3. Run `make baseline`, `make m3` and then `make eval`. Review failures and retained raw
+   answers/citations/judgments before replacing historical result claims.
+4. Review the prepared [schema mapping](schema_mapping.md) against the client's requirements,
+   record a current demonstration and verify the documented installation path.
+5. Deliver through Sodick's GitLab with history and without credentials. Record the
+   delivered commit and perform or explicitly schedule the [handover](handover.md).
 
-## Handover
-
-Two sessions are described in `docs/handover.md`. The recordings and the written answers are added after Sodick's developers attend. The package they need before those sessions is this repository: `pip install`, `make service`, and the four guides.
+The original Requirements v1.1 document is absent from this repository, so complete
+clause-by-clause compliance and the final schema mapping cannot yet be certified.
+GitLab delivery, client edge review and attended handover sessions are not recorded as
+completed. This report does not claim M3/M4 acceptance.
